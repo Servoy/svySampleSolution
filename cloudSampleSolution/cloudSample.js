@@ -1,4 +1,14 @@
 /**
+ * @protected 
+ * @properties={typeid:35,uuid:"E58D06FB-AB22-4449-AD17-2388722974D7",variableType:-4}
+ */
+var DEFAULT_COLORS = {
+	'MAIN-COLOR': '#4880FF',
+	'SECONDARY-COLOR': '#FFF'
+}
+
+
+/**
  * @protected
  * Callback method for when solution is opened.
  * When deeplinking into solutions, the argument part of the deeplink url will be passed in as the first argument
@@ -75,23 +85,22 @@ function onAfterUserCreate(userName, tenantName) {
  * @properties={typeid:24,uuid:"96687A40-3405-44AC-A105-56468D89CA7A"}
  */
 function overrideSolutionStyle() {
-
-	var newColorStyle = {
-		'MAIN-COLOR': '#4880FF',
-		'SECONDARY-COLOR': '#FFF'
-	}
+		
+	var mainColor = DEFAULT_COLORS['MAIN-COLOR'];
+	var secondaryColor = DEFAULT_COLORS['SECONDARY-COLOR'];
+	
 
 	var propMainColor = scopes.svyProperties.getProperties("MAIN-COLOR", "style", scopes.svySecurity.getTenant().getName(), scopes.svySecurity.getUser().getUserName())
 	if (propMainColor && propMainColor.length) {
-		newColorStyle["MAIN-COLOR"] = propMainColor[0].getPropertyValue();
+		mainColor = propMainColor[0].getPropertyValue();
 	}
 
 	var propSecondaryColor = scopes.svyProperties.getProperties("SECONDARY-COLOR", "style", scopes.svySecurity.getTenant().getName(), scopes.svySecurity.getUser().getUserName())
 	if (propSecondaryColor && propSecondaryColor.length) {
-		newColorStyle["SECONDARY-COLOR"] = propSecondaryColor[0].getPropertyValue();
+		secondaryColor = propSecondaryColor[0].getPropertyValue();
 	}
 
-	overrideStyleColors(newColorStyle["MAIN-COLOR"], newColorStyle["SECONDARY-COLOR"]);
+	overrideStyleColors(mainColor, secondaryColor);
 }
 
 /**
