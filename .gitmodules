@@ -30,3 +30,7 @@
 	path = svyThemeRoller
 	url = https://github.com/Servoy/svyThemeRoller.git
 	branch = master
+[submodule "svySecurity"]
+	path = svySecurity
+	url = https://github.com/Servoy/svySecurity.git
+	branch = master
