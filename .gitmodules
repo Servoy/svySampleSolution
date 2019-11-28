@@ -34,3 +34,7 @@
 	path = svySecurity
 	url = https://github.com/Servoy/svySecurity.git
 	branch = master
+[submodule "svySearch"]
+	path = svySearch
+	url = https://github.com/Servoy/svySearch.git
+	branch = master
