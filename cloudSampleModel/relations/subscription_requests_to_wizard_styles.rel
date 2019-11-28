@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/svy_cloud/wizard_styles",
+items:[
+{foreignColumnName:"subscription_request_id",primaryDataProviderID:"subscription_request_id",typeid:23,uuid:"B6C054DC-B900-4C2A-B6B0-CFF5F819369C"}
+],
+joinType:1,
+name:"subscription_requests_to_wizard_styles",
+primaryDataSource:"db:/svy_cloud/subscription_requests",
+typeid:22,
+uuid:"1C93BE87-23E5-48A7-9364-73F17CFDC379"

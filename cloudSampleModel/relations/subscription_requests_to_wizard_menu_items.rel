@@ -1,0 +1,10 @@
+allowCreationRelatedRecords:true,
+foreignDataSource:"db:/svy_cloud/wizard_menu_items",
+items:[
+{foreignColumnName:"subscription_request_id",primaryDataProviderID:"subscription_request_id",typeid:23,uuid:"58B56C98-1E96-459A-AE26-DE50707C648E"}
+],
+joinType:1,
+name:"subscription_requests_to_wizard_menu_items",
+primaryDataSource:"db:/svy_cloud/subscription_requests",
+typeid:22,
+uuid:"EAD265CB-C282-4B71-8265-703662973241"

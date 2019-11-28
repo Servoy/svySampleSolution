@@ -1,0 +1,180 @@
+// import of the custom servoy theme properties that will import the hidden servoy theme, this imported file is for customizing the default servoy theme properties 
+@import 'theme-servoy.less';
+@import 'custom_servoy_theme_properties.less';
+
+// Add your custom less/css to this file you can use the same less properties that are specified in the above properties.less 
+
+@import 'customicons.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:100,300,400,500,700,900&display=swap');
+
+label {
+	font-weight: normal;
+}
+
+.ag-table-header .ag-filter-icon {
+	display: none;
+}
+
+.btn-download-ide{
+	padding: 5px 20px !important;
+}
+
+
+/* Combine Theme Classes together */
+.btn-label {
+	display: inline-block;
+	line-height: 20px;
+	padding: 3px 20px;
+	.border();
+	.border-radius();
+	.text-uppercase();
+	.h5();
+}
+
+.btn-label-success {
+	.btn-label();
+	.border-success();
+	.text-success();
+}
+
+.btn-label-info {
+	.btn-label();
+	.border-info();
+	.text-info();
+}
+
+.btn-label-warning {
+	.btn-label();
+	.border-warning();
+	.text-warning();
+}
+
+
+/**************************** DASHBOARD ***************************/
+
+.revenue-background {			
+	background-color: #9D0952;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.profit-background {			
+	background-color: #F6B900;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.growth-background {			
+	background-color: #F68500;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.order-background {			
+	background-color: #5C975D;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+
+.tile-datalabel {	
+		color: #FFFFFF;	
+		font-size: 45px !important;	
+		font-weight: 800;	
+		letter-spacing: -1px;	
+}
+
+.tile-subDatalabel {	
+		color: #FFFFFF;	
+		font-size: 28px !important;	
+		font-weight: 400;
+		text-transform: uppercase;	
+}
+
+.tile-smallDatalabel {	
+		color: #FFFFFF;	
+		font-size: 16px !important;	
+		font-weight: 400;
+}
+
+.tile-image {
+		height: 50px;	
+		width: 150px;	
+		color: #FFFFFF;	
+		font-family: "Font Awesome 5 Pro";	
+		font-size: 40px !important;	
+		font-weight: 300;	
+ }
+ 
+.tile-MediumDatalabel {	
+		color: #FFFFFF;	
+		font-size: 34px !important;	
+		font-weight: 800;	
+		letter-spacing: -1px;	
+}
+
+.tile-MediumSubDatalabel {	
+		color: #FFFFFF;	
+		font-size: 20px !important;	
+		font-weight: 400;
+		text-transform: uppercase;	
+}
+
+.btn-revenueDanger{
+	font-size: 13px;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: @brand-danger;
+    border: none;
+    cursor: pointer;
+    border-radius:25px;
+    padding-left: 6px;
+}
+
+.btn-revenueSuccess{
+	font-size: 13px;
+    display: inline-block;
+    color: #FFFFFF;
+    background-color: @brand-success;
+    border: none;
+    cursor: pointer;
+    border-radius:25px;
+    padding-left: 6px;
+}
+
+.order-newbutton {
+ 	.btn-label();
+	.border-info();
+	.text-info();
+}
+
+.order-newbutton-active {
+	color:#FFFFFF;
+	background-color: @brand-info;
+ 	.btn-label();
+	.border-info();
+}
+
+.order-plannedbutton {
+ 	.btn-label();
+	.border-warning();
+	.text-warning();
+}
+
+.order-plannedbutton-active {
+	color:#FFFFFF;
+	background-color: @brand-warning;
+ 	.btn-label();
+	.border-warning();
+}
+
+.order-completedbutton {
+ 	.btn-label();
+	.border-success();
+	.text-success();
+}
+
+.order-completedbutton-active {
+	color:#FFFFFF;
+	background-color: @brand-success;
+ 	.btn-label();
+	.border-warning();
+ 	.btn-label();
+	.border-success();
+}
