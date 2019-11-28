@@ -2,3 +2,31 @@
 	path = svyNavigation
 	url = https://github.com/Servoy/svyNavigation.git
 	branch = master
+[submodule "svyLookup"]
+	path = svyLookup
+	url = https://github.com/Servoy/svyLookup.git
+	branch = master
+[submodule "svyUtils"]
+	path = svyUtils
+	url = https://github.com/Servoy/svyUtils.git
+	branch = master
+[submodule "svyAnalytics"]
+	path = svyAnalytics
+	url = https://github.com/Servoy/svyAnalytics.git
+	branch = master
+[submodule "svyPopupFilter"]
+	path = svyPopupFilter
+	url = https://github.com/Servoy/svyPopupFilter.git
+	branch = master
+[submodule "servoy-extra-components"]
+	path = servoy-extra-components
+	url = https://github.com/Servoy/servoy-extra-components.git
+	branch = master
+[submodule "custom-rendered-components"]
+	path = custom-rendered-components
+	url = https://github.com/Servoy/custom-rendered-components.git
+	branch = master
+[submodule "svyThemeRoller"]
+	path = svyThemeRoller
+	url = https://github.com/Servoy/svyThemeRoller.git
+	branch = master
