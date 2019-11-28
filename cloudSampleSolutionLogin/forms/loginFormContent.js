@@ -19,7 +19,7 @@ function onLoad(event) {
 		tenantName = "admin";
 		userName = "admin";
 		password = "admin";
-		login();
+	//	login();
 	}
 }
 

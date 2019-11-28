@@ -12,7 +12,6 @@ function sendRegistrationEmail(user) {
 			// TODO enable it to reset password
 			var accessToken = user.generateAccessToken(7*24*60*60*1000);
 			
-				
 			var urlSampleSolution = utils.stringFormat('%1$ssolutions/cloudSampleSolution/index.html',
 				[application.getServerURL()]);
 			
