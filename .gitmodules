@@ -1,0 +1,4 @@
+[submodule "svyNavigation"]
+	path = svyNavigation
+	url = https://github.com/Servoy/svyNavigation.git
+	branch = master
