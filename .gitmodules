@@ -10,10 +10,6 @@
 	path = svyUtils
 	url = https://github.com/Servoy/svyUtils.git
 	branch = master
-[submodule "svyAnalytics"]
-	path = svyAnalytics
-	url = https://github.com/Servoy/svyAnalytics.git
-	branch = master
 [submodule "svyPopupFilter"]
 	path = svyPopupFilter
 	url = https://github.com/Servoy/svyPopupFilter.git
