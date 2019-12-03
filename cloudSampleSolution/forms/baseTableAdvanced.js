@@ -35,8 +35,8 @@ function onActionShowFilter(event) {
  */
 function onLoad(event) {
 	toolbarFilter = new scopes.svyToolbarFilter.ListComponentFilterRenderer(elements.filterToolbar, elements.table);
-	toolbarFilter.setOnFilterApplyEvent(onFilterApplyEvent);
-	toolbarFilter.setOnFilterRemovedEvent(onFilterRemovedEvent);
+	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
+	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 }
 
 
@@ -69,6 +69,7 @@ function onFilterApplyEvent(values, operator, filter) {
  * @properties={typeid:24,uuid:"12E20715-5A64-45B2-A79A-335A1BFCFD5C"}
  */
 function saveToolbarFilterProperty() {
+	return;
 	
 	var filtersState = toolbarFilter.getToolbarFiltersState();
 	
@@ -216,19 +217,11 @@ function onShow(firstShow, event) {
 		elements.table.restoreColumnState(property[0].getPropertyValue())
 	}
 	
-	// restore toolbar filter state
-	if (firstShow) {
-		var filterProps = scopes.svyProperties.getProperties(propertyNameSpace, 'filter-state', tenantName, userName);
-		if (filterProps.length) {
-			toolbarFilter.restoreToolbarFiltersState(JSON.parse(filterProps[0].getPropertyValue()))
-		}
-	}
-	
 	// TODO move it into base form
 	var navItem = scopes.svyNavigation.getCurrentItem();
 	if (navItem.getFormName() == controller.getName()) {
 		var customData = navItem.getCustomData();
-		if (customData && customData.filters) {
+		if (customData && customData.filters && customData.filters.length) {
 			var navFilters = customData.filters;
 			
 			// clear prev filters
@@ -242,7 +235,23 @@ function onShow(firstShow, event) {
 				toolbarFilter.setFilterValue(column, filter.values, filter.operator)
 			}
 		}
-	}	
+	}
+	
+	// restore toolbar filter state
+	if (firstShow) {
+		var filterProps = scopes.svyProperties.getProperties(propertyNameSpace, 'filter-state', tenantName, userName);
+		if (filterProps.length) {
+			/** @type {Array<{
+				id: String,
+				dataprovider: String,
+				operator: String,
+				params: Object,
+				text: String,
+				values: Array}>} */
+			var toolbarState = JSON.parse(filterProps[0].getPropertyValue());
+			toolbarFilter.restoreToolbarFiltersState(toolbarState);
+		}
+	}
 }
 
 /**
