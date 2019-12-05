@@ -65,6 +65,7 @@ function loadMenuItems() {
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"B1558097-985D-4E15-A3CB-DC956FE2CA6C"}
  * @override
  */
@@ -108,6 +109,7 @@ function loadNavbarItems() {
 }
 
 /**
+ * @protected 
  * @param {JSEvent} event
  * @param menuItem
  *
