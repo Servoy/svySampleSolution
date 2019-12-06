@@ -69,7 +69,6 @@ function onFilterApplyEvent(values, operator, filter) {
  * @properties={typeid:24,uuid:"12E20715-5A64-45B2-A79A-335A1BFCFD5C"}
  */
 function saveToolbarFilterProperty() {
-	return;
 	
 	var filtersState = toolbarFilter.getToolbarFiltersState();
 	
