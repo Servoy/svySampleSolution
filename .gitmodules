@@ -38,3 +38,7 @@
 	path = svyAnalyticsClient
 	url = https://github.com/Servoy/svyAnalyticsClient.git
 	branch = master
+[submodule "aggridcomponents"]
+	path = aggridcomponents
+	url = https://github.com/Servoy/aggridcomponents.git
+	branch = master

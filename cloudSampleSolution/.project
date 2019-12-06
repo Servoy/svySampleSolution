@@ -5,6 +5,14 @@
 	<projects>
 		<project>resources</project>
 		<project>customrenderedcomponents</project>
+		<project>cloudSampleModel</project>
+		<project>cloudSampleSolutionLogin</project>
+		<project>svyNavigationUX</project>
+		<project>svyPopupFilter</project>
+		<project>svySearch</project>
+		<project>svySecurityUX</project>
+		<project>svyThemeRoller</project>
+		<project>aggrid</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
