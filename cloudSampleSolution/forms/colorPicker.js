@@ -24,14 +24,14 @@ var secondaryColor = "#FFFFFF";
  * @properties={typeid:24,uuid:"9A3921DF-552C-41D3-8D96-999FF469F78A"}
  */
 function onLoad(event) {
-	var propMainColor = scopes.svyProperties.getProperties("MAIN-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	if (propMainColor && propMainColor.length) {
-		primaryColor = propMainColor[0].getPropertyValue();
+	var propMainColor = scopes.svyProperties.getUserPropertyValue("MAIN-COLOR", "style")
+	if (propMainColor) {
+		primaryColor = propMainColor;
 	}
 	
-	var propSecondaryColor = scopes.svyProperties.getProperties("SECONDARY-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	if (propSecondaryColor && propSecondaryColor.length) {
-		secondaryColor = propSecondaryColor[0].getPropertyValue();
+	var propSecondaryColor = scopes.svyProperties.getUserPropertyValue("SECONDARY-COLOR", "style")
+	if (propSecondaryColor) {
+		secondaryColor = propSecondaryColor;
 	}
 }
 
@@ -44,11 +44,8 @@ function onLoad(event) {
  */
 function onActionApplyColors(event) {
 
-	var propMainColor = scopes.svyProperties.getOrCreateProperty("MAIN-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	propMainColor.setPropertyValue(primaryColor);
-	
-	var propSecondaryColor = scopes.svyProperties.getOrCreateProperty("SECONDARY-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	propSecondaryColor.setPropertyValue(secondaryColor);
+	scopes.svyProperties.setUserProperty("MAIN-COLOR", "style", primaryColor);
+	scopes.svyProperties.setUserProperty("SECONDARY-COLOR", "style", secondaryColor);
 	
 	scopes.cloudSample.overrideStyleColors(primaryColor, secondaryColor);
 }
@@ -64,11 +61,8 @@ function onActionReset(event) {
 	primaryColor = "#4880FF";
 	secondaryColor = "#FFFFFF";
 	
-	var propMainColor = scopes.svyProperties.getOrCreateProperty("MAIN-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	propMainColor.setPropertyValue(primaryColor);
-	
-	var propSecondaryColor = scopes.svyProperties.getOrCreateProperty("SECONDARY-COLOR", "style", scopes.svySecurity.getTenant().getName(),scopes.svySecurity.getUser().getUserName())
-	propSecondaryColor.setPropertyValue(secondaryColor);
+	scopes.svyProperties.setUserProperty("MAIN-COLOR", "style", primaryColor);
+	scopes.svyProperties.setUserProperty("SECONDARY-COLOR", "style", secondaryColor);
 	
 	scopes.cloudSample.overrideStyleColors(primaryColor, secondaryColor);
 }

@@ -6,7 +6,7 @@
 var searchText;
 
 /**
- * @type {scopes.svyToolbarFilter.ListComponentFilterRender}
+ * @type {scopes.svyToolbarFilter.ListComponentFilterRenderer}
  *
  * @properties={typeid:35,uuid:"36DBC6FF-7710-4094-8778-E14F7CBBFC59",variableType:-4}
  */
@@ -34,7 +34,7 @@ function onActionShowFilter(event) {
  * @properties={typeid:24,uuid:"2ADE1345-EC76-4D90-A228-58AA5363C8EE"}
  */
 function onLoad(event) {
-	toolbarFilter = new scopes.svyToolbarFilter.ListComponentFilterRenderer(elements.filterToolbar, elements.table);
+	toolbarFilter = scopes.svyToolbarFilter.createFilterToolbar(elements.filterToolbar, elements.table);
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 }
@@ -71,15 +71,8 @@ function onFilterApplyEvent(values, operator, filter) {
 function saveToolbarFilterProperty() {
 	
 	var filtersState = toolbarFilter.getToolbarFiltersState();
-	
 	var propertyNameSpace = controller.getName() + "-" + elements.table.getName();	
-	var tenantName = scopes.svySecurity.getTenant().getName();
-	var userName = scopes.svySecurity.getUser().getUserName();	
-	
-	var property = scopes.svyProperties.getOrCreateProperty(propertyNameSpace, 'filter-state', tenantName, userName);
-	if (property) {
-		property.setPropertyValue(JSON.stringify(filtersState));
-	}
+	scopes.svyProperties.setUserProperty(propertyNameSpace,'filter-state',JSON.stringify(filtersState));
 }
 
 /**
@@ -182,13 +175,7 @@ function onCellDoubleClick(foundsetindex, columnindex, record, event) {
  */
 function onColumnStateChanged(columnState) {
 	var propertyNameSpace = controller.getName() + "-" + elements.table.getName();	
-	var tenantName = scopes.svySecurity.getTenant().getName();
-	var userName = scopes.svySecurity.getUser().getUserName();	
-	
-	var property = scopes.svyProperties.getOrCreateProperty(propertyNameSpace, 'table-state', tenantName, userName);
-	if (property) {
-		property.setPropertyValue(columnState);
-	}
+	scopes.svyProperties.setUserProperty(propertyNameSpace, 'table-state', columnState);
 }
 
 /**
@@ -206,14 +193,12 @@ function onShow(firstShow, event) {
 	scopes.svyNavigationUX.addGlobalSearchListener(globalSearchListener);
 	
 	
-	var propertyNameSpace = controller.getName() + "-" + elements.table.getName();
-	var tenantName = scopes.svySecurity.getTenant().getName();
-	var userName = scopes.svySecurity.getUser().getUserName();
-	var property = scopes.svyProperties.getProperties(propertyNameSpace, 'table-state', tenantName, userName);
+	var propertyKey = controller.getName() + "-" + elements.table.getName();
+	var columnState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'table-state');
 	
 	// restore grid state
-	if (property.length) {
-		elements.table.restoreColumnState(property[0].getPropertyValue())
+	if (columnState) {
+		elements.table.restoreColumnState(columnState);
 	}
 	
 	// TODO move it into base form
@@ -238,8 +223,8 @@ function onShow(firstShow, event) {
 	
 	// restore toolbar filter state
 	if (firstShow) {
-		var filterProps = scopes.svyProperties.getProperties(propertyNameSpace, 'filter-state', tenantName, userName);
-		if (filterProps.length) {
+		var filterState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'filter-state');
+		if (filterState) {
 			/** @type {Array<{
 				id: String,
 				dataprovider: String,
@@ -247,7 +232,7 @@ function onShow(firstShow, event) {
 				params: Object,
 				text: String,
 				values: Array}>} */
-			var toolbarState = JSON.parse(filterProps[0].getPropertyValue());
+			var toolbarState = JSON.parse(filterState);
 			toolbarFilter.restoreToolbarFiltersState(toolbarState);
 		}
 	}

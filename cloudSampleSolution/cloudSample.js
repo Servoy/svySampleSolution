@@ -90,14 +90,14 @@ function overrideSolutionStyle() {
 	var secondaryColor = DEFAULT_COLORS['SECONDARY-COLOR'];
 	
 
-	var propMainColor = scopes.svyProperties.getProperties("MAIN-COLOR", "style", scopes.svySecurity.getTenant().getName(), scopes.svySecurity.getUser().getUserName())
-	if (propMainColor && propMainColor.length) {
-		mainColor = propMainColor[0].getPropertyValue();
+	var propMainColor = scopes.svyProperties.getUserPropertyValue("MAIN-COLOR", "style")
+	if (propMainColor) {
+		mainColor = propMainColor;
 	}
 
-	var propSecondaryColor = scopes.svyProperties.getProperties("SECONDARY-COLOR", "style", scopes.svySecurity.getTenant().getName(), scopes.svySecurity.getUser().getUserName())
-	if (propSecondaryColor && propSecondaryColor.length) {
-		secondaryColor = propSecondaryColor[0].getPropertyValue();
+	var propSecondaryColor = scopes.svyProperties.getUserPropertyValue("SECONDARY-COLOR", "style")
+	if (propSecondaryColor) {
+		secondaryColor = propSecondaryColor;
 	}
 
 	overrideStyleColors(mainColor, secondaryColor);
