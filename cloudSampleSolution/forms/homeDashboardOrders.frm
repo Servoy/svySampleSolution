@@ -69,7 +69,6 @@ typeid:47,
 uuid:"8436A90A-0DFD-4E38-8E9C-5EE828D6D158"
 },
 {
-cssPosition:"12,-1,-1,10,185,33",
 extendsID:"588976DF-F072-4B40-B0B0-D7F982816865",
 styleClass:"label_header_0",
 text:"Sales Order",

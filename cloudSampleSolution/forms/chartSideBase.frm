@@ -9,7 +9,7 @@ typeid:19,
 uuid:"4191DCDF-A364-4914-AD30-A36FC741EE52"
 },
 {
-cssPosition:"13,-1,-1,2,245,25",
+cssPosition:"13,0,-1,2,245,25",
 horizontalAlignment:0,
 styleClass:"label_header_0",
 text:"label",
@@ -18,15 +18,15 @@ typeid:7,
 uuid:"73AFBB4D-FB01-45F4-BBF8-4023671D99C3"
 },
 {
-cssPosition:"71,-1,-1,10,229,161",
+cssPosition:"71,calc(50% + 125px),-1,calc(50% - 125px),250,161",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"161",
-left:"10",
-right:"-1",
+left:"calc(50% - 125px)",
+right:"calc(50% + 125px)",
 top:"71",
-width:"229"
+width:"250"
 },
 type:"line"
 },

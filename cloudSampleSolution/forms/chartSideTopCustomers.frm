@@ -16,17 +16,8 @@ typeid:7,
 uuid:"55A23BCB-F203-4C3D-95BD-24751D660FF3"
 },
 {
-cssPosition:"62,-1,-1,10,229,161",
 extendsID:"B3B946CD-A178-4C49-A7F8-7072D267868D",
 json:{
-cssPosition:{
-bottom:"-1",
-height:"161",
-left:"10",
-right:"-1",
-top:"62",
-width:"229"
-},
 type:"doughnut"
 },
 typeid:47,

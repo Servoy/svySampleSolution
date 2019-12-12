@@ -44,7 +44,7 @@ function onLoad(event) {
  * @properties={typeid:24,uuid:"E9C17BB8-BB62-4AE9-B9DA-34E72A10D8AA"}
  */
 function onFilterRemovedEvent() {
-	plugins.webnotificationsToastr.info('filter removed');
+	//plugins.webnotificationsToastr.info('filter removed');
 	
 	saveToolbarFilterProperty();
 }
@@ -60,7 +60,7 @@ function onFilterRemovedEvent() {
  * @properties={typeid:24,uuid:"2600A53A-0203-4DB5-9D84-D2FC9FE1B450"}
  */
 function onFilterApplyEvent(values, operator, filter) {
-	plugins.webnotificationsToastr.info(values.join(','));
+	//plugins.webnotificationsToastr.info(values.join(','));
 	
 	saveToolbarFilterProperty();
 }
