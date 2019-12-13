@@ -68,9 +68,10 @@ function onOpen(event) {
 				return false;
 			}
 		}
-		return true;
 	}
+	return true;
 }
+
 /**
  * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
  *

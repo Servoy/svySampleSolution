@@ -10,9 +10,6 @@
 function onLoad(event) {
 
 	// switch the svy_security server to a db containin only sample users
-	databaseManager.switchServer('svy_security', 'svy_security_cloudsample');
-
-	scopes.svySecurity.createSampleData();
 
 	// auto fill credentials in developer
 	if (application.isInDeveloper()) {

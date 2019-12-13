@@ -1,4 +1,3 @@
 dataSource:"db:/example_data/orders",
-onAfterCreateMethodID:"9888EA5E-16A5-4BAC-BEA4-CFEC81E7EE38",
 typeid:39,
 uuid:"F233651A-7BED-4BD5-9F1D-8356EED82AF1"

@@ -7,7 +7,7 @@
  */
 function onActionAddProducts(event) {
 	var lookupObj = scopes.svyLookup.createLookup(datasources.db.example_data.products.getDataSource());
-	lookupObj.setLookupFormProvider(forms.multiLookup)
+	lookupObj.setLookupForm(forms.multiLookup)
 	
 	// add fields
 	lookupObj.addField('productname').setTitleText('Product');
