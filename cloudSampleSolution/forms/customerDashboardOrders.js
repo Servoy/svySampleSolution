@@ -1,7 +1,7 @@
 /**
  * @properties={typeid:35,uuid:"1D4F3FA5-4C36-45F7-B2B1-7073B308F51D",variableType:-4}
  */
-var ORDER_STATUS = {
+var ORDER_STATUSES = {
 	NEW: 1,
 	PLANNED: 2,
 	COMPLETED: 3
@@ -22,7 +22,7 @@ function applyFilter(type) { }
  * @properties={typeid:24,uuid:"7CB380CA-2C0D-4150-9FB1-2828F4B404E6"}
  */
 function onNewClick(event) {
-	applyFilter(ORDER_STATUS.NEW);
+	applyFilter(ORDER_STATUSES.NEW);
 
 	elements.btnNew.removeStyleClass('order-newbutton');
 	elements.btnNew.addStyleClass('order-newbutton-active');
@@ -42,7 +42,7 @@ function onNewClick(event) {
  * @properties={typeid:24,uuid:"8ECFFBE1-5135-411B-9EA0-537C8F305DA7"}
  */
 function onPlannedClick(event) {
-	applyFilter(ORDER_STATUS.PLANNED);
+	applyFilter(ORDER_STATUSES.PLANNED);
 
 	elements.btnPlanned.removeStyleClass('order-plannedbutton');
 	elements.btnPlanned.addStyleClass('order-plannedbutton-active');
@@ -63,7 +63,7 @@ function onPlannedClick(event) {
  */
 function onCompletedClick(event) {
 
-	applyFilter(ORDER_STATUS.COMPLETED);
+	applyFilter(ORDER_STATUSES.COMPLETED);
 
 	elements.btnCompleted.removeStyleClass('order-completedbutton');
 	elements.btnCompleted.addStyleClass('order-completedbutton-active');

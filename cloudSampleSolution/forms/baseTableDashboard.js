@@ -1,7 +1,7 @@
 /**
  * @properties={typeid:35,uuid:"78428562-84C6-479A-89F6-81915B38B8E2",variableType:-4}
  */
-var ORDER_STATUS = {
+var ORDER_STATUSES = {
 	NEW: 1,
 	PLANNED: 2,
 	COMPLETED: 3
@@ -15,13 +15,13 @@ function applyFilter(type) {
 	query.result.addPk();
 
 	switch (type) {
-	case ORDER_STATUS.NEW:
+	case ORDER_STATUSES.NEW:
 		query.where.add(query.columns.requireddate.isNull).add(query.columns.shippeddate.isNull);
 		break;
-	case ORDER_STATUS.PLANNED:
+	case ORDER_STATUSES.PLANNED:
 		query.where.add(query.columns.requireddate.not.isNull).add(query.columns.shippeddate.isNull);
 		break;
-	case ORDER_STATUS.COMPLETED:
+	case ORDER_STATUSES.COMPLETED:
 		query.where.add(query.columns.requireddate.not.isNull).add(query.columns.shippeddate.not.isNull);
 		break;
 	default:
@@ -42,7 +42,7 @@ function applyFilter(type) {
  * @properties={typeid:24,uuid:"D9738DFF-84BE-4344-AD7A-F79231DB1677"}
  */
 function onNewClick(event) {
-	applyFilter(ORDER_STATUS.NEW);
+	applyFilter(ORDER_STATUSES.NEW);
 
 	elements.btnNew.removeStyleClass('order-newbutton');
 	elements.btnNew.addStyleClass('order-newbutton-active');
@@ -62,7 +62,7 @@ function onNewClick(event) {
  * @properties={typeid:24,uuid:"51B9FE2B-66B8-40AC-A32D-26161731B55F"}
  */
 function onPlannedClick(event) {
-	applyFilter(ORDER_STATUS.PLANNED);
+	applyFilter(ORDER_STATUSES.PLANNED);
 
 	elements.btnPlanned.removeStyleClass('order-plannedbutton');
 	elements.btnPlanned.addStyleClass('order-plannedbutton-active');
@@ -83,7 +83,7 @@ function onPlannedClick(event) {
  */
 function onCompletedClick(event) {
 
-	applyFilter(ORDER_STATUS.COMPLETED);
+	applyFilter(ORDER_STATUSES.COMPLETED);
 
 	elements.btnCompleted.removeStyleClass('order-completedbutton');
 	elements.btnCompleted.addStyleClass('order-completedbutton-active');
