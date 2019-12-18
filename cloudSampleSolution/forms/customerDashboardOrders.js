@@ -1,4 +1,6 @@
 /**
+ * @enum 
+ * @public 
  * @properties={typeid:35,uuid:"1D4F3FA5-4C36-45F7-B2B1-7073B308F51D",variableType:-4}
  */
 var ORDER_STATUSES = {

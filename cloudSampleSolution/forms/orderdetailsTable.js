@@ -7,7 +7,8 @@
  */
 function onActionAddProducts(event) {
 	var lookupObj = scopes.svyLookup.createLookup(datasources.db.example_data.products.getDataSource());
-	lookupObj.setLookupForm(forms.multiLookup)
+	lookupObj.setMultiSelect(true);
+	//lookupObj.setLookupForm(forms.multiLookup);
 	
 	// add fields
 	lookupObj.addField('productname').setTitleText('Product');
@@ -16,27 +17,37 @@ function onActionAddProducts(event) {
 		.setSearchable(false)
 		.setTitleText('Price')
 		.setFormat('#,###.00')
-	
+			
 	// show pop-up
-	var component = elements.btnNewProduct;
-	lookupObj.showPopUp(onSelect,component, controller.getFormWidth()/2, 412);
+	lookupObj.showPopUp(onSelect, elements.btnNewProduct, controller.getFormWidth()/2, 412);
 }
 
 /**
- * TODO generated, please specify type and doc for the params
  * @param {Array<JSRecord<db:/example_data/products>>} record
+ * @param {Array} values
+ * @param {scopes.svyLookup.Lookup} lookup
  *
  * @properties={typeid:24,uuid:"0377551C-255C-4472-9E57-02B9A1CC2323"}
  */
-function onSelect(record){
+function onSelect(record, values, lookup){
+	if (values && values.length) {
+		foundset.productid = values[0];
+	}
+	
 	if(record){
 		record.forEach(function(rec){
 			
-			var newRec = foundset.getRecord(foundset.newRecord())
-			newRec.discount = 0;
-			newRec.quantity = 1;
-			newRec.unitprice = rec.unitprice
-			newRec.productid = rec.productid
+			if(foundset.selectRecord(foundset.orderid,rec.productid)) {
+				// increase quantity if product already in order
+				foundset.quantity = foundset.quantity + 1;
+			} else {
+				// create a new order line for each product selected in lookup
+				var newRec = foundset.getRecord(foundset.newRecord())
+				newRec.discount = 0;
+				newRec.quantity = 1;
+				newRec.unitprice = rec.unitprice;
+				newRec.productid = rec.productid;
+			}
 		})
 	}
 }
