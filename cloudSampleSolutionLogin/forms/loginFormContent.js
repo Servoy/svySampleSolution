@@ -16,7 +16,7 @@ function onLoad(event) {
 		tenantName = "admin";
 		userName = "admin";
 		password = "admin";
-	//	login();
+		//	login();
 	}
 }
 
@@ -27,7 +27,7 @@ function onLoad(event) {
  */
 function onLoginSuccess() {
 	elements.errorMsg.visible = false;
-	
+
 }
 
 /**
@@ -38,12 +38,47 @@ function onLoginSuccess() {
  * @override
  */
 function onLoginError(error) {
-	elements.errorMsg.text = error;
+
+	var errorTxt;
+	switch (error) {
+	case ERROR_CODES.INSUFFICIENT_PERMISSIONS:
+		errorTxt = "The User does not have any permission; login is denied";
+		break;
+	case ERROR_CODES.LOCKED_TENANT:
+		errorTxt = "The Tenant is locked";
+		break;
+	case ERROR_CODES.LOCKED_USER:
+		errorTxt = "The User is locked";
+		break;
+	case ERROR_CODES.PASSWORD_MISMATCH:
+		errorTxt = "The entered password is not correct";
+		break;
+	case ERROR_CODES.PASSWORD_NOT_SPECIFIED:
+		errorTxt = "Please enter the User's password";
+		break;
+	case ERROR_CODES.TENANT_NOT_FOUND:
+		errorTxt = "Tenant not found";
+		break;
+	case ERROR_CODES.TENANT_NOT_SPECIFIED:
+		errorTxt = "Please enter the Tenant";
+		break;
+	case ERROR_CODES.USER_NOT_FOUND:
+		errorTxt = "User not found";
+		break;
+	case ERROR_CODES.USER_NOT_SPECIFIED:
+		errorTxt = "Please enter the User";
+		break;
+	default:
+		errorTxt = error
+		break;
+	}
+
+	elements.errorMsg.text = errorTxt;
 	elements.errorMsg.visible = true;
 }
 
 /**
- * @public 
+ * @public
  * @param {String} appName
  *
  * @properties={typeid:24,uuid:"29B7E977-546A-4BCB-A0CD-FC99D629895B"}
