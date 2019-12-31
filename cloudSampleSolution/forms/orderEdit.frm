@@ -7,14 +7,14 @@ items:[
 {
 cssPosition:"268,60,-1,calc(50% + 145px),0,42",
 dataProviderID:"shipcountry",
-formIndex:8,
-name:"country1",
+formIndex:17,
+name:"country",
 typeid:4,
 uuid:"038B2A98-1715-4A89-9F3F-0CD765484E0C"
 },
 {
 cssPosition:"110,-1,-1,calc(50% + 15px),161,25",
-formIndex:11,
+formIndex:21,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -24,26 +24,26 @@ right:"-1",
 top:"110",
 width:"161"
 },
-formIndex:11,
+formIndex:21,
 styleClass:"h5 text-tertiary",
 text:"CUSTOMER ADDRESS"
 },
-name:"label_3ccc",
+name:"label_customerAddress",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"08A39C53-D5D1-4EC6-BA46-64C1B8275455"
 },
 {
-cssPosition:"90,30,-1,30,0,470",
+cssPosition:"90,28,-1,32,0,470",
 extendsID:"AFD100FA-E956-4DE4-B2CC-094D990971E8",
 formIndex:0,
 json:{
 cssPosition:{
 bottom:"-1",
 height:"470",
-left:"30",
-right:"30",
+left:"32",
+right:"28",
 top:"90",
 width:"0"
 },
@@ -53,16 +53,44 @@ typeid:47,
 uuid:"140F8736-7B1A-44EE-8EAD-3CC3908E09D2"
 },
 {
+cssPosition:"383,calc(50% - 10px),-1,-1,25,31",
+formIndex:33,
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"31",
+left:"-1",
+right:"calc(50% - 10px)",
+top:"383",
+width:"25"
+},
+faclass:"far fa-calendar-check",
+formIndex:33,
+onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
+size:{
+height:25,
+width:25
+},
+styleclass:"clickable"
+},
+name:"iconPickRequiredDate",
+size:"25,25",
+typeName:"servoyextra-fontawesome",
+typeid:47,
+uuid:"2C3AD001-4D86-4753-BB4A-AE3F2311E698"
+},
+{
 cssPosition:"326,60,-1,calc(50% + 145px),0,42",
 dataProviderID:"shipcity",
-formIndex:10,
-name:"city1",
+formIndex:20,
+name:"city",
 typeid:4,
 uuid:"33BF2F18-66BE-4529-972F-0C06D7337651"
 },
 {
 cssPosition:"163,-1,-1,60,25,20",
-formIndex:7,
+formIndex:16,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -73,7 +101,7 @@ top:"163",
 width:"25"
 },
 faclass:"fas fa-phone",
-formIndex:7,
+formIndex:16,
 size:{
 height:25,
 width:25
@@ -87,7 +115,7 @@ uuid:"38640E9B-6B49-43F0-8391-323CF42C2633"
 },
 {
 cssPosition:"326,-1,-1,60,120,42",
-formIndex:14,
+formIndex:28,
 labelFor:"orderdate",
 name:"orderdate_label",
 text:"Orderdate",
@@ -97,8 +125,8 @@ uuid:"386DD691-9D1C-4C33-BE5C-D29467732795"
 },
 {
 cssPosition:"268,-1,-1,calc(50% + 15px),120,42",
-formIndex:1,
-name:"country_0",
+formIndex:4,
+name:"country_label",
 text:"Country",
 transparent:true,
 typeid:7,
@@ -113,14 +141,14 @@ uuid:"3C8A19DF-9BE5-43DB-A5BA-1E21464239B3"
 {
 cssPosition:"188,59,-1,calc(50% + 16px),0,20",
 displaysTags:true,
-formIndex:1,
+formIndex:5,
 text:"%%orders_to_customers.country%%",
 typeid:7,
 uuid:"3E79631F-8442-424C-BF5A-40E8BE04A8F3"
 },
 {
 cssPosition:"233,-1,-1,calc(50% + 15px),142,23",
-formIndex:11,
+formIndex:22,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -130,11 +158,11 @@ right:"-1",
 top:"233",
 width:"142"
 },
-formIndex:11,
+formIndex:22,
 styleClass:"h5 text-tertiary",
 text:"DELIVERY ADDRESS"
 },
-name:"label_3",
+name:"label_deliveryAddress",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -153,7 +181,7 @@ cssPosition:"490,calc(50% + 15px),-1,180,243,42",
 dataProviderID:"shipvia",
 displayType:2,
 editable:false,
-formIndex:13,
+formIndex:26,
 name:"shipVia",
 typeid:4,
 uuid:"49C993DC-A68C-4FE3-8B31-926D902B98FD",
@@ -163,14 +191,14 @@ valuelistID:"EE397070-5A81-4A99-A9C0-539F6100B5BF"
 cssPosition:"378,calc(50% + 15px),-1,180,253,42",
 dataProviderID:"requireddate",
 displayType:5,
-formIndex:5,
+formIndex:12,
 name:"requireddate",
 typeid:4,
 uuid:"4B15B932-E3A4-4B0A-B8B2-7C301D1A98BE"
 },
 {
 cssPosition:"490,60,-1,calc(50% + 145px),0,42",
-formIndex:12,
+formIndex:25,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -181,17 +209,17 @@ top:"490",
 width:"0"
 },
 dataProviderID:"shipregion",
-formIndex:12
+formIndex:25
 },
-name:"textbox_4",
+name:"region",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
 uuid:"4F37A84E-C993-4FF1-AC77-C8B96B03690A"
 },
 {
 cssPosition:"378,-1,-1,calc(50% + 15px),120,42",
-formIndex:3,
-name:"address_0",
+formIndex:8,
+name:"address_label",
 text:"Address",
 transparent:true,
 typeid:7,
@@ -199,8 +227,8 @@ uuid:"5A277406-4B90-47C5-81CD-62000C97C462"
 },
 {
 cssPosition:"436,-1,-1,calc(50% + 15px),120,42",
-formIndex:4,
-name:"postalcode_0",
+formIndex:11,
+name:"postalcode_label",
 text:"Postalcode",
 transparent:true,
 typeid:7,
@@ -208,7 +236,7 @@ uuid:"5A885680-78CF-4AD7-BC84-45E6A24D275C"
 },
 {
 cssPosition:"378,-1,-1,60,120,42",
-formIndex:15,
+formIndex:29,
 labelFor:"requireddate",
 name:"requireddate_label",
 text:"Requireddate",
@@ -219,14 +247,14 @@ uuid:"668D2EE4-7419-4C9B-B48E-0B3C21FE3CE1"
 {
 cssPosition:"138,60,-1,calc(50% + 15px),0,20",
 displaysTags:true,
-formIndex:1,
+formIndex:2,
 text:"%%orders_to_customers.address%%",
 typeid:7,
 uuid:"6E796E1B-DA14-4E5F-AEAE-4A29B207E9AE"
 },
 {
 cssPosition:"110,-1,-1,58,86,23",
-formIndex:11,
+formIndex:23,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -236,11 +264,11 @@ right:"-1",
 top:"110",
 width:"86"
 },
-formIndex:11,
+formIndex:23,
 styleClass:"h5 text-tertiary",
 text:"INFO"
 },
-name:"label_3cc",
+name:"label_info",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -248,8 +276,8 @@ uuid:"73B00E8D-19E5-4027-9C2F-E877455EE5C9"
 },
 {
 cssPosition:"490,-1,-1,60,120,42",
-formIndex:17,
-name:"shipvia1_label",
+formIndex:32,
+name:"shipvia_label",
 text:"Shipvia",
 transparent:true,
 typeid:7,
@@ -259,15 +287,15 @@ uuid:"8638135C-7985-4AE3-A5BC-7737E27BA9CF"
 cssPosition:"436,calc(50% + 15px),-1,180,253,42",
 dataProviderID:"shippeddate",
 displayType:5,
-formIndex:1,
+formIndex:3,
 name:"shippeddate",
 typeid:4,
 uuid:"8C883DD2-1E0A-4EA9-987E-E35EAB9123C3"
 },
 {
 cssPosition:"490,-1,-1,calc(50% + 15px),120,42",
-formIndex:6,
-name:"postalcode_0c",
+formIndex:13,
+name:"region_label",
 text:"Region",
 transparent:true,
 typeid:7,
@@ -278,16 +306,16 @@ cssPosition:"268,calc(50% + 15px),-1,180,243,42",
 dataProviderID:"employeeid",
 displayType:2,
 editable:false,
-formIndex:13,
-name:"shipViac",
+formIndex:27,
+name:"employee",
 typeid:4,
 uuid:"991C01FB-3983-4233-BC24-29D5BF63E9FB",
 valuelistID:"68D0A4FD-5742-41AB-9165-9543DC40C9F2"
 },
 {
 cssPosition:"326,-1,-1,calc(50% + 15px),120,42",
-formIndex:2,
-name:"city_0",
+formIndex:7,
+name:"city_label",
 text:"City",
 transparent:true,
 typeid:7,
@@ -296,14 +324,14 @@ uuid:"9B9F6B92-2B88-41BD-B0A4-358DC8F33D87"
 {
 cssPosition:"138,calc(50% + 15px),-1,60,0,20",
 displaysTags:true,
-formIndex:2,
+formIndex:6,
 text:"%%orders_to_customers.contacttitle%% %%orders_to_customers.contactname%%",
 typeid:7,
 uuid:"9DE64BCA-81C0-4B92-A495-B51B2FAF3E43"
 },
 {
 cssPosition:"436,-1,-1,60,120,42",
-formIndex:16,
+formIndex:30,
 labelFor:"shippeddate",
 name:"shippeddate_label",
 text:"Shippeddate",
@@ -313,7 +341,7 @@ uuid:"A063E370-E5B7-4FAC-9715-DDC03B0254A2"
 },
 {
 cssPosition:"186,-1,-1,60,25,20",
-formIndex:3,
+formIndex:9,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -324,7 +352,7 @@ top:"186",
 width:"25"
 },
 faclass:"fas fa-fax",
-formIndex:3,
+formIndex:9,
 size:{
 height:25,
 width:25
@@ -338,7 +366,7 @@ uuid:"CB21DF48-5D03-4E2F-B2E5-7FC4F45AE862"
 },
 {
 cssPosition:"162,calc(50% + 15px),-1,93,0,20",
-formIndex:6,
+formIndex:14,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -348,7 +376,7 @@ right:"calc(50% + 15px)",
 top:"162",
 width:"0"
 },
-formIndex:6,
+formIndex:14,
 text:"%%phone%%"
 },
 name:"labelCreatedOn",
@@ -358,7 +386,7 @@ uuid:"D4F20D63-CEBF-4E9A-9EE0-95B4C7087AD9"
 },
 {
 cssPosition:"268,-1,-1,60,120,42",
-formIndex:17,
+formIndex:31,
 name:"label_employee",
 text:"Employee",
 transparent:true,
@@ -367,7 +395,7 @@ uuid:"D82982B0-5489-4237-BE59-73D4D1BFFD3A"
 },
 {
 cssPosition:"232,-1,-1,60,86,23",
-formIndex:11,
+formIndex:24,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -377,21 +405,49 @@ right:"-1",
 top:"232",
 width:"86"
 },
-formIndex:11,
+formIndex:24,
 styleClass:"h5 text-tertiary",
 text:"DELIVERY"
 },
-name:"label_3c",
+name:"label_delivery",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"E1812ED5-95E6-4B4D-8816-86A6384D2637"
 },
 {
+cssPosition:"441,calc(50% - 10px),-1,-1,25,31",
+formIndex:33,
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"31",
+left:"-1",
+right:"calc(50% - 10px)",
+top:"441",
+width:"25"
+},
+faclass:"far fa-calendar-check",
+formIndex:33,
+onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
+size:{
+height:25,
+width:25
+},
+styleclass:"clickable"
+},
+name:"iconPickRequiredDatec",
+size:"25,25",
+typeName:"servoyextra-fontawesome",
+typeid:47,
+uuid:"E49E62FE-0DA4-4A52-8DD8-A30FDA912ABD"
+},
+{
 cssPosition:"326,calc(50% + 15px),-1,180,0,42",
 dataProviderID:"orderdate",
 displayType:5,
-formIndex:4,
+formIndex:10,
 name:"orderdate",
 typeid:4,
 uuid:"E7C95726-FA27-4254-A506-8DD1142EAE44"
@@ -399,15 +455,15 @@ uuid:"E7C95726-FA27-4254-A506-8DD1142EAE44"
 {
 cssPosition:"436,60,-1,calc(50% + 145px),0,42",
 dataProviderID:"shippostalcode",
-formIndex:7,
-name:"postalcode1",
+formIndex:15,
+name:"postalcode",
 typeid:4,
 uuid:"E7C99501-B980-4242-94C6-64589D19E6D0"
 },
 {
 cssPosition:"378,60,-1,calc(50% + 145px),0,42",
 dataProviderID:"shipaddress",
-formIndex:9,
+formIndex:19,
 name:"address1",
 typeid:4,
 uuid:"F71E7872-B34E-4A03-834C-FF578F5DF535"
@@ -435,7 +491,7 @@ uuid:"F7482844-FA17-4418-BA21-45BC1A4C59C1"
 },
 {
 cssPosition:"188,calc(50% + 15px),-1,93,0,20",
-formIndex:8,
+formIndex:18,
 json:{
 cssPosition:{
 bottom:"-1",
@@ -445,7 +501,7 @@ right:"calc(50% + 15px)",
 top:"188",
 width:"0"
 },
-formIndex:8,
+formIndex:18,
 text:"%%fax%%"
 },
 name:"labelCreatedBy",

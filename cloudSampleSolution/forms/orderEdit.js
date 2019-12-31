@@ -20,3 +20,40 @@ function onCrumbClicked(event, crumb, index) {
 		break;
 	}
 }
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B"}
+ */
+function onActionPickRequiredShippedDates(event) {
+	
+	// create the popup filter
+	var datePicker = scopes.svyPopupFilter.createDateFilter();
+	
+	// set popup template form
+	datePicker.setRendererForm(forms.customDatePopupFilter);
+	
+	// set selected values
+	datePicker.setValues([foundset.shippeddate, foundset.requireddate]);
+	
+	// show the picker
+	datePicker.showPopUp(onRequiredShippedDatesPicked, elements.shippeddate);
+}
+
+
+/**
+ * @protected 
+ * 
+ * @param {Array} values
+ * @param {String} operator
+ * @param {scopes.svyPopupFilter.AbstractPopupFilter} dataPicker
+ *
+ * @properties={typeid:24,uuid:"5E29787B-B27D-4E8E-8294-498FD4C0E65A"}
+ */
+function onRequiredShippedDatesPicked(values, operator, dataPicker) {
+	foundset.shippeddate = values[0];
+	foundset.requireddate = values[1];
+}
