@@ -1,12 +1,10 @@
 // this file is for over writing the theme properties of the default servoy properties file.
-// @import 'servoy_theme.less?version=2019.6.0';
+@import 'servoy_theme.less?version=2019.12.0';
 
 
 @main-color: #4880FF; // default:#E9720B
 
-@secondary-color: #FFF; // default:#18222C
-
-@secondary-color-inverse: #92A2B5; // default:#FFF
+@secondary-color: #9D0952; // default:#18222C
 
 @secondary-color-light: lighten(@secondary-color, 10%); // default:#464E56
 
@@ -20,13 +18,17 @@
 
 @field-border-radius: 4px; // default:2px
 
+@sidenav-color: #FFF; // default:@secondary-color
+
+@sidenav-text-color: #92A2B5; // default:@secondary-color-inverse
+
 @sidenav-text-font-size: @font-size-h4; // default:@font-size-h6
 
 @sidenav-border-width: 0 1px 0 0; // default:1px
 
 @sidenav-border-color: @brand-tertiary; // default:@border-color
 
-@sidenav-selected-color: @secondary-color; // default:@secondary-color-light
+@sidenav-selected-color: @sidenav-color; // default:@secondary-color-light
 
 @sidenav-selected-text-color: @main-color; // default:@sidenav-text-color
 
@@ -43,8 +45,6 @@
 @table-row-selected-bg-color: #F4F5F6; // default:@main-color
 
 @table-row-selected-text-color: @text-color; // default:@main-color-inverse
-
-@ngtable-cell-value-line-height: 52px; // default:23px
 
 @brand-primary: @main-color; // default:#428bca
 

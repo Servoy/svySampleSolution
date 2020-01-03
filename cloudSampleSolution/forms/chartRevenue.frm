@@ -54,7 +54,6 @@ uuid:"BEB4D4C2-18A6-4F9A-AE52-220DC55D6FDB"
 }
 ],
 name:"chartRevenue",
-styleClass:"revenue-background",
-transparent:false,
+styleClass:"bg-secondary box-shadow",
 typeid:3,
 uuid:"7B9440C3-63E2-4C3F-98D5-07459B396BD9"

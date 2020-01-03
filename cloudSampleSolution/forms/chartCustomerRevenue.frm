@@ -17,7 +17,7 @@ uuid:"BB751D97-05AB-45F6-9EA9-A564711B1F4B"
 }
 ],
 name:"chartCustomerRevenue",
-styleClass:"profit-background",
+styleClass:"bg-fourth box-shadow",
 transparent:false,
 typeid:3,
 uuid:"BFBC27BC-B73E-4009-8EAB-1F9363E36B90"

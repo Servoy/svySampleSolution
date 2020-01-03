@@ -10,7 +10,7 @@ dataSource:"db:/example_data/customers",
 extendsID:"-1",
 items:[
 {
-cssPosition:"calc(25% - 72px),-1,-1,15px,224,143",
+cssPosition:"calc(25% - 72px),-1,-1,15px,239,143",
 json:{
 containedForm:"291B55B2-7E6C-46E4-A49F-6A0CFD432619",
 cssPosition:{
@@ -19,7 +19,7 @@ height:"143",
 left:"15px",
 right:"-1",
 top:"calc(25% - 72px)",
-width:"224"
+width:"239"
 },
 relationName:"customers_to_customers"
 },
@@ -29,7 +29,7 @@ typeid:47,
 uuid:"6A98ABBC-7AB5-41FE-8C1B-3AA27492C288"
 },
 {
-cssPosition:"calc(75% - 72px),-1,calc(75% - 72px),15px,223,143",
+cssPosition:"calc(75% - 72px),-1,calc(75% - 72px),15px,239,143",
 json:{
 containedForm:"BFBC27BC-B73E-4009-8EAB-1F9363E36B90",
 cssPosition:{
@@ -38,7 +38,7 @@ height:"143",
 left:"15px",
 right:"-1",
 top:"calc(75% - 72px)",
-width:"223"
+width:"239"
 },
 relationName:"customers_to_customers"
 },
@@ -48,13 +48,13 @@ typeid:47,
 uuid:"6B880446-7658-4B51-8B37-57EB12D97761"
 },
 {
-cssPosition:"0,0,0,250,376,288",
+cssPosition:"0,0,0,265,376,288",
 json:{
 containedForm:"FDFEFBF7-A7A7-4BBA-A85D-4402420FF3EB",
 cssPosition:{
 bottom:"0",
 height:"288",
-left:"250",
+left:"265",
 right:"0",
 top:"0",
 width:"376"

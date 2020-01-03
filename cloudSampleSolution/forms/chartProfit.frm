@@ -34,6 +34,6 @@ uuid:"F7EDF010-3C1E-4318-981F-622F46F23341"
 }
 ],
 name:"chartProfit",
-styleClass:"profit-background",
+styleClass:"bg-fourth box-shadow",
 typeid:3,
 uuid:"D9109B64-2178-48DB-88C0-FA43D0EFB056"

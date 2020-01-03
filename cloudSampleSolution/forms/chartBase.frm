@@ -13,7 +13,7 @@ cssPosition:"72,-1,-1,1,297,39",
 dataProviderID:"value",
 horizontalAlignment:0,
 name:"lblTitle",
-styleClass:"tile-datalabel",
+styleClass:"tile-title text-foreground font-weight-bold",
 text:"Amount",
 transparent:true,
 typeid:7,
@@ -23,7 +23,7 @@ uuid:"70D7E80C-8CCA-481A-BB05-01C853731C5E"
 cssPosition:"114,-1,-1,3,293,33",
 horizontalAlignment:0,
 name:"lblSubTitle",
-styleClass:"tile-subDatalabel",
+styleClass:"h2 text-foreground text-uppercase",
 text:"SubTitle",
 transparent:true,
 typeid:7,
@@ -79,6 +79,7 @@ uuid:"A336F1A0-F07E-417C-82DC-AD90989FE254"
 cssPosition:"211,-1,-1,138,51,20",
 dataProviderID:"diff",
 name:"lblDiff",
+styleClass:"h6 text-center bg-danger btn-round",
 text:"label",
 typeid:7,
 uuid:"D8E93EDD-D81B-4DA6-974B-8E7858D68905"
@@ -98,7 +99,7 @@ size:{
 height:25,
 width:25
 },
-styleclass:"tile-image"
+styleclass:"fa-3x"
 },
 name:"image",
 size:"25,25",
@@ -110,7 +111,7 @@ uuid:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC"
 cssPosition:"211,-1,-1,16,102,20",
 horizontalAlignment:0,
 name:"lblVsLastYear",
-styleClass:"tile-smallDatalabel",
+styleClass:"text-foreground",
 text:".vs Last Year",
 transparent:true,
 typeid:7,

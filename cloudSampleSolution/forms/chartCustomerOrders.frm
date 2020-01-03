@@ -11,6 +11,6 @@ uuid:"C9DEBA69-8466-43EF-AF3E-01FF7170BCE5"
 }
 ],
 name:"chartCustomerOrders",
-styleClass:"order-background",
+styleClass:"bg-sixth box-shadow",
 typeid:3,
 uuid:"291B55B2-7E6C-46E4-A49F-6A0CFD432619"

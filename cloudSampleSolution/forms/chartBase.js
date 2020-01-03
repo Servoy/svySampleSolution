@@ -50,13 +50,13 @@ function onShow(firstShow, event) {
  */
 function updateUI() {
 	if (diff >= 0) {
-		elements.lblDiff.removeStyleClass("btn-revenueDanger");
-		elements.lblDiff.addStyleClass("btn-revenueSuccess");
+		elements.lblDiff.removeStyleClass("bg-danger");
+		elements.lblDiff.addStyleClass("bg-success");
 		elements.fontawesome_decrease.visible =false;
 		elements.fontawesome_increase.visible = true;
 	} else {
-		elements.lblDiff.removeStyleClass("btn-revenueSuccess");
-		elements.lblDiff.addStyleClass("btn-revenueDanger");
+		elements.lblDiff.removeStyleClass("bg-success");
+		elements.lblDiff.addStyleClass("bg-danger");
 		elements.fontawesome_decrease.visible =true;
 		elements.fontawesome_increase.visible = false;
 	}

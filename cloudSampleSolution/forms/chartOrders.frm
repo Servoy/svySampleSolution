@@ -33,6 +33,6 @@ uuid:"F17F1BE7-6D91-4CE8-8D6F-1A9CC74A1C17"
 }
 ],
 name:"chartOrders",
-styleClass:"growth-background",
+styleClass:"bg-fifth box-shadow",
 typeid:3,
 uuid:"8E861C19-B0B6-4A86-B8EB-357B8334360D"
