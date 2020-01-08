@@ -1,10 +1,4 @@
 customProperties:"formComponent:false,\
-methods:{\
-onHideMethodID:{\
-arguments:null,\
-parameters:null\
-}\
-},\
 useCssPosition:true",
 dataSource:"db:/example_data/customers",
 extendsID:"220354D9-CA4C-401C-96E6-7A07733010B0",
@@ -118,6 +112,5 @@ uuid:"FFE14731-A9FD-484C-8CFC-09259B1EB4D3"
 }
 ],
 name:"customersTableView",
-onHideMethodID:"-1",
 typeid:3,
 uuid:"4177BF2C-39C6-4B52-A924-D65656EF00CB"
