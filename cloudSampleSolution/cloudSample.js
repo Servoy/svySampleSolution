@@ -35,6 +35,9 @@ function onSolutionOpen(arg, queryParams) {
 	
 	// apply custom style at the onOpen
 	overrideSolutionStyle();
+
+	// update sample data to last year
+	scopes.cloudSampleData.updateOrderDates();
 }
 
 /**
