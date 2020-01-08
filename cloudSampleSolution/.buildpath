@@ -6,6 +6,7 @@
 	<buildpathentry exported="true" kind="prj" path="/svyNavigationUX"/>
 	<buildpathentry exported="true" kind="prj" path="/svyPopupFilter"/>
 	<buildpathentry exported="true" kind="prj" path="/svySearch"/>
+	<buildpathentry exported="true" kind="prj" path="/svySecurity$postImport"/>
 	<buildpathentry exported="true" kind="prj" path="/svySecurityUX"/>
 	<buildpathentry exported="true" kind="prj" path="/svyThemeRoller"/>
 </buildpath>
