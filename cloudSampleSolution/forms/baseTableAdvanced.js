@@ -203,9 +203,6 @@ function onColumnStateChanged(columnState) {
  */
 function onShow(firstShow, event) {
 	
-	// listen for global search
-	scopes.svyNavigationUX.addGlobalSearchListener(globalSearchListener);
-	
 	// restore grid state
 	var propertyKey = controller.getName() + "-" + elements.table.getName();
 	var columnState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'table-state');
@@ -251,17 +248,6 @@ function onShow(firstShow, event) {
 }
 
 /**
- * @param {String} text
- * @protected 
- * 
- * @properties={typeid:24,uuid:"DFA73633-E335-4021-B293-D21DC2758C16"}
- */
-function globalSearchListener(text) {
-	search(text);
-}
-
-
-/**
  * @protected 
  * @param {String} dataprovider
  *
@@ -289,19 +275,4 @@ function getColumn(dataprovider) {
 function showForm(form){
 	var item = new scopes.svyNavigation.NavigationItem(form.controller.getName());
 	scopes.svyNavigation.open(item,foundset.getSelectedRecord(),scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD)
-}
-/**
- * Handle hide window.
- *
- * @param {JSEvent} event the event that triggered the action
- *
- * @return {Boolean}
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"8B5718C5-FE11-48B5-8571-442EFEF79EAC"}
- */
-function onHide(event) {
-	scopes.svyNavigationUX.removeGlobalSearchListener(globalSearchListener)
-	return true
 }

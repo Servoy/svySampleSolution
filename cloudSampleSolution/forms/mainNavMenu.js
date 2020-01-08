@@ -8,6 +8,19 @@ var NAVBAR_ACTIONS = {
 }
 
 /**
+ * @param event
+ *
+ * @properties={typeid:24,uuid:"6BF1B22E-1E26-426D-8AD6-F7D6EA7CA770"}
+ * @override
+ */
+function onLoad(event) {
+	_super.onLoad(event);
+
+	// register for search event
+	scopes.svyNavigationUX.addGlobalSearchListener(onSearch)
+}
+
+/**
  * @return {Array<CustomType<servoyextra-sidenav.MenuItem>>}
  * @protected
  * @override
@@ -15,7 +28,6 @@ var NAVBAR_ACTIONS = {
  */
 function loadMenuItems() {
 
-	
 	/** @type {CustomType<servoyextra-sidenav.MenuItem>} */
 	var menuItem;
 	var menuItems = [];
@@ -31,7 +43,7 @@ function loadMenuItems() {
 	menuItem = new Object();
 	menuItem.id = "customersTableView";
 	menuItem.text = "CUSTOMERS"
-	menuItem.iconStyleClass = "fas icon-contacts";
+	menuItem.iconStyleClass = "icon-contacts";
 	menuItems.push(menuItem);
 
 	menuItem = new Object();
@@ -65,7 +77,7 @@ function loadMenuItems() {
 }
 
 /**
- * @protected 
+ * @protected
  * @properties={typeid:24,uuid:"B1558097-985D-4E15-A3CB-DC956FE2CA6C"}
  * @override
  */
@@ -109,7 +121,7 @@ function loadNavbarItems() {
 }
 
 /**
- * @protected 
+ * @protected
  * @param {JSEvent} event
  * @param menuItem
  *
@@ -137,4 +149,61 @@ function onNavbarMenuItemClicked(event, menuItem) {
 		break;
 	}
 
+}
+
+/**
+ * @protected
+ * @param {String} txt
+ *
+ * @properties={typeid:24,uuid:"AC463340-1123-4AE3-8E04-536019C90B85"}
+ * @AllowToRunInFind
+ */
+function onSearch(txt) {
+	// show search view lookup
+	var lookup = scopes.svyLookup.createLookup(datasources.mem.search_results.getDataSource());
+	lookup.setLookupForm(forms.searchViewLookup);
+	lookup.addField("").setSearchable(false).setStyleClass("text-center fa-2x").setStyleClassDataprovider("iconStyleClass").setWidth("50");
+	lookup.addField("text_value").setTitleText("RESULT");
+	
+	// show the lookup as popup popup
+	var popup = lookup.createPopUp(onSearchLookup, txt);
+	popup.y(86);
+	popup.x(application.getWindow().getWidth() - 501);
+	popup.width(500);
+	popup.show();
+}
+
+/**
+ * @param {Array<JSRecord<mem:search_results>>} records
+ * @param values
+ * @param lookup
+ *
+ * @properties={typeid:24,uuid:"DFE38EA8-88D7-4939-9DD2-D9498CE540F0"}
+ */
+function onSearchLookup(records, values, lookup) {
+
+	// handle search lookup selection
+	if (records && records.length) {
+		
+		/** @type {scopes.svyNavigation.NavigationItem} */
+		var navItem;
+		var record = records[0];
+
+		switch (record.table_name) {
+		case "customers":
+			// navigate to customer
+			var customerRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.customers.getDataSource(), [record.pks]);
+			navItem = scopes.svyNavigation.createNavigationItem("customerView");
+			scopes.svyNavigation.open(navItem, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+			break;
+		case "orders":
+			// navigate to customer's order
+			var orderRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.orders.getDataSource(), [record.pks]);
+			navItem = scopes.svyNavigation.createNavigationItem("orderEdit");
+			scopes.svyNavigation.open(navItem, orderRecord.foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
+			break;
+		default:
+			return;
+		}
+	}
 }
