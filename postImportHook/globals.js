@@ -12,6 +12,9 @@
  */
 function onSolutionOpenPostImportHook(arg, queryParams) {
 	
+	
+	application.output("SYNC PERMISSIONS ", LOGGINGLEVEL.WARNING);
+	
 	// sync security permissions
 	scopes.svySecurity.syncPermissions();
 	
