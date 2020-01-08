@@ -3,10 +3,6 @@ methods:{\
 onHideMethodID:{\
 arguments:null,\
 parameters:null\
-},\
-onShowMethodID:{\
-arguments:null,\
-parameters:null\
 }\
 },\
 useCssPosition:true",
@@ -122,7 +118,6 @@ uuid:"FFE14731-A9FD-484C-8CFC-09259B1EB4D3"
 }
 ],
 name:"customersTableView",
-onHideMethodID:"6245651D-3035-4032-9A40-92DE16697EDE",
-onShowMethodID:"7E3ADA20-A1F5-44B5-A248-CE8FD13B9E7D",
+onHideMethodID:"-1",
 typeid:3,
 uuid:"4177BF2C-39C6-4B52-A924-D65656EF00CB"
