@@ -41,6 +41,7 @@ function onLoad(event) {
 
 
 /**
+ * @private 
  * @properties={typeid:24,uuid:"E9C17BB8-BB62-4AE9-B9DA-34E72A10D8AA"}
  */
 function onFilterRemovedEvent() {
@@ -51,11 +52,11 @@ function onFilterRemovedEvent() {
 
 
 /**
- * @protected 
- * TODO generated, please specify type and doc for the params
- * @param values
- * @param operator
- * @param filter
+ * @private 
+ * 
+ * @param {Array} values
+ * @param {String} operator
+ * @param {scopes.svyToolbarFilter.ListComponentFilterRenderer} filter
  *
  * @properties={typeid:24,uuid:"2600A53A-0203-4DB5-9D84-D2FC9FE1B450"}
  */
@@ -66,6 +67,7 @@ function onFilterApplyEvent(values, operator, filter) {
 }
 
 /**
+ * @private  
  * @properties={typeid:24,uuid:"12E20715-5A64-45B2-A79A-335A1BFCFD5C"}
  */
 function saveToolbarFilterProperty() {
@@ -122,7 +124,7 @@ function search(text) {
  */
 function duplicate() {
 	foundset.duplicateRecord();
-	edit();
+	gotoNew();
 }
 
 /**
@@ -131,17 +133,28 @@ function duplicate() {
  */
 function newRecord() {
 	foundset.newRecord();
-	edit();
+	gotoNew();
 }
 
 /**
- * Perform the element onclick action.
- *
+ * Go to the edit screen for the selected record
+ * 
  * @protected
  *
  * @properties={typeid:24,uuid:"0B0DCE39-793C-4171-9520-0C14BA8E023B"}
  */
-function edit() {
+function gotoNew() {
+	throw "to be implemented";
+}
+
+/**
+ * Go to the detail view screen for the selected record
+ *
+ * @protected
+ * 
+ * @properties={typeid:24,uuid:"E1CB51F6-AE0B-4F7A-9513-92ADF234EEE9"}
+ */
+function gotoDetail() {
 	throw "to be implemented";
 }
 
@@ -161,7 +174,7 @@ function edit() {
  * @properties={typeid:24,uuid:"FCD18DA8-42F4-41FC-B974-F482AC22A966"}
  */
 function onCellDoubleClick(foundsetindex, columnindex, record, event) {
-	edit();
+	gotoDetail();
 }
 
 /**
@@ -190,18 +203,17 @@ function onColumnStateChanged(columnState) {
  */
 function onShow(firstShow, event) {
 	
+	// listen for global search
 	scopes.svyNavigationUX.addGlobalSearchListener(globalSearchListener);
 	
-	
+	// restore grid state
 	var propertyKey = controller.getName() + "-" + elements.table.getName();
 	var columnState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'table-state');
-	
-	// restore grid state
 	if (columnState) {
 		elements.table.restoreColumnState(columnState);
 	}
 	
-	// TODO move it into base form
+	// check for navigation parameters
 	var navItem = scopes.svyNavigation.getCurrentItem();
 	if (navItem.getFormName() == controller.getName()) {
 		var customData = navItem.getCustomData();
@@ -216,13 +228,13 @@ function onShow(firstShow, event) {
 				var filter = navFilters[i];
 				
 				var column = getColumn(filter.dataprovider)
-				toolbarFilter.setFilterValue(column, filter.values, filter.operator)
+				toolbarFilter.setFilterValue(column, filter.values, filter.operator);
 			}
 		}
 	}
 	
-	// restore toolbar filter state
 	if (firstShow) {
+		// restore toolbar filter state on first show
 		var filterState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'filter-state');
 		if (filterState) {
 			/** @type {Array<{
@@ -256,7 +268,7 @@ function globalSearchListener(text) {
  * @properties={typeid:24,uuid:"633DA4C8-8E72-4243-ABFE-E7D092DDA47A"}
  */
 function getColumn(dataprovider) {
-	// TODO shall i move this method withn svyPopupFilter !?
+	// TODO shall i move this method within svyPopupFilter !?
 	var columns = elements.table.columns;
 	for (var i = 0; i < columns.length; i++) {
 		var col = columns[i];
