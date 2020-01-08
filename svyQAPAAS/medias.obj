@@ -1,8 +1,9 @@
 [
 {
 encapsulation:0,
-name:".DS_Store",
+mimeType:"application/zip",
+name:"dataseeds/example_data.zip",
 typeid:37,
-uuid:"3ADF0C8A-FFC9-4D60-A509-F4F9E10C0EA8"
+uuid:"B986DB55-F12E-4B48-A2FF-E8EB130E43D7"
 }
 ]
