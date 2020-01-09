@@ -162,10 +162,10 @@ top:"20",
 width:"0"
 },
 media:"E7BF5141-EB86-4316-91FF-A3A96B3F49FA",
-styleClass:"full-width"
+styleClass:"center-block"
 },
 name:"logo",
-styleClass:"full-width",
+styleClass:"center-block",
 typeName:"servoyextra-imagelabel",
 typeid:47,
 uuid:"A2CB4D7E-C90B-45A9-B870-9DC55459D84F"
