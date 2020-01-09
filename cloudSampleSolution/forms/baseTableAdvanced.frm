@@ -99,7 +99,7 @@ width:"324"
 styleClass:"font-weight-bold h4",
 text:"Title"
 },
-name:"label_1",
+name:"labelTitle",
 styleClass:"font-weight-bold h4",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -154,7 +154,7 @@ right:"34",
 top:"40",
 width:"28"
 },
-faclass:"fas fa-graduation-cap h4 clickable",
+faclass:"fas fa-graduation-cap clickable",
 onActionMethodID:"9C6747ED-5DA2-4932-BEC6-F77E7AEFE78E",
 toolTipText:"View Tutorial"
 },
