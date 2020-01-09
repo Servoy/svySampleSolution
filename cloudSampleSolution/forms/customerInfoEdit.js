@@ -16,7 +16,7 @@ function onCrumbClicked(event, crumb, index) {
 		scopes.svyNavigation.open(item);
 		break;
 	default:
-		back(event);
+		back();
 		break;
 	}
 }
