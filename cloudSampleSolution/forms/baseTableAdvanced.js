@@ -119,6 +119,17 @@ function search(text) {
 }
 
 /**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"9C6747ED-5DA2-4932-BEC6-F77E7AEFE78E"}
+ */
+function tutorial(event) {
+	scopes.tutorial.showTutorial(scopes.tutorial.TUTORIAL.TUTORIAL_1);
+}
+
+/**
  * @protected 
  * @properties={typeid:24,uuid:"3E00593D-76BD-42E1-9175-AE570D271FD0"}
  */

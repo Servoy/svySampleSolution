@@ -154,10 +154,11 @@ right:"34",
 top:"40",
 width:"28"
 },
-faclass:"icon-content_copy h4 clickable",
-onActionMethodID:"3E00593D-76BD-42E1-9175-AE570D271FD0"
+faclass:"fas fa-graduation-cap h4 clickable",
+onActionMethodID:"9C6747ED-5DA2-4932-BEC6-F77E7AEFE78E",
+toolTipText:"View Tutorial"
 },
-name:"btnDuplicate",
+name:"btnTutorial",
 typeName:"servoyextra-fontawesome",
 typeid:47,
 uuid:"D38E1B61-18AF-47B1-B104-EA3D61B6111C"

@@ -8,6 +8,7 @@ var NAVBAR_ACTIONS = {
 }
 
 /**
+ * @protected 
  * @param event
  *
  * @properties={typeid:24,uuid:"6BF1B22E-1E26-426D-8AD6-F7D6EA7CA770"}
@@ -34,24 +35,28 @@ function loadMenuItems() {
 	var menuSubItem;
 	var menuSubItems = [];
 
+	// HOME
 	menuItem = new Object();
 	menuItem.id = "homeDashboard";
 	menuItem.text = "DASHBOARD"
 	menuItem.iconStyleClass = "fa fa-th-large";
 	menuItems.push(menuItem);
 
+	// CUSTOMERS
 	menuItem = new Object();
 	menuItem.id = "customersTableView";
 	menuItem.text = "CUSTOMERS"
 	menuItem.iconStyleClass = "icon-contacts";
 	menuItems.push(menuItem);
 
+	// ORDERS
 	menuItem = new Object();
 	menuItem.id = "ordersTableView";
 	menuItem.text = "ORDERS"
 	menuItem.iconStyleClass = "icon-box";
 	menuItems.push(menuItem);
 
+	// SECURITY
 	menuItem = new Object();
 	menuItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT;
 	menuItem.text = "SECURITY"
@@ -70,10 +75,45 @@ function loadMenuItems() {
 	menuSubItems.push(menuSubItem);
 
 	menuItem.menuItems = menuSubItems;
-
+	menuItems.push(menuItem);
+	
+	// DIVIDER
+	menuItem = new Object();
+	menuItem.isDivider = true;
+	menuItems.push(menuItem);
+	
+	// TUTORIAL
+	menuItem = new Object();
+	menuItem.id = "TUTORIAL";
+	menuItem.text = "TUTORIAL"
+	menuItem.styleClass = "font-weight-bold"
+	menuItem.iconStyleClass = "fas fa-graduation-cap";
 	menuItems.push(menuItem);
 
+	// DIVIDER
+	menuItem = new Object();
+	menuItem.isDivider = true;
+	menuItems.push(menuItem);
+	
 	return menuItems;
+}
+
+/**
+ * @protected 
+ * @param menuItemId
+ * @param event
+ *
+ * @properties={typeid:24,uuid:"413A1E7A-D4AD-4651-A78C-54541FDAB6D7"}
+ * @override
+ */
+function onMenuItemSelected(menuItemId,event) {
+	
+	if (menuItemId === "TUTORIAL") {
+		scopes.tutorial.showTutorial()
+		return false;
+	}
+	
+	return true;
 }
 
 /**
@@ -174,6 +214,7 @@ function onSearch(txt) {
 }
 
 /**
+ * @protected 
  * @param {Array<JSRecord<mem:search_results>>} records
  * @param values
  * @param lookup
