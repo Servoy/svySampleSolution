@@ -9,7 +9,7 @@ typeid:19,
 uuid:"47A62135-056E-4B52-B556-685D0ED0F7C7"
 },
 {
-cssPosition:"72,-1,-1,1,297,39",
+cssPosition:"72,0,-1,0,0,39",
 dataProviderID:"value",
 horizontalAlignment:0,
 name:"lblTitle",
@@ -20,7 +20,7 @@ typeid:7,
 uuid:"70D7E80C-8CCA-481A-BB05-01C853731C5E"
 },
 {
-cssPosition:"114,-1,-1,3,293,33",
+cssPosition:"114,0,-1,0,0,33",
 horizontalAlignment:0,
 name:"lblSubTitle",
 styleClass:"h2 text-foreground text-uppercase",
@@ -122,6 +122,6 @@ name:"chartBase",
 navigatorID:"-1",
 onShowMethodID:"F7151473-8F9C-4D59-A1C4-5A4656BD7EBB",
 showInMenu:true,
-size:"300,250",
+size:"200,250",
 typeid:3,
 uuid:"C1A96FE4-9EB4-4074-B1B3-772A54C1E6F9"

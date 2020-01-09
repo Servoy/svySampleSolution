@@ -39,7 +39,6 @@ typeid:7,
 uuid:"8714A686-BB91-44FE-A89B-D36A7AABCB0A"
 },
 {
-cssPosition:"72,-1,-1,1,297,39",
 displaysTags:true,
 extendsID:"70D7E80C-8CCA-481A-BB05-01C853731C5E",
 format:"¤ ##,###.00",
