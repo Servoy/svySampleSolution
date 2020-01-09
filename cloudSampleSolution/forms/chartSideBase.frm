@@ -11,7 +11,7 @@ uuid:"4191DCDF-A364-4914-AD30-A36FC741EE52"
 {
 cssPosition:"13,0,-1,2,245,25",
 horizontalAlignment:0,
-styleClass:"label_header_0",
+styleClass:"h3 text-uppercase text-primary",
 text:"label",
 transparent:true,
 typeid:7,

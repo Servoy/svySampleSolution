@@ -61,8 +61,9 @@ typeid:47,
 uuid:"58532960-BC18-43F9-A60D-DE87E65EBEAF"
 },
 {
-cssPosition:"12,355,-1,10,185,33",
+cssPosition:"12,355,-1,35,185,33",
 name:"lblTitle",
+styleClass:"h3 text-uppercase text-primary",
 text:"label",
 typeid:7,
 uuid:"588976DF-F072-4B40-B0B0-D7F982816865"

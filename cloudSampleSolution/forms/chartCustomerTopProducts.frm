@@ -14,7 +14,7 @@ dataSource:"db:/example_data/customers",
 extendsID:"3712A276-C5BC-492A-8D3A-7BDC8E557F70",
 items:[
 {
-cssPosition:"13,calc( 50% + 15px),-1,15px,229,25",
+cssPosition:"13,50%,-1,0,50%,25",
 extendsID:"73AFBB4D-FB01-45F4-BBF8-4023671D99C3",
 text:"Top 5 Products",
 typeid:7,
@@ -27,7 +27,7 @@ typeid:19,
 uuid:"34A03D54-F5AB-44AA-8B0D-475E84EFB06F"
 },
 {
-cssPosition:"calc(50% - 80px),15,calc(50% - 105px),calc( 50% + 15px),210,210",
+cssPosition:"calc(50% - 80px),15,calc(50% - 105px),calc( 50% + 15px),calc( 50% - 30px),210",
 json:{
 cssPosition:{
 bottom:"calc(50% - 105px)",
@@ -35,7 +35,7 @@ height:"210",
 left:"calc( 50% + 15px)",
 right:"15",
 top:"calc(50% - 80px)",
-width:"210"
+width:"calc( 50% - 30px)"
 },
 type:"bar"
 },
@@ -45,16 +45,16 @@ typeid:47,
 uuid:"604016BB-B09B-46A0-A419-36C3604D93AF"
 },
 {
-cssPosition:"13,15px,-1,calc( 50% + 15px),195,25",
+cssPosition:"13,0,-1,50%,50%,25",
 horizontalAlignment:0,
-styleClass:"label_header_0",
+styleClass:"h3 text-uppercase text-primary",
 text:"Annual Sales",
 transparent:true,
 typeid:7,
 uuid:"9CCFD5C2-335B-4E29-8658-D6FE13C2F2D5"
 },
 {
-cssPosition:"calc(50% - 80px),calc(50% + 15px),calc(50% - 105px),15,229,210",
+cssPosition:"calc(50% - 80px),calc(50% + 15px),calc(50% - 105px),15,calc( 50% - 30px),210",
 extendsID:"B3B946CD-A178-4C49-A7F8-7072D267868D",
 json:{
 cssPosition:{
@@ -63,7 +63,7 @@ height:"210",
 left:"15",
 right:"calc(50% + 15px)",
 top:"calc(50% - 80px)",
-width:"229"
+width:"calc( 50% - 30px)"
 },
 type:"doughnut"
 },

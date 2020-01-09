@@ -4,16 +4,16 @@ dataSource:"db:/example_data/customers",
 encapsulation:60,
 items:[
 {
-cssPosition:"30,-1,30,30,calc( 33% - 45px),30",
+cssPosition:"30,calc( 66% + 45px),30,30,282,30",
 json:{
 containedForm:"71C80C08-190D-4DA7-AEAD-4925904EE22E",
 cssPosition:{
 bottom:"30",
 height:"30",
 left:"30",
-right:"-1",
+right:"calc( 66% + 45px)",
 top:"30",
-width:"calc( 33% - 45px)"
+width:"282"
 },
 styleClass:"box"
 },

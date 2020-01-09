@@ -17,7 +17,7 @@ width:"80"
 styleClass:"h5 text-tertiary",
 text:"ADDRESS"
 },
-name:"labelLocked",
+name:"labelTitleAddress",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -38,7 +38,7 @@ styleClass:"h4 text-tertiary clickable",
 text:"%%customerid%%",
 toolTipText:"Display Name"
 },
-name:"labelDisplayName",
+name:"customerid",
 styleClass:"h4 text-tertiary clickable",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -57,26 +57,26 @@ width:"0"
 },
 text:"%%phone%%"
 },
-name:"labelCreatedOn",
+name:"phone",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"1E440378-C09C-4770-9EB0-F66106DFCCC9"
 },
 {
-cssPosition:"227,33,-1,20,0,28",
+cssPosition:"227,20,-1,20,0,28",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"28",
 left:"20",
-right:"33",
+right:"20",
 top:"227",
 width:"0"
 },
 text:"%%contacttitle%% <b>%%contactname%%<\/b>",
 toolTipText:"Email"
 },
-name:"labelEmail",
+name:"contact",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"25855CE3-AFDD-4809-A79A-D35BF56A4FC9"
@@ -98,27 +98,27 @@ height:25,
 width:25
 }
 },
-name:"iconCreatedBy",
+name:"iconFax",
 size:"25,25",
 typeName:"servoyextra-fontawesome",
 typeid:47,
 uuid:"264A835E-E197-4AF9-BCCC-5AD5B30BFC94"
 },
 {
-cssPosition:"322,-1,-1,180,150,29",
+cssPosition:"322,-1,-1,155,125,29",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"29",
-left:"180",
+left:"155",
 right:"-1",
 top:"322",
-width:"150"
+width:"125"
 },
 styleClass:"btn btn-round btn-outline-primary",
 text:"FAX"
 },
-name:"buttonResetPwdc",
+name:"buttonFax",
 styleClass:"btn btn-round btn-outline-primary",
 typeName:"bootstrapcomponents-button",
 typeid:47,
@@ -139,7 +139,7 @@ styleClass:"h4",
 text:"%%companyname%%",
 toolTipText:"User Name"
 },
-name:"labelName",
+name:"companyname",
 styleClass:"h4",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -159,7 +159,7 @@ width:"80"
 styleClass:"h5 text-tertiary",
 text:"CONTACT"
 },
-name:"labelSessions",
+name:"labelTitleContact",
 styleClass:"h5 text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -182,7 +182,7 @@ height:25,
 width:25
 }
 },
-name:"iconCreatedOn",
+name:"iconPhone",
 size:"25,25",
 typeName:"servoyextra-fontawesome",
 typeid:47,
@@ -203,7 +203,7 @@ width:"0"
 formIndex:3,
 styleClass:"border-top"
 },
-name:"dividerBottomc",
+name:"divider2",
 styleClass:"border-top",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -230,27 +230,29 @@ height:25,
 width:25
 }
 },
-name:"iconNewRole",
+name:"edit_icon",
 size:"25,25",
 typeName:"servoyextra-fontawesome",
 typeid:47,
 uuid:"63E95015-BE04-4EEA-9EE4-BBED1361E0CA"
 },
 {
-cssPosition:"466,239,-1,22,0,22",
+cssPosition:"466,22,-1,22,0,22",
+formIndex:1,
 json:{
 cssPosition:{
 bottom:"-1",
 height:"22",
 left:"22",
-right:"239",
+right:"22",
 top:"466",
 width:"0"
 },
+formIndex:1,
 text:"%%address%% %%postalcode%%",
 toolTipText:"Lock reason"
 },
-name:"labelLockReasonc",
+name:"address",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"6804DD3E-D648-4593-9ACF-6D3114515D36"
@@ -282,20 +284,22 @@ typeid:47,
 uuid:"834E2D3A-E45A-4019-A517-F78421D412DC"
 },
 {
-cssPosition:"441,239,-1,22,0,22",
+cssPosition:"441,22,-1,22,0,22",
+formIndex:2,
 json:{
 cssPosition:{
 bottom:"-1",
 height:"22",
 left:"22",
-right:"239",
+right:"22",
 top:"441",
 width:"0"
 },
+formIndex:2,
 text:"%%city%%",
 toolTipText:"Lock reason"
 },
-name:"labelLockReasoncc",
+name:"city",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"8FBBAF59-156E-4F60-BCB4-D7E617AF6928"
@@ -313,7 +317,7 @@ width:"0"
 },
 styleClass:"border-top"
 },
-name:"dividerBottom",
+name:"divider",
 styleClass:"border-top",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -340,7 +344,7 @@ typeid:47,
 uuid:"94F12C6E-58CD-4E29-9830-CAAFED93C28D"
 },
 {
-cssPosition:"322,-1,-1,22,150,29",
+cssPosition:"322,-1,-1,22,125,29",
 json:{
 cssPosition:{
 bottom:"-1",
@@ -348,12 +352,12 @@ height:"29",
 left:"22",
 right:"-1",
 top:"322",
-width:"150"
+width:"125"
 },
 styleClass:"btn btn-round btn-primary",
 text:"PHONE"
 },
-name:"buttonResetPwd",
+name:"buttonPhone",
 styleClass:"btn btn-round btn-primary",
 typeName:"bootstrapcomponents-button",
 typeid:47,
@@ -366,7 +370,7 @@ typeid:19,
 uuid:"9E7909C5-A944-4F5B-9438-27A8BE5E3CF2"
 },
 {
-cssPosition:"-1,30,10,-1,150,40",
+cssPosition:"-1,30,10,-1,136,40",
 formIndex:2,
 json:{
 cssPosition:{
@@ -375,14 +379,14 @@ height:"40",
 left:"-1",
 right:"30",
 top:"-1",
-width:"150"
+width:"136"
 },
 formIndex:2,
 onActionMethodID:"10F36B49-6417-4D92-AFA2-8EF903405D80",
 styleClass:"text-tertiary clickable text-center-vertical",
 text:"EDIT CUSTOMER"
 },
-name:"btnNewRole",
+name:"edit_button",
 styleClass:"text-tertiary clickable text-center-vertical",
 typeName:"bootstrapcomponents-label",
 typeid:47,
@@ -404,7 +408,7 @@ faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
 onActionMethodID:"7984D179-92B2-481F-A085-27F2B6931AF6",
 styleclass:"clickable"
 },
-name:"fontawesome_1",
+name:"back_icon",
 typeName:"servoyextra-fontawesome",
 typeid:47,
 uuid:"E0686D9E-AA64-4A1B-A07A-3ED2114E0A00"
@@ -442,7 +446,7 @@ width:"0"
 },
 text:"%%fax%%"
 },
-name:"labelCreatedBy",
+name:"fax",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"E36FD9EE-9E75-41F9-B444-113395528D19"
@@ -481,21 +485,21 @@ onActionMethodID:"7984D179-92B2-481F-A085-27F2B6931AF6",
 styleClass:"text-tertiary clickable",
 text:"Back"
 },
-name:"label_2",
+name:"back_label",
 styleClass:"text-tertiary clickable",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"F7B3D9AB-FDBB-450C-8D1C-AAA06606178E"
 },
 {
-cssPosition:"415,186,-1,22,0,22",
+cssPosition:"415,22,-1,22,0,22",
 formIndex:4,
 json:{
 cssPosition:{
 bottom:"-1",
 height:"22",
 left:"22",
-right:"186",
+right:"22",
 top:"415",
 width:"0"
 },
@@ -503,7 +507,7 @@ formIndex:4,
 text:"%%country%%",
 toolTipText:"Lock reason"
 },
-name:"labelLockReason",
+name:"country",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"FFDB557C-335D-4CFB-A65D-A55A2765353E"
