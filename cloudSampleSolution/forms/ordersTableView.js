@@ -19,7 +19,12 @@ var tooltipCustomer = 'Show customer at double click';
 function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 
 	if (columnindex == 1) {
+		// navigate to the clicked customer
 		var item = new scopes.svyNavigation.NavigationItem("customerView");
-		scopes.svyNavigation.open(item, foundset.orders_to_customers.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD)
+		scopes.svyNavigation.open(item, foundset.orders_to_customers.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+	} else {
+		// navigate to the orderEdit
+		var navItem = scopes.svyNavigation.createNavigationItem("orderEdit");
+		scopes.svyNavigation.open(navItem, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 	}
 }
