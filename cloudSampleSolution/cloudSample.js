@@ -24,7 +24,8 @@ function onSolutionOpen(arg, queryParams) {
 	
 	// autosave false
 	databaseManager.setAutoSave(false);
-	// allow to enter new values in fields
+	
+	// disable null check validation exception
 	databaseManager.nullColumnValidatorEnabled = false;
 
 	// global config for grids
@@ -41,6 +42,8 @@ function onSolutionOpen(arg, queryParams) {
 }
 
 /**
+ * configure grid globally, applying a common style & behavior
+ * 
  * @private
  * @properties={typeid:24,uuid:"7AB92316-A5EC-4779-9CEC-CFFDB1DB3615"}
  */
@@ -50,9 +53,12 @@ function configGrid() {
 	// set up grid options
 	plugins.ngDataGrid.gridOptions = {
 		headerHeight: 10,
-		rowHeight: 52 //,
-		//floatingFilter: true,
-		//floatingFiltersHeight: 40
+		rowHeight: 52
+	}
+	
+	// set up default column properties
+	plugins.ngDataGrid.columnOptions = {
+		// suppressMenu : true
 	}
 
 	// set up tool panel options

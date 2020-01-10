@@ -127,6 +127,7 @@ floatingFiltersHeight:"0",
 headerHeight:"35"
 },
 onCellDoubleClick:"FCD18DA8-42F4-41FC-B974-F482AC22A966",
+onColumnDataChange:"51762184-6F32-4021-9998-6CFBCA60B2FC",
 onColumnStateChanged:"913541E9-3BB0-4377-8C06-F6E22C3B6948",
 styleClass:"ag-theme-servoy"
 },

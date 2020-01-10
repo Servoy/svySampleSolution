@@ -56,7 +56,7 @@ function onFilterRemovedEvent() {
  * 
  * @param {Array} values
  * @param {String} operator
- * @param {scopes.svyToolbarFilter.ListComponentFilterRenderer} filter
+ * @param {scopes.svyPopupFilter.AbstractPopupFilter} filter
  *
  * @properties={typeid:24,uuid:"2600A53A-0203-4DB5-9D84-D2FC9FE1B450"}
  */
@@ -155,7 +155,7 @@ function newRecord() {
  * @properties={typeid:24,uuid:"0B0DCE39-793C-4171-9520-0C14BA8E023B"}
  */
 function gotoNew() {
-	throw "to be implemented";
+	application.output("to be implemented");
 }
 
 /**
@@ -166,7 +166,7 @@ function gotoNew() {
  * @properties={typeid:24,uuid:"E1CB51F6-AE0B-4F7A-9513-92ADF234EEE9"}
  */
 function gotoDetail() {
-	throw "to be implemented";
+	application.output("to be implemented");
 }
 
 
@@ -286,4 +286,25 @@ function getColumn(dataprovider) {
 function showForm(form){
 	var item = new scopes.svyNavigation.NavigationItem(form.controller.getName());
 	scopes.svyNavigation.open(item,foundset.getSelectedRecord(),scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD)
+}
+
+/**
+ * Called when the columns data is changed.
+ *
+ * @param {Number} foundsetindex
+ * @param {Number} [columnindex]
+ * @param {object} [oldvalue]
+ * @param {object} [newvalue]
+ * @param {JSEvent} [event]
+ *
+ * @return {boolean}
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"51762184-6F32-4021-9998-6CFBCA60B2FC"}
+ */
+function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, event) {
+	// save data at every data change
+	databaseManager.saveData();
+	return true;
 }

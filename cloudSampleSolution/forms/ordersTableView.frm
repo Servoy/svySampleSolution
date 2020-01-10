@@ -46,6 +46,7 @@ filterType:"TEXT",
 headerTitle:"Customer",
 id:"customer",
 svyUUID:"23334659-F1A0-48A5-932F-45BCF4E08A64",
+tooltip:"tooltipCustomer",
 valuelist:"C78DE8DA-7789-45DA-915C-542BDD02312D"
 },
 {
