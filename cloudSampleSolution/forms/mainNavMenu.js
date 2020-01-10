@@ -41,6 +41,13 @@ function loadMenuItems() {
 	menuItem.text = "DASHBOARD"
 	menuItem.iconStyleClass = "fa fa-th-large";
 	menuItems.push(menuItem);
+	
+	// PRODUCTS
+	menuItem = new Object();
+	menuItem.id = "productsTableView";
+	menuItem.text = "PRODUCTS"
+	menuItem.iconStyleClass = "fas fa-shopping-basket";
+	menuItems.push(menuItem);
 
 	// CUSTOMERS
 	menuItem = new Object();
