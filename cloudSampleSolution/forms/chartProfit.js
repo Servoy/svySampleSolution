@@ -9,9 +9,13 @@ function getValue() {
 	/**@type {Date}*/
 	var endDate = new Date();
 
-	//set to begining of the year
+	//set to beginning of the year
 	startDate.setFullYear(startDate.getFullYear(), 0, 1);
 	startDate.setHours(0, 0, 0);
+	
+	//set to end of the year
+	endDate.setFullYear(endDate.getFullYear(), 11, 30);
+	endDate.setHours(0, 0, 0);
 
 	var rev = scopes.modelDashboard.getTotalProfitThisYear(startDate,endDate);
 	return rev;
@@ -29,11 +33,11 @@ function getLastYearValue() {
 	/**@type {Date}*/
 	var endDate = new Date();
 
-	//set to begining of the year
+	//set to beginning of the year
 	startDate.setFullYear(startDate.getFullYear() - 1, 0, 1);
 	startDate.setHours(0, 0, 0);
 
-	//set to begining of the year
+	//set to end of the year
 	endDate.setFullYear(endDate.getFullYear() - 1, 11, 30);
 	endDate.setHours(0, 0, 0);
 
