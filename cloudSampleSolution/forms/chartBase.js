@@ -49,16 +49,16 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"7F25C79E-6004-468D-8B2E-98D0D3666053"}
  */
 function updateUI() {
-	if (diff >= 0) {
-		elements.lblDiff.removeStyleClass("bg-danger");
-		elements.lblDiff.addStyleClass("bg-success");
-		elements.fontawesome_decrease.visible =false;
-		elements.fontawesome_increase.visible = true;
-	} else {
+	if (diff[0] == "-") { // negative diff
 		elements.lblDiff.removeStyleClass("bg-success");
 		elements.lblDiff.addStyleClass("bg-danger");
 		elements.fontawesome_decrease.visible =true;
 		elements.fontawesome_increase.visible = false;
+	} else { // positive diff
+		elements.lblDiff.removeStyleClass("bg-danger");
+		elements.lblDiff.addStyleClass("bg-success");
+		elements.fontawesome_decrease.visible =false;
+		elements.fontawesome_increase.visible = true;
 	}
 }
 
