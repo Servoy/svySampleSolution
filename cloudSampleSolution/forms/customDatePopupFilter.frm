@@ -14,7 +14,7 @@ top:"25",
 width:"calc(50% - 30px)"
 },
 styleClass:"text-tertiary",
-text:"Required Date"
+text:"Shipped Date"
 },
 name:"labelTitle",
 styleClass:"text-tertiary",
@@ -70,7 +70,7 @@ top:"25",
 width:"calc(50% - 30px)"
 },
 styleClass:"text-tertiary",
-text:"Shipped Date"
+text:"Required Date"
 },
 name:"labelTitlec",
 styleClass:"text-tertiary",
