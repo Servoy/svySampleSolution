@@ -6,6 +6,12 @@ extendsID:"804EB596-ECA6-45A8-84D3-1C373665F1DD",
 initialSort:"orderdate desc",
 items:[
 {
+customProperties:"methods:{\
+onCellDoubleClick:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"58532960-BC18-43F9-A60D-DE87E65EBEAF",
 json:{
 columns:[
@@ -21,7 +27,8 @@ dataprovider:"orders_to_customers.companyname",
 headerTitle:"Customer",
 id:"customer",
 minWidth:100,
-svyUUID:"8AF6EEF9-EF5A-4F5D-BF1E-20594E6F9E2B"
+svyUUID:"8AF6EEF9-EF5A-4F5D-BF1E-20594E6F9E2B",
+tooltip:"tooltipCustomer"
 },
 {
 dataprovider:"orderdate",
@@ -53,6 +60,7 @@ styleClassDataprovider:"orderStatusStyleClass",
 svyUUID:"5497694F-D4F7-4248-B2B6-09D0CED86B83"
 }
 ],
+onCellDoubleClick:"42D92E70-9F1C-42B6-999A-FFC784FDEA7A",
 toolPanelConfig:{
 svyUUID:"EBBBA3E2-39C4-4C9B-91C4-919E929B514B"
 }
