@@ -221,6 +221,22 @@ function onShow(firstShow, event) {
 		elements.table.restoreColumnState(columnState);
 	}
 	
+	// restore toolbar filter state on first show
+	if (firstShow) {
+		var filterState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'filter-state');
+		if (filterState) {
+			/** @type {Array<{
+				id: String,
+				dataprovider: String,
+				operator: String,
+				params: Object,
+				text: String,
+				values: Array}>} */
+			var toolbarState = JSON.parse(filterState);
+			toolbarFilter.restoreToolbarFiltersState(toolbarState);
+		}
+	}
+	
 	// check for navigation parameters
 	var navItem = scopes.svyNavigation.getCurrentItem();
 	if (navItem.getFormName() == controller.getName()) {
@@ -240,22 +256,7 @@ function onShow(firstShow, event) {
 			}
 		}
 	}
-	
-	if (firstShow) {
-		// restore toolbar filter state on first show
-		var filterState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'filter-state');
-		if (filterState) {
-			/** @type {Array<{
-				id: String,
-				dataprovider: String,
-				operator: String,
-				params: Object,
-				text: String,
-				values: Array}>} */
-			var toolbarState = JSON.parse(filterState);
-			toolbarFilter.restoreToolbarFiltersState(toolbarState);
-		}
-	}
+
 }
 
 /**

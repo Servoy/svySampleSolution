@@ -71,3 +71,26 @@ function onLoad(event) {
 	RenderChart();
 
 }
+
+/**
+ * @param {Number} dataset_index
+ * @param {Number} index
+ * @param {string} label
+ * @param {Number} value
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"01F188CD-7447-404C-A612-2B634169F3D3"}
+ */
+function onClickChart(dataset_index, index, label, value) {
+
+	// navigate to orders table
+	var item = new scopes.svyNavigation.NavigationItem("ordersTableView");
+	// TODO: can extend the svyNavigation to include filters
+	item.setCustomData({ filters: [{ dataprovider: "customerid", operator: scopes.svyPopupFilter.OPERATOR.IS_IN, values: [label] }] })
+
+	// FIXME: since a filter is applied loadind data is reduntant: can i use another example to load data ?
+	scopes.svyNavigation.open(item)
+
+}
+
