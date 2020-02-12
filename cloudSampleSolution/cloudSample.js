@@ -39,6 +39,9 @@ function onSolutionOpen(arg, queryParams) {
 
 	// update sample data to last year
 	scopes.cloudSampleData.updateOrderDates();
+	
+	// init navigation first-item
+	scopes.svyNavigation.open(scopes.svyNavigation.createNavigationItem("homeDashboard"));
 }
 
 /**
