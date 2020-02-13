@@ -101,17 +101,12 @@ function onClickMonth(dataset_index, index, label, value) {
 	var startDate = scopes.svyDateUtils.toStartOfDay(scopes.svyDateUtils.getFirstDayOfMonth(monthDate));
 	var endDate = scopes.svyDateUtils.toEndOfDay(scopes.svyDateUtils.getLastDayOfMonth(monthDate));
 
-	var query = datasources.db.example_data.orders.createSelect();
-	query.where.add(query.columns.orderdate.ge(startDate));
-	query.where.add(query.columns.orderdate.le(endDate));
-
 	// navigate to orders table
 	var item = new scopes.svyNavigation.NavigationItem("ordersTableView");
 	// TODO: can extend the svyNavigation to include filters
 	item.setCustomData({ filters: [{ dataprovider: "orderdate", operator: scopes.svyPopupFilter.OPERATOR.BETWEEN, values: [startDate, endDate] }] })
 
-	// FIXME: since a filter is applied loadind data is reduntant: can i use another example to load data ?
-	scopes.svyNavigation.open(item, query, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
-
+	// open the item
+	scopes.svyNavigation.open(item);
 }
 

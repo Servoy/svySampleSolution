@@ -16,8 +16,15 @@ typeid:7,
 uuid:"55A23BCB-F203-4C3D-95BD-24751D660FF3"
 },
 {
+customProperties:"methods:{\
+onClick:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"B3B946CD-A178-4C49-A7F8-7072D267868D",
 json:{
+onClick:"01F188CD-7447-404C-A612-2B634169F3D3",
 type:"doughnut"
 },
 typeid:47,
