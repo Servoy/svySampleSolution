@@ -18,7 +18,7 @@ function onLoad(event) {
 	_super.onLoad(event);
 
 	// register for search event
-	scopes.svyNavigationUX.addGlobalSearchListener(onSearch)
+	scopes.svyNavigationUX.addGlobalSearchListener(onSearch);
 }
 
 /**
