@@ -61,12 +61,14 @@ function configGrid() {
 	
 	// set up default column properties
 	plugins.ngDataGrid.columnOptions = {
-		// suppressMenu : true
+		menuTabs: ['generalMenuTab']
 	}
 
 	// set up tool panel options
 	var toolPanelOptions = plugins.ngDataGrid.createToolPanelConfig();
-	toolPanelOptions.suppressSideButtons = true; // suppress the side buttons when set to true
+	toolPanelOptions.suppressColumnFilter = true;
+	toolPanelOptions.suppressColumnSelectAll = true;
+	toolPanelOptions.suppressRowGroups = true;
 	plugins.ngDataGrid.toolPanelConfig = toolPanelOptions;
 
 	// set up grid icons
