@@ -30,6 +30,9 @@ function onSolutionOpen(arg, queryParams) {
 
 	// global config for grids
 	configGrid();
+	
+	// global config for grid filters
+	scopes.svyToolbarFilter.setPopupDefaultOperator(scopes.svyToolbarFilter.FILTER_TYPES.TOKEN, scopes.svyPopupFilter.OPERATOR.LIKE);
 
 	// run onAfterUserCreate when a user is created from the svySecurityUX templates
 	scopes.svySecurityUX.addAfterUserCreateListener(onAfterUserCreate);
