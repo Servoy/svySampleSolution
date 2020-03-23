@@ -12,7 +12,7 @@ var urlTutorial = "https://github.com/Servoy/svySampleSolution/wiki/"
  * @properties={typeid:35,uuid:"BD0628C9-D4B3-46CC-8BFE-C1B007ACBDF8",variableType:-4}
  */
 var TUTORIAL = {
-	TUTORIAL_1: "tutorial-1"
+	TUTORIAL_1: "tutorial"
 }
 
 /**
