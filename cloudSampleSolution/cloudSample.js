@@ -1,4 +1,13 @@
 /**
+ * @private 
+ * @type {String}
+ * @SuppressWarnings(unused)
+ *
+ * @properties={typeid:35,uuid:"AC0890DB-44B5-406C-98C2-10C91900F290"}
+ */
+var SAMPLE_APPLICATION_VERSION = "1.0.0";
+
+/**
  * @protected 
  * @properties={typeid:35,uuid:"E58D06FB-AB22-4449-AD17-2388722974D7",variableType:-4}
  */
