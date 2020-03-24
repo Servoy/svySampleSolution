@@ -28,7 +28,7 @@ enableToolPanel:false,
 id:"edit",
 maxWidth:40,
 minWidth:40,
-styleClass:"far fa-edit",
+styleClass:"far fa-edit clickable",
 svyUUID:"EE9FDCD2-B5C8-47C3-98D9-FC1DA67FED27",
 width:40
 },
