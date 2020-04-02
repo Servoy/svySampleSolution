@@ -1,4 +1,13 @@
 /**
+ * @private 
+ * @type {String}
+ * @SuppressWarnings(unused)
+ *
+ * @properties={typeid:35,uuid:"AC0890DB-44B5-406C-98C2-10C91900F290"}
+ */
+var SAMPLE_APPLICATION_VERSION = "1.0.0";
+
+/**
  * @protected 
  * @properties={typeid:35,uuid:"E58D06FB-AB22-4449-AD17-2388722974D7",variableType:-4}
  */
@@ -30,6 +39,9 @@ function onSolutionOpen(arg, queryParams) {
 
 	// global config for grids
 	configGrid();
+	
+	// global config for grid filters
+	scopes.svyToolbarFilter.setPopupDefaultOperator(scopes.svyToolbarFilter.FILTER_TYPES.TOKEN, scopes.svyPopupFilter.OPERATOR.LIKE);
 
 	// run onAfterUserCreate when a user is created from the svySecurityUX templates
 	scopes.svySecurityUX.addAfterUserCreateListener(onAfterUserCreate);
@@ -61,12 +73,14 @@ function configGrid() {
 	
 	// set up default column properties
 	plugins.ngDataGrid.columnOptions = {
-		// suppressMenu : true
+		menuTabs: ['generalMenuTab']
 	}
 
 	// set up tool panel options
 	var toolPanelOptions = plugins.ngDataGrid.createToolPanelConfig();
-	toolPanelOptions.suppressSideButtons = true; // suppress the side buttons when set to true
+	toolPanelOptions.suppressColumnFilter = true;
+	toolPanelOptions.suppressColumnSelectAll = true;
+	toolPanelOptions.suppressRowGroups = true;
 	plugins.ngDataGrid.toolPanelConfig = toolPanelOptions;
 
 	// set up grid icons

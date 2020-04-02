@@ -12,9 +12,6 @@
  */
 function onSolutionOpenPostImportHook(arg, queryParams) {
 	
-	// sync security permissions
+	// sync security permissions at every deployment
 	scopes.svySecurity.syncPermissions();
-	
-	// seed example_data data
-	scopes.svyDataSeed.runDataseedFromMedia();
 }

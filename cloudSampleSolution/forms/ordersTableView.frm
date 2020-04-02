@@ -86,7 +86,12 @@ id:"address",
 svyUUID:"5110B8F3-191F-4320-9288-6864371B50DD"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"orderStatus",
+enableRowGroup:false,
+enableSort:false,
 headerTitle:"Status",
 id:"status",
 minWidth:120,

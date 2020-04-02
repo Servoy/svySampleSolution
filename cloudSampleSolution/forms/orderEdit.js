@@ -1,4 +1,24 @@
 /**
+ * @type {String}
+ *
+ * @properties={typeid:35,uuid:"56CE4D98-5F86-46D6-9F76-9378822CA2FA"}
+ */
+var orderText;
+
+/**
+ * Handle record selected.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"D4EEAFC8-18D5-4CBC-AA7B-B9C94344B52B"}
+ */
+function onRecordSelection(event) {
+	orderText = foundset.getSelectedRecord() ? foundset.orderid : "";
+}
+
+/**
  * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
  *
  * @param {JSEvent} event

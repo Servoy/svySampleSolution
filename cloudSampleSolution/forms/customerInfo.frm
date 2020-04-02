@@ -250,7 +250,7 @@ width:"0"
 },
 formIndex:1,
 text:"%%address%% %%postalcode%%",
-toolTipText:"Lock reason"
+toolTipText:"Address"
 },
 name:"address",
 typeName:"bootstrapcomponents-label",
@@ -297,7 +297,7 @@ width:"0"
 },
 formIndex:2,
 text:"%%city%%",
-toolTipText:"Lock reason"
+toolTipText:"City"
 },
 name:"city",
 typeName:"bootstrapcomponents-label",
@@ -505,7 +505,7 @@ width:"0"
 },
 formIndex:4,
 text:"%%country%%",
-toolTipText:"Lock reason"
+toolTipText:"Country"
 },
 name:"country",
 typeName:"bootstrapcomponents-label",

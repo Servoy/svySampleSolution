@@ -73,7 +73,11 @@ cssPosition:"70,0,60,0,0,50",
 json:{
 columns:[
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"productid",
+enableRowGroup:false,
 filterType:null,
 headerTitle:"Product",
 id:"product",
@@ -81,7 +85,11 @@ svyUUID:"476D579E-AF53-413E-AA1C-E13544F4EA9F",
 valuelist:"FF6542C6-8731-40F3-BEF5-1C923D90C385"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"quantity",
+enableRowGroup:false,
 headerTitle:"Quantity",
 id:"quantity",
 svyUUID:"38BB1109-DB7D-4B08-B97E-638A629A1D85",
@@ -89,6 +97,9 @@ width:80
 },
 {
 autoResize:false,
+columnDef:{
+suppressMenu:"true"
+},
 enableResize:false,
 enableRowGroup:false,
 enableSort:false,
@@ -96,12 +107,15 @@ enableToolPanel:false,
 id:"plus",
 maxWidth:40,
 minWidth:40,
-styleClass:"fas fa-plus",
+styleClass:"fas fa-plus clickable",
 svyUUID:"AED2B33F-4CAC-492D-91F6-016C0D063722",
 width:40
 },
 {
 autoResize:false,
+columnDef:{
+suppressMenu:"true"
+},
 enableResize:false,
 enableRowGroup:false,
 enableSort:false,
@@ -109,26 +123,38 @@ enableToolPanel:false,
 id:"minus",
 maxWidth:40,
 minWidth:40,
-styleClass:"fas fa-minus",
+styleClass:"fas fa-minus clickable",
 svyUUID:"F21FDC2A-03D1-40C3-A280-8F7DC83D8195",
 width:40
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"unitprice",
+enableRowGroup:false,
 format:"¤#.00",
 headerTitle:"Price",
 id:"price",
 svyUUID:"3C1BA302-8078-47A1-A961-00BC48AF3CDB"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"discount",
+enableRowGroup:false,
 headerTitle:"Discount",
 id:"discount",
 svyUUID:"31CCA978-58B7-47EC-8CF9-0D9C0EEEB965"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"subtotal",
 enableRowGroup:false,
+enableSort:false,
 format:"¤#.00",
 headerTitle:"Total",
 id:"subtotal",
@@ -136,6 +162,9 @@ svyUUID:"7A5EFE95-7F1A-494D-948F-79A324A7AD88"
 },
 {
 autoResize:false,
+columnDef:{
+suppressMenu:"true"
+},
 enableResize:false,
 enableRowGroup:false,
 enableSort:false,
@@ -143,7 +172,7 @@ enableToolPanel:false,
 id:"delete",
 maxWidth:40,
 minWidth:40,
-styleClass:"fas fa-trash",
+styleClass:"fas fa-trash clickable",
 svyUUID:"1C78BDC6-6B29-4786-BA94-5716886A6ECD",
 width:40
 }
@@ -157,7 +186,12 @@ top:"70",
 width:"0"
 },
 onCellClick:"3124C6A0-201B-46B3-A116-A52068CBFB53",
-styleClass:"ag-theme-servoy"
+styleClass:"ag-theme-servoy",
+toolPanelConfig:{
+suppressColumnExpandAll:true,
+suppressSideButtons:true,
+svyUUID:"DCC7445C-FE86-4F80-8C9E-60210FDB8E65"
+}
 },
 name:"table",
 styleClass:"ag-theme-servoy",

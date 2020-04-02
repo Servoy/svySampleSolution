@@ -17,6 +17,7 @@ json:{
 columns:[
 {
 dataprovider:"orderid",
+format:"#",
 headerTitle:"ID",
 id:"id",
 maxWidth:70,
@@ -45,15 +46,25 @@ id:"country",
 svyUUID:"4C389912-90E5-4807-8579-66799D122943"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"order_total",
 enableResize:false,
+enableRowGroup:false,
+enableSort:false,
 format:"¤#.00",
 headerTitle:"Total",
 id:"total",
 svyUUID:"1EE5A275-8411-4A15-9D58-42BA97C0BF31"
 },
 {
+columnDef:{
+suppressMenu:"true"
+},
 dataprovider:"orderStatus",
+enableRowGroup:false,
+enableSort:false,
 headerTitle:"Status",
 id:"status",
 styleClassDataprovider:"orderStatusStyleClass",
@@ -78,7 +89,7 @@ uuid:"8436A90A-0DFD-4E38-8E9C-5EE828D6D158"
 },
 {
 extendsID:"588976DF-F072-4B40-B0B0-D7F982816865",
-text:"Sales Order",
+text:"Sales Orders",
 typeid:7,
 uuid:"9BFF52EA-259E-417D-84CF-D4DB6497C77F"
 },
