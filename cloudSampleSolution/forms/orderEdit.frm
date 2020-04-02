@@ -1,4 +1,10 @@
 customProperties:"formComponent:false,\
+methods:{\
+onRecordSelectionMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+},\
 useCssPosition:true",
 dataSource:"db:/example_data/orders",
 encapsulation:44,
@@ -525,7 +531,7 @@ svyUUID:"D48E1073-F7C7-4251-BDB6-1E994F03E2E3"
 },
 {
 crumbId:"id",
-displayName:"Order %%orderid%%",
+displayName:"Order %%orderText%%",
 svyUUID:"31260DD4-D10B-4560-9CCC-2D1C4F5E68F2"
 }
 ]
@@ -536,6 +542,7 @@ uuid:"F9E367C8-930C-41DA-A063-DCA4416CFD65"
 ],
 name:"orderEdit",
 navigatorID:"-1",
+onRecordSelectionMethodID:"D4EEAFC8-18D5-4CBC-AA7B-B9C94344B52B",
 showInMenu:true,
 size:"895,812",
 typeid:3,

@@ -17,6 +17,7 @@ json:{
 columns:[
 {
 dataprovider:"orderid",
+format:"#",
 headerTitle:"ID",
 id:"id",
 maxWidth:70,
@@ -88,7 +89,7 @@ uuid:"8436A90A-0DFD-4E38-8E9C-5EE828D6D158"
 },
 {
 extendsID:"588976DF-F072-4B40-B0B0-D7F982816865",
-text:"Sales Order",
+text:"Sales Orders",
 typeid:7,
 uuid:"9BFF52EA-259E-417D-84CF-D4DB6497C77F"
 },

@@ -5,7 +5,7 @@ extendsID:"73B793DD-49A2-418E-9BCE-80E531EE6686",
 items:[
 {
 extendsID:"743206C2-A000-4760-955C-FD7EBAA2DE54",
-text:"Total Sale",
+text:"Total Sales",
 typeid:7,
 uuid:"93545ED8-EDAF-4ECD-962B-A36DA01961C8"
 },

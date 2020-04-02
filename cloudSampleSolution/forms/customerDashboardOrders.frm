@@ -34,6 +34,7 @@ width:40
 },
 {
 dataprovider:"orderid",
+format:"#",
 headerTitle:"ID",
 id:"id",
 maxWidth:70,
@@ -99,7 +100,7 @@ uuid:"0A07AF6F-FAF1-4145-8817-DAA0BDB0E6EE"
 cssPosition:"12,-1,-1,30,185,33",
 extendsID:"588976DF-F072-4B40-B0B0-D7F982816865",
 styleClass:"h2 text-primary",
-text:"Sales Order",
+text:"Sales Orders",
 typeid:7,
 uuid:"14E02609-9E3C-407C-806B-BB1FA7B93699"
 },
