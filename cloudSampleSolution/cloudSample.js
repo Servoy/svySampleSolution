@@ -48,6 +48,9 @@ function onSolutionOpen(arg, queryParams) {
 	
 	// apply custom style at the onOpen
 	overrideSolutionStyle();
+	
+	// reference FA for load
+	plugins.fontawesomeLib.load();
 
 	// update sample data to last year
 	scopes.cloudSampleData.updateOrderDates();
