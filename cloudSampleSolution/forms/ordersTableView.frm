@@ -36,6 +36,7 @@ columns:[
 autoResize:false,
 dataprovider:"orderid",
 filterType:"NUMBER",
+format:"#",
 headerTitle:"ID",
 id:"id",
 svyUUID:"B58A3126-34AA-4EDA-8B31-EBC438417D81"
