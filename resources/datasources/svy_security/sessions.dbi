@@ -13,6 +13,20 @@ titleText:"ID"
 },
 {
 allowNull:true,
+creationOrderIndex:12,
+dataType:12,
+length:36,
+name:"closed_by"
+},
+{
+allowNull:true,
+creationOrderIndex:13,
+dataType:12,
+length:36,
+name:"closed_by_server"
+},
+{
+allowNull:true,
 compatibleColumnTypes:"[[-9,50,0]]",
 creationOrderIndex:3,
 dataType:12,
@@ -38,6 +52,14 @@ dataType:12,
 length:36,
 name:"servoy_client_id",
 titleText:"Servoy Client ID"
+},
+{
+allowNull:true,
+creationOrderIndex:11,
+dataType:12,
+length:36,
+name:"servoy_server_id",
+titleText:"Servoy Server ID"
 },
 {
 allowNull:true,
