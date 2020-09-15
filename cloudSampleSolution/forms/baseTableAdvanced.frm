@@ -108,11 +108,6 @@ uuid:"77B75982-F3BC-459F-ABAE-D1B5EF16340A"
 {
 cssPosition:"84,30,53,30,0,0",
 json:{
-columns:[
-{
-svyUUID:"DAA6C3EE-83E9-4B15-893C-B0B0BE29166D"
-}
-],
 cssPosition:{
 bottom:"53",
 height:"0",
