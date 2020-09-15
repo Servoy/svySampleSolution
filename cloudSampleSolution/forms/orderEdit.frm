@@ -73,16 +73,19 @@ width:"25"
 },
 faclass:"far fa-calendar-check",
 formIndex:33,
+imageStyleClass:"far fa-calendar-check",
 onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align clickable",
 styleclass:"clickable"
 },
 name:"iconPickRequiredDate",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"2C3AD001-4D86-4753-BB4A-AE3F2311E698"
 },
@@ -108,6 +111,7 @@ width:"25"
 },
 faclass:"fas fa-phone",
 formIndex:16,
+imageStyleClass:"fas fa-phone",
 size:{
 height:25,
 width:25
@@ -115,7 +119,7 @@ width:25
 },
 name:"iconCreatedOn",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"38640E9B-6B49-43F0-8391-323CF42C2633"
 },
@@ -359,6 +363,7 @@ width:"25"
 },
 faclass:"fas fa-fax",
 formIndex:9,
+imageStyleClass:"fas fa-fax",
 size:{
 height:25,
 width:25
@@ -366,7 +371,7 @@ width:25
 },
 name:"iconCreatedBy",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"CB21DF48-5D03-4E2F-B2E5-7FC4F45AE862"
 },
@@ -436,16 +441,19 @@ width:"25"
 },
 faclass:"far fa-calendar-check",
 formIndex:33,
+imageStyleClass:"far fa-calendar-check",
 onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align clickable",
 styleclass:"clickable"
 },
 name:"iconPickRequiredDatec",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"E49E62FE-0DA4-4A52-8DD8-A30FDA912ABD"
 },

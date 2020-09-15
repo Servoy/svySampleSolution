@@ -184,15 +184,18 @@ width:"215"
 },
 faclass:"fas icon-contacts fa-8x",
 formIndex:17,
+imageStyleClass:"fas icon-contacts fa-8x",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align h2 text-tertiary",
 styleclass:"h2 text-tertiary"
 },
 name:"icon",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align h2 text-tertiary",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"71249C82-50DF-4EFE-9BE6-70EA5AF68544"
 },

@@ -155,16 +155,19 @@ width:"25"
 },
 faclass:"icon-control_point h4 clickable",
 formIndex:1,
+imageStyleClass:"icon-control_point h4",
 onActionMethodID:"E0143577-D0A3-422B-8382-DE48E2094A1F",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align clickable text-success",
 styleclass:"text-success"
 },
 name:"iconNewRole",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable text-success",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"9A98B839-6DE8-4B07-8E45-73CAF7A1AE12"
 }

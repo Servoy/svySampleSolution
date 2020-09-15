@@ -17,15 +17,18 @@ width:"25"
 },
 faclass:"fa fa-search",
 formIndex:1,
+imageStyleClass:"fa fa-search",
 onActionMethodID:"FA66816E-DE30-43F3-AF63-E26D2F6A2379",
 size:{
 height:25,
 width:25
-}
+},
+styleClass:"default-align clickable"
 },
 name:"btnSearch",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"116E83ED-9286-4DEE-8B1F-C8E8ACB30272"
 },
@@ -54,15 +57,18 @@ width:"25"
 },
 faclass:"fa fa-filter",
 formIndex:2,
+imageStyleClass:"fa fa-filter",
 onActionMethodID:"18402340-95F4-4FEC-BAAE-DB7533D2C3E1",
 size:{
 height:25,
 width:25
-}
+},
+styleClass:"default-align clickable"
 },
 name:"btnFilter",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"33748875-2236-4888-8EEE-5347DC761343"
 },
@@ -151,11 +157,14 @@ top:"40",
 width:"28"
 },
 faclass:"fas fa-graduation-cap clickable",
+imageStyleClass:"fas fa-graduation-cap",
 onActionMethodID:"9C6747ED-5DA2-4932-BEC6-F77E7AEFE78E",
+styleClass:"default-align clickable",
 toolTipText:"View Tutorial"
 },
 name:"btnTutorial",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"D38E1B61-18AF-47B1-B104-EA3D61B6111C"
 },
@@ -172,10 +181,13 @@ top:"40",
 width:"28"
 },
 faclass:"icon-control_point h4 clickable",
-onActionMethodID:"0617C50E-1CB5-4E1F-8D42-AEA2408967DD"
+imageStyleClass:"icon-control_point h4",
+onActionMethodID:"0617C50E-1CB5-4E1F-8D42-AEA2408967DD",
+styleClass:"default-align clickable"
 },
 name:"btnAdd",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"E08B9F39-7A28-40C7-8FAF-81034783BCCD"
 }

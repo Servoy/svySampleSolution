@@ -55,16 +55,19 @@ width:"25"
 },
 faclass:"icon-control_point h4 clickable",
 formIndex:1,
+imageStyleClass:"icon-control_point h4",
 onActionMethodID:"500A0286-3A91-4C29-956E-EF0397468FEA",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align text-success clickable",
 styleclass:"text-success"
 },
 name:"iconNewProduct",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-success clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"B9AB6691-BF76-4986-81E3-B3AD85149503"
 },

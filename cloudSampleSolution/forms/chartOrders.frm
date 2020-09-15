@@ -14,14 +14,17 @@ extendsID:"A336F1A0-F07E-417C-82DC-AD90989FE254",
 json:{
 
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"CE0BB075-D7F3-462C-B48E-3F72C1F54753"
 },
 {
 extendsID:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC",
 json:{
-faclass:"fas fa-chart-line"
+faclass:"fas fa-chart-line",
+imageStyleClass:"fas fa-chart-line fa-3x"
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"D40A6E97-E359-4603-B15F-8A99ABBE1562"
 },

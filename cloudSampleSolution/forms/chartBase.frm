@@ -41,14 +41,17 @@ top:"208",
 width:"16"
 },
 faclass:"fas fa-sort-down",
+imageStyleClass:"fas fa-sort-down",
 size:{
 height:25,
 width:25
-}
+},
+styleClass:"default-align text-foreground"
 },
 name:"fontawesome_decrease",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-foreground",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"A0388905-90D7-4C09-B2DA-3468A04038B7"
 },
@@ -64,14 +67,17 @@ top:"212",
 width:"16"
 },
 faclass:"fas fa-sort-up",
+imageStyleClass:"fas fa-sort-up",
 size:{
 height:25,
 width:25
-}
+},
+styleClass:"default-align text-foreground"
 },
 name:"fontawesome_increase",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-foreground",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"A336F1A0-F07E-417C-82DC-AD90989FE254"
 },
@@ -99,11 +105,13 @@ size:{
 height:25,
 width:25
 },
+styleClass:"default-align text-foreground",
 styleclass:"fa-3x"
 },
 name:"image",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-foreground",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC"
 },

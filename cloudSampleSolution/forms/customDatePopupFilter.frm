@@ -97,16 +97,19 @@ top:"0",
 width:"25"
 },
 faclass:"fa fa-close",
+imageStyleClass:"fa fa-close",
 onActionMethodID:"F18750A2-44A6-4CC0-B6A9-C973F0569851",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align text-tertiary clickable",
 styleclass:"text-tertiary clickable"
 },
 name:"faClose",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"D8646202-E793-4746-92CF-EAF305C9AAF7"
 }

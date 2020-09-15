@@ -45,14 +45,14 @@ typeid:47,
 uuid:"1BF3ACE3-17E7-4DDC-A2AD-851021E96689"
 },
 {
-cssPosition:"261,30,-1,58,0,31",
+cssPosition:"256,30,-1,58,0,31",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"31",
 left:"58",
 right:"30",
-top:"261",
+top:"256",
 width:"0"
 },
 text:"%%phone%%"
@@ -82,17 +82,18 @@ typeid:47,
 uuid:"25855CE3-AFDD-4809-A79A-D35BF56A4FC9"
 },
 {
-cssPosition:"291,-1,-1,28,33,31",
+cssPosition:"286,-1,-1,28,33,31",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"31",
 left:"28",
 right:"-1",
-top:"291",
+top:"286",
 width:"33"
 },
 faclass:"fas fa-fax",
+imageStyleClass:"fas fa-fax",
 size:{
 height:25,
 width:25
@@ -100,7 +101,7 @@ width:25
 },
 name:"iconFax",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"264A835E-E197-4AF9-BCCC-5AD5B30BFC94"
 },
@@ -166,17 +167,18 @@ typeid:47,
 uuid:"496BCBC8-E307-4A65-BB80-A43DCBC67A7C"
 },
 {
-cssPosition:"261,-1,-1,28,33,31",
+cssPosition:"256,-1,-1,28,33,31",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"31",
 left:"28",
 right:"-1",
-top:"261",
+top:"256",
 width:"33"
 },
 faclass:"fas fa-phone",
+imageStyleClass:"fas fa-phone",
 size:{
 height:25,
 width:25
@@ -184,7 +186,7 @@ width:25
 },
 name:"iconPhone",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"507E64A4-93FD-474B-A429-AC38FDCA8EA1"
 },
@@ -224,15 +226,18 @@ width:"25"
 },
 faclass:"fa fa-long-arrow-right text-tertiary fa-lg clickable",
 formIndex:1,
+imageStyleClass:"fa fa-long-arrow-right fa-lg",
 onActionMethodID:"10F36B49-6417-4D92-AFA2-8EF903405D80",
 size:{
 height:25,
 width:25
-}
+},
+styleClass:"default-align text-tertiary clickable"
 },
 name:"edit_icon",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"63E95015-BE04-4EEA-9EE4-BBED1361E0CA"
 },
@@ -271,15 +276,18 @@ width:"115"
 },
 faclass:"fas icon-contacts fa-4x",
 formIndex:0,
+imageStyleClass:"fas icon-contacts fa-4x",
 size:{
 height:25,
 width:25
 },
+styleClass:"default-align text-tertiary h2",
 styleclass:"h2 text-tertiary"
 },
 name:"icon",
 size:"25,25",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-tertiary h2",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"834E2D3A-E45A-4019-A517-F78421D412DC"
 },
@@ -405,11 +413,14 @@ top:"16",
 width:"25"
 },
 faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
+imageStyleClass:"fas fa-long-arrow-alt-left fa-lg",
 onActionMethodID:"7984D179-92B2-481F-A085-27F2B6931AF6",
+styleClass:"default-align text-tertiary clickable",
 styleclass:"clickable"
 },
 name:"back_icon",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"E0686D9E-AA64-4A1B-A07A-3ED2114E0A00"
 },
@@ -434,14 +445,14 @@ typeid:47,
 uuid:"E26FD47B-890C-42DB-95CE-89A66F48A3B2"
 },
 {
-cssPosition:"291,30,-1,58,0,31",
+cssPosition:"286,30,-1,58,0,31",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"31",
 left:"58",
 right:"30",
-top:"291",
+top:"286",
 width:"0"
 },
 text:"%%fax%%"

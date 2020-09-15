@@ -8,6 +8,7 @@ extendsID:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
 json:{
 visible:false
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"2E214610-140A-4DCA-8850-7906CA37DE05",
 visible:false
@@ -25,6 +26,7 @@ extendsID:"D38E1B61-18AF-47B1-B104-EA3D61B6111C",
 json:{
 
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"C1DA3D6F-6950-493B-BB3B-1ABA0ACEACE3"
 },
