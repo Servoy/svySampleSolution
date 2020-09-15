@@ -9,7 +9,7 @@ function updateOrderDates() {
 	var thisYear = new Date().getFullYear();
 	var yearPool = [thisYear, thisYear-1, thisYear-2];
 	
-	var comparedDate = new Date (2018, 0, 1)
+	var comparedDate = new Date (yearPool[yearPool.length - 1], 0, 1)
 	comparedDate.setHours(0, 0, 0);
 	
 	var query = datasources.db.example_data.orders.createSelect();
@@ -40,6 +40,7 @@ function updateOrderDates() {
 			record.requireddate = record.requireddate.setFullYear(newYear)
 		}
 
-		databaseManager.saveData(record);
 	}
+	databaseManager.saveData(orderFS);
+
 }
