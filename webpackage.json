@@ -1,7 +1,7 @@
 {
-    "name":"svySampleSolution",
+    "name":"cloudSampleSolution",
     "displayName":"Sample Application",
-    "packageType": "Solution",
+    "packageType": "Solution-Main",
     "icon": "https://raw.githubusercontent.com/Servoy/servoy-extra-components/master/servoy.png",
     "description": "Take Servoy for a spin and try out this sample application",
     "wikiUrl": "https://github.com/Servoy/svySampleSolution/wiki",
