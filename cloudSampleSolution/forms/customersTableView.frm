@@ -8,6 +8,7 @@ extendsID:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
 json:{
 
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"00286565-00FB-4862-8372-38CAE1E0B0DE"
 },
@@ -103,6 +104,7 @@ formIndex:10,
 json:{
 formIndex:10
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"FBF9AF49-7193-47F9-990B-ACDBAD656FB8"
 },
@@ -111,6 +113,7 @@ extendsID:"D38E1B61-18AF-47B1-B104-EA3D61B6111C",
 json:{
 
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"FFE14731-A9FD-484C-8CFC-09259B1EB4D3"
 }

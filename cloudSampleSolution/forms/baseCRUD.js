@@ -29,7 +29,7 @@ function onActionBack(event) {
  * @properties={typeid:24,uuid:"1BD0CAE4-813A-443C-AFB0-0630D66C8429"}
  */
 function back() {
-	scopes.svyNavigation.close();
+	scopes.svyNavigationHistory.back();
 }
 
 /**

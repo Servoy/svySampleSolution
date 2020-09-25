@@ -1,11 +1,13 @@
 {
-    "name":"svySampleSolution",
+    "name":"cloudSampleSolution",
     "displayName":"Sample Application",
-    "packageType": "Solution",
+    "packageType": "Solution-Main",
     "icon": "https://raw.githubusercontent.com/Servoy/servoy-extra-components/master/servoy.png",
     "description": "Take Servoy for a spin and try out this sample application",
     "wikiUrl": "https://github.com/Servoy/svySampleSolution/wiki",
     "sourceUrl" : "https://github.com/Servoy/svySampleSolution",
     "releases" : [
-        {"version":"1.0.0","url":"https://github.com/Servoy/svySampleSolution/releases/download/v1.0.0/cloudSampleSolution.servoy", "servoy-version":"2020.6", "dependency":"svyNavigationUX#>=1.0.1,svySecurityUX#>=1.4.0,svyPopupFilter#>=1.1.0,webnotifications#>=1.1.2,aggridservice#>=1.2.1"}    ]
-}
+        {"version":"1.0.0","url":"https://github.com/Servoy/svySampleSolution/releases/download/v1.0.0/cloudSampleSolution.servoy", "servoy-version":"2020.6", "dependency":"svyNavigationUX#>=1.0.1,svySecurityUX#>=1.4.0,svyPopupFilter#>=1.1.0,webnotifications#>=1.1.2,aggridservice#>=1.2.1"},
+        {"version":"1.0.1","url":"https://github.com/Servoy/svySampleSolution/releases/download/v1.0.1/cloudSampleSolution.servoy", "servoy-version":"2020.9", "dependency":"svyNavigationUX#>=1.0.2,svySecurityUX#>=1.4.1,svyPopupFilter#>=1.2.0,webnotifications#>=1.1.2,aggridservice#>=1.2.2"}
+    ]
+    }

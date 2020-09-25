@@ -15,11 +15,14 @@ top:"42",
 width:"25"
 },
 faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
+imageStyleClass:"fas fa-long-arrow-alt-left fa-lg",
 onActionMethodID:"2A3F64AB-11F1-4DDB-81E9-571640F47307",
+styleClass:"default-align text-tertiary clickable",
 styleclass:"clickable"
 },
 name:"back_icon",
-typeName:"servoyextra-fontawesome",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"3D16B6DD-FBBD-48A8-B862-BF0310C6E864"
 },

@@ -7,6 +7,7 @@ extendsID:"A336F1A0-F07E-417C-82DC-AD90989FE254",
 json:{
 
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"29B58D8C-19DD-446C-B541-A849BEB88F3B"
 },
@@ -19,8 +20,10 @@ uuid:"6B7BABCB-8743-4409-8DAF-B4B10F81055F"
 {
 extendsID:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC",
 json:{
-faclass:"fas fa-coins"
+faclass:"fas fa-coins",
+imageStyleClass:"fas fa-coins fa-3x"
 },
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"D650533E-11EB-4F85-8564-2DFE8A78A318"
 },

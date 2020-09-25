@@ -6,7 +6,7 @@
  * @properties={typeid:24,uuid:"7984D179-92B2-481F-A085-27F2B6931AF6"}
  */
 function onActionBack(event) {
-	scopes.svyNavigation.close();
+	scopes.svyNavigationHistory.back();
 }
 
 /**
