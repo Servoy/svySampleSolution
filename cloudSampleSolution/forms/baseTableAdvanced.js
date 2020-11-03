@@ -144,6 +144,7 @@ function onActionSearch(event) {
 function search(text) {
 	toolbarFilter.setSearchText(text);
 	toolbarFilter.search();
+	renderChart();
 }
 
 /**

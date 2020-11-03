@@ -3,16 +3,16 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
-cssPosition:"40,84,-1,-1,28,30",
+cssPosition:"40,86,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"-1",
-right:"84",
+right:"86",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"fas fa-chart-bar clickable",
 onActionMethodID:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A"
@@ -63,16 +63,16 @@ typeid:4,
 uuid:"204FD588-8F62-4F01-9CB2-D298EE211CE5"
 },
 {
-cssPosition:"42,-1,-1,359,25,25",
+cssPosition:"40,-1,-1,359,25,30",
 formIndex:2,
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
-height:"25",
+height:"30",
 left:"359",
 right:"-1",
-top:"42",
+top:"40",
 width:"25"
 },
 faclass:"fa fa-filter",
@@ -93,15 +93,15 @@ typeid:47,
 uuid:"33748875-2236-4888-8EEE-5347DC761343"
 },
 {
-cssPosition:"41,110,-1,385,0,30",
+cssPosition:"40,139,-1,385,111,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"385",
-right:"110",
-top:"41",
-width:"0"
+right:"139",
+top:"40",
+width:"111"
 },
 foundset:null,
 onClick:"4DA82988-EE93-4BFC-A5DE-11AE27EE1310"
@@ -112,16 +112,16 @@ typeid:47,
 uuid:"58578296-17E6-435F-AC5F-3F5609F0F2BE"
 },
 {
-cssPosition:"40,58,-1,-1,28,29",
+cssPosition:"40,60,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
-height:"29",
+height:"30",
 left:"-1",
-right:"58",
+right:"60",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"fas fa-cog clickable",
 onActionMethodID:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C",
@@ -188,7 +188,7 @@ typeid:19,
 uuid:"AA801C33-79D0-48C7-9E88-58A11D7AB1D1"
 },
 {
-cssPosition:"40,34,-1,-1,28,30",
+cssPosition:"40,34,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
@@ -197,7 +197,7 @@ height:"30",
 left:"-1",
 right:"34",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"fas fa-graduation-cap clickable",
 imageStyleClass:"fas fa-graduation-cap",
@@ -212,16 +212,16 @@ typeid:47,
 uuid:"D38E1B61-18AF-47B1-B104-EA3D61B6111C"
 },
 {
-cssPosition:"40,109,-1,-1,28,30",
+cssPosition:"40,112,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"-1",
-right:"109",
+right:"112",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"icon-control_point h4 clickable",
 imageStyleClass:"icon-control_point h4",

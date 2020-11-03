@@ -1,4 +1,12 @@
 /**
+ * @protected 
+ * @type {String}
+ *
+ * @properties={typeid:35,uuid:"A98A5563-B053-4BC0-B1E2-A445CE49163C"}
+ */
+var chartDataSource;
+
+/**
  * @enum
  * @protected
  * @properties={typeid:35,uuid:"87462D20-3369-4DA8-9D74-89E9AEDA1C5A",variableType:-4}
@@ -54,9 +62,10 @@ var callback;
 function showChartConfig(table, onApply, event, params) {
 
 	callback = onApply;
+	chartDataSource = table.myFoundset.foundset.getDataSource();
 
 	// assume there is only 1 pk
-	var jsTable = databaseManager.getTable(table.myFoundset.foundset.getDataSource());
+	var jsTable = databaseManager.getTable(chartDataSource);
 	var pkName = jsTable.getRowIdentifierColumnNames()[0];
 
 	var labelsDisplay = [];
@@ -65,8 +74,8 @@ function showChartConfig(table, onApply, event, params) {
 	// include all columns
 	for (var i = 0; i < table.columns.length; i++) {
 		var col = table.columns[i];
-		// exclude pkName
-		if (col.dataprovider && col.dataprovider != pkName) {
+		// exclude pkName & calculations/aggregates
+		if (col.dataprovider && col.dataprovider != pkName && getJSColumn(chartDataSource, col.dataprovider)) {
 			labelsRealValue.push(col.dataprovider);
 			labelsDisplay.push(col.headerTitle ? col.headerTitle : col.dataprovider);
 		}
@@ -123,6 +132,23 @@ function onLoad(event) {
  * @properties={typeid:24,uuid:"19136D1C-96B0-4D09-A22A-4C8834652E0E"}
  */
 function updateUI() {
+	
+	var canSum = false;
+	
+	// TODO make api get JSColumn
+	if (valueColumn) {
+		var jsColumn = getJSColumn(chartDataSource, valueColumn);
+		
+		// allow only if number
+		if (jsColumn && jsColumn.getType() == JSColumn.INTEGER || jsColumn.getType() == JSColumn.NUMBER) {
+			canSum = true;
+		}
+		
+		if (jsColumn.getRowIdentifierType() == JSColumn.PK_COLUMN) {
+			canSum = false;
+		}
+	}
+	
 	elements.funcCount.removeStyleClass("text-primary");
 	elements.funcSum.removeStyleClass("text-primary");
 	elements.funcMax.removeStyleClass("text-primary");
@@ -156,6 +182,14 @@ function updateUI() {
 		valueFunc = CHART_VALUE_FUNC.COUNT;
 		break;
 	}
+	
+	// if cannot sum allow only COUNT agg
+	elements.funcSum.enabled = canSum;
+	elements.funcMax.enabled = canSum;
+	elements.funcMin.enabled = canSum;
+	if (!canSum) {
+		valueFunc = CHART_VALUE_FUNC.COUNT;
+	}
 }
 
 /**
@@ -165,7 +199,7 @@ function updateUI() {
  *
  * @properties={typeid:24,uuid:"55A3B8DF-529F-4516-8F2F-8DC58F7794A5"}
  */
-function onActionApplyColors(event) {
+function onActionApply(event) {
 
 	//	scopes.svyProperties.setUserProperty("MAIN-COLOR", "style", primaryColor);
 	//	scopes.svyProperties.setUserProperty("SECONDARY-COLOR", "style", secondaryColor);
@@ -247,4 +281,44 @@ function onActionMax(event, dataTarget) {
 function onActionMin(event, dataTarget) {
 	valueFunc = CHART_VALUE_FUNC.MIN;
 	updateUI();
+}
+
+/**
+ * Handle changed data, return false if the value should not be accepted. In NGClient you can return also a (i18n) string, instead of false, which will be shown as a tooltip.
+ *
+ * @param {String} oldValue old value
+ * @param {String} newValue new value
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @return {Boolean}
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"B0B5AA84-65BB-43F5-A694-AD09B0ADC976"}
+ */
+function onDataChangeChartValue(oldValue, newValue, event) {
+	updateUI();
+	return true
+}
+
+/**
+ * @private 
+ * @param {String} dataSource
+ * @param {String} dataprovider
+ * 
+ * @return {JSColumn}
+ *
+ * @properties={typeid:24,uuid:"8B37F8C3-9AB3-4694-9791-2CCD64452B9A"}
+ */
+function getJSColumn(dataSource, dataprovider) {
+	var jsColumn = null;
+	if (dataprovider) {
+		var dpRelationName = scopes.svyDataUtils.getDataProviderRelationName(dataprovider)
+		if (dpRelationName) {
+			jsColumn = databaseManager.getTable(scopes.svyDataUtils.getRelationForeignDataSource(dpRelationName)).getColumn(scopes.svyDataUtils.getUnrelatedDataProviderID(dataprovider));
+		} else {
+			jsColumn = databaseManager.getTable(dataSource).getColumn(dataprovider);
+		}
+	}
+	return jsColumn;
 }
