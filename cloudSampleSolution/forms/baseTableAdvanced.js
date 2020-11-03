@@ -37,6 +37,18 @@ function onLoad(event) {
 	toolbarFilter = scopes.svyToolbarFilter.createFilterToolbar(elements.filterToolbar, elements.table);
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
+	
+	// customize the free search
+	var simpleSearch = toolbarFilter.getSimpleSearch();
+	simpleSearch.addAlternateDateFormat("yyyy")
+		.addAlternateDateFormat("MMM yyyy")
+		.addAlternateDateFormat("MMMM yyyy")
+		.addAlternateDateFormat("MM/yyyy").addAlternateDateFormat("MM-yyyy")
+		.addAlternateDateFormat("dd/MM/yyyy").addAlternateDateFormat("MM-yyyy")
+		.addAlternateDateFormat("dd/MM/yyyy HH").addAlternateDateFormat("dd-MM-yyyy HH")
+		.addAlternateDateFormat("dd/MM/yyyy HH:mm").addAlternateDateFormat("dd-MM-yyyy HH:mm")
+		.addAlternateDateFormat("dd/MM/yyyy HH:mm:ss").addAlternateDateFormat("dd-MM-yyyy HH:mm:ss")
+		.addAlternateDateFormat("DDD/yyyy").addAlternateDateFormat("DDD-yyyy");
 }
 
 
