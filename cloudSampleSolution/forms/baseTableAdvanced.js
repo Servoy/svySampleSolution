@@ -11,6 +11,17 @@ var searchText;
  * @properties={typeid:35,uuid:"36DBC6FF-7710-4094-8778-E14F7CBBFC59",variableType:-4}
  */
 var toolbarFilter;
+
+/**
+ * @protected 
+ * @properties={typeid:35,uuid:"46E8021B-4455-4D1C-A443-6E267B746577",variableType:-4}
+ */
+var chartParams = {
+	label : "",
+	value : "",
+	valueFunc : "count"
+}
+
 /**
  * Perform the element onclick action.
  *
@@ -49,6 +60,7 @@ function onLoad(event) {
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm").addAlternateDateFormat("dd-MM-yyyy HH:mm")
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm:ss").addAlternateDateFormat("dd-MM-yyyy HH:mm:ss")
 		.addAlternateDateFormat("DDD/yyyy").addAlternateDateFormat("DDD-yyyy");
+	//chartParams.label = elements.table.columns[0].dataprovider;
 }
 
 
@@ -60,6 +72,8 @@ function onFilterRemovedEvent() {
 	//plugins.webnotificationsToastr.info('filter removed');
 	
 	saveToolbarFilterProperty();
+	
+	renderChart();
 }
 
 
@@ -76,6 +90,8 @@ function onFilterApplyEvent(values, operator, filter) {
 	//plugins.webnotificationsToastr.info(values.join(','));
 	
 	saveToolbarFilterProperty();
+	
+	renderChart();
 }
 
 /**
@@ -268,7 +284,12 @@ function onShow(firstShow, event) {
 			}
 		}
 	}
+	
+	if (firstShow) {
+		forms.tableChartAdvanced.configChart(foundset, "orders_to_customers.companyname");
+	}
 
+	renderChart();
 }
 
 /**
@@ -320,4 +341,72 @@ function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, even
 	// save data at every data change
 	databaseManager.saveData();
 	return true;
+}
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A"}
+ */
+function toggleViewChart(event) {
+
+	// elements.btnChartConfig.visible = elements.tabChart.visible;
+	//elements.btnAdd.visible = !elements.tabChart.visible;
+	
+	if (!chartParams.label) {
+		chartConfig(event);
+	} else {
+		elements.table.visible = !elements.table.visible;
+		elements.tabChart.visible = !elements.tabChart.visible;
+		renderChart();
+	}
+}
+
+/**
+ * @private
+ * @properties={typeid:24,uuid:"5F6486A3-A01E-4C6D-ABFD-A78C1770047F"}
+ */
+function renderChart() {
+	if (elements.tabChart.visible) {
+		forms.tableChartAdvanced.renderChart(foundset)
+	}
+}
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C"}
+ */
+function chartConfig(event) {
+	forms.chartPicker.showChartConfig(elements.table, applyChartConfig, event, chartParams);
+}
+
+/**
+ * @param chartLabel
+ * @param chartValue
+ * @param chartFunc
+ * 
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"0E580D43-803C-4224-839E-F8ED00D22956"}
+ */
+function applyChartConfig(chartLabel, chartValue, chartFunc) {
+	
+	// update chart Values
+	chartParams.label = chartLabel;
+	chartParams.value = chartValue;
+	chartParams.valueFunc = chartFunc;
+	
+	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc);
+
+	elements.table.visible = false;
+	elements.tabChart.visible = true;
+	
+	renderChart();
+	
+
 }
