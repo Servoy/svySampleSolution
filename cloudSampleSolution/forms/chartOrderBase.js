@@ -45,6 +45,7 @@ function onShow(firstShow, event) {
 }
 
 /**
+ * @return {Number}
  * @properties={typeid:24,uuid:"2396FBBC-64F6-49BB-BA37-FE206041CEBC"}
  */
 function getValue() {
@@ -52,6 +53,7 @@ function getValue() {
 }
 
 /**
+ * @return {Number}
  * @properties={typeid:24,uuid:"42BB0273-11A4-4F2A-AAA6-406608946AE1"}
  */
 function getLastYearValue() {
@@ -59,6 +61,7 @@ function getLastYearValue() {
 }
 
 /**
+ * @return {String}
  * @properties={typeid:24,uuid:"E33D294A-C043-4BBD-89EF-B54064EA60AF"}
  */
 function getDiffValue() {

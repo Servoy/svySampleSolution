@@ -262,6 +262,7 @@ function onShow(firstShow, event) {
 /**
  * @protected 
  * @param {String} dataprovider
+ * @return {CustomType<aggrid-groupingtable.column>}
  *
  * @properties={typeid:24,uuid:"633DA4C8-8E72-4243-ABFE-E7D092DDA47A"}
  */

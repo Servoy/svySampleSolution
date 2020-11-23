@@ -1,6 +1,7 @@
 /**
  * @public
  * @param {scopes.svySecurity.User} user
+ * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"6BC09BAF-6EA7-440F-BBEE-00032A0B43C7"}
  * @AllowToRunInFind
