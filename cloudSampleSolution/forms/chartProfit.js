@@ -1,4 +1,5 @@
 /**
+ * @return {Array}
  * @properties={typeid:24,uuid:"372FCFFB-E63A-4A38-A779-7E34F9F8AAC6"}
  * @override
  */
@@ -22,6 +23,7 @@ function getValue() {
 }
 
 /**
+ * @return {Array}
  * @properties={typeid:24,uuid:"377629D1-F186-4440-A4AA-D0D6EAB40EC3"}
  * @override
  */

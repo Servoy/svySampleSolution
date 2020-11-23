@@ -102,6 +102,7 @@ function loadMenuItems() {
  * @protected 
  * @param menuItemId
  * @param event
+ * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"413A1E7A-D4AD-4651-A78C-54541FDAB6D7"}
  * @override
@@ -117,6 +118,7 @@ function onMenuItemSelected(menuItemId,event) {
 }
 
 /**
+ * @return {Array<CustomType<bootstrapextracomponents-navbar.menuItem>>}
  * @protected
  * @properties={typeid:24,uuid:"B1558097-985D-4E15-A3CB-DC956FE2CA6C"}
  * @override
@@ -244,7 +246,6 @@ function onSearchLookup(records, values, lookup) {
 			scopes.svyNavigation.open(navItem, orderRecord.foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 			break;
 		default:
-			return;
 		}
 	}
 }
