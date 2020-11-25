@@ -6,34 +6,39 @@ autoEnterType:2,
 creationOrderIndex:4,
 dataType:4,
 flags:1,
-name:"book_text_id"
+name:"book_text_id",
+titleText:"Book Text ID"
 },
 {
 allowNull:true,
 creationOrderIndex:2,
 dataType:12,
 length:8000,
-name:"comment_text"
+name:"comment_text",
+titleText:"Comment"
 },
 {
 allowNull:true,
 creationOrderIndex:3,
 dataType:12,
 length:8000,
-name:"item_text"
+name:"item_text",
+titleText:"Item text"
 },
 {
 allowNull:true,
 creationOrderIndex:1,
 dataType:4,
-name:"node_id"
+name:"node_id",
+titleText:"Node"
 },
 {
 allowNull:true,
 creationOrderIndex:0,
 dataType:12,
 length:8000,
-name:"note_text"
+name:"note_text",
+titleText:"Note text"
 }
 ],
 name:"book_text",

@@ -183,13 +183,15 @@ width:"28"
 faclass:"icon-control_point h4 clickable",
 imageStyleClass:"icon-control_point h4",
 onActionMethodID:"0617C50E-1CB5-4E1F-8D42-AEA2408967DD",
-styleClass:"default-align clickable"
+styleClass:"default-align clickable",
+visible:false
 },
 name:"btnAdd",
 styleClass:"default-align clickable",
 typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"E08B9F39-7A28-40C7-8FAF-81034783BCCD"
+uuid:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
+visible:false
 }
 ],
 name:"baseTableAdvanced",

@@ -4,14 +4,16 @@ allowNull:false,
 creationOrderIndex:0,
 dataType:4,
 flags:1,
-name:"orderid"
+name:"orderid",
+titleText:"Order ID"
 },
 {
 allowNull:false,
 creationOrderIndex:1,
 dataType:4,
 flags:1,
-name:"productid"
+name:"productid",
+titleText:"Product"
 },
 {
 allowNull:false,
@@ -20,19 +22,22 @@ creationOrderIndex:4,
 dataType:8,
 length:17,
 name:"discount",
-scale:17
+scale:17,
+titleText:"Discount"
 },
 {
 allowNull:false,
 creationOrderIndex:3,
 dataType:4,
-name:"quantity"
+name:"quantity",
+titleText:"Quantity"
 },
 {
 allowNull:false,
 creationOrderIndex:2,
 dataType:4,
-name:"unitprice"
+name:"unitprice",
+titleText:"Unit price"
 }
 ],
 name:"order_details",
