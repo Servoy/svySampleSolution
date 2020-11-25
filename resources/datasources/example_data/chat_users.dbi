@@ -6,33 +6,38 @@ autoEnterType:2,
 creationOrderIndex:3,
 dataType:4,
 flags:1,
-name:"chat_user_id"
+name:"chat_user_id",
+titleText:"User ID"
 },
 {
 allowNull:true,
 creationOrderIndex:1,
 dataType:12,
 length:50,
-name:"ip_address"
+name:"ip_address",
+titleText:"IP address"
 },
 {
 allowNull:true,
 creationOrderIndex:2,
 dataType:93,
-name:"login_time"
+name:"login_time",
+titleText:"Login time"
 },
 {
 allowNull:true,
 creationOrderIndex:4,
 dataType:4,
-name:"status"
+name:"status",
+titleText:"Status"
 },
 {
 allowNull:true,
 creationOrderIndex:0,
 dataType:12,
 length:50,
-name:"user_name"
+name:"user_name",
+titleText:"Username"
 }
 ],
 name:"chat_users",

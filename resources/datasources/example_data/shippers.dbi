@@ -6,21 +6,24 @@ autoEnterType:2,
 creationOrderIndex:0,
 dataType:4,
 flags:1,
-name:"shipperid"
+name:"shipperid",
+titleText:"Shipper ID"
 },
 {
 allowNull:false,
 creationOrderIndex:1,
 dataType:12,
 length:40,
-name:"companyname"
+name:"companyname",
+titleText:"Company"
 },
 {
 allowNull:true,
 creationOrderIndex:2,
 dataType:12,
 length:24,
-name:"phone"
+name:"phone",
+titleText:"Phone"
 }
 ],
 name:"shippers",
