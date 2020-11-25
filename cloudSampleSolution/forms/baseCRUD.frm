@@ -33,11 +33,12 @@ typeid:19,
 uuid:"642700D2-400D-46A8-B5C7-E88E7D6B3E91"
 },
 {
-cssPosition:"44,-1,-1,30,350,40",
+cssPosition:"44,260,-1,30,350,40",
 json:{
 autoRemoveWhenClicked:false,
 breadcrumbs:[
 {
+crumbId:"table",
 svyUUID:"6897F316-1316-4F8F-980D-4723DA248BD3"
 }
 ],
@@ -45,7 +46,7 @@ cssPosition:{
 bottom:"-1",
 height:"40",
 left:"30",
-right:"-1",
+right:"260",
 top:"44",
 width:"350"
 },

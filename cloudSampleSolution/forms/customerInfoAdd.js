@@ -1,6 +1,7 @@
 /**
  * @protected 
  * @param event
+ * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"2542B86E-6B54-4B15-861B-3B60F423CF43"}
  * @override

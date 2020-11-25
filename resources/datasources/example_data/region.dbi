@@ -6,14 +6,16 @@ autoEnterType:2,
 creationOrderIndex:0,
 dataType:4,
 flags:1,
-name:"regionid"
+name:"regionid",
+titleText:"Region ID"
 },
 {
 allowNull:false,
 creationOrderIndex:1,
 dataType:1,
 length:50,
-name:"regiondescription"
+name:"regiondescription",
+titleText:"Region desc."
 }
 ],
 name:"region",

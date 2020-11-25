@@ -1,4 +1,5 @@
 /**
+ * @return {Array}
  * @properties={typeid:24,uuid:"4CCFFCB3-B115-4FB1-AD8D-FC95817D879A"}
  * @override
  */

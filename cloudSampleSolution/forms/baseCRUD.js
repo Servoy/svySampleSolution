@@ -73,6 +73,8 @@ function onHide(event) {
  /**
   * @protected 
  * @param event
+ * 
+ * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"8C730973-3860-4E82-A1C3-FE78B396E219"}
  */

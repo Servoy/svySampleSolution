@@ -5,7 +5,7 @@
  * @param {Date} startDate
  * @param {Date} endDate
  * @param {String} [customerID]
- *
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"B182744A-D0BC-42F3-BCAB-F8019590CF05"}
  */
@@ -49,6 +49,7 @@ function getTotalRevenueYear(startDate, endDate, customerID) {
  * @param {Date} startDate
  * @param {Date} endDate
  * @param {String} [customerID]
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"6BE06753-0F8B-4EF8-B237-FA43C5428F69"}
  */
@@ -92,7 +93,7 @@ function getTotalProfitThisYear(startDate, endDate, customerID) {
  * @param {Date} startDate
  * @param {Date} endDate
  * @param {String} [customerID]
- *
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"F1F93BA7-87A7-412C-AFA4-7C90B7D5782B"}
  */
@@ -126,6 +127,7 @@ function getTotalSalesOrder(startDate, endDate, customerID) {
  * This method is used to get top customers based on total amount of orders
  *
  * @param {Number} nr
+ * @return {Array}
  * @properties={typeid:24,uuid:"D7C827C2-5753-43B5-85F2-CBF118F23766"}
  */
 function getTopCustomers(nr) {
@@ -160,6 +162,7 @@ function getTopCustomers(nr) {
 
 /**
  * This method is used to get total sales in last 6 months
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"8D66E930-646C-43A5-8185-A011DEFB7892"}
  */
@@ -203,6 +206,7 @@ function getSalesLastMonths() {
  *
  * @param {Number} nr
  * @param {String} customerID
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"7FD64592-0EB8-43A3-9829-AB8DED598BEF"}
  */
@@ -248,6 +252,7 @@ function getTopCustomersProducts(customerID, nr) {
  *
  *
  * @param {String} customerID
+ * @return {Array}
  *
  * @properties={typeid:24,uuid:"E3FCB296-29D6-43E5-8F42-0DB1A5E81926"}
  */

@@ -63,6 +63,7 @@ function updateUI() {
 }
 
 /**
+ * @return {Number}
  * @properties={typeid:24,uuid:"62530077-C9E9-4E2E-8A0B-D038CF93829F"}
  */
 function getValue() {
@@ -70,6 +71,7 @@ function getValue() {
 }
 
 /**
+ * @return {Number}
  * @properties={typeid:24,uuid:"8F45DCCA-E18C-4922-844A-426B93BCFFE3"}
  */
 function getLastYearValue() {
@@ -77,6 +79,7 @@ function getLastYearValue() {
 }
 
 /**
+ * @return {String}
  * @properties={typeid:24,uuid:"B29B0172-183D-46C1-8FEA-33CF3F7B76BE"}
  */
 function getDiffValue() {

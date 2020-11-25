@@ -6,20 +6,23 @@ autoEnterType:2,
 creationOrderIndex:2,
 dataType:4,
 flags:1,
-name:"node_id"
+name:"node_id",
+titleText:"Node ID"
 },
 {
 allowNull:true,
 creationOrderIndex:1,
 dataType:12,
 length:255,
-name:"label_text"
+name:"label_text",
+titleText:"Text"
 },
 {
 allowNull:true,
 creationOrderIndex:0,
 dataType:4,
-name:"parent_id"
+name:"parent_id",
+titleText:"Parent node"
 }
 ],
 name:"book_nodes",
