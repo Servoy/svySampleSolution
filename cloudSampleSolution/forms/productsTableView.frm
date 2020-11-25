@@ -17,7 +17,7 @@ json:{
 columns:[
 {
 dataprovider:"productname",
-editType:"TEXTFIELD",
+editType:null,
 filterType:"TEXT",
 headerTitle:"Product",
 id:"productname",
@@ -25,7 +25,7 @@ svyUUID:"C1E5A46D-DF09-4DB4-BCD7-23DB51603F39"
 },
 {
 dataprovider:"categoryid",
-editType:"COMBOBOX",
+editType:null,
 filterType:"TEXT",
 headerTitle:"Category",
 id:"category",
@@ -34,7 +34,7 @@ valuelist:"0A33A641-6094-41B6-BB64-5F15869929F4"
 },
 {
 dataprovider:"supplierid",
-editType:"COMBOBOX",
+editType:null,
 filterType:"TEXT",
 headerTitle:"Supplier",
 id:"supplier",
@@ -43,7 +43,7 @@ valuelist:"B2CE91F1-9801-4076-BFD3-902087B5B7D2"
 },
 {
 dataprovider:"unitprice",
-editType:"TEXTFIELD",
+editType:null,
 filterType:"NUMBER",
 format:"¤#.00",
 headerTitle:"Unit Price",
@@ -53,14 +53,14 @@ width:100
 },
 {
 dataprovider:"quantityperunit",
-editType:"TEXTFIELD",
+editType:null,
 headerTitle:"Quantity p/u",
 id:"quantityperunit",
 svyUUID:"E47C7520-8DD4-4C34-AFD9-1B2FC8384D05"
 },
 {
 dataprovider:"unitsinstock",
-editType:"TEXTFIELD",
+editType:null,
 filterType:"NUMBER",
 format:"#,###",
 headerTitle:"Units in Stock",
