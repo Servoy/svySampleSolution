@@ -12,6 +12,12 @@ typeid:47,
 uuid:"0D44784B-63B3-41D4-A2D6-A6C999EAC651"
 },
 {
+customProperties:"methods:{\
+onCellClick:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"9BF6D2ED-B31B-4F1D-BF51-67A2F8F04D33",
 json:{
 columns:[
@@ -67,8 +73,20 @@ headerTitle:"Units in Stock",
 id:"unitsinstock",
 svyUUID:"26B2BEF4-F275-4ECB-88F7-E99492BAB978",
 width:80
+},
+{
+autoResize:false,
+enableResize:false,
+enableRowGroup:false,
+enableSort:false,
+enableToolPanel:false,
+id:"edit",
+styleClass:"fa fa-pencil clickable",
+svyUUID:"C77A8A70-AA8A-4205-BFB2-17C08E31F37A",
+width:40
 }
-]
+],
+onCellClick:"842D914F-B800-4AD1-8526-525E78776CEE"
 },
 typeid:47,
 uuid:"7C764868-0D04-47F7-950E-A0E8B8B7BB27"
