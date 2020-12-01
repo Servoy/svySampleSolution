@@ -15,11 +15,6 @@
  */
 function onValidate(record, recordMarkers, stateObject) {
 
-	// check if companyname id is filled
-	if (!record.companyname && validateDataprovider("companyname")) {
-		recordMarkers.report("Company Name is required", "companyname", LOGGINGLEVEL.ERROR);
-	}
-
 	// check if customer id is filled
 	if (!record.customerid && validateDataprovider("customerid")) {
 		recordMarkers.report("Customer ID is required", "customerid", LOGGINGLEVEL.ERROR);
@@ -36,6 +31,11 @@ function onValidate(record, recordMarkers, stateObject) {
 		if (!isUnique) {
 			recordMarkers.report("Entered Customer ID is not unique", "customerid", LOGGINGLEVEL.ERROR);
 		} 
+	}
+	
+	// check if companyname id is filled
+	if (!record.companyname && validateDataprovider("companyname")) {
+		recordMarkers.report("Company Name is required", "companyname", LOGGINGLEVEL.ERROR);
 	}
 	
 	/** 

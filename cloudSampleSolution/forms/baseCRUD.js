@@ -40,10 +40,11 @@ function back() {
  * @properties={typeid:24,uuid:"422592A6-34AF-4CF4-A9B8-D2ADED0D9CBE"}
  */
 function save() {
+	// return false when the record had validation problems
 	if (validate()) {
-		return databaseManager.saveData();
+		return false;
 	}
-	return false;
+	return databaseManager.saveData();
 }
 
 /**
@@ -136,12 +137,13 @@ function updateUI(){
  * Validate the record
  * @param {RuntimeTextField} [element] validate only the dataprovider linked to the given element when set
  * @protected 
- * @return {Boolean} returns true if record is valid
+ * @return {Array<JSRecordMarker>} It will return an array of JSRecordMarker when the record had validation problems 
  * @properties={typeid:24,uuid:"A95E28F2-F687-4DBB-B179-DB6EEAE1B586"}
  */
 function validate(element) {
 	// validate the record
 	var dataprovider = element ? element.getDataProviderID() : null;
+	// TODO handle validation for relation
 	var errors = databaseManager.validate(foundset.getSelectedRecord(), dataprovider);
 	var markers = errors ? errors.getMarkers(LOGGINGLEVEL.ERROR) : null;
 	var isValid = markers ? false : true;
@@ -166,7 +168,7 @@ function validate(element) {
 		}
 	}
 
-	return isValid;
+	return markers;
 }
 
 /**
@@ -260,6 +262,10 @@ function clearValidationError(element) {
  * @properties={typeid:24,uuid:"8EA94FC5-668C-4874-9891-6379F38012C1"}
  */
 function onElementDataChange(oldValue, newValue, event) {
-	validate(event.getSource());
+	var markers = validate(event.getSource());
+	if (markers) {
+		// show error message
+		plugins.webnotificationsToastr.error(markers[0].message);
+	}
 	return true
 }
