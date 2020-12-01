@@ -1,14 +1,4 @@
 /**
- * @properties={typeid:24,uuid:"0170268E-0794-4605-8288-DE3AB2D8463A"}
- * @override
- */
-function newRecord() { 
-	foundset.newRecord();
-	foundset.discontinued = 0;
-	elements.table.editCellAt(foundset.getSelectedIndex(), 0);
-}
-
-/**
  * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
  * the foundsetindex is always -1 when there are grouped rows
  *
@@ -25,3 +15,13 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 	var item = scopes.svyNavigation.createNavigationItem("productInfoEdit")
 	scopes.svyNavigation.open(item, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
 }
+
+
+/**
+ * @properties={typeid:24,uuid:"4086699F-28AD-4A14-A39D-0699EB63DB03"}
+ * @override
+ */
+function gotoNew() {
+	var item = new scopes.svyNavigation.NavigationItem("productInfoEdit");
+	scopes.svyNavigation.open(item, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+} 
