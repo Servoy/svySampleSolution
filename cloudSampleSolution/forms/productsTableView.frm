@@ -94,10 +94,11 @@ uuid:"7C764868-0D04-47F7-950E-A0E8B8B7BB27"
 {
 extendsID:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
 json:{
-
+visible:true
 },
 typeid:47,
-uuid:"7EA8F166-479D-4C08-82CA-9FCB034F0B16"
+uuid:"7EA8F166-479D-4C08-82CA-9FCB034F0B16",
+visible:true
 }
 ],
 name:"productsTableView",
