@@ -8,7 +8,6 @@ cssPosition:"193,calc(50% + 15px),-1,180,0,42",
 dataProviderID:"customerid",
 formIndex:8,
 name:"customerid",
-onDataChangeMethodID:"189FC06F-4C31-4E16-A087-4834DAF81A52",
 placeholderText:"Enter Unique ID",
 typeid:4,
 uuid:"12F0C64F-B479-4B91-852B-E5BD9BB2E53D"
@@ -27,14 +26,7 @@ uuid:"25A267AD-55DD-4978-B138-120F178C233D"
 },
 {
 cssPosition:"251,calc(50% + 15px),-1,180,0,42",
-customProperties:"methods:{\
-onDataChangeMethodID:{\
-arguments:null,\
-parameters:null\
-}\
-}",
 extendsID:"6BBF8651-28C7-4029-91C2-D7813BCB08F3",
-onDataChangeMethodID:"28688DF0-A306-4FE1-B1CD-0902E91805E4",
 placeholderText:"Required",
 typeid:4,
 uuid:"2E3E486F-BD5D-42A1-AC01-C1BB82BCB813"
