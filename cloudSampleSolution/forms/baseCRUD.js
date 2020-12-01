@@ -40,7 +40,10 @@ function back() {
  * @properties={typeid:24,uuid:"422592A6-34AF-4CF4-A9B8-D2ADED0D9CBE"}
  */
 function save() {
-	return databaseManager.saveData();
+	if (validate()) {
+		return databaseManager.saveData();
+	}
+	return false;
 }
 
 /**
@@ -67,6 +70,7 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"8135AB2F-8ECE-4E48-9EEF-3DC512F4EB70"}
  */
 function onHide(event) {
+	clearValidationErrors();
 	return scopes.svyNavigation.removeNavigationListener(onOpen);
 }
 
@@ -118,4 +122,144 @@ function onCrumbClicked(event, crumb, index) {
  */
 function updateUI(){
 	// intentionally left empty
+}
+
+/************************************************************************************************************************
+*************************************************************************************************************************
+*
+* UI Validations
+*
+*************************************************************************************************************************
+************************************************************************************************************************/
+
+/**
+ * Validate the record
+ * @param {RuntimeTextField} [element] validate only the dataprovider linked to the given element when set
+ * @protected 
+ * @return {Boolean} returns true if record is valid
+ * @properties={typeid:24,uuid:"A95E28F2-F687-4DBB-B179-DB6EEAE1B586"}
+ */
+function validate(element) {
+	// validate the record
+	var dataprovider = element ? element.getDataProviderID() : null;
+	var errors = databaseManager.validate(foundset.getSelectedRecord(), dataprovider);
+	var markers = errors ? errors.getMarkers(LOGGINGLEVEL.ERROR) : null;
+	var isValid = markers ? false : true;
+	
+	if (element) {
+		
+		if (isValid) {
+			// clear validation error, if any
+			clearValidationError(element);
+		} else {
+			// show validation error
+			updateValidationError(markers[0], element);
+		}
+	} else {
+		
+		if (isValid) {
+			// clear all validation errors
+			clearValidationErrors();
+		} else {
+			// show all validation errors
+			updateValidationErrors(markers);
+		}
+	}
+
+	return isValid;
+}
+
+/**
+ * Show validation errors in UI, if any
+ * @protected 
+ * @param {Array<JSRecordMarker>} errorMarkers
+ *
+ * @properties={typeid:24,uuid:"8D83EB2B-FCA9-4381-B4B0-802A3BF00C53"}
+ */
+function updateValidationErrors(errorMarkers) {
+	// clear all validation errors
+	clearValidationErrors();
+	
+	if (errorMarkers) {
+		
+		// get the error markers
+		for (var i = 0; i < errorMarkers.length; i++) {
+	
+			// update the UI showing validation error
+			var errorMarker = errorMarkers[i];
+			
+			// get the element linked to the error marker
+			var element = scopes.svyValidationUtils.getMarkerElement(controller.getName(), errorMarker);
+			updateValidationError(errorMarker, element);
+		}
+		
+		// show the error message
+		var errorMsg = scopes.svyValidationUtils.getErrorMessages(foundset.getSelectedRecord());
+		plugins.webnotificationsToastr.error(errorMsg);
+	}
+}
+
+/**
+ * Update the UI showing validation error in element
+ * @protected 
+ * @param {JSRecordMarker} marker
+ * @param {RuntimeTextField} element
+ *
+ * @properties={typeid:24,uuid:"0F955500-B6E1-4A86-B3D4-31271C22F596"}
+ */
+function updateValidationError(marker, element) {
+	if (element) {
+		
+		// show error as tooltip
+		element.toolTipText = marker.message;
+		// style the element as invalid input
+		element.addStyleClass("form-invalid");
+	}
+}
+
+/**
+ * Clear validation error from all UI elements
+ * @protected 
+ * @properties={typeid:24,uuid:"421146F2-E577-4722-B145-A3E16B050091"}
+ */
+function clearValidationErrors() {
+
+	// clear error from all elements.
+	for (var i = 0; i < elements.allnames.length; i++) {
+		var element = elements[elements.allnames[i]];
+		clearValidationError(element);
+	}
+}
+
+/**
+ * Clear validation error for the given UI element
+ * @param element
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"04EE0A1B-FEFA-40D7-A441-55CFF184108A"}
+ */
+function clearValidationError(element) {
+	// clear error in element if any
+	if (element.hasStyleClass("form-invalid")) {
+		element.toolTipText = null;
+		element.removeStyleClass("form-invalid");
+	}
+}
+
+/**
+ * Handle changed data, return false if the value should not be accepted. In NGClient you can return also a (i18n) string, instead of false, which will be shown as a tooltip.
+ *
+ * @param oldValue old value
+ * @param newValue new value
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @return {Boolean}
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"8EA94FC5-668C-4874-9891-6379F38012C1"}
+ */
+function onElementDataChange(oldValue, newValue, event) {
+	validate(event.getSource());
+	return true
 }
