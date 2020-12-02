@@ -22,4 +22,14 @@ function onValidate(record, recordMarkers, stateObject) {
 	if (record.unitprice < 0) {
 		recordMarkers.report("Unit Price cannot be negative", "unitprice", LOGGINGLEVEL.ERROR);
 	}
+	
+	// check if unitsinstock is positive
+	if (record.unitsinstock < 0) {
+		recordMarkers.report("Unit in Stock cannot be negative", "unitsinstock", LOGGINGLEVEL.ERROR);
+	}
+	
+	// check if unitsonorder is positive
+	if (record.unitsonorder < 0) {
+		recordMarkers.report("Unit in Order cannot be negative", "unitsonorder", LOGGINGLEVEL.ERROR);
+	}
 }
