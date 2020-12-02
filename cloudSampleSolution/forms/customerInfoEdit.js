@@ -12,10 +12,10 @@
 function onCrumbClicked(event, crumb, index) {
 	switch (index) {
 	case 0:
-		showForm(forms.customersTableView)
+		showForm(forms.customersTableView);
 		break;
 	default:
-		back();
+		showForm(forms.customerView);
 		break;
 	}
 }

@@ -524,6 +524,12 @@ typeid:47,
 uuid:"F9025EDE-3273-41EA-8D38-3F91628433D4"
 },
 {
+customProperties:"methods:{\
+onCrumbClicked:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"9002DFD5-92D4-4E02-A613-E24A0B0C42DE",
 json:{
 breadcrumbs:[
@@ -542,7 +548,8 @@ crumbId:"id",
 displayName:"Order %%orderText%%",
 svyUUID:"31260DD4-D10B-4560-9CCC-2D1C4F5E68F2"
 }
-]
+],
+onCrumbClicked:"B004B4E7-62B9-4D04-AC04-336474CAC6E5"
 },
 typeid:47,
 uuid:"F9E367C8-930C-41DA-A063-DCA4416CFD65"
