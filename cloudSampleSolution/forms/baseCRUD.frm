@@ -50,7 +50,6 @@ right:"260",
 top:"44",
 width:"350"
 },
-onCrumbClicked:"06174DA0-7BA1-4EBF-833D-01833179B912",
 size:{
 height:40,
 width:600

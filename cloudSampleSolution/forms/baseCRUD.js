@@ -115,21 +115,6 @@ function showForm(form) {
 }
 
 /**
- * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
- *
- * @param {JSEvent} event
- * @param {CustomType<bootstrapextracomponents-breadcrumbs.crumb>} crumb
- * @param {Number} index
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"06174DA0-7BA1-4EBF-833D-01833179B912"}
- */
-function onCrumbClicked(event, crumb, index) {
-
-}
-
-/**
  * @protected
  * @properties={typeid:24,uuid:"3B6E57D0-3923-482E-8CFA-FACE80376C9B"}
  */
