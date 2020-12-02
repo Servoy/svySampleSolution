@@ -69,33 +69,6 @@ typeid:47,
 uuid:"224A354F-4902-459B-92AC-7D95F889ECD6"
 },
 {
-cssPosition:"30,30,-1,-1,20,49",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"49",
-left:"-1",
-right:"30",
-top:"30",
-width:"20"
-},
-imageStyleClass:"fas fa-plus",
-onActionMethodID:"846F37DA-D6F5-41A0-83E1-5D0213C4238F",
-size:{
-height:30,
-width:80
-},
-styleClass:"default-align btn-success border-left",
-toolTipText:"Apply and New"
-},
-name:"saveAndNew_button",
-size:"80,30",
-styleClass:"default-align btn-success border-left",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"2DE3569A-C432-48D7-9306-7CF94ED2AE1E"
-},
-{
 cssPosition:"285,-1,-1,60,120,42",
 json:{
 cssPosition:{
@@ -328,22 +301,6 @@ name:"description",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"B035CCEB-A688-40FB-B6A7-60DF1D6AC07B"
-},
-{
-cssPosition:"30,30,-1,-1,115,49",
-extendsID:"CF02B3D1-E0F3-431B-8A15-005A3EA5CE61",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"49",
-left:"-1",
-right:"30",
-top:"30",
-width:"115"
-}
-},
-typeid:47,
-uuid:"E94A8508-57C9-41D7-8E4A-CEB88CB55000"
 },
 {
 cssPosition:"450,-1,-1,60,120,42",
