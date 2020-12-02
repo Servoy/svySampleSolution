@@ -103,18 +103,15 @@ function onOpen(event) {
 }
 
 /**
- * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
+ * @protected 
+ * @param {RuntimeForm} form
+ * 
+ * @return {Boolean}
  *
- * @param {JSEvent} event
- * @param {CustomType<bootstrapextracomponents-breadcrumbs.crumb>} crumb
- * @param {Number} index
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"06174DA0-7BA1-4EBF-833D-01833179B912"}
+ * @properties={typeid:24,uuid:"29DCE67A-CA6E-48E9-BD77-3E6BC21B0847"}
  */
-function onCrumbClicked(event, crumb, index) {
-
+function showForm(form) {
+	return scopes.global.showForm(form);
 }
 
 /**
