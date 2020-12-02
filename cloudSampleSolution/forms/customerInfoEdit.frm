@@ -13,6 +13,12 @@ uuid:"021EB8D0-4F39-4C64-AB44-85E79A2B9360"
 },
 {
 cssPosition:"34,328,-1,30,547,40",
+customProperties:"methods:{\
+onCrumbClicked:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"9002DFD5-92D4-4E02-A613-E24A0B0C42DE",
 json:{
 breadcrumbs:[
@@ -39,7 +45,8 @@ left:"30",
 right:"328",
 top:"34",
 width:"547"
-}
+},
+onCrumbClicked:"027CD8C5-1758-4700-9622-3F48373E9C00"
 },
 typeid:47,
 uuid:"08523BC9-4B76-4BB1-845B-E456BC85D8D5"

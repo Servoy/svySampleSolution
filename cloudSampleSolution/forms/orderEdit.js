@@ -35,7 +35,7 @@ function onCrumbClicked(event, crumb, index) {
 		showForm(forms.customersTableView);
 		break;
 	default:
-		back();
+		showForm(forms.customerView);
 		break;
 	}
 }
