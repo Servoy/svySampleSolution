@@ -34,3 +34,13 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 	showForm(forms.productInfoEdit);
 }
+
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"625A80DD-1658-41BB-B074-30C8692875A4"}
+ * @override
+ */
+function newRecord() {
+	_super.newRecord();
+	showForm(forms.productInfoEdit);
+}
