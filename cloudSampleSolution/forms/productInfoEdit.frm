@@ -124,20 +124,24 @@ typeid:47,
 uuid:"366BD724-650D-4BE8-B453-A48C3EEEE299"
 },
 {
-cssPosition:"450,50%,-1,180,200,42",
+cssPosition:"450,-1,-1,180,100,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"180",
-right:"50%",
+right:"-1",
 top:"450",
-width:"200"
+width:"100"
 },
 dataProviderID:"unitsonorder",
+imageStyleClass:"fas fa-cart-plus margin-right-10",
+onActionMethodID:"49BEDC63-246C-4B4E-91EA-15A404EA8247",
+styleClass:"default-align btn btn-outline-success",
 styleClassExpression:"unitsonorder"
 },
 name:"unitsonorder",
+styleClass:"default-align btn btn-outline-success",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"39B2E131-B982-4D1C-8A19-82B71ABD0580"
@@ -164,20 +168,24 @@ typeid:47,
 uuid:"4D46C93E-A601-4214-9DE8-50A0143B215D"
 },
 {
-cssPosition:"395,50%,-1,180,200,42",
+cssPosition:"395,-1,-1,180,100,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"180",
-right:"50%",
+right:"-1",
 top:"395",
-width:"200"
+width:"100"
 },
 dataProviderID:"unitsinstock",
+imageStyleClass:"fa fa-truck-loading  margin-right-10",
+onActionMethodID:"E1E9312E-CCBA-456F-A2FF-E0C8BD9CB3A3",
+styleClass:"default-align btn btn-outline-success",
 styleClassExpression:"unitsinstock"
 },
 name:"unitsinstock",
+styleClass:"default-align btn btn-outline-success",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"5931C08D-458A-4213-A788-F608ABCDE01C"
@@ -224,6 +232,25 @@ typeid:47,
 uuid:"659E037D-D128-4702-B315-B2678AAE9AF1"
 },
 {
+cssPosition:"502,-1,-1,181,200,42",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"42",
+left:"181",
+right:"-1",
+top:"502",
+width:"200"
+},
+dataProviderID:"unitsavailable",
+styleClassExpression:"unitsavailable"
+},
+name:"unitsavailable",
+typeName:"bootstrapcomponents-datalabel",
+typeid:47,
+uuid:"7C3D3971-674E-457D-9C10-AFB6D7CDBD01"
+},
+{
 cssPosition:"120,50%,-1,180,200,42",
 json:{
 cssPosition:{
@@ -261,6 +288,28 @@ name:"description_label",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"8B73AA66-9729-41E6-B9FD-4BB043D907B8"
+},
+{
+cssPosition:"502,-1,-1,61,120,42",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"42",
+left:"61",
+right:"-1",
+top:"502",
+width:"120"
+},
+imageStyleClass:"fas fa-warehouse",
+labelFor:"unitsavailable",
+styleClassExpression:null,
+text:"Available",
+toolTipText:"Units available"
+},
+name:"unitsavailable_label",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"A797BFC4-91EA-4856-9B60-61A251D6572C"
 },
 {
 cssPosition:"340,-1,-1,60,120,42",
