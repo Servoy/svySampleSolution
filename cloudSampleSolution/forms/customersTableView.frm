@@ -39,6 +39,12 @@ typeid:47,
 uuid:"D5811EBA-6FF0-444F-85EF-6044E569852D"
 },
 {
+customProperties:"methods:{\
+onCellDoubleClick:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"9BF6D2ED-B31B-4F1D-BF51-67A2F8F04D33",
 json:{
 columns:[
@@ -103,7 +109,8 @@ headerTitle:"Sales",
 id:"total",
 svyUUID:"16288B62-5ED9-4982-AB78-05CA3F2B8954"
 }
-]
+],
+onCellDoubleClick:"8ED7CCB1-5E0F-4D4A-A33A-96E8E7247BF2"
 },
 typeid:47,
 uuid:"E3786202-0D11-4F57-AE35-B4405D7A9DE9"

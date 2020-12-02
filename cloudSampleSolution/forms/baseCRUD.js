@@ -103,6 +103,18 @@ function onOpen(event) {
 }
 
 /**
+ * @protected 
+ * @param {RuntimeForm} form
+ * 
+ * @return {Boolean}
+ *
+ * @properties={typeid:24,uuid:"29DCE67A-CA6E-48E9-BD77-3E6BC21B0847"}
+ */
+function showForm(form) {
+	return scopes.global.showForm(form);
+}
+
+/**
  * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
  *
  * @param {JSEvent} event

@@ -31,6 +31,12 @@ typeid:47,
 uuid:"C1DA3D6F-6950-493B-BB3B-1ABA0ACEACE3"
 },
 {
+customProperties:"methods:{\
+onCellDoubleClick:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"9BF6D2ED-B31B-4F1D-BF51-67A2F8F04D33",
 json:{
 columns:[
@@ -108,7 +114,8 @@ headerTitle:"Total",
 id:"total",
 svyUUID:"C4FF6E75-BEB5-4075-9554-8E4F86704493"
 }
-]
+],
+onCellDoubleClick:"B8E6B20B-B389-4204-96D4-36BA81D25C24"
 },
 typeid:47,
 uuid:"DC3E71F9-420E-4C63-88FD-26C037041F33"

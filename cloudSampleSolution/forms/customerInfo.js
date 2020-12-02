@@ -18,6 +18,5 @@ function onActionBack(event) {
  * @properties={typeid:24,uuid:"10F36B49-6417-4D92-AFA2-8EF903405D80"}
  */
 function onActionEditCustomer(event, dataTarget) {
-	var item = new scopes.svyNavigation.NavigationItem("customerInfoEdit");
-	scopes.svyNavigation.open(item);
+	scopes.global.showForm(forms.customerInfoEdit);
 }

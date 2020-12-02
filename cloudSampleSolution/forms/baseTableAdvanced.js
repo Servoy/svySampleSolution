@@ -147,7 +147,6 @@ function tutorial(event) {
  */
 function duplicate() {
 	foundset.duplicateRecord();
-	gotoNew();
 }
 
 /**
@@ -156,48 +155,6 @@ function duplicate() {
  */
 function newRecord() {
 	foundset.newRecord();
-	gotoNew();
-}
-
-/**
- * Go to the edit screen for the selected record
- * 
- * @protected
- *
- * @properties={typeid:24,uuid:"0B0DCE39-793C-4171-9520-0C14BA8E023B"}
- */
-function gotoNew() {
-	application.output("to be implemented");
-}
-
-/**
- * Go to the detail view screen for the selected record
- *
- * @protected
- * 
- * @properties={typeid:24,uuid:"E1CB51F6-AE0B-4F7A-9513-92ADF234EEE9"}
- */
-function gotoDetail() {
-	application.output("to be implemented");
-}
-
-
-/**
- * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
- * the foundsetindex is always -1 when there are grouped rows
- * the record is not an actual JSRecord but an object having the dataprovider values of the clicked record
- *
- * @param {Number} foundsetindex
- * @param {Number} [columnindex]
- * @param {object} [record]
- * @param {JSEvent} [event]
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"FCD18DA8-42F4-41FC-B974-F482AC22A966"}
- */
-function onCellDoubleClick(foundsetindex, columnindex, record, event) {
-	gotoDetail();
 }
 
 /**
@@ -298,8 +255,7 @@ function getColumn(dataprovider) {
  * @properties={typeid:24,uuid:"185B6063-C444-4A51-A3C7-B42B18E648D5"}
  */
 function showForm(form){
-	var item = new scopes.svyNavigation.NavigationItem(form.controller.getName());
-	scopes.svyNavigation.open(item,foundset.getSelectedRecord(),scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD)
+	scopes.global.showForm(form, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
 }
 
 /**

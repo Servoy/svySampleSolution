@@ -45,7 +45,5 @@ function onCellClick(foundsetindex, columnindex, record, event) {
  * @properties={typeid:24,uuid:"76AA264F-0E7E-4ED7-A5BC-C85DD23A2099"}
  */
 function edit() {
-	var item = new scopes.svyNavigation.NavigationItem("orderEdit");
-	scopes.svyNavigation.open(item, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
-
+	scopes.global.showForm(forms.orderEdit, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 }
