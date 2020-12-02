@@ -18,8 +18,10 @@ titleText:"Category"
 },
 {
 allowNull:false,
+autoEnterType:3,
 creationOrderIndex:9,
 dataType:4,
+defaultValue:"0",
 name:"discontinued",
 titleText:"Discontinued"
 },
