@@ -16,6 +16,10 @@ customProperties:"methods:{\
 onCellClick:{\
 arguments:null,\
 parameters:null\
+},\
+onCellDoubleClick:{\
+arguments:null,\
+parameters:null\
 }\
 }",
 extendsID:"9BF6D2ED-B31B-4F1D-BF51-67A2F8F04D33",
@@ -86,7 +90,8 @@ svyUUID:"C77A8A70-AA8A-4205-BFB2-17C08E31F37A",
 width:40
 }
 ],
-onCellClick:"842D914F-B800-4AD1-8526-525E78776CEE"
+onCellClick:"842D914F-B800-4AD1-8526-525E78776CEE",
+onCellDoubleClick:"036B3F13-56A9-4379-A8BE-8BBF52436109"
 },
 typeid:47,
 uuid:"7C764868-0D04-47F7-950E-A0E8B8B7BB27"
