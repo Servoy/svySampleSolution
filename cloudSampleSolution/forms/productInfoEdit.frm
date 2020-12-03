@@ -134,8 +134,7 @@ right:"50%",
 top:"450",
 width:"200"
 },
-dataProviderID:"unitsonorder",
-styleClassExpression:"unitsonorder"
+dataProviderID:"unitsonorder"
 },
 name:"unitsonorder",
 typeName:"bootstrapcomponents-datalabel",
@@ -174,8 +173,7 @@ right:"50%",
 top:"395",
 width:"200"
 },
-dataProviderID:"unitsinstock",
-styleClassExpression:"unitsinstock"
+dataProviderID:"unitsinstock"
 },
 name:"unitsinstock",
 typeName:"bootstrapcomponents-datalabel",
@@ -294,8 +292,7 @@ right:"60",
 top:"230",
 width:"200"
 },
-dataProviderID:"products_to_categories.description",
-styleClassExpression:"products_to_categories.description"
+dataProviderID:"products_to_categories.description"
 },
 name:"description",
 typeName:"bootstrapcomponents-datalabel",
