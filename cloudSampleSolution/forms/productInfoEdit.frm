@@ -343,8 +343,7 @@ right:"60",
 top:"230",
 width:"200"
 },
-dataProviderID:"products_to_categories.description",
-styleClassExpression:"products_to_categories.description"
+dataProviderID:"products_to_categories.description"
 },
 name:"description",
 typeName:"bootstrapcomponents-datalabel",
