@@ -228,8 +228,6 @@ function onSearchLookup(records, values, lookup) {
 	// handle search lookup selection
 	if (records && records.length) {
 		
-		/** @type {scopes.svyNavigation.NavigationItem} */
-		var navItem;
 		var record = records[0];
 
 		switch (record.table_name) {
