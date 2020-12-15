@@ -12,7 +12,6 @@ typeid:4,
 uuid:"021EB8D0-4F39-4C64-AB44-85E79A2B9360"
 },
 {
-cssPosition:"34,328,-1,30,547,40",
 customProperties:"methods:{\
 onCrumbClicked:{\
 arguments:null,\
@@ -38,14 +37,6 @@ displayName:"%%companyname%%",
 svyUUID:"38D9D351-7A95-4A13-8B8C-30FBCA442DA8"
 }
 ],
-cssPosition:{
-bottom:"-1",
-height:"40",
-left:"30",
-right:"328",
-top:"34",
-width:"547"
-},
 onCrumbClicked:"027CD8C5-1758-4700-9622-3F48373E9C00"
 },
 typeid:47,
