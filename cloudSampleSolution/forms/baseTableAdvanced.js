@@ -214,14 +214,14 @@ function onShow(firstShow, event) {
 			var navFilters = customData.filters;
 			
 			// clear prev filters
-			toolbarFilter.clearGridFilters();
+			toolbarFilter.clearFilterUI();
 			
 			// set new filters
 			for (var i = 0; i < navFilters.length; i++) {
 				var filter = navFilters[i];
 				
-				var column = getColumn(filter.dataprovider)
-				toolbarFilter.setFilterValue(column, filter.values, filter.operator);
+				var filterItem = toolbarFilter.getFilter(filter.dataprovider);
+				toolbarFilter.setFilterValue(filterItem, filter.values, filter.operator);
 			}
 		}
 	}
