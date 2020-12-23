@@ -136,5 +136,6 @@ uuid:"FFE14731-A9FD-484C-8CFC-09259B1EB4D3"
 }
 ],
 name:"customersTableView",
+namedFoundSet:"separate_customerGrid",
 typeid:3,
 uuid:"4177BF2C-39C6-4B52-A924-D65656EF00CB"

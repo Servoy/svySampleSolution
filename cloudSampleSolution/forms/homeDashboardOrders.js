@@ -25,6 +25,6 @@ function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 		scopes.global.showForm(forms.customerView, foundset.orders_to_customers.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
 	} else {
 		// navigate to the orderEdit
-		scopes.global.showForm(forms.customerView, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
+		scopes.global.showForm(forms.orderEdit, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 	}
 }
