@@ -58,6 +58,7 @@ name:"lock_reason"
 },
 {
 allowNull:true,
+compatibleColumnTypes:"[[12,50,0]]",
 creationOrderIndex:9,
 dataType:-9,
 length:50,
