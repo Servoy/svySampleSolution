@@ -41,7 +41,8 @@ function back() {
  */
 function save() {
 	// return false when the record had validation problems
-	if (validate()) {
+	var markers = validate();
+	if (markers && markers.length) {
 		return false;
 	}
 	return databaseManager.saveData();
