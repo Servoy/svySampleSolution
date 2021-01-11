@@ -20,7 +20,7 @@ function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 	var column = elements.table.getColumn(columnindex)
 	if (column.id == "customer") {
 		// navigate to the clicked customer
-		scopes.global.showForm(forms.customerView, foundset.orders_to_customers.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 		
 	} else {
 		// navigate to the orderEdit
