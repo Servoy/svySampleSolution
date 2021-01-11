@@ -223,14 +223,14 @@ typeid:47,
 uuid:"659E037D-D128-4702-B315-B2678AAE9AF1"
 },
 {
-cssPosition:"502,-1,-1,181,200,42",
+cssPosition:"482,-1,-1,181,200,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"181",
 right:"-1",
-top:"502",
+top:"482",
 width:"200"
 },
 dataProviderID:"unitsavailable",
@@ -281,14 +281,14 @@ typeid:47,
 uuid:"8B73AA66-9729-41E6-B9FD-4BB043D907B8"
 },
 {
-cssPosition:"502,-1,-1,61,120,42",
+cssPosition:"482,-1,-1,61,120,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"61",
 right:"-1",
-top:"502",
+top:"482",
 width:"120"
 },
 imageStyleClass:"fas fa-warehouse",
