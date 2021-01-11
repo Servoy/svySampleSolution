@@ -35,7 +35,7 @@ function onCrumbClicked(event, crumb, index) {
 		showForm(forms.customersTableView);
 		break;
 	default:
-		scopes.global.showForm(forms.customerView, foundset.orders_to_customers.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 		break;
 	}
 }
