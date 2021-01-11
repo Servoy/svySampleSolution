@@ -234,12 +234,12 @@ function onSearchLookup(records, values, lookup) {
 		case "customers":
 			// navigate to customer
 			var customerRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.customers.getDataSource(), [record.pks]);
-			scopes.global.showForm(forms.customerView, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+			scopes.global.showForm(forms.customerView, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		case "orders":
 			// navigate to customer's order
 			var orderRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.orders.getDataSource(), [record.pks]);
-			scopes.global.showForm(forms.orderEdit, orderRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+			scopes.global.showForm(forms.orderEdit, orderRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		default:
 		}
