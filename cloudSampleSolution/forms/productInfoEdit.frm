@@ -128,8 +128,7 @@ width:"100"
 dataProviderID:"unitsonorder",
 imageStyleClass:"fas fa-cart-plus margin-right-10",
 onActionMethodID:"49BEDC63-246C-4B4E-91EA-15A404EA8247",
-styleClass:"default-align btn btn-outline-success",
-styleClassExpression:"unitsonorder"
+styleClass:"default-align btn btn-outline-success"
 },
 name:"unitsonorder",
 styleClass:"default-align btn btn-outline-success",
@@ -172,8 +171,7 @@ width:"100"
 dataProviderID:"unitsinstock",
 imageStyleClass:"fa fa-truck-loading  margin-right-10",
 onActionMethodID:"E1E9312E-CCBA-456F-A2FF-E0C8BD9CB3A3",
-styleClass:"default-align btn btn-outline-success",
-styleClassExpression:"unitsinstock"
+styleClass:"default-align btn btn-outline-success"
 },
 name:"unitsinstock",
 styleClass:"default-align btn btn-outline-success",
@@ -233,8 +231,7 @@ right:"-1",
 top:"482",
 width:"200"
 },
-dataProviderID:"unitsavailable",
-styleClassExpression:"unitsavailable"
+dataProviderID:"unitsavailable"
 },
 name:"unitsavailable",
 typeName:"bootstrapcomponents-datalabel",
