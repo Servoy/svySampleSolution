@@ -3,7 +3,7 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
-cssPosition:"42,193,-1,-1,25,25",
+cssPosition:"22,193,-1,-1,25,25",
 json:{
 alignment:"center",
 cssPosition:{
@@ -11,7 +11,7 @@ bottom:"-1",
 height:"25",
 left:"-1",
 right:"193",
-top:"42",
+top:"22",
 width:"25"
 },
 faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
@@ -33,7 +33,7 @@ typeid:19,
 uuid:"642700D2-400D-46A8-B5C7-E88E7D6B3E91"
 },
 {
-cssPosition:"44,260,-1,30,350,40",
+cssPosition:"24,260,-1,30,350,40",
 json:{
 autoRemoveWhenClicked:false,
 breadcrumbs:[
@@ -47,10 +47,9 @@ bottom:"-1",
 height:"40",
 left:"30",
 right:"260",
-top:"44",
+top:"24",
 width:"350"
 },
-onCrumbClicked:"06174DA0-7BA1-4EBF-833D-01833179B912",
 size:{
 height:40,
 width:600
@@ -65,14 +64,14 @@ typeid:47,
 uuid:"9002DFD5-92D4-4E02-A613-E24A0B0C42DE"
 },
 {
-cssPosition:"44,154,-1,-1,36,20",
+cssPosition:"24,154,-1,-1,36,20",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"20",
 left:"-1",
 right:"154",
-top:"44",
+top:"24",
 width:"36"
 },
 onActionMethodID:"2A3F64AB-11F1-4DDB-81E9-571640F47307",
@@ -86,14 +85,14 @@ typeid:47,
 uuid:"A762F33F-C32B-435A-B781-D2A665D59C0E"
 },
 {
-cssPosition:"90,30,30,30,0,0",
+cssPosition:"70,30,30,30,0,0",
 json:{
 cssPosition:{
 bottom:"30",
 height:"0",
 left:"30",
 right:"30",
-top:"90",
+top:"70",
 width:"0"
 },
 styleClass:"bg border-radius"
@@ -105,14 +104,14 @@ typeid:47,
 uuid:"AFD100FA-E956-4DE4-B2CC-094D990971E8"
 },
 {
-cssPosition:"30,30,-1,-1,115,49",
+cssPosition:"10,30,-1,-1,115,49",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"49",
 left:"-1",
 right:"30",
-top:"30",
+top:"10",
 width:"115"
 },
 onActionMethodID:"F27A0ED3-62BF-4FF6-8B52-B82B6D1416F0",

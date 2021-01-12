@@ -1,19 +1,30 @@
 /**
+ * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
+ * the foundsetindex is always -1 when there are grouped rows
+ *
+ * @param {number} foundsetindex
+ * @param {number} [columnindex]
+ * @param {JSRecord} [record]
+ * @param {JSEvent} [event]
+ *
  * @protected
- * @properties={typeid:24,uuid:"63C39F88-9247-446F-BFD4-061AEBDA44F7"}
- * @override
+ *
+ * @properties={typeid:24,uuid:"8ED7CCB1-5E0F-4D4A-A33A-96E8E7247BF2"}
  */
-function gotoDetail() {
-	var item = new scopes.svyNavigation.NavigationItem("customerView");
-	scopes.svyNavigation.open(item, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+function onCellDoubleClick(foundsetindex, columnindex, record, event) {
+	showForm(forms.customerView);
 }
 
 /**
- * @protected
- * @properties={typeid:24,uuid:"EA7B38FB-78F0-41B7-B4CB-A68D6D620004"}
+ * @protected 
+ * @properties={typeid:24,uuid:"6CC9EB83-061C-4990-A3F6-DF96E215BE9B"}
  * @override
  */
-function gotoNew() {
-	var item = new scopes.svyNavigation.NavigationItem("customerInfoAdd");
-	scopes.svyNavigation.open(item, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+function newRecord() {
+	
+	// call the super to create a new record
+	_super.newRecord();
+	
+	// show new record in editable form
+	showForm(forms.customerInfoAdd);
 }

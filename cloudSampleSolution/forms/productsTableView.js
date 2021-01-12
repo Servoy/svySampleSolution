@@ -9,11 +9,20 @@
  *
  * @protected
  *
- * @properties={typeid:24,uuid:"842D914F-B800-4AD1-8526-525E78776CEE"}
+ * @properties={typeid:24,uuid:"036B3F13-56A9-4379-A8BE-8BBF52436109"}
  */
-function onCellClick(foundsetindex, columnindex, record, event) {
-	var item = scopes.svyNavigation.createNavigationItem("productInfoEdit")
-	scopes.svyNavigation.open(item, foundset.getSelectedRecord(), scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+function onCellDoubleClick(foundsetindex, columnindex, record, event) {
+	showForm(forms.productInfoEdit);
+}
+
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"625A80DD-1658-41BB-B074-30C8692875A4"}
+ * @override
+ */
+function newRecord() {
+	_super.newRecord();
+	showForm(forms.productInfoEdit);
 }
 
 

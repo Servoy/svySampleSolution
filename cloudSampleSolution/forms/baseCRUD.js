@@ -41,7 +41,8 @@ function back() {
  */
 function save() {
 	// return false when the record had validation problems
-	if (validate()) {
+	var markers = validate();
+	if (markers && markers.length) {
 		return false;
 	}
 	return databaseManager.saveData();
@@ -103,18 +104,15 @@ function onOpen(event) {
 }
 
 /**
- * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
+ * @protected 
+ * @param {RuntimeForm} form
+ * 
+ * @return {Boolean}
  *
- * @param {JSEvent} event
- * @param {CustomType<bootstrapextracomponents-breadcrumbs.crumb>} crumb
- * @param {Number} index
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"06174DA0-7BA1-4EBF-833D-01833179B912"}
+ * @properties={typeid:24,uuid:"29DCE67A-CA6E-48E9-BD77-3E6BC21B0847"}
  */
-function onCrumbClicked(event, crumb, index) {
-
+function showForm(form) {
+	return scopes.global.showForm(form);
 }
 
 /**
@@ -141,20 +139,22 @@ function updateUI(){
  * @properties={typeid:24,uuid:"A95E28F2-F687-4DBB-B179-DB6EEAE1B586"}
  */
 function validate(element) {
-	// validate the record
 	var dataprovider = element ? element.getDataProviderID() : null;
-	// TODO handle validation for relation
-	var errors = databaseManager.validate(foundset.getSelectedRecord(), dataprovider);
-	var markers = errors ? errors.getMarkers(LOGGINGLEVEL.ERROR) : null;
-	var isValid = markers ? false : true;
+	// validate the edited records
+	var markers = scopes.svyValidationUtils.validateEditedRecords(null, LOGGINGLEVEL.ERROR, dataprovider);
+	if (dataprovider) {
+		// filter markers having element's dataprovider
+		markers = scopes.svyValidationUtils.getMarkersWithDataprovider(markers, dataprovider);
+	}
+	// invalid if any error marker
+	var isValid = markers.length ? false : true;
 	
-	if (element) {
-		
+	if (element) {		
 		if (isValid) {
 			// clear validation error, if any
 			clearValidationError(element);
 		} else {
-			// show validation error
+			// show validation error	
 			updateValidationError(markers[0], element);
 		}
 	} else {
@@ -263,7 +263,7 @@ function clearValidationError(element) {
  */
 function onElementDataChange(oldValue, newValue, event) {
 	var markers = validate(event.getSource());
-	if (markers) {
+	if (markers && markers.length) {
 		// show error message
 		plugins.webnotificationsToastr.error(markers[0].message);
 	}

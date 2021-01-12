@@ -32,11 +32,10 @@ function onRecordSelection(event) {
 function onCrumbClicked(event, crumb, index) {
 	switch (index) {
 	case 0:
-		var item = new scopes.svyNavigation.NavigationItem("customersTableView");
-		scopes.svyNavigation.open(item);
+		showForm(forms.customersTableView);
 		break;
 	default:
-		back();
+		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 		break;
 	}
 }

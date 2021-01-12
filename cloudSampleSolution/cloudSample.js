@@ -56,7 +56,7 @@ function onSolutionOpen(arg, queryParams) {
 	scopes.cloudSampleData.updateOrderDates();
 	
 	// init navigation first-item
-	scopes.svyNavigation.open(scopes.svyNavigation.createNavigationItem("homeDashboard"));
+	scopes.global.showForm(forms.homeDashboard);
 }
 
 /**

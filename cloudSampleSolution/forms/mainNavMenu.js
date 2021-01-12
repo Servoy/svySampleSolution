@@ -235,22 +235,18 @@ function onSearchLookup(records, values, lookup) {
 	// handle search lookup selection
 	if (records && records.length) {
 		
-		/** @type {scopes.svyNavigation.NavigationItem} */
-		var navItem;
 		var record = records[0];
 
 		switch (record.table_name) {
 		case "customers":
 			// navigate to customer
 			var customerRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.customers.getDataSource(), [record.pks]);
-			navItem = scopes.svyNavigation.createNavigationItem("customerView");
-			scopes.svyNavigation.open(navItem, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SELECT_RECORD);
+			scopes.global.showForm(forms.customerView, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		case "orders":
 			// navigate to customer's order
 			var orderRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.orders.getDataSource(), [record.pks]);
-			navItem = scopes.svyNavigation.createNavigationItem("orderEdit");
-			scopes.svyNavigation.open(navItem, orderRecord.foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
+			scopes.global.showForm(forms.orderEdit, orderRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		default:
 		}

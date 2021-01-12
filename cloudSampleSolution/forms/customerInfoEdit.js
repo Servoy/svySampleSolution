@@ -12,11 +12,10 @@
 function onCrumbClicked(event, crumb, index) {
 	switch (index) {
 	case 0:
-		var item = new scopes.svyNavigation.NavigationItem("customersTableView");
-		scopes.svyNavigation.open(item);
+		showForm(forms.customersTableView);
 		break;
 	default:
-		back();
+		showForm(forms.customerView);
 		break;
 	}
 }

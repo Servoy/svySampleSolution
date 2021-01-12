@@ -1,3 +1,4 @@
 dataSource:"db:/example_data/products",
+onValidateMethodID:"5B000D34-6C19-4845-A016-90D3AD92B16E",
 typeid:39,
 uuid:"B6D5E90A-342D-47F1-A76D-4FD6D5B65D95"
