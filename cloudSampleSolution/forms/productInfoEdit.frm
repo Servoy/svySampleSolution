@@ -1,4 +1,10 @@
 customProperties:"formComponent:false,\
+methods:{\
+onRecordSelectionMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+},\
 useCssPosition:true",
 dataSource:"db:/example_data/products",
 extendsID:"954F2DA3-D9B2-44F2-B5C2-6A1FDAB1507B",
@@ -24,7 +30,7 @@ uuid:"05766D36-C17D-4287-8BD2-DBF68BED9723"
 },
 {
 extendsID:"642700D2-400D-46A8-B5C7-E88E7D6B3E91",
-height:580,
+height:640,
 typeid:19,
 uuid:"12B8D45E-1FEE-4B2E-B333-E6A28F80E3B3"
 },
@@ -157,11 +163,11 @@ width:"100"
 dataProviderID:"unitsonorder",
 imageStyleClass:"fas fa-cart-plus margin-right-10",
 onActionMethodID:"49BEDC63-246C-4B4E-91EA-15A404EA8247",
-styleClass:"default-align btn btn-outline-success",
-styleClassExpression:"unitsonorder"
+styleClass:"default-align btn",
+styleClassExpression:"unitsavailableClass"
 },
 name:"unitsonorder",
-styleClass:"default-align btn btn-outline-success",
+styleClass:"default-align btn",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"39B2E131-B982-4D1C-8A19-82B71ABD0580"
@@ -201,11 +207,11 @@ width:"100"
 dataProviderID:"unitsinstock",
 imageStyleClass:"fa fa-truck-loading  margin-right-10",
 onActionMethodID:"E1E9312E-CCBA-456F-A2FF-E0C8BD9CB3A3",
-styleClass:"default-align btn btn-outline-success",
-styleClassExpression:"unitsinstock"
+styleClass:"default-align btn",
+styleClassExpression:"unitsinstockClass"
 },
 name:"unitsinstock",
-styleClass:"default-align btn btn-outline-success",
+styleClass:"default-align btn",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"5931C08D-458A-4213-A788-F608ABCDE01C"
@@ -371,6 +377,27 @@ typeid:47,
 uuid:"B035CCEB-A688-40FB-B6A7-60DF1D6AC07B"
 },
 {
+cssPosition:"535,-1,-1,60,120,42",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"42",
+left:"60",
+right:"-1",
+top:"535",
+width:"120"
+},
+labelFor:"discontinued",
+styleClassExpression:null,
+text:"Discontinued",
+toolTipText:"Discontinued"
+},
+name:"discontinued_label",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"E32FA894-23DF-4BFE-930E-42730E58891F"
+},
+{
 extendsID:"CF02B3D1-E0F3-431B-8A15-005A3EA5CE61",
 json:{
 
@@ -399,9 +426,31 @@ name:"unitsonorder_label",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"FB9C5EB3-A1A4-492C-BBC0-19E54FDFA3AC"
+},
+{
+cssPosition:"540,-1,-1,181,200,30",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"30",
+left:"181",
+right:"-1",
+top:"540",
+width:"200"
+},
+dataProviderID:"discontinued",
+onDataChangeMethodID:"9B97B522-FA74-4A67-9EBA-91B739456102",
+selectedValue:"-1",
+text:null
+},
+name:"discontinued",
+typeName:"bootstrapcomponents-checkbox",
+typeid:47,
+uuid:"FD98898A-3AAB-4BDC-8EA5-A89F38E42AAF"
 }
 ],
 name:"productInfoEdit",
+onRecordSelectionMethodID:"E06DE87F-B9FD-473C-96BE-79632DEB8F56",
 size:"640,541",
 typeid:3,
 uuid:"52A20278-29C7-45DF-B39D-B0A26B93B5FF"

@@ -58,3 +58,46 @@ function saveAndNew(event, dataTarget) {
 		foundset.newRecord();
 	}
 }
+
+/**
+ * @param oldValue
+ * @param newValue
+ * @param {JSEvent} event
+ *
+ * @return {boolean}
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"9B97B522-FA74-4A67-9EBA-91B739456102"}
+ */
+function onDataChangeDiscontinued(oldValue, newValue, event) {
+	updateUI();
+	return true
+}
+
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"A10F4B45-2766-4BCF-8CB1-380A407223A3"}
+ * @override
+ */
+function updateUI() {
+	
+	var isDiscontinued = foundset.discontinued ? true : false;
+	elements.unitsonorder.enabled = !isDiscontinued;
+	elements.unitsinstock.enabled = !isDiscontinued;
+	
+}
+
+
+/**
+ * Handle record selected.
+ *
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"E06DE87F-B9FD-473C-96BE-79632DEB8F56"}
+ */
+function onRecordSelection(event) {
+	updateUI();
+}
