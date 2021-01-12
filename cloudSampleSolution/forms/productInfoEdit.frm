@@ -115,15 +115,15 @@ typeid:47,
 uuid:"366BD724-650D-4BE8-B453-A48C3EEEE299"
 },
 {
-cssPosition:"430,50%,-1,180,200,42",
+cssPosition:"430,-1,-1,180,100,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"180",
-right:"50%",
+right:"-1",
 top:"430",
-width:"200"
+width:"100"
 },
 dataProviderID:"unitsonorder",
 imageStyleClass:"fas fa-cart-plus margin-right-10",
@@ -159,15 +159,15 @@ typeid:47,
 uuid:"4D46C93E-A601-4214-9DE8-50A0143B215D"
 },
 {
-cssPosition:"375,50%,-1,180,200,42",
+cssPosition:"375,-1,-1,180,100,42",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"42",
 left:"180",
-right:"50%",
+right:"-1",
 top:"375",
-width:"200"
+width:"100"
 },
 dataProviderID:"unitsinstock",
 imageStyleClass:"fa fa-truck-loading  margin-right-10",
