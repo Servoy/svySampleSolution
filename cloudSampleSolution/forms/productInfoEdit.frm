@@ -75,35 +75,6 @@ typeid:47,
 uuid:"224A354F-4902-459B-92AC-7D95F889ECD6"
 },
 {
-cssPosition:"10,30,-1,-1,20,49",
-formIndex:1,
-json:{
-cssPosition:{
-bottom:"-1",
-height:"49",
-left:"-1",
-right:"30",
-top:"10",
-width:"20"
-},
-formIndex:1,
-imageStyleClass:"fas fa-plus",
-onActionMethodID:"846F37DA-D6F5-41A0-83E1-5D0213C4238F",
-size:{
-height:30,
-width:80
-},
-styleClass:"default-align btn-success border-left",
-toolTipText:"Apply and New"
-},
-name:"saveAndNew_button",
-size:"80,30",
-styleClass:"default-align btn-success border-left",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"2DE3569A-C432-48D7-9306-7CF94ED2AE1E"
-},
-{
 cssPosition:"265,-1,-1,60,120,42",
 json:{
 cssPosition:{

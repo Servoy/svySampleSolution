@@ -46,20 +46,6 @@ function onActionReorder(event) {
 }
 
 /**
- * @param {JSEvent} event
- * @param {string} dataTarget
- *
- * @protected
- *
- * @properties={typeid:24,uuid:"846F37DA-D6F5-41A0-83E1-5D0213C4238F"}
- */
-function saveAndNew(event, dataTarget) {
-	if (save()) {
-		foundset.newRecord();
-	}
-}
-
-/**
  * @param oldValue
  * @param newValue
  * @param {JSEvent} event
