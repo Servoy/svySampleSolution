@@ -239,8 +239,7 @@ right:"-1",
 top:"482",
 width:"200"
 },
-dataProviderID:"unitsavailable",
-styleClassExpression:"unitsavailable"
+dataProviderID:"unitsavailable"
 },
 name:"unitsavailable",
 typeName:"bootstrapcomponents-datalabel",
