@@ -122,6 +122,5 @@ uuid:"DC3E71F9-420E-4C63-88FD-26C037041F33"
 }
 ],
 name:"ordersTableView",
-namedFoundSet:"separate_orderGrid",
 typeid:3,
 uuid:"E769C79E-4D81-4AE5-9B7A-0C3CFD518F53"
