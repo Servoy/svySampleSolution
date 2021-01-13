@@ -192,6 +192,7 @@ function onColumnStateChanged(columnState) {
  * @protected
  *
  * @properties={typeid:24,uuid:"C9EC8A6B-DABC-41C0-BA9E-E1C7C415EA33"}
+ * @AllowToRunInFind
  */
 function onShow(firstShow, event) {
 	
@@ -238,6 +239,9 @@ function onShow(firstShow, event) {
 		}
 	}
 
+	// re-apply last search
+	toolbarFilter.search();
+	
 }
 
 /**
