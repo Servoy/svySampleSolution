@@ -184,9 +184,6 @@ function onNavbarMenuItemClicked(event, menuItem) {
 		popup.show();
 
 		break;
-	case DEFAULT_NAVBAR_ACTIONS.LOGOUT:
-		scopes.svySecurity.logout();
-		break;
 	default:
 		break;
 	}
