@@ -13,12 +13,37 @@ titleText:"ID"
 },
 {
 allowNull:true,
+autoEnterSubType:8,
+autoEnterType:1,
+creationOrderIndex:1,
+dataType:93,
+name:"session_start",
+titleText:"Session Start"
+},
+{
+allowNull:true,
+creationOrderIndex:2,
+dataType:93,
+name:"session_end",
+titleText:"Session End"
+},
+{
+allowNull:true,
 compatibleColumnTypes:"[[-9,50,0]]",
 creationOrderIndex:3,
 dataType:12,
 length:50,
 name:"ip_address",
 titleText:"IP Address"
+},
+{
+allowNull:true,
+compatibleColumnTypes:"[[-9,256,0]]",
+creationOrderIndex:4,
+dataType:12,
+length:256,
+name:"user_agent_string",
+titleText:"User Agent"
 },
 {
 allowNull:true,
@@ -29,6 +54,24 @@ dataType:93,
 description:"@deprecated use is_active calculation",
 name:"last_client_ping",
 titleText:"Last Activity"
+},
+{
+allowNull:true,
+compatibleColumnTypes:"[[-9,50,0]]",
+creationOrderIndex:6,
+dataType:12,
+length:254,
+name:"user_name",
+titleText:"User Name"
+},
+{
+allowNull:true,
+compatibleColumnTypes:"[[-9,50,0]]",
+creationOrderIndex:7,
+dataType:12,
+length:50,
+name:"tenant_name",
+titleText:"Tenant Name"
 },
 {
 allowNull:true,
@@ -51,54 +94,11 @@ titleText:"Session Duration (ms)"
 },
 {
 allowNull:true,
-creationOrderIndex:2,
-dataType:93,
-name:"session_end",
-titleText:"Session End"
-},
-{
-allowNull:true,
-autoEnterSubType:8,
-autoEnterType:1,
-creationOrderIndex:1,
-dataType:93,
-name:"session_start",
-titleText:"Session Start"
-},
-{
-allowNull:true,
 compatibleColumnTypes:"[[-9,50,0]]",
 creationOrderIndex:10,
 dataType:12,
 length:50,
 name:"solution_name"
-},
-{
-allowNull:true,
-compatibleColumnTypes:"[[-9,50,0]]",
-creationOrderIndex:7,
-dataType:12,
-length:50,
-name:"tenant_name",
-titleText:"Tenant Name"
-},
-{
-allowNull:true,
-compatibleColumnTypes:"[[-9,256,0]]",
-creationOrderIndex:4,
-dataType:12,
-length:256,
-name:"user_agent_string",
-titleText:"User Agent"
-},
-{
-allowNull:true,
-compatibleColumnTypes:"[[-9,50,0]]",
-creationOrderIndex:6,
-dataType:12,
-length:50,
-name:"user_name",
-titleText:"User Name"
 }
 ],
 name:"sessions",
