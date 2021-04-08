@@ -16,7 +16,7 @@ compatibleColumnTypes:"[[-9,50,0]]",
 creationOrderIndex:0,
 dataType:12,
 flags:1,
-length:50,
+length:254,
 name:"user_name",
 titleText:"User Name"
 },
@@ -106,6 +106,16 @@ dataType:12,
 length:64,
 name:"user_password",
 titleText:"Password"
+},
+{
+allowNull:true,
+autoEnterSubType:3,
+autoEnterType:2,
+creationOrderIndex:13,
+dataType:12,
+flags:4,
+length:36,
+name:"user_uuid"
 }
 ],
 name:"users",

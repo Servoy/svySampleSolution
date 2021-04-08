@@ -60,7 +60,7 @@ function loadMenuItems() {
 	menuItem = new Object();
 	menuItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT;
 	menuItem.text = "SECURITY"
-	menuItem.iconStyleClass = "fa fa-shield";
+	menuItem.iconStyleClass = "fas fa-shield-alt";
 
 	menuSubItem = new Object();
 	menuSubItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT_ROLES;
@@ -183,9 +183,6 @@ function onNavbarMenuItemClicked(event, menuItem) {
 		popup.y(event.getY());
 		popup.show();
 
-		break;
-	case DEFAULT_NAVBAR_ACTIONS.LOGOUT:
-		scopes.svySecurity.logout();
 		break;
 	default:
 		break;

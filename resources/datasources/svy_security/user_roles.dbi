@@ -26,7 +26,7 @@ creationOrderIndex:3,
 dataType:12,
 flags:1,
 foreignType:"users",
-length:50,
+length:254,
 name:"user_name",
 titleText:"User Name"
 },
