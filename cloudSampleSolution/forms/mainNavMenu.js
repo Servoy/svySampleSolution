@@ -55,6 +55,13 @@ function loadMenuItems() {
 	menuItem.text = "ORDERS"
 	menuItem.iconStyleClass = "icon-box";
 	menuItems.push(menuItem);
+	
+	// DOCUMENT EDITOR
+	menuItem = new Object();
+	menuItem.id = "documentEditor";
+	menuItem.text = "DOCUMENT EDITOR"
+	menuItem.iconStyleClass = "far fa-file-alt";
+	menuItems.push(menuItem);
 
 	// SECURITY
 	menuItem = new Object();
