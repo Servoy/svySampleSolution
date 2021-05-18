@@ -1,9 +1,18 @@
 /**
  * @type {String}
+ * @protected 
  *
  * @properties={typeid:35,uuid:"1CF681C0-1374-4FB1-A0F4-67E32352044C"}
  */
 var docContent;
+
+/**
+ * @type {scopes.svyDocEditor_2.DocumentEditor}
+ * @protected 
+ *
+ * @properties={typeid:35,uuid:"FA547B05-6669-4D63-B313-7EDB4DC6D4B4",variableType:-4}
+ */
+var docEditor
 
 /**
  * Callback method when form is (re)loaded.
@@ -16,46 +25,37 @@ var docContent;
  */
 function onLoad(event) {
 	docContent = scopes.svyProperties.getUserPropertyValue("doc-orders", "smart-document-type");
-}
-
-/**
- * TODO generated, please specify type and doc for the params
- * @param firstShow
- * @param event
- *
- * @properties={typeid:24,uuid:"663DC6F0-936E-4326-B713-99FA0AC197DB"}
- * @override
- */
-function onShow(firstShow,event) {
-	_super.onShow(firstShow,event);
+	if (!docContent) docContent = scopes.cloudSample.getDefaultDocumentTemplate();
 	
-	if (firstShow) initEditor();
+	initEditor();
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"07F74E6A-AC7F-403F-B90A-CB37A8FB48DA"}
  */
 function initEditor(){
 	
-	// POPULATE THE TAG FIELDS LIST
-	var fields = {
-		DATASOURCE: datasources.db.example_data.orders.getDataSource(),
-		FIELDS: [
-			{DB_TITLE: 'orders', FIELD: 'orderid'},
-			{DB_TITLE: 'orders', FIELD: 'displayAddressHTML'},
-			{DB_TITLE: 'orders', FIELD: 'displayOrderDate'},
-			{DB_TITLE: 'orders', FIELD: 'displayShippedDate'},
-			{DB_TITLE: 'orders', FIELD: 'displayOrderTotal'},
-			{DB_TITLE: 'customers', FIELD: 'companyname', RELATION: 'orders_to_customers', ONE_TO_ONE: true },
-			{DB_TITLE: 'order_details', FIELD: 'quantity', RELATION: 'orders_to_order_details', ONE_TO_ONE: false },
-			{DB_TITLE: 'order_details', FIELD: 'unitprice', RELATION: 'orders_to_order_details', ONE_TO_ONE: false },
-			{DB_TITLE: 'order_details', FIELD: 'subtotal', RELATION: 'orders_to_order_details', ONE_TO_ONE: false },
-			{DB_TITLE: 'products', FIELD: 'productname', RELATION: 'orders_to_order_details.order_details_to_products', ONE_TO_ONE: false }
-		],
-		ATTRIBUTES: ['RELATION']
-	}
+	// TODO getInstance. or CreateDocEditor ?
+	docEditor = scopes.svyDocEditor_2.getInstance(elements.smartDoc);
 	
-	scopes.svyDocTagValuelists.generateFieldTags(fields);
+	// POPULATE THE TAG FIELDS LIST
+	var tagBuilder = docEditor.tagBuilder(datasources.db.example_data.orders.getDataSource());
+	tagBuilder.addField('orderid');
+	tagBuilder.addField('displayAddressHTML', 'Address');
+	tagBuilder.addField('displayOrderDate', 'Order Date');
+	tagBuilder.addField('displayShippedDate', 'Shipped Date');
+	tagBuilder.addField('displayOrderTotal', 'Total');
+	tagBuilder.addField('orders_to_customers.companyname', 'Customer.Company', false);
+	tagBuilder.addField('orders_to_order_details.quantity', 'OrderDetails.Quantity');
+	tagBuilder.addField('orders_to_order_details.unitprice', 'OrderDetails.Unit Price');
+	tagBuilder.addField('orders_to_order_details.subtotal', 'OrderDetails.Subtotal');
+	tagBuilder.addField('orders_to_order_details.order_details_to_products.productname', 'Product.Name', false);
+	
+	// BUILD THE TAG LIST
+	tagBuilder.build();
+	
+	application.setValueListItems("documentEditorTags", tagBuilder.getFields());
 	
 	var toolbarConfig = {
 		"toolbar" : {
@@ -93,19 +93,12 @@ function initEditor(){
         		{ "type": "|" }, 
         		{ "type": "undo" },
         		{ "type": "redo" },
-//        		{ "type": "|" },
-//				{ "type": "servoyToolbarItem", "valuelist": "svyDoc_fieldTags", "withText": "true", "label": "Insert Tag" },
 				{ "type": "|" }
     		]
 		}
 	}
-	elements.smartDoc.create(toolbarConfig)
 	
-//	var items = [
-//		{displayName:'Customer', dataprovider:'orders_to_customers.companyname'},
-//		{displayName:'Sales Rep', dataprovider:'orders_to_employees.lastname'}
-//	];
-//	elements.smartDoc.placeholders = items;
+//	elements.smartDoc.create(toolbarConfig)
 }
 
 /**
@@ -153,7 +146,8 @@ function onError(errorMessage, errorStack) {
  * @properties={typeid:24,uuid:"45F208E3-879D-48DA-87FF-B0255DAF169C"}
  */
 function onClickCustomToolbar(event, id, value) {
-	var display = application.getValueListDisplayValue('svyDoc_fieldTags',value);
+	// FIXME doesn't work yet
+	var display = application.getValueListDisplayValue('documentEditorTags', value);
 	elements.smartDoc.addInputAtCursor('#' + display);
 }
 
@@ -164,8 +158,6 @@ function onClickCustomToolbar(event, id, value) {
  */
 function onActionPreview() {
 	
-	
-	// TODO need to save the template !?
 	// preview document for an order record
 	var orders = datasources.db.example_data.orders.getFoundSet();
 	orders.loadAllRecords();

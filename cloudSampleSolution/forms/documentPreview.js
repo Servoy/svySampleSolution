@@ -6,7 +6,6 @@
  */
 var displayContent = '';
 
-
 /**
  * Show preview
  * 
@@ -21,10 +20,10 @@ function show(templateName, record){
 	
 	// LOAD TEMPLATE
 	var docContent = scopes.svyProperties.getUserPropertyValue(templateName, "smart-document-type");
-	if(!docContent) throw 'No template';
+	if (!docContent) docContent = scopes.cloudSample.getDefaultDocumentTemplate();
 	
 	// MERGE
-	displayContent = scopes.svyDocHtmlParse.processHTML(docContent, record);
+	displayContent = scopes.svyDocEditor_2.mergeTags(docContent, record);
 	
 	// SHOW IN WINDOW
 	var win = application.createWindow(controller.getName(), JSWindow.MODAL_DIALOG);
@@ -42,7 +41,7 @@ function show(templateName, record){
 function showContent(content, record){
 	
 	// MERGE
-	displayContent = scopes.svyDocHtmlParse.processHTML(content, record);
+	displayContent = scopes.svyDocEditor_2.mergeTags(content, record);
 	
 	// SHOW IN WINDOW
 	var win = application.createWindow(controller.getName(), JSWindow.MODAL_DIALOG);
@@ -84,9 +83,16 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"2CF915F6-5065-432E-B073-B2A9476109CA"}
  */
 function onActionGeneratePdf(event, dataTarget) {
-	var options = new scopes.svyDocEditor.exportObject();
-	options.html = displayContent;
-	// TODO set key
-	var bytes = scopes.svyDocEditor.generatePDF(options);
-	// TODO download bytes
+	var docExporter = scopes.svyDocEditor_2.getExporter();
+	
+	try {
+		var bytes = docExporter.exportToPDF();
+	} catch (e) {
+		plugins.dialogs.showWarningDialog("Export error", "API Key required for export");
+	}
+
+	var pdf = plugins.file.createFile('export.pdf');
+	plugins.file.writeFile(pdf,bytes);
+	plugins.file.openFile(pdf);
 }
+
