@@ -23,7 +23,7 @@ function show(templateName, record){
 	if (!docContent) docContent = scopes.cloudSample.getDefaultDocumentTemplate();
 	
 	// MERGE
-	displayContent = scopes.svyDocEditor_2.mergeTags(docContent, record);
+	displayContent = scopes.svyDocEditor.mergeTags(docContent, record);
 	
 	// SHOW IN WINDOW
 	var win = application.createWindow(controller.getName(), JSWindow.MODAL_DIALOG);
@@ -41,7 +41,7 @@ function show(templateName, record){
 function showContent(content, record){
 	
 	// MERGE
-	displayContent = scopes.svyDocEditor_2.mergeTags(content, record);
+	displayContent = scopes.svyDocEditor.mergeTags(content, record);
 	
 	// SHOW IN WINDOW
 	var win = application.createWindow(controller.getName(), JSWindow.MODAL_DIALOG);
@@ -83,7 +83,7 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"2CF915F6-5065-432E-B073-B2A9476109CA"}
  */
 function onActionGeneratePdf(event, dataTarget) {
-	var docExporter = scopes.svyDocEditor_2.getExporter();
+	var docExporter = scopes.svyDocEditor.getExporter();
 	
 	try {
 		var bytes = docExporter.exportToPDF();

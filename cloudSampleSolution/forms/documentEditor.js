@@ -7,7 +7,7 @@
 var docContent;
 
 /**
- * @type {scopes.svyDocEditor_2.DocumentEditor}
+ * @type {scopes.svyDocEditor.DocumentEditor}
  * @protected 
  *
  * @properties={typeid:35,uuid:"FA547B05-6669-4D63-B313-7EDB4DC6D4B4",variableType:-4}
@@ -37,7 +37,7 @@ function onLoad(event) {
 function initEditor(){
 	
 	// TODO getInstance. or CreateDocEditor ?
-	docEditor = scopes.svyDocEditor_2.getInstance(elements.smartDoc);
+	docEditor = scopes.svyDocEditor.getInstance(elements.smartDoc);
 	
 	// POPULATE THE TAG FIELDS LIST
 	var tagBuilder = docEditor.tagBuilder(datasources.db.example_data.orders.getDataSource());
@@ -55,50 +55,8 @@ function initEditor(){
 	// BUILD THE TAG LIST
 	tagBuilder.build();
 	
+	// populate the valuelist used in toolbar item
 	application.setValueListItems("documentEditorTags", tagBuilder.getFields());
-	
-	var toolbarConfig = {
-		"toolbar" : {
-			"items" : 						
-			 [
-			 	{ "type": "pageNavigation"},
-			 	{ "type": "previousPage"},
-				{ "type": "nextPage"},
-			 	{ "type": "|"},
-				{ "type": "heading" },
-			 	{ "type": "fontfamily" }, 
-			 	{ "type": "fontsize" }, 
-        		{ "type": "|" },
-        		{ "type": "bold" }, 
-        		{ "type": "italic" }, 
-        		{ "type": "underline" }, 
-        		{ "type": "strikethrough" },
-				{ "type": "superscript"},
-        		{ "type": "subscript" },
-        		{ "type": "|" },
-        		{ "type": "imageUpload" },
-        		{ "type": "link" },
-        		{ "type": "|" }, 
-        		{ "type": "FontColor" },
-        		{ "type": "FontBackgroundColor" },
-        		{ "type": "|" }, 
-        		{ "type": "numberedList" }, 
-        		{ "type": "bulletedList" }, 
-        		{ "type": "|" }, 
-        		{ "type": "alignment" },
-        		{ "type": "insertTable" },
-        		{ "type": "|" }, 
-        		{ "type": "HorizontalLine" },
-        		{ "type": "pageBreak" },
-        		{ "type": "|" }, 
-        		{ "type": "undo" },
-        		{ "type": "redo" },
-				{ "type": "|" }
-    		]
-		}
-	}
-	
-//	elements.smartDoc.create(toolbarConfig)
 }
 
 /**
