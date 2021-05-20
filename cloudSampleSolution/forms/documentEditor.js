@@ -36,7 +36,7 @@ function onLoad(event) {
  */
 function initEditor(){
 	
-	// TODO getInstance. or CreateDocEditor ?
+	// getInstance
 	docEditor = scopes.svyDocEditor.getInstance(elements.smartDoc);
 	
 	// POPULATE THE TAG FIELDS LIST
@@ -104,7 +104,6 @@ function onError(errorMessage, errorStack) {
  * @properties={typeid:24,uuid:"45F208E3-879D-48DA-87FF-B0255DAF169C"}
  */
 function onClickCustomToolbar(event, id, value) {
-	// FIXME doesn't work yet
 	var display = application.getValueListDisplayValue('documentEditorTags', value);
 	elements.smartDoc.addInputAtCursor('#' + display);
 }
