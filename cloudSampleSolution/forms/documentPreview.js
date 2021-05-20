@@ -83,30 +83,42 @@ function onShow(firstShow, event) {
  * @properties={typeid:24,uuid:"2CF915F6-5065-432E-B073-B2A9476109CA"}
  */
 function onActionGeneratePdf(event, dataTarget) {
-		
+
 	// GET THE EXPORTER AND SET THE CONTENT
 	var docExporter = scopes.svyDocEditor.getExporter();
 	docExporter.setContent(displayContent);
-	
+
 	try { // throws an exception if the API key isn't registered.
 		var bytes = docExporter.exportToPDF();
-		if (bytes) {
-			var pdf = plugins.file.createFile('export.pdf');
-			plugins.file.writeFile(pdf,bytes);
-			plugins.file.openFile(pdf);
-		} else {
-			plugins.dialogs.showErrorDialog("Print Failed","Sorry cannot print the document.")
+		if (bytes === null) {
+			plugins.dialogs.showErrorDialog("Print Failed", "Sorry cannot print the document.")
 		}
+
 	} catch (e) {
-		
-		
+
+		// ASK FOR THE API KEY
 		var key = plugins.dialogs.showInputDialog('API Key required for export', 'Please enter the API Key for document printing.<br/>\
 										You can generate the API Key in your <a href="https://admin.servoy-cloud.eu/" target="_blank">ServoyCloud</a> page, in the \'Add-Ons\' section');
-		
+
 		// REGISTER THE API KEY
 		if (key) {
 			scopes.svyDocEditor.registerAPIKey(key);
+
+			// TRY AGAIN DOCUMENT PRINT
+			bytes = docExporter.exportToPDF();
+			if (!bytes) {
+				// RESET KEY IF PRINT FAILS
+				plugins.dialogs.showErrorDialog("Print Failed", "Sorry cannot print the document. Check the API Key you provided.");
+				scopes.svyDocEditor.registerAPIKey(null);
+			}
 		}
+	}
+
+	if (bytes) {
+		// SAVE THE DOCUMENT AS A FILE
+		var pdf = plugins.file.createFile('export.pdf');
+		plugins.file.writeFile(pdf, bytes);
+		plugins.file.openFile(pdf);
 	}
 }
 
