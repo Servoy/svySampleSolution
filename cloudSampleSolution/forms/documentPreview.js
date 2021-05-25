@@ -86,7 +86,7 @@ function onActionGeneratePdf(event, dataTarget) {
 
 	// GET THE EXPORTER AND SET THE CONTENT
 	var docExporter = scopes.svyDocEditor.getExporter();
-	docExporter.setContent(displayContent);
+	docExporter.setContent(elements.editor.getHTMLData(true));
 
 	try { // throws an exception if the API key isn't registered.
 		var bytes = docExporter.exportToPDF();
