@@ -42,10 +42,11 @@ function initEditor(){
 	// POPULATE THE TAG FIELDS LIST
 	var tagBuilder = docEditor.tagBuilder(datasources.db.example_data.orders.getDataSource());
 	tagBuilder.addField('orderid');
-	tagBuilder.addField('displayAddressHTML', 'Address');
-	tagBuilder.addField('displayOrderDate', 'Order Date');
-	tagBuilder.addField('displayShippedDate', 'Shipped Date');
-	tagBuilder.addField('displayOrderTotal', 'Total');
+	tagBuilder.addField('orderdate', 'Order Date');
+	tagBuilder.addField('shippeddate', 'Shipped Date');
+	tagBuilder.addField('displayAddress', 'Address');
+	tagBuilder.addField('orderStatus', 'Status');
+	tagBuilder.addField('order_total', 'Total');
 	tagBuilder.addField('orders_to_customers.companyname', 'Customer.Company', false);
 	tagBuilder.addField('orders_to_order_details.quantity', 'OrderDetails.Quantity');
 	tagBuilder.addField('orders_to_order_details.unitprice', 'OrderDetails.Unit Price');
@@ -66,22 +67,6 @@ function initEditor(){
  */
 function save() {
 	scopes.svyProperties.setUserProperty("doc-orders","smart-document-type", docContent);
-}
-
-
-/**
- * @param oldValue
- * @param newValue
- * @param {JSEvent} event
- *
- * @return {boolean}
- *
- * @private
- *
- * @properties={typeid:24,uuid:"73F0DFEF-81B6-48E0-ADA0-784AF5BCDEDC"}
- */
-function onDataChangeDocs(oldValue, newValue, event) {
-	return true
 }
 
 /**
