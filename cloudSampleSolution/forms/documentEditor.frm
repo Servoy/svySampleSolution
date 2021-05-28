@@ -167,12 +167,22 @@ type:"insertTable"
 {
 ignoreReadOnly:true,
 label:"Insert Tag",
+name:"insertTag",
 onClick:"45F208E3-879D-48DA-87FF-B0255DAF169C",
 styleClass:"fas fa-user",
 svyUUID:"6D8A0618-250B-47B3-B978-FCA8E9EA2CA6",
 type:"servoyToolbarItem",
 valueList:"E5441089-AA52-41F2-AAEC-38ADDF0F610B",
 withText:true
+},
+{
+iconStyleClass:"fas fa-file-pdf",
+name:"preview",
+onClick:"D0DE8B3C-9FAC-4F7C-B8AD-CD30AF290B1F",
+svyUUID:"F15DAB46-8709-4BFB-AA73-0C7684F93A3A",
+tooltip:"Preview",
+type:"servoyToolbarItem",
+withTooltip:true
 }
 ]
 },
@@ -180,33 +190,6 @@ name:"smartDoc",
 typeName:"smartdocumenteditor-smartdocumenteditor",
 typeid:47,
 uuid:"2EE0F277-0B49-42C4-82A4-0F55E93BFBE2"
-},
-{
-cssPosition:"73,35,-1,-1,20,25",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"25",
-left:"-1",
-right:"35",
-top:"73",
-width:"20"
-},
-imageStyleClass:"fas fa-print",
-onActionMethodID:"D0DE8B3C-9FAC-4F7C-B8AD-CD30AF290B1F",
-size:{
-height:30,
-width:80
-},
-styleClass:"default-align clickable",
-toolTipText:"Print"
-},
-name:"labelPrint",
-size:"80,30",
-styleClass:"default-align clickable",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"62FC237F-2BFF-418D-B526-6AEFCC786E44"
 }
 ],
 name:"documentEditor",
