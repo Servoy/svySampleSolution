@@ -53,15 +53,12 @@ formIndex:0,
 showToolbar:false,
 toolbarItems:[
 {
-svyUUID:"77471BCC-1AD1-40F6-B36D-D30A5694958A"
-},
-{
 svyUUID:"4ABB9025-5D90-4E63-A2EB-B1C24DE9122E",
 type:"heading"
 },
 {
 svyUUID:"DD81F237-B42D-45F7-830E-0633AA523D16",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"E7CE234C-5E8A-4ADB-8218-C21AB7ABD9B4",
@@ -77,7 +74,7 @@ type:"fontColor"
 },
 {
 svyUUID:"DA6E1647-8643-4333-97F6-7D03EE0647D2",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"C0AAC9CF-DF67-4A04-ACC5-F3BCEC765845",
@@ -97,7 +94,7 @@ type:"strikethrough"
 },
 {
 svyUUID:"12DB95BF-DFD6-45A6-85AA-973447C2978C",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"4397956F-B42D-460C-9A6F-AE2C87CE0DA9",
@@ -105,7 +102,7 @@ type:"alignment"
 },
 {
 svyUUID:"8F1F85B5-AEC6-4D69-BEFC-D7063433315B",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"5F6661E0-7497-43BE-A161-EBBC271C5D27",
@@ -117,7 +114,7 @@ type:"bulletedList"
 },
 {
 svyUUID:"285BD439-3908-4D14-85CF-1D56FBA6C19B",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"0FE306B8-6E33-400E-BC71-DB0E762E97F4",
@@ -129,7 +126,7 @@ type:"outdent"
 },
 {
 svyUUID:"89535564-3B94-474A-98C3-E49C2D2A156C",
-type:"|"
+type:"separator"
 },
 {
 svyUUID:"CCEEDC5C-F26D-44F6-8CC3-5389704C7C34",
