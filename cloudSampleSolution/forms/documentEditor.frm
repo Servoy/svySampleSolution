@@ -61,7 +61,6 @@ width:"0"
 },
 dataProviderID:"docContent",
 onError:"7D204985-8E0B-4893-A470-D32456976061",
-showInspector:true,
 toolbarItems:[
 {
 svyUUID:"B7522F85-F1FA-4789-A2B6-6F3D06B6378E",
