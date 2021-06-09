@@ -526,7 +526,7 @@ styleClass:"box"
 },
 name:"tabOrders",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"F7482844-FA17-4418-BA21-45BC1A4C59C1"
 },

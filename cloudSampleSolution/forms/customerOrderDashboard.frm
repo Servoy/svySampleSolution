@@ -24,7 +24,7 @@ width:"239"
 relationName:"customers_to_customers"
 },
 name:"tab1",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"6A98ABBC-7AB5-41FE-8C1B-3AA27492C288"
 },
@@ -43,7 +43,7 @@ width:"239"
 relationName:"customers_to_customers"
 },
 name:"tab2",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"6B880446-7658-4B51-8B37-57EB12D97761"
 },
@@ -62,7 +62,7 @@ width:"-1"
 relationName:"customers_to_customers"
 },
 name:"tab1c",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"7F136531-313D-4927-B933-B1ED7E5EEAD8"
 },
