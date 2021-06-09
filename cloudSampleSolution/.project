@@ -13,7 +13,8 @@
 		<project>svySecurityUX</project>
 		<project>svyThemeRoller</project>
 		<project>aggrid</project>
-		<project>ckeditor</project>
+		<project>postImportHook</project>
+		<project>svyUtils$documentEditor</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
