@@ -15,6 +15,13 @@ uuid:"DF3AC9FD-270A-4D3B-B0E9-D66425BB3F54"
 },
 {
 encapsulation:0,
+mimeType:"text/css",
+name:"cloudSampleSolution_ng2.less",
+typeid:37,
+uuid:"E189CD9C-7268-4D6E-8DBC-FABE21690B24"
+},
+{
+encapsulation:0,
 name:"cloudSampleTemplate.less",
 typeid:37,
 uuid:"28A04C52-44F6-485A-B578-E645EF91968A"
@@ -31,6 +38,13 @@ mimeType:"text/css",
 name:"custom_servoy_theme_properties.less",
 typeid:37,
 uuid:"7B8E7211-F8AF-4528-99D0-9AB45D37C183"
+},
+{
+encapsulation:0,
+mimeType:"text/css",
+name:"custom_servoy_theme_properties_ng2.less",
+typeid:37,
+uuid:"5D19EDAE-15B2-4F3B-8129-2894C2542BF0"
 },
 {
 encapsulation:0,

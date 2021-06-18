@@ -7,4 +7,5 @@
 	<buildpathentry exported="true" kind="prj" path="/svyNavigationUX"/>
 	<buildpathentry exported="true" kind="prj" path="/svyPopupFilter"/>
 	<buildpathentry exported="true" kind="prj" path="/svySecurityUX"/>
+	<buildpathentry exported="true" kind="prj" path="/svyUtils$documentEditor"/>
 </buildpath>
