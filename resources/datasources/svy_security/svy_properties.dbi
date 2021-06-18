@@ -55,7 +55,7 @@ allowNull:true,
 compatibleColumnTypes:"[[-9,50,0]]",
 creationOrderIndex:5,
 dataType:12,
-length:50,
+length:254,
 name:"user_name"
 }
 ],

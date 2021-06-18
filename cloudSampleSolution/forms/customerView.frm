@@ -19,7 +19,7 @@ styleClass:"box"
 },
 name:"tabInfo",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"2EB9251B-EAB4-47CA-A45E-B0ED1B6A2311"
 },
@@ -38,7 +38,7 @@ width:"-1"
 relationName:"customers_to_customers"
 },
 name:"tab",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"43C3E13A-3C46-4F36-BADE-F47ED3228CE4"
 },
@@ -65,7 +65,7 @@ styleClass:"box"
 },
 name:"tabOrders",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"F2456175-2AC6-487B-9DAB-F294D3B0A7EA"
 }
