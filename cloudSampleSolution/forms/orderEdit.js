@@ -76,3 +76,16 @@ function onRequiredShippedDatesPicked(values, operator, dataPicker) {
 	foundset.shippeddate = values[0];
 	foundset.requireddate = values[1];
 }
+
+
+/**
+ * @param {JSEvent} event
+ * @param {string} dataTarget
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"B21596CC-59C5-4BFE-ABB0-FAC832E914CA"}
+ */
+function onActionPrint(event, dataTarget) {
+	forms.documentPreview.show("doc-orders", foundset.getSelectedRecord());
+}
