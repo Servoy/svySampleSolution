@@ -32,7 +32,7 @@ width:"-1"
 formIndex:1
 },
 name:"tablesspanel",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"F1EFD28B-2D44-4A85-8380-67C3C3D7A23C"
 }

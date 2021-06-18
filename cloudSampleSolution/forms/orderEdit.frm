@@ -98,6 +98,33 @@ typeid:4,
 uuid:"33BF2F18-66BE-4529-972F-0C06D7337651"
 },
 {
+cssPosition:"80,40,-1,-1,20,25",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"25",
+left:"-1",
+right:"40",
+top:"80",
+width:"20"
+},
+imageStyleClass:"fas fa-print",
+onActionMethodID:"B21596CC-59C5-4BFE-ABB0-FAC832E914CA",
+size:{
+height:30,
+width:80
+},
+styleClass:"default-align clickable",
+toolTipText:"Print"
+},
+name:"labelPrint",
+size:"80,30",
+styleClass:"default-align clickable",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"36E8E190-84FA-47C1-B88A-0B7A4B229326"
+},
+{
 cssPosition:"148,-1,-1,60,25,20",
 formIndex:16,
 json:{
@@ -499,7 +526,7 @@ styleClass:"box"
 },
 name:"tabOrders",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"F7482844-FA17-4418-BA21-45BC1A4C59C1"
 },

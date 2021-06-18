@@ -224,9 +224,9 @@ right:"30",
 top:"-1",
 width:"25"
 },
-faclass:"fa fa-long-arrow-right text-tertiary fa-lg clickable",
+faclass:"fas fa-long-arrow-alt-right text-tertiary fa-lg clickable",
 formIndex:1,
-imageStyleClass:"fa fa-long-arrow-right fa-lg",
+imageStyleClass:"fas fa-long-arrow-alt-right fa-lg",
 onActionMethodID:"10F36B49-6417-4D92-AFA2-8EF903405D80",
 size:{
 height:25,
