@@ -59,7 +59,7 @@ y:1
 },
 location:"1,1",
 name:"tablesspanel",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"AC0424AB-ADC7-4483-AC62-76F3E5E2C51F"
 }
@@ -101,7 +101,7 @@ y:1
 },
 location:"1,1",
 name:"tablesspanel_1",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"0E31C67D-43E0-4EDE-A01A-A642E041B03E"
 }
@@ -141,7 +141,7 @@ styleClass:"box"
 location:"1,1",
 name:"tbOrders",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"197D4F3C-D81F-4CAE-9FEA-CB6491F62307"
 }
@@ -185,7 +185,7 @@ styleClass:"box"
 location:"1,1",
 name:"tbRevenue",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"389099A6-1807-47B2-A7E9-AD1B5E8A9C75"
 }
@@ -215,7 +215,7 @@ styleClass:"box"
 location:"1,1",
 name:"tbGrowth",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"0344D1A2-5368-43D3-9458-E0757FD313EE"
 }
@@ -245,7 +245,7 @@ styleClass:"box"
 location:"1,1",
 name:"tbProfit",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"E8D47955-1B86-4548-BEC8-4DDE62C771E1"
 }
