@@ -297,3 +297,10 @@ function onSearchLookup(records, values, lookup) {
 		}
 	}
 }
+
+/**
+ * @properties={typeid:24,uuid:"97C7DCBE-0A6C-4D59-9F88-F729BA74B531"}
+ */
+function toggleMenu(){
+	elements.sidenav.open = !elements.sidenav.open;
+}
