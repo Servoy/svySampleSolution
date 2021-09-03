@@ -10,7 +10,7 @@ function loadMenuItems() {
 	var menuItem;
 	var menuSubItems = [];
 	var menuSubItem;
-	
+
 	// User
 	menuItem = new Object();
 	menuItem.id = "User";
@@ -19,7 +19,7 @@ function loadMenuItems() {
 	menuItem.styleClass = "text-primary";
 	menuItem.enabled = false;
 	menuItems.push(menuItem);
-	
+
 	// DIVIDER
 	menuItem = new Object();
 	menuItem.isDivider = true;
@@ -34,7 +34,7 @@ function loadMenuItems() {
 
 	// CUSTOMERS
 	menuItem = new Object();
-	menuItem.id = "customersTableView";
+	menuItem.id = "customersViewMobile";
 	menuItem.text = "CUSTOMERS";
 	menuItem.iconStyleClass = "icon-contacts";
 	menuItems.push(menuItem);
@@ -45,7 +45,7 @@ function loadMenuItems() {
 	menuItem.text = "ORDERS";
 	menuItem.iconStyleClass = "icon-box";
 	menuItems.push(menuItem);
-	
+
 	// DOCUMENT EDITOR
 	menuItem = new Object();
 	menuItem.id = "documentEditor";
@@ -73,12 +73,12 @@ function loadMenuItems() {
 
 	menuItem.menuItems = menuSubItems;
 	menuItems.push(menuItem);
-	
+
 	// DIVIDER
 	menuItem = new Object();
 	menuItem.isDivider = true;
 	menuItems.push(menuItem);
-	
+
 	// TUTORIAL
 	menuItem = new Object();
 	menuItem.id = "TUTORIAL";
@@ -86,7 +86,7 @@ function loadMenuItems() {
 	menuItem.styleClass = "font-weight-bold";
 	menuItem.iconStyleClass = "fas fa-graduation-cap";
 	menuItems.push(menuItem);
-	
+
 	// DOWNLOAD IDE
 	menuItem = new Object();
 	menuItem.id = "DOWNLOADIDE";
@@ -94,12 +94,12 @@ function loadMenuItems() {
 	menuItem.styleClass = "font-weight-bold";
 	menuItem.iconStyleClass = "icon-cloud-download";
 	menuItems.push(menuItem);
-	
+
 	// DIVIDER
 	menuItem = new Object();
 	menuItem.isDivider = true;
 	menuItems.push(menuItem);
-	
+
 	// PRIMARY COLORS
 	menuItem = new Object();
 	menuItem.id = "PRIMARYCOLORS";
@@ -109,13 +109,13 @@ function loadMenuItems() {
 
 	// LOGOUT
 	menuItems.push(_super.loadMenuItems()[0]);
-	
-    // return the menu items
+
+	// return the menu items
 	return menuItems;
 }
 
 /**
- * @protected 
+ * @protected
  * @param menuItemId
  * @param event
  * @return {Boolean}
@@ -123,23 +123,19 @@ function loadMenuItems() {
  * @properties={typeid:24,uuid:"F13A7870-4303-4BF4-9B72-EB6460907D59"}
  * @override
  */
-function onMenuItemSelected(menuItemId,event) {
-	
+function onMenuItemSelected(menuItemId, event) {
+
 	if (menuItemId === "TUTORIAL") {
 		scopes.tutorial.showTutorial()
-	}
-	
-	else if(menuItemId === "DOWNLOADIDE"){
+	} else if (menuItemId === "DOWNLOADIDE") {
 		application.showURL("https://www.servoy.com/download/", "_blank");
-	}
-	
-	else if(menuItemId === "PRIMARYCOLORS"){
+	} else if (menuItemId === "PRIMARYCOLORS") {
 		var popup = plugins.window.createFormPopup(forms.colorPicker);
 		popup.x(2.5);
 		popup.y(102.5);
 		popup.show();
 		return false;
 	}
-	
+
 	return true;
 }
