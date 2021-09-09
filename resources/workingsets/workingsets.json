@@ -13,7 +13,9 @@
 "/cloudSampleSolution/forms/customerInfoEdit.frm",
 "/cloudSampleSolution/forms/customerOrderDashboard.frm",
 "/cloudSampleSolution/forms/customerView.frm",
-"/cloudSampleSolution/forms/customersTableView.frm"
+"/cloudSampleSolution/forms/customersListViewMobile.frm",
+"/cloudSampleSolution/forms/customersTableView.frm",
+"/cloudSampleSolution/forms/customersViewMobile.frm"
 ]
 },
 {
