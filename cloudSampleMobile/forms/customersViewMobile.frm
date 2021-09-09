@@ -56,10 +56,12 @@ secondValue:{
 dataProviderID:"address"
 },
 seeMore:{
-
+onActionMethodID:"C17EAB43-D42F-4AB4-B433-D4BF56D937D7"
 },
 svy_form:"886F145B-5628-446D-8715-D70131CC0CD0"
-}
+},
+readOnly:true,
+responsivePageSize:99999
 },
 typeid:47,
 uuid:"BB01EC37-27D9-4178-965C-CA89161346C5"

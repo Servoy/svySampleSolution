@@ -12,10 +12,10 @@ var searchText = null;
  * @properties={typeid:24,uuid:"785B115C-F8EC-47B9-AC92-AAC722B9FE95"}
  */
 function search(text,column){
-	var search = scopes.svySearch.createSimpleSearch(foundset);
-	search.addSearchProvider(column)
-	search.setSearchText(text);
-	search.loadRecords(foundset);
+	var simpleSearch = scopes.svySearch.createSimpleSearch(foundset);
+	simpleSearch.addSearchProvider(column)
+	simpleSearch.setSearchText(text);
+	simpleSearch.loadRecords(foundset);
 }
 
 /**
