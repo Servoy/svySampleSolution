@@ -34,7 +34,7 @@ function loadMenuItems() {
 
 	// CUSTOMERS
 	menuItem = new Object();
-	menuItem.id = "customersViewMobile";
+	menuItem.id = "customersViewMobileDataGrid";
 	menuItem.text = "CUSTOMERS";
 	menuItem.iconStyleClass = "icon-contacts";
 	menuItems.push(menuItem);
