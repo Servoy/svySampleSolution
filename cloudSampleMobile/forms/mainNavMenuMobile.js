@@ -2,7 +2,7 @@
  * @return {Array<CustomType<servoyextra-sidenav.MenuItem>>}
  * @protected
  * @override
- * @properties={typeid:24,uuid:"4572AD06-0653-4F4D-9EFC-C80B45C6F0BF"}
+ * @properties={typeid:24,uuid:"F8A19012-5907-4828-94A7-365D70971DA9"}
  */
 function loadMenuItems() {
 	var menuItems = [];
@@ -120,7 +120,7 @@ function loadMenuItems() {
  * @param event
  * @return {Boolean}
  *
- * @properties={typeid:24,uuid:"F13A7870-4303-4BF4-9B72-EB6460907D59"}
+ * @properties={typeid:24,uuid:"E1AB7615-CB14-4E5E-ADC0-60F282A0F27F"}
  * @override
  */
 function onMenuItemSelected(menuItemId, event) {

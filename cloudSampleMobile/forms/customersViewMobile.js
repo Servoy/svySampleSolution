@@ -3,15 +3,14 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"B43EAC85-E43D-4C67-B0E1-8695FC18A855"}
+ * @properties={typeid:24,uuid:"41DDD72D-B382-4FAB-834F-E848CBE74814"}
  */
 function onActionSearch(event) {
 	search(searchText,'companyname')
 }
 
-
 /**
- * @properties={typeid:24,uuid:"2B8087EE-5DE0-41A4-B196-A023D76B5CEE"}
+ * @properties={typeid:24,uuid:"C2C1A57D-67E2-495C-BE2F-A91B0AC50045"}
  * @override
  */
 function newRecord() {

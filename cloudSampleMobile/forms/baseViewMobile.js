@@ -1,7 +1,7 @@
 /**
  * @type {String}
  *
- * @properties={typeid:35,uuid:"26D97AF1-A220-459D-9F13-0316EDA13B06"}
+ * @properties={typeid:35,uuid:"8E791442-4E0E-471C-8078-E9D16A26E2B5"}
  */
 var searchText = null;
 
@@ -9,7 +9,7 @@ var searchText = null;
  * TODO generated, please specify type and doc for the params
  * @param text
  * @param column
- * @properties={typeid:24,uuid:"BDA39187-D0BE-4F3F-B96B-32592BD3395C"}
+ * @properties={typeid:24,uuid:"82FB8684-9A4D-4C99-B3F5-817F9E831C6C"}
  */
 function search(text,column){
 	var search = scopes.svySearch.createSimpleSearch(foundset);
@@ -19,7 +19,7 @@ function search(text,column){
 }
 
 /**
- * @properties={typeid:24,uuid:"FC5AD931-1626-4AC4-8E5E-50DE47C5A799"}
+ * @properties={typeid:24,uuid:"629301E7-48DA-4760-AEDF-9E3755E7CBE0"}
  */
 function newRecord() {
 	foundset.newRecord();
@@ -29,7 +29,7 @@ function newRecord() {
  * TODO generated, please specify type and doc for the params
  * @param form
  *
- * @properties={typeid:24,uuid:"8B36C0A4-ACB6-4520-BDE5-47969B434C5B"}
+ * @properties={typeid:24,uuid:"C028FCDC-8A4B-4EA1-B290-02C133C7B1E7"}
  */
 function showForm(form){
 	scopes.global.showForm(form, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
