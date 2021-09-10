@@ -43,5 +43,12 @@
 "/cloudSampleSolution/forms/orderdetailsTable.frm",
 "/cloudSampleSolution/forms/ordersTableView.frm"
 ]
+},
+{
+"name":"Orders",
+"paths":[
+"/cloudSampleMobile/.project",
+"/cloudSampleMobile/forms/ordersViewMobileDataGrid.frm"
+]
 }
 ]

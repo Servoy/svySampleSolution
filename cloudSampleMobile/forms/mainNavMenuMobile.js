@@ -42,7 +42,7 @@ function loadMenuItems() {
 
 	// ORDERS
 	menuItem = new Object();
-	menuItem.id = "ordersTableView";
+	menuItem.id = "ordersViewMobileDataGrid";
 	menuItem.text = "ORDERS";
 	menuItem.iconStyleClass = "icon-box";
 	menuItems.push(menuItem);
