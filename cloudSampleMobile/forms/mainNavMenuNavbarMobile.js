@@ -1,6 +1,6 @@
 /**
  * @private
- * @properties={typeid:35,uuid:"CDB8F194-BC37-41D9-9692-8435E476E5EE",variableType:-4}
+ * @properties={typeid:35,uuid:"2C240038-1E7E-4165-B2AA-172ED915A7C9",variableType:-4}
  */
 var NAVBAR_ACTIONS = {
 	DOWNLOAD_IDE: "download-ide",
@@ -13,13 +13,13 @@ var NAVBAR_ACTIONS = {
 	SECURITY: "svyTENANT",
 	SECURITY_ROLES: "svyROLES",
 	SECURITY_USERS: "svyUSERS"
-}
+};
 
 /**
  * @protected
  * @param event
  *
- * @properties={typeid:24,uuid:"B7DFE495-A4FA-4C09-AF64-49A916F4E5C5"}
+ * @properties={typeid:24,uuid:"7B16644E-1E7D-4A09-AD03-F683C1011FF1"}
  * @override
  */
 function onLoad(event) {
@@ -29,15 +29,13 @@ function onLoad(event) {
 	scopes.svyNavigationUX.addGlobalSearchListener(onSearch);
 }
 
-
-
 /**
  * @protected
  * @param menuItemId
  * @param event
  * @return {Boolean}
  *
- * @properties={typeid:24,uuid:"03CA2046-F192-47A3-8E2A-25BE9F275DBD"}
+ * @properties={typeid:24,uuid:"B79F7A55-18E3-4375-8D69-262DFCDFD981"}
  * @override
  */
 function onMenuItemSelected(menuItemId, event) {
@@ -53,7 +51,7 @@ function onMenuItemSelected(menuItemId, event) {
 /**
  * @return {Array<CustomType<bootstrapextracomponents-navbar.menuItem>>}
  * @protected
- * @properties={typeid:24,uuid:"34561015-D2E7-42CA-A52A-A3B10DFF342D"}
+ * @properties={typeid:24,uuid:"9CDFAE8D-2102-45D6-BB7E-A28E1566634C"}
  * @override
  */
 function loadNavbarItems() {
@@ -151,7 +149,7 @@ function loadNavbarItems() {
  * @param {JSEvent} event
  * @param menuItem
  *
- * @properties={typeid:24,uuid:"66EEFB31-08D3-4973-92C4-7FF8D31277E7"}
+ * @properties={typeid:24,uuid:"0A06EBDB-05B3-4DC5-83D7-26684F6E6F9D"}
  * @override
  */
 function onNavbarMenuItemClicked(event, menuItem) {
@@ -205,7 +203,7 @@ function onNavbarMenuItemClicked(event, menuItem) {
  * @protected
  * @param {String} txt
  *
- * @properties={typeid:24,uuid:"917AF150-B3EB-49A7-BDAF-16ECA5139CCA"}
+ * @properties={typeid:24,uuid:"4A5B9394-B9D3-4076-87C8-3A956E2A4761"}
  * @AllowToRunInFind
  */
 function onSearch(txt) {
@@ -229,7 +227,7 @@ function onSearch(txt) {
  * @param values
  * @param lookup
  *
- * @properties={typeid:24,uuid:"7037996E-C523-4CCB-BEFD-0661F30654C4"}
+ * @properties={typeid:24,uuid:"E42AD00E-2BF1-40F6-8DC1-A6A234F53C18"}
  */
 function onSearchLookup(records, values, lookup) {
 

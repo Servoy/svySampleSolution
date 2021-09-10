@@ -4,6 +4,11 @@
 "paths":[
 "/cloudSampleMobile/forms/customerInfoAddMobile.frm",
 "/cloudSampleMobile/forms/customerInfoEditMobile.frm",
+"/cloudSampleMobile/forms/chartCustomerTopProductsMobile.frm",
+"/cloudSampleMobile/forms/customerDashboardOrdersMobile.frm",
+"/cloudSampleMobile/forms/customerInfoMobile.frm",
+"/cloudSampleMobile/forms/customerOrderDashboardMobile.frm",
+"/cloudSampleMobile/forms/customerViewMobile.frm",
 "/cloudSampleMobile/forms/customersViewMobile.frm",
 "/cloudSampleMobile/forms/customersViewMobileDataGrid.frm",
 "/cloudSampleSolution/.project",
