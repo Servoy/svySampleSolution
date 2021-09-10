@@ -15,7 +15,7 @@ function onActionSearch(event) {
  */
 function newRecord() {
 	_super.newRecord();
-	showForm(forms.customerInfoAddMobile);
+	showForm(forms.customerInfoEditMobile);
 }
 
 /**
