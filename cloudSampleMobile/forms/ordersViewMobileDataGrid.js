@@ -3,20 +3,12 @@
  *
  * @private
  *
- * @properties={typeid:24,uuid:"8EFB537A-7765-424E-B053-5AD0877BFA71"}
+ * @properties={typeid:24,uuid:"F88F013D-AFC3-41E6-9F22-F4E3132C0B8D"}
  */
 function onActionSearch(event) {
-	search(searchText,'companyname');
+	search(searchText,'orderid');
 }
 
-/**
- * @properties={typeid:24,uuid:"DC89E380-3668-4155-A275-8AC17802F1E1"}
- * @override
- */
-function newRecord() {
-	_super.newRecord();
-	showForm(forms.customerInfoAddMobile);
-}
 
 /**
  * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
@@ -29,8 +21,8 @@ function newRecord() {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"60B5D18C-215E-4DC2-88FB-CC5817743B5C"}
+ * @properties={typeid:24,uuid:"4F3D62A5-6008-4881-8AA6-AEC370D37414"}
  */
 function onCellClick(foundsetindex, columnindex, record, event) {
-	showForm(forms.customerView);
+	showForm(forms.orderEdit);
 }

@@ -1,7 +1,7 @@
 /**
- * @type {String}
+ * @type {String|Number}
  *
- * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39"}
+ * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39",variableType:-4}
  */
 var searchText = null;
 
