@@ -15,5 +15,17 @@ function onActionSearch(event) {
  */
 function newRecord() {
 	_super.newRecord();
-	showForm(forms.customerInfoAdd);
+	showForm(forms.customerInfoEditMobile);
+}
+
+/**
+ * @param {JSEvent} event
+ * @param {string} dataTarget
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"C17EAB43-D42F-4AB4-B433-D4BF56D937D7"}
+ */
+function onActionViewDetails(event, dataTarget) {
+	showForm(forms.customerView);
 }
