@@ -2,12 +2,13 @@
 {
 "name":"Customer",
 "paths":[
-"/cloudSampleMobile/forms/customerInfoAddMobile.frm",
-"/cloudSampleMobile/forms/customerInfoEditMobile.frm",
 "/cloudSampleMobile/forms/chartCustomerTopProductsMobile.frm",
 "/cloudSampleMobile/forms/customerDashboardOrdersMobile.frm",
+"/cloudSampleMobile/forms/customerInfoAddMobile.frm",
+"/cloudSampleMobile/forms/customerInfoEditMobile.frm",
 "/cloudSampleMobile/forms/customerInfoMobile.frm",
 "/cloudSampleMobile/forms/customerOrderDashboardMobile.frm",
+"/cloudSampleMobile/forms/customerOrdersMobile.frm",
 "/cloudSampleMobile/forms/customerViewMobile.frm",
 "/cloudSampleMobile/forms/customersViewMobile.frm",
 "/cloudSampleMobile/forms/customersViewMobileDataGrid.frm",

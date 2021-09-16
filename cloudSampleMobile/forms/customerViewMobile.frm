@@ -101,7 +101,7 @@ uuid:"E4FDF197-9399-48A1-B672-6B1B44DCBE6D"
 },
 {
 customProperties:"attributes:{\
-class:\"row\"\
+class:\"row margin-10\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -110,7 +110,7 @@ specname:\"row\"\
 items:[
 {
 customProperties:"attributes:{\
-class:\"col-md-12\"\
+class:\"col-md-12 text-center\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -119,23 +119,25 @@ specname:\"column\"\
 items:[
 {
 json:{
-containedForm:"AC8A78E2-C233-4103-BB63-2476D0DF3085",
 location:{
-x:183,
-y:357
+x:96,
+y:950
 },
-relationName:"customers_to_orders",
+onActionMethodID:"4AD30008-B2D0-4C12-AE4B-4BC75B60B985",
 size:{
-height:100,
-width:200
-}
+height:30,
+width:80
 },
-location:"183,357",
-name:"formcontainer_3",
-size:"200,100",
-typeName:"servoycore-formcontainer",
+styleClass:"btn btn-default btn-lg",
+text:"CUSTOMER'S ORDERS"
+},
+location:"96,950",
+name:"button_1",
+size:"80,30",
+styleClass:"btn btn-default btn-lg",
+typeName:"bootstrapcomponents-button",
 typeid:47,
-uuid:"9CD29117-230A-450F-BAD3-D3DAFC7E4886"
+uuid:"529EEBF2-8AC3-463A-BDF6-8E995C97AFFA"
 }
 ],
 location:"1,1",
