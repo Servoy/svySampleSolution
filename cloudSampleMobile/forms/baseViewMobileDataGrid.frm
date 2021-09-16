@@ -40,17 +40,17 @@ right:"15",
 top:"17",
 width:"28"
 },
-imageStyleClass:"icon-control_point h4",
+imageStyleClass:"icon-control_point h3",
 onActionMethodID:"DF6D7132-A835-44A9-B68A-D4CCBCB28260",
 size:{
 height:30,
 width:80
 },
-styleClass:"default-align clickable"
+styleClass:"default-align clickable text-primary"
 },
 name:"addBtn",
 size:"80,30",
-styleClass:"default-align clickable",
+styleClass:"default-align clickable text-primary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"7C3D5751-9314-450F-BA26-4871A2A78713"
