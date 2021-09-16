@@ -6,8 +6,8 @@ var NAVBAR_ACTIONS = {
 	DOWNLOAD_IDE: "download-ide",
 	PRIMARY_COLOR: "primary-color",
 	HOME: "homeDashboard",
-	CUSTOMERS: "customersTableView",
-	ORDERS: "ordersTableView",
+	CUSTOMERS: "customersViewMobileDataGrid",
+	ORDERS: "ordersViewMobileDataGrid",
 	DOCUMENT_EDITOR: "documentEditor",
 	TUTORIAL: "TUTORIAL",
 	SECURITY: "svyTENANT",
@@ -170,10 +170,10 @@ function onNavbarMenuItemClicked(event, menuItem) {
 		elements.formcontainer.containedForm = forms.homeDashboard;
 		break;
 	case NAVBAR_ACTIONS.CUSTOMERS:
-		elements.formcontainer.containedForm = forms.customersTableView;
+		elements.formcontainer.containedForm = forms.customersViewMobileDataGrid;
 		break;
 	case NAVBAR_ACTIONS.ORDERS:
-		elements.formcontainer.containedForm = forms.ordersTableView;
+		elements.formcontainer.containedForm = forms.ordersViewMobileDataGrid;
 		break;
 	case NAVBAR_ACTIONS.DOCUMENT_EDITOR:
 		elements.formcontainer.containedForm = forms.documentEditor;

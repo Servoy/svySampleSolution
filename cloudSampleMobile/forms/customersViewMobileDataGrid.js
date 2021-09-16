@@ -32,5 +32,5 @@ function newRecord() {
  * @properties={typeid:24,uuid:"60B5D18C-215E-4DC2-88FB-CC5817743B5C"}
  */
 function onCellClick(foundsetindex, columnindex, record, event) {
-	showForm(forms.customerView);
+	showForm(forms.customerViewMobile);
 }
