@@ -129,14 +129,14 @@ typeid:47,
 uuid:"4F89E5A9-C6CD-4DEF-B49A-6BA752D2941E"
 },
 {
-cssPosition:"392,10,-1,10,80,30",
+cssPosition:"409,10,-1,10,80,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"10",
 right:"10",
-top:"392",
+top:"409",
 width:"80"
 },
 size:{
@@ -154,14 +154,14 @@ typeid:47,
 uuid:"54C7E90A-5C62-4D3A-AD2B-D543FE41459B"
 },
 {
-cssPosition:"278,-1,-1,calc(50% - 24px),48,30",
+cssPosition:"298,-1,-1,calc(50% - 24px),48,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"calc(50% - 24px)",
 right:"-1",
-top:"278",
+top:"298",
 width:"48"
 },
 imageStyleClass:"fas fa-ellipsis-h fa-3x",
@@ -169,11 +169,11 @@ size:{
 height:30,
 width:80
 },
-styleClass:"text-center text-tertiary"
+styleClass:"text-center text-center-vertical text-tertiary"
 },
 name:"dividerDotsc",
 size:"80,30",
-styleClass:"text-center text-tertiary",
+styleClass:"text-center text-center-vertical text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"76D145FE-585D-4CED-8F5E-5446B8FF9405"
@@ -185,14 +185,14 @@ typeid:19,
 uuid:"7C95BF5C-A699-40D4-A686-6F25ABAA2369"
 },
 {
-cssPosition:"320,10,-1,10,-1,30",
+cssPosition:"337,10,-1,10,-1,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"10",
 right:"10",
-top:"320",
+top:"337",
 width:"-1"
 },
 size:{
@@ -210,14 +210,14 @@ typeid:47,
 uuid:"7DCA965B-9EED-4AFD-AC08-2D326FF436A3"
 },
 {
-cssPosition:"355,10,-1,10,80,30",
+cssPosition:"372,10,-1,10,80,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"10",
 right:"10",
-top:"355",
+top:"372",
 width:"80"
 },
 size:{
@@ -235,114 +235,64 @@ typeid:47,
 uuid:"95519B42-B852-48CF-8A16-DEC764668551"
 },
 {
-cssPosition:"247,10,-1,10,-1,30",
+cssPosition:"260,10,-1,10,-1,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"10",
 right:"10",
-top:"247",
+top:"260",
 width:"-1"
 },
 size:{
 height:30,
 width:80
 },
-styleClass:"h4 text-center",
+styleClass:"h4 text-center text-center-vertical",
 text:"%%phone%%"
 },
 name:"phone",
 size:"80,30",
-styleClass:"h4 text-center",
+styleClass:"h4 text-center text-center-vertical",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"AF239DF5-B3C7-4BED-9C87-795A44EB032C"
 },
 {
-cssPosition:"209,10,-1,10,-1,30",
+cssPosition:"222,10,-1,10,-1,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"10",
 right:"10",
-top:"209",
+top:"222",
 width:"-1"
 },
 size:{
 height:30,
 width:80
 },
-styleClass:"h4 text-center",
+styleClass:"h4 text-center text-center-vertical",
 text:"%%contacttitle%% <b>%%contactname%%<\/b>"
 },
 name:"contactTitle",
 size:"80,30",
-styleClass:"h4 text-center",
+styleClass:"h4 text-center text-center-vertical",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"C4ECE7EF-F505-46DA-80A8-2AE74DB54935"
 },
 {
-cssPosition:"136,10,-1,10,-1,34",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"34",
-left:"10",
-right:"10",
-top:"136",
-width:"-1"
-},
-size:{
-height:30,
-width:80
-},
-styleClass:"h4 text-center",
-text:"%%customerid%%"
-},
-name:"customerID",
-size:"80,30",
-styleClass:"h4 text-center",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"D3370065-135A-40DB-A971-C0488E137D33"
-},
-{
-cssPosition:"106,10,-1,10,-1,34",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"34",
-left:"10",
-right:"10",
-top:"106",
-width:"-1"
-},
-size:{
-height:30,
-width:80
-},
-styleClass:"h3 text-center",
-text:"%%companyname%%"
-},
-name:"userName",
-size:"80,30",
-styleClass:"h3 text-center",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"D541A1D8-3FE9-4371-9BEF-26A53D9CF1D5"
-},
-{
-cssPosition:"171,-1,-1,calc(50% - 24px),48,30",
+cssPosition:"184,-1,-1,calc(50% - 24px),48,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"calc(50% - 24px)",
 right:"-1",
-top:"171",
+top:"184",
 width:"48"
 },
 imageStyleClass:"fas fa-ellipsis-h fa-3x",
@@ -350,14 +300,39 @@ size:{
 height:30,
 width:80
 },
-styleClass:"text-center text-tertiary"
+styleClass:"text-center text-center-vertical text-tertiary"
 },
 name:"dividerDots",
 size:"80,30",
-styleClass:"text-center text-tertiary",
+styleClass:"text-center text-center-vertical text-tertiary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"D8C4194E-5038-48EE-9DD2-A549C170B2EE"
+},
+{
+cssPosition:"106,10,-1,10,200,70",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"70",
+left:"10",
+right:"10",
+top:"106",
+width:"200"
+},
+dataProviderID:"customerName",
+size:{
+height:30,
+width:80
+},
+styleClass:"h3 text-center"
+},
+name:"datalabel_1",
+size:"80,30",
+styleClass:"h3 text-center",
+typeName:"bootstrapcomponents-datalabel",
+typeid:47,
+uuid:"F37B67E2-0704-4EB5-8C3F-B428B42942F9"
 }
 ],
 name:"customerInfoMobile",
