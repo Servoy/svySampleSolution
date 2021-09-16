@@ -268,7 +268,7 @@ typeid:4,
 uuid:"F45A8222-9FF4-46EE-AB6C-95E79B668378"
 },
 {
-cssPosition:"5,-1,-1,80,200,40",
+cssPosition:"5,-1,-1,80,210,40",
 customProperties:"methods:{\
 onCrumbClicked:{\
 arguments:null,\
@@ -284,7 +284,7 @@ svyUUID:"3AA128F8-000B-4C0C-BA8F-30BB440BDD2C"
 },
 {
 crumbId:"table",
-displayName:"Info",
+displayName:"%%customerid%%",
 svyUUID:"83AB1285-B639-4A8F-A79E-DA101B795570"
 }
 ],
@@ -294,7 +294,7 @@ height:"40",
 left:"80",
 right:"-1",
 top:"5",
-width:"200"
+width:"210"
 },
 onCrumbClicked:"26D81190-EE80-4F71-B67B-08E36210972B"
 },

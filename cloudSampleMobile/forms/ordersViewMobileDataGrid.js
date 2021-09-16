@@ -24,5 +24,5 @@ function onActionSearch(event) {
  * @properties={typeid:24,uuid:"4F3D62A5-6008-4881-8AA6-AEC370D37414"}
  */
 function onCellClick(foundsetindex, columnindex, record, event) {
-	showForm(forms.orderEdit);
+	showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 }

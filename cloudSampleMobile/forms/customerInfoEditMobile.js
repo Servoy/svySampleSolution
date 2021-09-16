@@ -15,7 +15,7 @@ function onCrumbClicked(event, crumb, index) {
 		showForm(forms.customersViewMobileDataGrid);
 		break;
 	default:
-		showForm(forms.customerView);
+		showForm(forms.customerViewMobile);
 		break;
 	}
 }
