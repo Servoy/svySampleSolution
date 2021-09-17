@@ -61,6 +61,7 @@
 "name":"Orders",
 "paths":[
 "/cloudSampleMobile/.project",
+"/cloudSampleMobile/forms/orderDetailsViewMobile.frm",
 "/cloudSampleMobile/forms/orderEditMobile.frm",
 "/cloudSampleMobile/forms/ordersViewMobileDataGrid.frm"
 ]

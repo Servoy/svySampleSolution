@@ -256,13 +256,13 @@ typeid:7,
 uuid:"735C9222-304D-4FAA-8543-609B3CB7CF15"
 },
 {
-cssPosition:"1140,15,-1,15,115,25",
+cssPosition:"1140,15,-1,15,115,35",
 extendsID:"DF107F13-E782-4C96-ADF4-C3319C182AD9",
 formIndex:24,
 json:{
 cssPosition:{
 bottom:"-1",
-height:"25",
+height:"35",
 left:"15",
 right:"15",
 top:"1140",
@@ -289,7 +289,7 @@ displayName:"Orders",
 svyUUID:"AF905CC9-C7F7-472E-8FC1-87A4088FB1CB"
 },
 {
-displayName:"Order %%orderText%%",
+displayName:"Order %%orderIdText%%",
 svyUUID:"A6A8F835-DD51-4BCB-8CA9-91CB3DCBB158"
 }
 ],
@@ -336,13 +336,13 @@ typeid:47,
 uuid:"9320534C-D984-4939-888F-9E00143B1D98"
 },
 {
-cssPosition:"51,10,9,10,-1,1120",
+cssPosition:"51,10,9,10,-1,1130",
 extendsID:"A55FC613-C594-4E63-9DBB-0A672FADEABA",
 formIndex:0,
 json:{
 cssPosition:{
 bottom:"9",
-height:"1120",
+height:"1130",
 left:"10",
 right:"10",
 top:"51",
@@ -354,14 +354,14 @@ typeid:47,
 uuid:"A7B29890-9E9B-41BD-BF01-6AC0D98B9487"
 },
 {
-cssPosition:"1105,15,-1,15,80,25",
+cssPosition:"1100,15,-1,15,80,35",
 json:{
 cssPosition:{
 bottom:"-1",
-height:"25",
+height:"35",
 left:"15",
 right:"15",
-top:"1105",
+top:"1100",
 width:"80"
 },
 onActionMethodID:"09139261-A5AE-4721-A679-623D58439260",
@@ -369,11 +369,13 @@ size:{
 height:30,
 width:80
 },
+styleClass:"btn btn-default btn-lg font-weight-bold",
 text:"Order Lines",
 visible:true
 },
 name:"button_1",
 size:"80,30",
+styleClass:"btn btn-default btn-lg font-weight-bold",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"AD743489-A0FB-4C01-A62F-F3763310DF6A"

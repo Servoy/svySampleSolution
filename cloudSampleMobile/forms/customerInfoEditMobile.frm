@@ -40,7 +40,7 @@ valuelistID:"841EC083-B7FE-41B7-A0FA-F0A3844E0EA5"
 },
 {
 cssPosition:"290,15,-1,15,120,25",
-formIndex:2,
+formIndex:3,
 name:"contactname_label",
 text:"Contact Name",
 transparent:true,
@@ -56,17 +56,19 @@ typeid:4,
 uuid:"49375A6B-F6E1-4D2C-86B8-03A68C367528"
 },
 {
-cssPosition:"835,15,-1,15,115,30",
+cssPosition:"830,15,-1,15,115,35",
 extendsID:"DF107F13-E782-4C96-ADF4-C3319C182AD9",
+formIndex:21,
 json:{
 cssPosition:{
 bottom:"-1",
-height:"30",
+height:"35",
 left:"15",
 right:"15",
-top:"835",
+top:"830",
 width:"115"
-}
+},
+formIndex:21
 },
 typeid:47,
 uuid:"4B173345-9737-4463-BE9B-BEF77A8950E3"
@@ -74,7 +76,7 @@ uuid:"4B173345-9737-4463-BE9B-BEF77A8950E3"
 {
 cssPosition:"50,15,-1,15,250,40",
 displaysTags:true,
-formIndex:2,
+formIndex:4,
 labelFor:"companyname",
 name:"title_label",
 styleClass:"h3 font-weight-bold text-center",
@@ -115,7 +117,7 @@ uuid:"5C5664AE-7B2E-4C42-AD67-EFD660B2CE13"
 },
 {
 cssPosition:"140,15,-1,15,120,25",
-formIndex:4,
+formIndex:5,
 labelFor:"companyname",
 name:"companyname_label",
 text:"Company Name",
@@ -126,7 +128,7 @@ uuid:"5F4B20BB-8B2D-47E4-9E34-4B48CD408412"
 {
 cssPosition:"540,15,-1,15,0,40",
 dataProviderID:"country",
-formIndex:19,
+formIndex:18,
 name:"country",
 typeid:4,
 uuid:"87D51456-F408-4E6C-937B-45B5AB34C091"
@@ -152,7 +154,7 @@ uuid:"8C749E8D-EF43-4C71-9967-97BACDD532FD"
 {
 cssPosition:"390,15,-1,15,0,40",
 dataProviderID:"phone",
-formIndex:1,
+formIndex:2,
 name:"phone",
 typeid:4,
 uuid:"9D10E33C-C70D-4BA3-BA45-D908F9A4F290"
@@ -190,7 +192,7 @@ uuid:"AEE60037-0E7C-44ED-8437-5FAFCCCFC3A8"
 {
 cssPosition:"765,15,-1,15,0,40",
 dataProviderID:"postalcode",
-formIndex:18,
+formIndex:17,
 name:"postalcode",
 typeid:4,
 uuid:"C5C89F19-BE7D-4D8C-A1D7-9AF795B6DB75"
@@ -214,7 +216,7 @@ uuid:"D267B920-94D3-435C-9D54-59D8279CD718"
 {
 cssPosition:"615,15,-1,15,0,40",
 dataProviderID:"city",
-formIndex:21,
+formIndex:20,
 name:"city",
 typeid:4,
 uuid:"D60227B5-C775-4E64-A218-EBF46DCBB0BD"
@@ -262,7 +264,7 @@ uuid:"F4261E09-9635-478E-BDD7-047D2B4C9360"
 {
 cssPosition:"690,15,-1,15,0,40",
 dataProviderID:"address",
-formIndex:20,
+formIndex:19,
 name:"address",
 typeid:4,
 uuid:"F45A8222-9FF4-46EE-AB6C-95E79B668378"

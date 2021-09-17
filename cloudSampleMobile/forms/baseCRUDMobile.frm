@@ -8,8 +8,7 @@ json:{
 autoRemoveWhenClicked:false,
 breadcrumbs:[
 {
-crumbId:"table",
-svyUUID:"94E93104-78C9-49CB-ACC2-F9CAB86BC080"
+svyUUID:"01083E7D-E7EE-4685-888E-7EF673BEB58D"
 }
 ],
 cssPosition:{
@@ -84,14 +83,14 @@ typeid:19,
 uuid:"B1D98F42-E45A-4A98-B1DE-9764B3B5A5D5"
 },
 {
-cssPosition:"435,15,-1,15,115,25",
+cssPosition:"430,15,-1,15,115,35",
 json:{
 cssPosition:{
 bottom:"-1",
-height:"25",
+height:"35",
 left:"15",
 right:"15",
-top:"435",
+top:"430",
 width:"115"
 },
 formIndex:0,
