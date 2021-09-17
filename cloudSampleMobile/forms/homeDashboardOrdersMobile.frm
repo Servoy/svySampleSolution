@@ -79,7 +79,7 @@ right:"0",
 top:"70",
 width:"-1"
 },
-rowHeight:100,
+rowHeight:75,
 toolPanelConfig:{
 suppressColumnExpandAll:true,
 suppressColumnFilter:true,

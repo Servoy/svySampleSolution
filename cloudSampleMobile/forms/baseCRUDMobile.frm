@@ -3,7 +3,7 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
-cssPosition:"5,-1,-1,80,200,40",
+cssPosition:"5,-1,-1,65,200,40",
 json:{
 autoRemoveWhenClicked:false,
 breadcrumbs:[
@@ -14,7 +14,7 @@ svyUUID:"01083E7D-E7EE-4685-888E-7EF673BEB58D"
 cssPosition:{
 bottom:"-1",
 height:"40",
-left:"80",
+left:"65",
 right:"-1",
 top:"5",
 width:"200"

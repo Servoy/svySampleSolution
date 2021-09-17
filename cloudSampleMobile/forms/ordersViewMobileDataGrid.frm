@@ -44,11 +44,11 @@ right:"10",
 top:"15",
 width:"25"
 },
-visible:true
+visible:false
 },
 typeid:47,
 uuid:"553A3D87-E9B8-4B10-B8CA-28AB4A37C0A6",
-visible:true
+visible:false
 },
 {
 cssPosition:"55,0,0,0,200,100",
@@ -77,7 +77,7 @@ top:"55",
 width:"200"
 },
 onCellClick:"4F3D62A5-6008-4881-8AA6-AEC370D37414",
-rowHeight:100,
+rowHeight:75,
 toolPanelConfig:{
 svyUUID:"F31FA6E2-2EDA-47DD-8BDE-B71942D72D35"
 }
