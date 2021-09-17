@@ -77,7 +77,7 @@ top:"55",
 width:"200"
 },
 onCellClick:"4F3D62A5-6008-4881-8AA6-AEC370D37414",
-rowHeight:100,
+rowHeight:75,
 toolPanelConfig:{
 svyUUID:"F31FA6E2-2EDA-47DD-8BDE-B71942D72D35"
 }
