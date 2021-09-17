@@ -1,9 +1,10 @@
 /**
+ * @protected 
  * @type {String}
  *
  * @properties={typeid:35,uuid:"2AF80A14-E2DA-4D8B-B64C-14EFB011BCF5"}
  */
-var orderText;
+var orderIdText;
 
 /**
  * Handle record selected.
@@ -15,9 +16,8 @@ var orderText;
  * @properties={typeid:24,uuid:"99F7E369-41CD-4919-A98E-557E48C9A100"}
  */
 function onRecordSelection(event) {
-	orderText = foundset.getSelectedRecord() ? foundset.orderid : "";
+	orderIdText = foundset.getSelectedRecord() ? foundset.orderid : "";
 }
-
 
 /**
  * Called whenever a breadcrumb item is clicked with the JSEvent and the item clicked on.
@@ -40,6 +40,7 @@ function onCrumbClicked(event, crumb, index) {
 		break;
 	}
 }
+
 /**
  * @param {JSEvent} event
  *
@@ -48,5 +49,6 @@ function onCrumbClicked(event, crumb, index) {
  * @properties={typeid:24,uuid:"09139261-A5AE-4721-A679-623D58439260"}
  */
 function onActionOrderLines(event) {
-	scopes.global.showForm(forms.orderdetailsTable, foundset.orders_to_order_details);
+	forms.orderDetailsViewMobile.setOrderId(foundset.orderid);
+	scopes.global.showForm(forms.orderDetailsViewMobile, foundset.orders_to_order_details);
 }

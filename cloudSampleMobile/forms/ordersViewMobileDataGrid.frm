@@ -1,4 +1,10 @@
 customProperties:"formComponent:false,\
+methods:{\
+onShowMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+},\
 useCssPosition:true",
 dataSource:"db:/example_data/orders",
 extendsID:"DF4918EA-5E73-4887-91AA-15CB2300AEBF",
@@ -81,5 +87,6 @@ uuid:"6265D155-F43D-4A71-A7B5-16E322045FE3"
 }
 ],
 name:"ordersViewMobileDataGrid",
+onShowMethodID:"5177FCA9-0F48-4661-A71A-413CC080B870",
 typeid:3,
 uuid:"F555E9CF-ED40-4909-A808-56A1E320847D"

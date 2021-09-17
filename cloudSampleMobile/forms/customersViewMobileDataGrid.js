@@ -34,3 +34,17 @@ function newRecord() {
 function onCellClick(foundsetindex, columnindex, record, event) {
 	showForm(forms.customerViewMobile);
 }
+
+/**
+ * Callback method for when form is shown.
+ *
+ * @param {Boolean} firstShow form is shown first time after load
+ * @param {JSEvent} event the event that triggered the action
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"7DEE4500-8EC4-46E1-BFDE-082DE6FFB636"}
+ */
+function onShow(firstShow, event) {
+	foundset.loadAllRecords();
+}

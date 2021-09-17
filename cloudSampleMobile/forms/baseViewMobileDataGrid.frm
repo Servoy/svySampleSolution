@@ -30,15 +30,15 @@ typeid:47,
 uuid:"5BAED26F-EC07-4BA8-9DD6-9C5FAAEB6228"
 },
 {
-cssPosition:"17,15,-1,-1,28,30",
+cssPosition:"17,15,-1,-1,25,25",
 json:{
 cssPosition:{
 bottom:"-1",
-height:"30",
+height:"25",
 left:"-1",
 right:"15",
 top:"17",
-width:"28"
+width:"25"
 },
 imageStyleClass:"icon-control_point h3",
 onActionMethodID:"DF6D7132-A835-44A9-B68A-D4CCBCB28260",
