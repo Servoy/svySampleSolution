@@ -31,7 +31,9 @@
 "name":"Home",
 "paths":[
 "/cloudSampleMobile/.project",
+"/cloudSampleMobile/forms/HomeDashboardChartSalesByMonths.frm",
 "/cloudSampleMobile/forms/homeDashboardCardsMobile.frm",
+"/cloudSampleMobile/forms/homeDashboardChartTopCustomers.frm",
 "/cloudSampleMobile/forms/homeDashboardChartsMobile.frm",
 "/cloudSampleMobile/forms/homeDashboardMobile.frm",
 "/cloudSampleMobile/forms/homeDashboardOrdersMobile.frm",
