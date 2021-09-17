@@ -5,7 +5,7 @@
 var NAVBAR_ACTIONS = {
 	DOWNLOAD_IDE: "download-ide",
 	PRIMARY_COLOR: "primary-color",
-	HOME: "homeDashboard",
+	HOME: "homeDashboardMobile",
 	CUSTOMERS: "customersViewMobileDataGrid",
 	ORDERS: "ordersViewMobileDataGrid",
 	DOCUMENT_EDITOR: "documentEditor",
@@ -167,7 +167,7 @@ function onNavbarMenuItemClicked(event, menuItem) {
 
 		break;
 	case NAVBAR_ACTIONS.HOME:
-		elements.formcontainer.containedForm = forms.homeDashboard;
+		elements.formcontainer.containedForm = forms.homeDashboardMobile;
 		break;
 	case NAVBAR_ACTIONS.CUSTOMERS:
 		elements.formcontainer.containedForm = forms.customersViewMobileDataGrid;

@@ -30,6 +30,11 @@
 {
 "name":"Home",
 "paths":[
+"/cloudSampleMobile/.project",
+"/cloudSampleMobile/forms/homeDashboardCardsMobile.frm",
+"/cloudSampleMobile/forms/homeDashboardChartsMobile.frm",
+"/cloudSampleMobile/forms/homeDashboardMobile.frm",
+"/cloudSampleMobile/forms/homeDashboardOrdersMobile.frm",
 "/cloudSampleSolution/.project",
 "/cloudSampleSolution/forms/chartBase.frm",
 "/cloudSampleSolution/forms/chartOrders.frm",
