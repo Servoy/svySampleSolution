@@ -57,7 +57,7 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 	switch (column.id) {
 	case "product":
 		var answer = plugins.dialogs.showInputDialog("Quantity","Please enter the new value:",foundset.quantity.toString());
-		if (answer != null && parseInt(answer)) {
+		if (answer != null) {
 			if(answer == '0'){
 				deleteRecord();
 			}

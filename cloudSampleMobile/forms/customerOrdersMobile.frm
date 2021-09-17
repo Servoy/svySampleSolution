@@ -16,6 +16,8 @@ json:{
 columns:[
 {
 dataprovider:"ordersHtml",
+headerStyleClass:"bold h4",
+headerTitle:"%%customerid%% - Orders",
 svyUUID:"6ABB2357-6512-4952-AF67-7B4A54EACA51"
 }
 ],
@@ -71,10 +73,10 @@ right:"15",
 top:"15",
 width:"35"
 },
-imageStyleClass:"icon-control_point h2",
-styleClass:"clickable text-center"
+imageStyleClass:"icon-control_point h3",
+styleClass:"clickable text-primary"
 },
-styleClass:"clickable text-center",
+styleClass:"clickable text-primary",
 typeid:47,
 uuid:"81198594-04B3-43E0-95F4-72126FE6E65D"
 }
