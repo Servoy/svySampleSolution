@@ -11,7 +11,7 @@
  * @properties={typeid:24,uuid:"3395F868-D90A-4E61-A127-04176B5F26C4"}
  */
 function onCellClick(foundsetindex, columnindex, record, event) {
-	scopes.global.showForm(forms.orderEditMobile);
+	scopes.global.showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 
 }
 
