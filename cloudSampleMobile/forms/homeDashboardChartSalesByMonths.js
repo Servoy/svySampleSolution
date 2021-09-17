@@ -93,6 +93,7 @@ function onLoad(event) {
  * @param value
  *
  * @properties={typeid:24,uuid:"3FDE62A0-BA13-4A0B-8CF9-07A9ECC078C6"}
+ * @AllowToRunInFind
  */
 function onClickMonth(dataset_index, index, label, value) {
 
@@ -104,9 +105,10 @@ function onClickMonth(dataset_index, index, label, value) {
 	var endDate = scopes.svyDateUtils.toEndOfDay(scopes.svyDateUtils.getLastDayOfMonth(monthDate));
 
 	// navigate to orders table
+	
 	var item = new scopes.svyNavigation.NavigationItem("ordersViewMobileDataGrid");
-	// TODO: can extend the svyNavigation to include filters
-	item.setCustomData({ filters: [{ dataprovider: "orderdate", operator: scopes.svyPopupFilter.OPERATOR.BETWEEN, values: [startDate, endDate] }] })
+//	// TODO: can extend the svyNavigation to include filters
+//	item.setCustomData({ filters: [{ dataprovider: "orderdate", operator: scopes.svyPopupFilter.OPERATOR.BETWEEN, values: [startDate, endDate] }] })
 
 	// open the item
 	scopes.svyNavigation.open(item);

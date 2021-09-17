@@ -11,9 +11,10 @@
  */
 function onShow(firstShow, event) {
 
-	foundset.sort('orderdate desc');
-	var query = foundset.getQuery();	
-	var dataset= databaseManager.getDataSetByQuery(query,10);
+	var query = datasources.db.example_data.orders.createSelect();
+	query.result.addPk()
+	query.sort.add(query.columns.orderdate.desc)
+	var dataset = databaseManager.getDataSetByQuery(query,10);
 	foundset.loadRecords(dataset);
 
 }

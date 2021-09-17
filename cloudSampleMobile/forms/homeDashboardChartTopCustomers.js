@@ -86,12 +86,10 @@ function onLoad(event) {
  * @AllowToRunInFind
  */
 function onClickChart(dataset_index, index, label, value) {
-	forms.ordersViewMobileDataGrid.search(label,'customerid');
-	// navigate to orders table
-	var item = new scopes.svyNavigation.NavigationItem("ordersViewMobileDataGrid");
-	
-	// FIXME: since a filter is applied loadind data is reduntant: can i use another example to load data ?
-	scopes.svyNavigation.open(item)
+	forms.customersViewMobile.search(label,'customerid')
+	// navigate to Customer view table
+	var item = new scopes.svyNavigation.NavigationItem("customerViewMobile");
+	scopes.svyNavigation.open(item);
 
 }
 

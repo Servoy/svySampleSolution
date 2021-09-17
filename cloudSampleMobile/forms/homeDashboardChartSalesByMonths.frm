@@ -39,7 +39,7 @@ typeid:47,
 uuid:"DB35C773-D9B7-46DD-8854-21DF0B930FB0"
 }
 ],
-name:"HomeDashboardChartSalesByMonths",
+name:"homeDashboardChartSalesByMonths",
 onLoadMethodID:"C8BF6D52-4DB1-4C45-9BE8-E5B78074862C",
 typeid:3,
 uuid:"EF757369-C9E6-444D-90F6-10CF11A30466"
