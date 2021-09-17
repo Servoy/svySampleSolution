@@ -11,7 +11,7 @@ typeid:7,
 uuid:"024A805A-EC06-41AB-8118-2BA1CCA4DEDE"
 },
 {
-cssPosition:"5,-1,-1,80,200,40",
+cssPosition:"5,-1,-1,65,200,40",
 extendsID:"18D552B3-6DF7-4CDF-A9F6-444DD60D663B",
 json:{
 breadcrumbs:[
@@ -26,7 +26,7 @@ svyUUID:"4906CF3B-1CC2-424B-B373-EC58DCB1BB36"
 cssPosition:{
 bottom:"-1",
 height:"40",
-left:"80",
+left:"65",
 right:"-1",
 top:"5",
 width:"200"

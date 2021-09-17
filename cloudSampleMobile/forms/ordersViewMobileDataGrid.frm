@@ -44,11 +44,11 @@ right:"10",
 top:"15",
 width:"25"
 },
-visible:true
+visible:false
 },
 typeid:47,
 uuid:"553A3D87-E9B8-4B10-B8CA-28AB4A37C0A6",
-visible:true
+visible:false
 },
 {
 cssPosition:"55,0,0,0,200,100",
