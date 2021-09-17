@@ -27,7 +27,7 @@ function loadMenuItems() {
 
 	// HOME
 	menuItem = new Object();
-	menuItem.id = "homeDashboard";
+	menuItem.id = "homeDashboardMobile";
 	menuItem.text = "DASHBOARD";
 	menuItem.iconStyleClass = "fa fa-th-large";
 	menuItems.push(menuItem);

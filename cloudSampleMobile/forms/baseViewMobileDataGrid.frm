@@ -30,14 +30,14 @@ typeid:47,
 uuid:"5BAED26F-EC07-4BA8-9DD6-9C5FAAEB6228"
 },
 {
-cssPosition:"17,15,-1,-1,25,25",
+cssPosition:"15,10,-1,-1,25,25",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"25",
 left:"-1",
-right:"15",
-top:"17",
+right:"10",
+top:"15",
 width:"25"
 },
 imageStyleClass:"icon-control_point h3",
@@ -46,11 +46,11 @@ size:{
 height:30,
 width:80
 },
-styleClass:"default-align clickable text-primary"
+styleClass:"clickable text-primary"
 },
 name:"addBtn",
 size:"80,30",
-styleClass:"default-align clickable text-primary",
+styleClass:"clickable text-primary",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"7C3D5751-9314-450F-BA26-4871A2A78713"

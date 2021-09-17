@@ -30,7 +30,7 @@ top:"55",
 width:"200"
 },
 onCellClick:"3395F868-D90A-4E61-A127-04176B5F26C4",
-rowHeight:75,
+rowHeight:100,
 toolPanelConfig:{
 svyUUID:"DF8BCEB9-9D7C-47BF-BFFE-2D68BB831938"
 }
@@ -62,16 +62,16 @@ typeid:47,
 uuid:"70531FED-BD58-437C-988A-6FFE2AF2AAC7"
 },
 {
-cssPosition:"15,15,-1,-1,35,35",
+cssPosition:"15,10,-1,-1,25,25",
 extendsID:"7C3D5751-9314-450F-BA26-4871A2A78713",
 json:{
 cssPosition:{
 bottom:"-1",
-height:"35",
+height:"25",
 left:"-1",
-right:"15",
+right:"10",
 top:"15",
-width:"35"
+width:"25"
 },
 imageStyleClass:"icon-control_point h3",
 styleClass:"clickable text-primary"
