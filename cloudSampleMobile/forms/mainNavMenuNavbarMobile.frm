@@ -29,6 +29,7 @@ parameters:null\
 }",
 extendsID:"5D586B6A-6C3D-436C-8BA2-D12084B0CA20",
 json:{
+brandLogo:"FD2567AF-AE16-4CBF-AFE2-0F23703103EF",
 collapsing:true,
 cssPosition:{
 bottom:"-1",
