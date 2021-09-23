@@ -4,7 +4,50 @@ dataSource:"db:/example_data/orders",
 extendsID:"DF4918EA-5E73-4887-91AA-15CB2300AEBF",
 items:[
 {
-cssPosition:"55,0,0,0,200,100",
+cssPosition:"10,-1,-1,10,55,25",
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"25",
+left:"10",
+right:"-1",
+top:"10",
+width:"55"
+},
+faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
+imageStyleClass:"fas fa-angle-left fa-2x",
+onActionMethodID:"801C4D4C-3B0B-499D-B3B0-1FB06E66E283",
+styleClass:"default-align text-tertiary clickable",
+styleclass:"clickable",
+text:"Back"
+},
+name:"back_icon",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"2EE26127-E232-4377-8DCB-88564D3620C6"
+},
+{
+cssPosition:"50,-1,-1,15,265,32",
+extendsID:"D087ED71-9EFF-45B2-A61F-DCC5A5E64C45",
+formIndex:0,
+json:{
+cssPosition:{
+bottom:"-1",
+height:"32",
+left:"15",
+right:"-1",
+top:"50",
+width:"265"
+},
+formIndex:0
+},
+typeid:47,
+uuid:"47D90D1B-EA33-4219-BFC7-8A981CB6B642"
+},
+{
+cssPosition:"90,0,0,0,200,100",
 customProperties:"methods:{\
 onCellClick:{\
 arguments:null,\
@@ -16,8 +59,8 @@ json:{
 columns:[
 {
 dataprovider:"ordersHtml",
-headerStyleClass:"bold h4",
-headerTitle:"%%customerid%% - Orders",
+headerStyleClass:null,
+headerTitle:null,
 svyUUID:"6ABB2357-6512-4952-AF67-7B4A54EACA51"
 }
 ],
@@ -26,7 +69,7 @@ bottom:"0",
 height:"100",
 left:"0",
 right:"0",
-top:"55",
+top:"90",
 width:"200"
 },
 onCellClick:"3395F868-D90A-4E61-A127-04176B5F26C4",
@@ -39,7 +82,7 @@ typeid:47,
 uuid:"5E9CAEC1-BB99-456F-87ED-EE4019A54378"
 },
 {
-cssPosition:"19,-1,-1,255,25,25",
+cssPosition:"52,-1,-1,255,25,25",
 customProperties:"methods:{\
 onActionMethodID:{\
 arguments:null,\
@@ -47,22 +90,24 @@ parameters:null\
 }\
 }",
 extendsID:"E2641547-899B-41E9-B7DA-E4B0D347C050",
+formIndex:1,
 json:{
 cssPosition:{
 bottom:"-1",
 height:"25",
 left:"255",
 right:"-1",
-top:"19",
+top:"52",
 width:"25"
 },
+formIndex:1,
 onActionMethodID:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF"
 },
 typeid:47,
 uuid:"70531FED-BD58-437C-988A-6FFE2AF2AAC7"
 },
 {
-cssPosition:"15,10,-1,-1,25,25",
+cssPosition:"52,10,-1,-1,25,25",
 extendsID:"7C3D5751-9314-450F-BA26-4871A2A78713",
 json:{
 cssPosition:{
@@ -70,7 +115,7 @@ bottom:"-1",
 height:"25",
 left:"-1",
 right:"10",
-top:"15",
+top:"52",
 width:"25"
 },
 imageStyleClass:"icon-control_point h3",
@@ -79,6 +124,42 @@ styleClass:"clickable text-primary"
 styleClass:"clickable text-primary",
 typeid:47,
 uuid:"81198594-04B3-43E0-95F4-72126FE6E65D"
+},
+{
+cssPosition:"5,-1,-1,65,270,40",
+json:{
+autoRemoveWhenClicked:false,
+breadcrumbs:[
+{
+displayName:"Customer %%customerid%% ",
+svyUUID:"3FE930C2-15BD-4766-9598-6C24E633CDF1"
+},
+{
+displayName:"Orders",
+svyUUID:"A2685EC6-56DA-4EFB-98AC-B7B81DFFFED6"
+}
+],
+cssPosition:{
+bottom:"-1",
+height:"40",
+left:"65",
+right:"-1",
+top:"5",
+width:"270"
+},
+onCrumbClicked:"954BC2B9-9E7B-4A35-A47B-D65DBD3D40A3",
+size:{
+height:40,
+width:600
+},
+styleClass:"text-primary h4"
+},
+name:"breadcrumbs",
+size:"600,40",
+styleClass:"text-primary h4",
+typeName:"bootstrapextracomponents-breadcrumbs",
+typeid:47,
+uuid:"BF1577EC-8BF2-4EF0-BC20-C852E3C4821D"
 }
 ],
 name:"customerOrdersMobile",

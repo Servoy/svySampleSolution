@@ -21,7 +21,7 @@ typeid:47,
 uuid:"1C013BBB-F137-4C80-81EF-C2205C46E936"
 },
 {
-cssPosition:"5,-1,-1,5,140,40",
+cssPosition:"10,-1,-1,5,140,40",
 extendsID:"77CD119F-5A99-44A4-8D88-3323630A0407",
 formIndex:2,
 json:{
@@ -30,7 +30,7 @@ bottom:"-1",
 height:"40",
 left:"5",
 right:"-1",
-top:"5",
+top:"10",
 width:"140"
 },
 formIndex:2,

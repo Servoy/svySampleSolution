@@ -48,7 +48,7 @@ function loadMenuItems() {
 	menuItems.push(menuItem);
 
 	// DOCUMENT EDITOR
-	menuItem = new Object();
+	/*menuItem = new Object();
 	menuItem.id = "documentEditor";
 	menuItem.text = "DOCUMENT EDITOR";
 	menuItem.iconStyleClass = "far fa-file-alt";
@@ -73,7 +73,7 @@ function loadMenuItems() {
 	menuSubItems.push(menuSubItem);
 
 	menuItem.menuItems = menuSubItems;
-	menuItems.push(menuItem);
+	menuItems.push(menuItem);*/
 
 	// DIVIDER
 	menuItem = new Object();

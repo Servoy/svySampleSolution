@@ -80,6 +80,7 @@ top:"70",
 width:"-1"
 },
 rowHeight:75,
+styleClass:"ag-theme-servoy",
 toolPanelConfig:{
 suppressColumnExpandAll:true,
 suppressColumnFilter:true,
@@ -90,6 +91,7 @@ svyUUID:"5500AC78-6918-4D75-B3F7-B39994275802"
 }
 },
 name:"groupingtable_1",
+styleClass:"ag-theme-servoy",
 typeName:"aggrid-groupingtable",
 typeid:47,
 uuid:"653FFDBD-705A-4EC3-B106-71B8C1203704"

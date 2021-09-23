@@ -3,8 +3,7 @@
  */
 function ordersHtml()
 {
-	var customerID = orders_to_customers.customerid;
 	var date = new Date(orderdate);
 	var printDate = date.getFullYear() + "/" + (date.getMonth()+1) + "/" + date.getDate();
-	return '<div class="container" style="border-bottom: 1px solid darkgray"><div class="h4 bold" style="margin-bottom:10px"><span class="oId">No.' + orderid + '</span><span class="cId" style="float:right;"> CustomerID: ' + customerID + '</span></div><div style="margin-bottom:10px"><span class="date">Date: ' + printDate + '</span><span class="status '+ orderStatusStyleClass +'" style="float:right;">' + orderStatus + '</span></div></div>';
+	return '<div class="container"><div class="h4 bold" style="margin-bottom: 10px; display: grid; grid-template-columns: 1fr 1fr;"><span class="oId">No.' + orderid + '</span><span class="cId" style="text-align: center;"> CustomerID: ' + customerid + '</span></div><div style="margin-bottom: 10px; display: grid; grid-template-columns: 1fr 1fr;"><span class="date">Date: ' + printDate + '</span><span class="status '+ orderStatusStyleClass +'">' + orderStatus + '</span></div></div>';
 }

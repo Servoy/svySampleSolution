@@ -9,15 +9,15 @@ typeid:19,
 uuid:"50490D68-90C2-46A5-8286-26AC083C707D"
 },
 {
-cssPosition:"calc( 50% - 250px),calc( 50% - 300px),calc( 50% - 250px),calc( 50% - 300px),-1,-1",
+cssPosition:"calc( 50% - 250px),calc( 50% - 160px),calc( 50% - 250px),calc( 50% - 160px),-1,-1",
 formIndex:1,
 json:{
-containedForm:"CF5B4C78-9945-470E-AEAE-9C6BF9A14443",
+containedForm:"4C2E1A02-7C51-4180-90C2-6DDCE81D4ACA",
 cssPosition:{
 bottom:"calc( 50% - 250px)",
 height:"-1",
-left:"calc( 50% - 300px)",
-right:"calc( 50% - 300px)",
+left:"calc( 50% - 160px)",
+right:"calc( 50% - 160px)",
 top:"calc( 50% - 250px)",
 width:"-1"
 },
@@ -27,20 +27,12 @@ name:"tablesspanel",
 typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"7ED3585A-6F66-4874-B9A8-4772F1C7BFB6"
-},
-{
-cssPosition:"0,0,0,0,0,0",
-imageMediaID:"696AA329-B5E6-44E6-80CB-3C0D53BC6CDE",
-name:"image",
-text:"",
-typeid:7,
-uuid:"C64B7CD2-FD0B-4C38-90DD-27C064B5482B"
 }
 ],
 name:"loginFormCenteredContainer",
 navigatorID:"-1",
 showInMenu:true,
-size:"600,500",
-styleClass:"bg-tertiary",
+size:"320,500",
+styleClass:"bg-primary",
 typeid:3,
 uuid:"EFA4F47F-BD54-405D-A9C1-6E796BF93B05"

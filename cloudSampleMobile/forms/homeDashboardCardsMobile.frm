@@ -14,10 +14,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",
@@ -61,10 +58,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",
@@ -108,10 +102,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",

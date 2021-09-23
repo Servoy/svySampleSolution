@@ -19,12 +19,14 @@ right:"0",
 top:"55",
 width:"200"
 },
+styleClass:"ag-theme-servoy",
 toolPanelConfig:{
 suppressSideButtons:true,
 svyUUID:"A2A681F9-3D99-4EAA-9F13-4EA19FCAECC6"
 }
 },
 name:"containerTable",
+styleClass:"ag-theme-servoy",
 typeName:"aggrid-groupingtable",
 typeid:47,
 uuid:"5BAED26F-EC07-4BA8-9DD6-9C5FAAEB6228"

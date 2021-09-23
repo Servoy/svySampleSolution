@@ -65,6 +65,7 @@ columns:[
 dataprovider:"ordersHtml",
 headerStyleClass:"bold h4",
 headerTitle:"Orders",
+maxWidth:null,
 svyUUID:"147A9C61-8A38-45F5-A298-99FDC9621FCE"
 }
 ],

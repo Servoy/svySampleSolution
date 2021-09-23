@@ -33,3 +33,43 @@ function newRecord(){
 	foundset.customerid = cId;
 	scopes.global.showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 }
+
+/**
+ * @param {JSEvent} event
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"801C4D4C-3B0B-499D-B3B0-1FB06E66E283"}
+ */
+function onActionBack(event) {
+	back();
+}
+
+/**
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"B2E2629E-7BDB-4215-8EEF-26F99A2E948D"}
+ */
+function back() {
+	scopes.svyNavigationHistory.back();
+}
+
+/**
+ * TODO generated, please specify type and doc for the params
+ * @param event
+ * @param crumb
+ * @param index
+ *
+ * @properties={typeid:24,uuid:"954BC2B9-9E7B-4A35-A47B-D65DBD3D40A3"}
+ */
+function onCrumbClicked(event, crumb, index) {
+	switch (index) {
+	case 0:
+		back();
+		break;
+	default:
+		back();
+		break;
+	}
+}

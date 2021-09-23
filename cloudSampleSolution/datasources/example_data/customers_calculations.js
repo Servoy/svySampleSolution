@@ -3,5 +3,5 @@
  */
 function addressNameHtml()
 {
-	return '<div class="container" style="border-bottom: 1px solid darkgray"><div class="cName h4 bold" style="margin-bottom:10px">' + companyname + '</div><div class="cAddress" style="margin-bottom:10px">' + address + '</div></div>';
+	return '<div class="container"><div class="cName h4 bold" style="margin-bottom:10px">' + companyname + '</div><div class="cAddress" style="margin-bottom:10px">' + address + '</div></div>';
 }
