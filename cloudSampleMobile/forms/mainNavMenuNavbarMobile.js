@@ -91,7 +91,7 @@ function loadNavbarItems() {
 	menuItem.inputButtonStyleClass = "btn-default";
 	menuItems.push(menuItem);
 
-	menuItem = elements.navbar.createMenuItem('DOCUMENT EDITOR', NAVBAR_ACTIONS.DOCUMENT_EDITOR, 'RIGHT');
+	/*menuItem = elements.navbar.createMenuItem('DOCUMENT EDITOR', NAVBAR_ACTIONS.DOCUMENT_EDITOR, 'RIGHT');
 	menuItem.displayType = 'MENU_ITEM';
 	menuItem.styleClass = 'no-border';
 	menuItem.inputButtonStyleClass = "btn-default";
@@ -109,7 +109,7 @@ function loadNavbarItems() {
 	submenuItems.push(users);
 	
 	menuItem.subMenuItems = submenuItems;
-	menuItems.push(menuItem);
+	menuItems.push(menuItem);*/
 	
 	
 	
@@ -161,8 +161,8 @@ function onNavbarMenuItemClicked(event, menuItem) {
 	case NAVBAR_ACTIONS.PRIMARY_COLOR:
 
 		var popup = plugins.window.createFormPopup(forms.colorPicker);
-		popup.x(event.getX());
-		popup.y(event.getY());
+		popup.x(0);
+		popup.y(0);
 		popup.show();
 
 		break;

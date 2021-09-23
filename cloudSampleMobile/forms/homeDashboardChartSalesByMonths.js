@@ -101,8 +101,8 @@ function onClickMonth(dataset_index, index, label, value) {
 	var monthIndex = scopes.svyDateUtils.getShortMonthNames("en").indexOf(label);
 	var monthDate = new Date()
 	monthDate.setMonth(monthIndex);
-	var startDate = scopes.svyDateUtils.toStartOfDay(scopes.svyDateUtils.getFirstDayOfMonth(monthDate));
-	var endDate = scopes.svyDateUtils.toEndOfDay(scopes.svyDateUtils.getLastDayOfMonth(monthDate));
+	//var startDate = scopes.svyDateUtils.toStartOfDay(scopes.svyDateUtils.getFirstDayOfMonth(monthDate));
+	//var endDate = scopes.svyDateUtils.toEndOfDay(scopes.svyDateUtils.getLastDayOfMonth(monthDate));
 
 	// navigate to orders table
 	

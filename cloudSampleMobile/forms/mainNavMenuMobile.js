@@ -8,8 +8,8 @@ function loadMenuItems() {
 	var menuItems = [];
 	/** @type {CustomType<servoyextra-sidenav.MenuItem>} */
 	var menuItem;
-	var menuSubItems = [];
-	var menuSubItem;
+	//var menuSubItems = [];
+	//var menuSubItem;
 
 	// User
 	menuItem = new Object();

@@ -79,6 +79,7 @@ right:"0",
 top:"70",
 width:"-1"
 },
+onCellClick:"BC3D4245-597D-4CDE-A8C8-BDA5DBD4D54B",
 rowHeight:75,
 styleClass:"ag-theme-servoy",
 toolPanelConfig:{

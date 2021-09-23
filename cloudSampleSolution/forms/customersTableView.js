@@ -12,7 +12,7 @@
  * @properties={typeid:24,uuid:"8ED7CCB1-5E0F-4D4A-A33A-96E8E7247BF2"}
  */
 function onCellDoubleClick(foundsetindex, columnindex, record, event) {
-	showForm(forms.customerViewMobile);
+	showForm(forms.customerView);
 }
 
 /**

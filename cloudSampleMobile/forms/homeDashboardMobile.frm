@@ -14,10 +14,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",
@@ -53,7 +50,7 @@ uuid:"0DD98FD1-3C02-4857-8C79-FC06C9A606A3"
 },
 {
 customProperties:"attributes:{\
-class:\"row margin-top-15\"\
+class:\"row\"\
 },\
 properties:{\
 packagename:\"12grid\",\
@@ -61,10 +58,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",
@@ -108,10 +102,7 @@ specname:\"row\"\
 }",
 items:[
 {
-customProperties:"attributes:{\
-class:\"col-md-12\"\
-},\
-properties:{\
+customProperties:"properties:{\
 packagename:\"12grid\",\
 specname:\"column\"\
 }",

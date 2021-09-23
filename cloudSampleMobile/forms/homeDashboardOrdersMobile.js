@@ -29,3 +29,20 @@ function onActionSeeMoreOrders(event, dataTarget) {
 	scopes.global.showForm(forms.ordersViewMobileDataGrid);
 
 }
+
+/**
+ * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
+ * the foundsetindex is always -1 when there are grouped rows
+ *
+ * @param {number} foundsetindex
+ * @param {number} [columnindex]
+ * @param {JSRecord} [record]
+ * @param {JSEvent} [event]
+ *
+ * @private
+ *
+ * @properties={typeid:24,uuid:"BC3D4245-597D-4CDE-A8C8-BDA5DBD4D54B"}
+ */
+function onCellClick(foundsetindex, columnindex, record, event) {
+	scopes.global.showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
+}
