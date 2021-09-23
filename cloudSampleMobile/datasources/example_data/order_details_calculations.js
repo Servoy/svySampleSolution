@@ -3,5 +3,5 @@
  */
 function orderDetailsHtml()
 {
-	return '<div class="container"><div class="h4 bold" style="overflow: hidden; text-overflow: ellipsis;">' + (order_details_to_products != null ? order_details_to_products.productname : "") + '</div><div>Quantity: ' +quantity+ '</div><div>Price: ' +unitprice+ '</div><div>Total: ' +subtotal+ '</div></div>';
+	return '<div class="container" style="display: grid;"><div class="h4 bold" style="overflow: hidden; text-overflow: ellipsis;">' + (order_details_to_products != null ? order_details_to_products.productname : "") + '</div><div>Quantity: ' +quantity+ '</div><div>Price: ' +unitprice+ '</div><div>Total: ' +subtotal+ '</div></div>';
 }
