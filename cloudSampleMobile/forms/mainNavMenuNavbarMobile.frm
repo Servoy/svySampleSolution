@@ -21,12 +21,6 @@ uuid:"7633073D-14C7-4A8F-BFDF-D97D5EACB3FB"
 },
 {
 cssPosition:"0,0,-1,0,-1,50",
-customProperties:"methods:{\
-onMenuItemClicked:{\
-arguments:null,\
-parameters:null\
-}\
-}",
 extendsID:"5D586B6A-6C3D-436C-8BA2-D12084B0CA20",
 json:{
 brandLogo:"FD2567AF-AE16-4CBF-AFE2-0F23703103EF",
@@ -38,8 +32,7 @@ left:"0",
 right:"0",
 top:"0",
 width:"-1"
-},
-onMenuItemClicked:"0A06EBDB-05B3-4DC5-83D7-26684F6E6F9D"
+}
 },
 typeid:47,
 uuid:"A64CA417-E3CC-43A5-A73F-E92707B426D0"

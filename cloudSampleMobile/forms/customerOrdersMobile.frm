@@ -4,13 +4,13 @@ dataSource:"db:/example_data/orders",
 extendsID:"DF4918EA-5E73-4887-91AA-15CB2300AEBF",
 items:[
 {
-cssPosition:"10,-1,-1,10,55,25",
+cssPosition:"10,-1,-1,5,55,25",
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
-left:"10",
+left:"5",
 right:"-1",
 top:"10",
 width:"55"
@@ -126,7 +126,7 @@ typeid:47,
 uuid:"81198594-04B3-43E0-95F4-72126FE6E65D"
 },
 {
-cssPosition:"5,-1,-1,65,270,40",
+cssPosition:"5,-1,-1,55,265,40",
 json:{
 autoRemoveWhenClicked:false,
 breadcrumbs:[
@@ -142,10 +142,10 @@ svyUUID:"A2685EC6-56DA-4EFB-98AC-B7B81DFFFED6"
 cssPosition:{
 bottom:"-1",
 height:"40",
-left:"65",
+left:"55",
 right:"-1",
 top:"5",
-width:"270"
+width:"265"
 },
 onCrumbClicked:"954BC2B9-9E7B-4A35-A47B-D65DBD3D40A3",
 size:{

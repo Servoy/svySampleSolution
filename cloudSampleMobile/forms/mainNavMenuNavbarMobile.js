@@ -30,25 +30,6 @@ function onLoad(event) {
 }
 
 /**
- * @protected
- * @param menuItemId
- * @param event
- * @return {Boolean}
- *
- * @properties={typeid:24,uuid:"B79F7A55-18E3-4375-8D69-262DFCDFD981"}
- * @override
- */
-function onMenuItemSelected(menuItemId, event) {
-
-	if (menuItemId === "TUTORIAL") {
-		scopes.tutorial.showTutorial()
-		return false;
-	}
-
-	return true;
-}
-
-/**
  * @return {Array<CustomType<bootstrapextracomponents-navbar.menuItem>>}
  * @protected
  * @properties={typeid:24,uuid:"9CDFAE8D-2102-45D6-BB7E-A28E1566634C"}
@@ -148,6 +129,8 @@ function loadNavbarItems() {
  * @protected
  * @param {JSEvent} event
  * @param menuItem
+ * 
+ * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"0A06EBDB-05B3-4DC5-83D7-26684F6E6F9D"}
  * @override
@@ -165,38 +148,15 @@ function onNavbarMenuItemClicked(event, menuItem) {
 		popup.y(0);
 		popup.show();
 
-		break;
-	case NAVBAR_ACTIONS.HOME:
-		elements.formcontainer.containedForm = forms.homeDashboardMobile;
-		break;
-	case NAVBAR_ACTIONS.CUSTOMERS:
-		elements.formcontainer.containedForm = forms.customersViewMobileDataGrid;
-		break;
-	case NAVBAR_ACTIONS.ORDERS:
-		elements.formcontainer.containedForm = forms.ordersViewMobileDataGrid;
-		break;
-	case NAVBAR_ACTIONS.DOCUMENT_EDITOR:
-		elements.formcontainer.containedForm = forms.documentEditor;
-		break;
-	case NAVBAR_ACTIONS.SECURITY:
-	elements.formcontainer.containedForm = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT;
-		break;
-	case NAVBAR_ACTIONS.SECURITY_ROLES:
-		elements.formcontainer.containedForm = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT_ROLES;
-		break;
-	case NAVBAR_ACTIONS.SECURITY_USERS:
-	elements.formcontainer.containedForm = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT_USERS;
-	break;
-	case DEFAULT_NAVBAR_ACTIONS.LOGOUT:
-		security.logout();
-		break;
+		return false;
 	case NAVBAR_ACTIONS.TUTORIAL:
 		scopes.tutorial.showTutorial();
-		break;
+		return false;
 	default:
 		break;
 	}
 
+	return true
 }
 
 /**

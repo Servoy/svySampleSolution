@@ -274,7 +274,7 @@ typeid:47,
 uuid:"81535BB0-974F-4AD7-B950-2A9911C0EC74"
 },
 {
-cssPosition:"5,-1,-1,80,230,40",
+cssPosition:"5,-1,-1,70,230,40",
 customProperties:"methods:{\
 onCrumbClicked:{\
 arguments:null,\
@@ -296,7 +296,7 @@ svyUUID:"A6A8F835-DD51-4BCB-8CA9-91CB3DCBB158"
 cssPosition:{
 bottom:"-1",
 height:"40",
-left:"80",
+left:"70",
 right:"-1",
 top:"5",
 width:"230"

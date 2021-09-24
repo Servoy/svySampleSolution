@@ -31,7 +31,7 @@ var DEFAULT_COLORS = {
  */
 function onSolutionOpen(arg, queryParams) {
 
-	plugins.ngclientutils.setViewportMetaDefaultForMobileAwareSites();
+	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
 	
 	// autosave false
 	databaseManager.setAutoSave(false);
