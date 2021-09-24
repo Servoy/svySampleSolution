@@ -169,15 +169,16 @@ function onNavbarMenuItemClicked(event, menuItem) {
 function onSearch(txt) {
 	// show search view lookup
 	var lookup = scopes.svyLookup.createLookup(datasources.mem.search_results.getDataSource());
-	lookup.setLookupForm(forms.searchViewLookup);
+	lookup.setLookupForm(forms.searchViewLookupMobile);
 	lookup.addField("").setSearchable(false).setStyleClass("text-center fa-2x").setStyleClassDataprovider("iconStyleClass").setWidth("50");
 	lookup.addField("text_value").setTitleText("RESULT");
 
-	// show the lookup as popup popup
+	// show the lookup as popup
 	var popup = lookup.createPopUp(onSearchLookup, txt);
-	popup.y(86);
-	popup.x(application.getWindow().getWidth() - 501);
-	popup.width(500);
+	popup.y(85);
+	popup.x(1);
+	popup.width(application.getWindow().getWidth()-1);
+	popup.height(application.getWindow().getHeight()-85);
 	popup.show();
 }
 
@@ -200,12 +201,12 @@ function onSearchLookup(records, values, lookup) {
 		case "customers":
 			// navigate to customer
 			var customerRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.customers.getDataSource(), [record.pks]);
-			scopes.global.showForm(forms.customerView, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+			scopes.global.showForm(forms.customerViewMobile, customerRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		case "orders":
 			// navigate to customer's order
 			var orderRecord = scopes.svyDataUtils.getRecord(datasources.db.example_data.orders.getDataSource(), [record.pks]);
-			scopes.global.showForm(forms.orderEdit, orderRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+			scopes.global.showForm(forms.orderEditMobile, orderRecord, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 			break;
 		default:
 		}
