@@ -1,4 +1,11 @@
 /**
+ * @type {String}
+ *
+ * @properties={typeid:35,uuid:"01256C01-6088-4605-85C3-4670A4C4138E"}
+ */
+var addRemoveText = "+/-";
+
+/**
  * @protected 
  * @type {String}
  *
@@ -55,7 +62,7 @@ function setOrderId(id){
 function onCellClick(foundsetindex, columnindex, record, event) {
 	var column = elements.dataGridTable.getColumn(columnindex);
 	switch (column.id) {
-	case "product":
+	case "addRemove":
 		var answer = plugins.dialogs.showInputDialog("Quantity","Please enter the new value:",foundset.quantity.toString());
 		if (answer != null) {
 			if(answer == '0'){

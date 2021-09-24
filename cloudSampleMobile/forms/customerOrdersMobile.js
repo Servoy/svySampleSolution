@@ -1,3 +1,10 @@
+/**
+ * @protected 
+ * @type {String}
+ *
+ * @properties={typeid:35,uuid:"7ADFBD5B-2362-4C54-9AFB-DF4C5EC6B163"}
+ */
+var cId;
 
 /**
  * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
@@ -28,7 +35,6 @@ function onActionSearch() {
  * @override
  */
 function newRecord(){
-	var cId = foundset.customerid;
 	_super.newRecord();
 	foundset.customerid = cId;
 	scopes.global.showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
@@ -72,4 +78,15 @@ function onCrumbClicked(event, crumb, index) {
 		back();
 		break;
 	}
+}
+
+/**
+ * @public 
+ * TODO generated, please specify type and doc for the params
+ * @param id
+ *
+ * @properties={typeid:24,uuid:"14930FB8-FCB0-43FD-84FB-13429F85B242"}
+ */
+function setCID(id){
+	cId = id;
 }

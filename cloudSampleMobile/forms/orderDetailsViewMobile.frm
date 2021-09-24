@@ -13,9 +13,17 @@ dataprovider:"orderDetailsHtml",
 headerStyleClass:"bold h4",
 headerTitle:"Details",
 id:"product",
-minWidth:245,
+minWidth:205,
 showAs:"html",
 svyUUID:"95A6336D-7564-41DB-AEE7-A01B57F497B9"
+},
+{
+dataprovider:"addRemoveText",
+id:"addRemove",
+maxWidth:40,
+minWidth:40,
+styleClass:"clickable h4",
+svyUUID:"1CC65F81-4283-4702-92AE-6F1BEB715F64"
 },
 {
 id:"delete",
