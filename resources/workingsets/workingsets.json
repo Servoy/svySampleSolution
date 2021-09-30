@@ -49,6 +49,13 @@
 ]
 },
 {
+"name":"Login",
+"paths":[
+"/cloudSampleMobile/.project",
+"/cloudSampleMobile/forms/loginMobile.frm"
+]
+},
+{
 "name":"Order",
 "paths":[
 "/cloudSampleSolution/.project",
