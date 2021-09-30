@@ -24,9 +24,12 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 
 /**
  * @properties={typeid:24,uuid:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF"}
+ * @AllowToRunInFind
  */
 function onActionSearch() {
-	search(searchText,'orderid');
+		
+		search(searchText,'orderdate');
+		search(searchText,'orderid');
 }
 
 

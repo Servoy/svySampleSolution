@@ -8,5 +8,5 @@
  */
 function onActionOrders(event) {
 	forms.customerOrdersMobile.setCID(foundset.customerid);
-	scopes.global.showForm(forms.customerOrdersMobile,foundset.customers_to_orders);
+	scopes.global.showForm(forms.customerOrdersMobile, foundset.customers_to_orders, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
 }
