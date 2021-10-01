@@ -6,7 +6,7 @@
  * @properties={typeid:24,uuid:"F88F013D-AFC3-41E6-9F22-F4E3132C0B8D"}
  */
 function onActionSearch(event) {
-	search(searchText,'orderid');
+	search(searchText,['orderid','orderdate','customerid']);
 }
 
 
