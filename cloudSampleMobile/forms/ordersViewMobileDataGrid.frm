@@ -10,7 +10,7 @@ dataSource:"db:/example_data/orders",
 extendsID:"DF4918EA-5E73-4887-91AA-15CB2300AEBF",
 items:[
 {
-cssPosition:"19,-1,-1,255,25,25",
+cssPosition:"19,-1,-1,210,25,25",
 customProperties:"methods:{\
 onActionMethodID:{\
 arguments:null,\
@@ -22,7 +22,7 @@ json:{
 cssPosition:{
 bottom:"-1",
 height:"25",
-left:"255",
+left:"210",
 right:"-1",
 top:"19",
 width:"25"
@@ -59,10 +59,12 @@ parameters:null\
 }\
 }",
 extendsID:"5BAED26F-EC07-4BA8-9DD6-9C5FAAEB6228",
+formIndex:0,
 json:{
 columns:[
 {
 dataprovider:"ordersHtml",
+filterType:"TEXT",
 headerStyleClass:"bold h4",
 headerTitle:"Orders",
 maxWidth:null,
@@ -77,6 +79,7 @@ right:"0",
 top:"55",
 width:"200"
 },
+formIndex:0,
 onCellClick:"4F3D62A5-6008-4881-8AA6-AEC370D37414",
 rowHeight:75,
 toolPanelConfig:{
