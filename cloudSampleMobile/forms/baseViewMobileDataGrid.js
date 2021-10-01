@@ -13,9 +13,12 @@ var searchText = null;
  */
 function search(text,column){
 	var simpleSearch = scopes.svySearch.createSimpleSearch(foundset);
-	simpleSearch.addSearchProvider(column)
+	for(var i =0; i<column.length; i++){
+		simpleSearch.addSearchProvider(column[i]);
+	}	
 	simpleSearch.setSearchText(text);
 	simpleSearch.loadRecords(foundset);
+	
 }
 
 /**

@@ -27,9 +27,7 @@ function onCellClick(foundsetindex, columnindex, record, event) {
  * @AllowToRunInFind
  */
 function onActionSearch() {
-		
-		search(searchText,'orderdate');
-		search(searchText,'orderid');
+	search(searchText,['orderdate','orderid']);
 }
 
 
