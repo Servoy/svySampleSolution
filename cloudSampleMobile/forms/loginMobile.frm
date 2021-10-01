@@ -1,7 +1,7 @@
 customProperties:"formComponent:false,\
 useCssPosition:true",
-dataSource:"db:/svy_security/users",
 encapsulation:108,
+extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
 items:[
 {
 cssPosition:"312,38,-1,35,140,35",
@@ -112,7 +112,7 @@ right:"35",
 top:"247",
 width:"140"
 },
-dataProviderID:"user",
+dataProviderID:"userName",
 size:{
 height:30,
 width:140
@@ -135,7 +135,7 @@ right:"35",
 top:"182",
 width:"140"
 },
-dataProviderID:"tenant",
+dataProviderID:"tenantName",
 size:{
 height:30,
 width:140
