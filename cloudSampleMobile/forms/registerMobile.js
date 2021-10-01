@@ -39,10 +39,12 @@ function onActionRegister(event) {
 		plugins.dialogs.showErrorDialog('','User name or passord cannot be empty');
 		
 	}else{
+		
 		var user = scopes.svySecurity.getTenant(tenantName).createUser(newUserName);
 		user.addRole('admin');
 		user.setPassword(newPassword);
-		plugins.dialogs.showInfoDialog('','The user has been created')
+		
+		plugins.dialogs.showInfoDialog('','The user has been created');
 		forms.loginContainerMobile.navigation(forms.loginMobile);
 	}
 	

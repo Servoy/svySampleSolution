@@ -4,28 +4,30 @@ encapsulation:108,
 extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
 items:[
 {
-cssPosition:"405,-1,-1,calc(50% - 60px),100,30",
+cssPosition:"403,35,-1,35,140,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
-left:"calc(50% - 60px)",
-right:"-1",
-top:"405",
-width:"100"
+left:"35",
+right:"35",
+top:"403",
+width:"140"
 },
 onActionMethodID:"3C45AC0A-0968-4254-83E1-EBA2A8AB251F",
 size:{
 height:30,
 width:80
 },
+styleClass:"text-tertiary text-center text-center-vertical text-underline",
 text:"Back"
 },
-name:"button_2",
+name:"label_3",
 size:"80,30",
-typeName:"bootstrapcomponents-button",
+styleClass:"text-tertiary text-center text-center-vertical text-underline",
+typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"1F8024E8-9755-4BA1-BA93-F0DEB52AE33E"
+uuid:"242733B3-C2F7-4B58-9051-A860FC8DD3C1"
 },
 {
 height:480,
@@ -72,13 +74,13 @@ typeid:47,
 uuid:"52B25F7E-0959-4F90-8113-866925134A0F"
 },
 {
-cssPosition:"312,38,-1,35,140,35",
+cssPosition:"312,35,-1,35,140,35",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"35",
 left:"35",
-right:"38",
+right:"35",
 top:"312",
 width:"140"
 },
@@ -96,25 +98,27 @@ typeid:47,
 uuid:"7AAE449C-4AD0-4952-895F-68B018A42AA5"
 },
 {
-cssPosition:"365,-1,-1,calc(50% - 60px),100,30",
+cssPosition:"365,35,-1,35,140,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
-left:"calc(50% - 60px)",
-right:"-1",
+left:"35",
+right:"35",
 top:"365",
-width:"100"
+width:"140"
 },
 onActionMethodID:"DF8B19E2-1B91-4F8B-97CF-CE0BE451550C",
 size:{
 height:30,
 width:80
 },
+styleClass:"btn btn-default text-primary",
 text:"Register"
 },
 name:"button_4",
 size:"80,30",
+styleClass:"btn btn-default text-primary",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"888663D2-E556-4FAA-B61B-D59B50718B4F"

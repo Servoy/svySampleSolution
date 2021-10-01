@@ -28,30 +28,6 @@ typeid:47,
 uuid:"01B4C50E-B5AC-45C7-BC8E-992036BF80AE"
 },
 {
-cssPosition:"405,-1,-1,calc(50% - 60px),100,30",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"30",
-left:"calc(50% - 60px)",
-right:"-1",
-top:"405",
-width:"100"
-},
-onActionMethodID:"B15FCD0E-99F2-4D74-BC99-EABD7A4160D2",
-size:{
-height:30,
-width:80
-},
-text:"Register"
-},
-name:"button_1",
-size:"80,30",
-typeName:"bootstrapcomponents-button",
-typeid:47,
-uuid:"1AF72EFF-8021-478A-A766-234CC2F8AF8A"
-},
-{
 cssPosition:"290,35,-1,35,100,20",
 json:{
 cssPosition:{
@@ -149,6 +125,32 @@ typeid:47,
 uuid:"CC1E7CC1-7BC1-406C-9716-57EF2680BBDB"
 },
 {
+cssPosition:"405,35,-1,35,140,30",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"30",
+left:"35",
+right:"35",
+top:"405",
+width:"140"
+},
+onActionMethodID:"B15FCD0E-99F2-4D74-BC99-EABD7A4160D2",
+size:{
+height:30,
+width:80
+},
+styleClass:"text-tertiary text-center text-center-vertical text-underline",
+text:"Register"
+},
+name:"label_2",
+size:"80,30",
+styleClass:"text-tertiary text-center text-center-vertical text-underline",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"D15BA662-2BEF-4BF6-9D7B-5F30E7FA157B"
+},
+{
 cssPosition:"182,35,-1,35,140,30",
 json:{
 cssPosition:{
@@ -178,25 +180,27 @@ typeid:19,
 uuid:"E089211D-ED16-410A-9157-688D9B960A8B"
 },
 {
-cssPosition:"365,-1,-1,calc(50% - 60px),100,30",
+cssPosition:"365,35,-1,35,140,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
-left:"calc(50% - 60px)",
-right:"-1",
+left:"35",
+right:"35",
 top:"365",
-width:"100"
+width:"140"
 },
 onActionMethodID:"FB895DED-D75D-4931-9427-56F7F2A068D4",
 size:{
 height:30,
 width:80
 },
+styleClass:"btn btn-default text-primary",
 text:"Login"
 },
 name:"button_4",
 size:"80,30",
+styleClass:"btn btn-default text-primary",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"E77F726B-7396-4F84-94E6-5BAF22D46923"
