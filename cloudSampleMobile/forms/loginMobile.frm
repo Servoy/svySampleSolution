@@ -28,6 +28,30 @@ typeid:47,
 uuid:"01B4C50E-B5AC-45C7-BC8E-992036BF80AE"
 },
 {
+cssPosition:"405,-1,-1,calc(50% - 60px),100,30",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"30",
+left:"calc(50% - 60px)",
+right:"-1",
+top:"405",
+width:"100"
+},
+onActionMethodID:"B15FCD0E-99F2-4D74-BC99-EABD7A4160D2",
+size:{
+height:30,
+width:80
+},
+text:"Register"
+},
+name:"button_1",
+size:"80,30",
+typeName:"bootstrapcomponents-button",
+typeid:47,
+uuid:"1AF72EFF-8021-478A-A766-234CC2F8AF8A"
+},
+{
 cssPosition:"290,35,-1,35,100,20",
 json:{
 cssPosition:{

@@ -52,7 +52,9 @@
 "name":"Login",
 "paths":[
 "/cloudSampleMobile/.project",
-"/cloudSampleMobile/forms/loginMobile.frm"
+"/cloudSampleMobile/forms/loginContainerMobile.frm",
+"/cloudSampleMobile/forms/loginMobile.frm",
+"/cloudSampleMobile/forms/registerMobile.frm"
 ]
 },
 {

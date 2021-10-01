@@ -28,3 +28,13 @@ function onShow(firstShow, event) {
 function onActionLogin(event) {
 	login();
 }
+
+/**
+ * @param {JSEvent} event
+ *
+ * @properties={typeid:24,uuid:"B15FCD0E-99F2-4D74-BC99-EABD7A4160D2"}
+ */
+function onActionRegister(event) {
+	
+	forms.loginContainerMobile.navigation(forms.registerMobile);
+}
