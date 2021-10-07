@@ -30,7 +30,7 @@ var DEFAULT_COLORS = {
  * @properties={typeid:24,uuid:"BFCC6B60-B595-4A61-B90E-0D1D0853B7C7"}
  */
 function onSolutionOpen(arg, queryParams) {
-	
+	scopes.svyToolbarFilter.setPopupRendererForm(scopes.svyToolbarFilter.FILTER_TYPES.DATE, forms.svyDatePopupFilterMobile);
 	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
 	
 	// autosave false
