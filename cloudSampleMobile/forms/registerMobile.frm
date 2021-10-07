@@ -4,14 +4,38 @@ encapsulation:108,
 extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
 items:[
 {
-cssPosition:"403,35,-1,35,140,30",
+cssPosition:"383,35,-1,35,140,35",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"35",
+left:"35",
+right:"35",
+top:"383",
+width:"140"
+},
+dataProviderID:"confirmPassword",
+inputType:"password",
+size:{
+height:30,
+width:140
+}
+},
+name:"textbox_3c",
+size:"140,30",
+typeName:"bootstrapcomponents-textbox",
+typeid:47,
+uuid:"04BD2B4E-71B2-459B-A712-1316D4927BD5"
+},
+{
+cssPosition:"473,35,-1,35,140,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"35",
 right:"35",
-top:"403",
+top:"473",
 width:"140"
 },
 onActionMethodID:"3C45AC0A-0968-4254-83E1-EBA2A8AB251F",
@@ -30,7 +54,7 @@ typeid:47,
 uuid:"242733B3-C2F7-4B58-9051-A860FC8DD3C1"
 },
 {
-height:480,
+height:568,
 partType:5,
 typeid:19,
 uuid:"29A0558B-82E4-482E-A693-A25990AE60A1"
@@ -54,6 +78,30 @@ typeid:47,
 uuid:"3CE5E760-6C22-4613-B612-03DF70838EA6"
 },
 {
+cssPosition:"503,35,-1,35,140,60",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"60",
+left:"35",
+right:"35",
+top:"503",
+width:"140"
+},
+size:{
+height:30,
+width:80
+},
+styleClass:"default-align text-danger h6"
+},
+name:"errorMsg",
+size:"80,30",
+styleClass:"default-align text-danger h6",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"429F47A3-ABBC-47CA-8E1B-368E5A563BAE"
+},
+{
 cssPosition:"20,calc(50% - 120px),-1,calc(50% - 120px),0,120",
 json:{
 cssPosition:{
@@ -72,6 +120,24 @@ styleClass:"center-block",
 typeName:"servoyextra-imagelabel",
 typeid:47,
 uuid:"52B25F7E-0959-4F90-8113-866925134A0F"
+},
+{
+cssPosition:"361,35,-1,35,100,20",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"20",
+left:"35",
+right:"35",
+top:"361",
+width:"100"
+},
+text:"Confirm Password"
+},
+name:"lblPasswordconfirmation",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"6B8C6447-7C61-4780-A110-ACE77F758CA6"
 },
 {
 cssPosition:"312,35,-1,35,140,35",
@@ -98,14 +164,14 @@ typeid:47,
 uuid:"7AAE449C-4AD0-4952-895F-68B018A42AA5"
 },
 {
-cssPosition:"365,35,-1,35,140,30",
+cssPosition:"435,35,-1,35,140,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"35",
 right:"35",
-top:"365",
+top:"435",
 width:"140"
 },
 onActionMethodID:"DF8B19E2-1B91-4F8B-97CF-CE0BE451550C",
@@ -113,12 +179,12 @@ size:{
 height:30,
 width:80
 },
-styleClass:"btn btn-default text-primary",
+styleClass:"btn btn-default bg-success",
 text:"Register"
 },
 name:"button_4",
 size:"80,30",
-styleClass:"btn btn-default text-primary",
+styleClass:"btn btn-default bg-success",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"888663D2-E556-4FAA-B61B-D59B50718B4F"
@@ -211,6 +277,6 @@ name:"registerMobile",
 navigatorID:"-1",
 onShowMethodID:"9EF63D56-88A7-4FDD-8039-7968DC79EE3C",
 showInMenu:true,
-size:"250,480",
+size:"250,511",
 typeid:3,
 uuid:"B5872DC9-9B57-4FA7-A620-FF88633B8622"

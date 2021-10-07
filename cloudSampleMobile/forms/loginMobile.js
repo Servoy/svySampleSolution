@@ -1,4 +1,19 @@
 /**
+ * @properties={typeid:35,uuid:"71C225B7-64DE-4A10-922C-1923C8F32A61",variableType:-4}
+ */
+var ERROR_CODES = {
+	TENANT_NOT_SPECIFIED : 'Please enter the Tenant',
+	USER_NOT_SPECIFIED : 'Please enter the User',
+	PASSWORD_NOT_SPECIFIED : 'Please enter the User\'s password',
+	TENANT_NOT_FOUND : 'Tenant not found',
+	USER_NOT_FOUND : 'User not found',
+	PASSWORD_MISMATCH : 'The entered password is not correct',
+	INSUFFICIENT_PERMISSIONS : 'The User does not have any permission; login is denied',
+	LOCKED_USER : 'The User is locked',
+	LOCKED_TENANT : 'The Tenant is locked'
+};
+
+/**
  * Callback method for when form is shown.
  *
  * @param {Boolean} firstShow form is shown first time after load
@@ -16,7 +31,52 @@ function onShow(firstShow, event) {
 	password = "admin";
 	
 }
+/**
+ * TODO generated, please specify type and doc for the params
+ * @param error
+ *
+ * @properties={typeid:24,uuid:"45E92DBA-9531-42DC-93EC-130143F6149A"}
+ * @override
+ */
+function onLoginError(error) {
 
+	var errorTxt;
+	switch (error) {
+	case ERROR_CODES.INSUFFICIENT_PERMISSIONS:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.LOCKED_TENANT:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.LOCKED_USER:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.PASSWORD_MISMATCH:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.PASSWORD_NOT_SPECIFIED:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.TENANT_NOT_FOUND:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.TENANT_NOT_SPECIFIED:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.USER_NOT_FOUND:
+		errorTxt = error;
+		break;
+	case ERROR_CODES.USER_NOT_SPECIFIED:
+		errorTxt = error;
+		break;
+	default:
+		errorTxt = error
+		break;
+	}
+	
+	elements.errorMsg.text = errorTxt;
+	elements.errorMsg.visible = true;
+}
 /**
  * @param {JSEvent} event
  *

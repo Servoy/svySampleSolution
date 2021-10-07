@@ -84,6 +84,30 @@ typeid:47,
 uuid:"3B968014-2E49-434C-A5B9-A55E4AD70385"
 },
 {
+cssPosition:"437,35,-1,35,140,60",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"60",
+left:"35",
+right:"35",
+top:"437",
+width:"140"
+},
+size:{
+height:30,
+width:80
+},
+styleClass:"default-align text-danger"
+},
+name:"errorMsg",
+size:"80,30",
+styleClass:"default-align text-danger",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"A1EB13E6-51A4-483D-B918-147E7D710031"
+},
+{
 cssPosition:"160,35,-1,35,100,20",
 json:{
 cssPosition:{
@@ -174,7 +198,7 @@ typeid:47,
 uuid:"DF6E2D56-DBF1-437B-9C14-90A058A349C6"
 },
 {
-height:480,
+height:500,
 partType:5,
 typeid:19,
 uuid:"E089211D-ED16-410A-9157-688D9B960A8B"
@@ -195,12 +219,12 @@ size:{
 height:30,
 width:80
 },
-styleClass:"btn btn-default text-primary",
+styleClass:"btn btn-default bg-success",
 text:"Login"
 },
 name:"button_4",
 size:"80,30",
-styleClass:"btn btn-default text-primary",
+styleClass:"btn btn-default bg-success",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"E77F726B-7396-4F84-94E6-5BAF22D46923"
@@ -210,6 +234,6 @@ name:"loginMobile",
 navigatorID:"-1",
 onShowMethodID:"068D9927-B8AF-4BE4-B104-DA9E0553A5C4",
 showInMenu:true,
-size:"250,480",
+size:"250,474",
 typeid:3,
 uuid:"9B35BEA8-995B-4488-9B64-2829615D1B16"
