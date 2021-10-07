@@ -48,31 +48,13 @@ function onLoad(event) {
 		'<button class=\"btn-mobile-filter\" data-target=\"open\" svy-tooltip=\"entry.text + entry.operator + \\' \\' + entry.value\">' + \n\
 			'<span class=\"toolbar-filter-tag-text-mobile\">' + entry.text + '</span>' + \n\
 			'<span class=\"toolbar-filter-tag-operator\">' + entry.operator + '</span>' + \n\
-			'<span class=\"toolbar-filter-tag-value\"> ' + valuesArr.join(', ') + ' </span>' + \n\
+			'<span class=\"toolbar-filter-tag-value\"> ' + (valuesArr.length == 1 && valuesArr[0] == '' ? '' : 'On') + ' </span>' + \n\
 			'<span class=\"toolbar-filter-tag-icon-mobile " + scopes.svyPopupFilter.STYLING.OPEN_FILTER_ICON +"\">' + '</span>' + \n\
 		'</button>' + \n\
 		'</div>'; \n\
 		return template; \n\
-	})"
-	
-	var orderFilter = toolbarFilter.addFilter('Order ID', 'orderid', scopes.svyToolbarFilter.FILTER_TYPES.NUMBER);
-	toolbarFilter.addFilter('Order Date', 'orderdate', scopes.svyToolbarFilter.FILTER_TYPES.DATE);
-	var filter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
-	filter.setValueList('customers');
-	
-	toolbarFilter.setFilterValue(filter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
-	toolbarFilter.setFilterValue(orderFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
-	
-}
-
-/**
- * TODO generated, please specify type and doc for the params
- * @param event
- *
- * @properties={typeid:24,uuid:"4ECA171E-ADED-4730-B9BC-0B9CEA4FBE7E"}
- */
-function onActionPickFilter(event) {
-	toolbarFilter.showPopupFilterPicker(elements[event.getElementName()]);
+	})";
+	updateCounter();
 }
 
 /**
@@ -86,6 +68,7 @@ function onActionPickFilter(event) {
  */
 function onListComponentClick(entry, index, dataTarget, event) {
     toolbarFilter.onClick(entry, index, dataTarget, event);
+    updateCounter();
 }
 
 /**
@@ -94,6 +77,7 @@ function onListComponentClick(entry, index, dataTarget, event) {
  */
 function onFilterRemovedEvent() {
 	saveToolbarFilterProperty();
+	updateCounter();
 }
 
 /**
@@ -107,6 +91,7 @@ function onFilterRemovedEvent() {
  */
 function onFilterApplyEvent(values, operator, filter) {
 	saveToolbarFilterProperty();
+	updateCounter();
 }
 
 /**

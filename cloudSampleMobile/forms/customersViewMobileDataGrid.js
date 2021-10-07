@@ -48,3 +48,22 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 function onShow(firstShow, event) {
 	foundset.loadAllRecords();
 }
+
+
+/**
+ * TODO generated, please specify type and doc for the params
+ * @param event
+ *
+ * @properties={typeid:24,uuid:"01676E59-6F0B-4C97-AE8F-2CCFB694C11D"}
+ * @override
+ */
+function onLoad(event) {
+	_super.onLoad(event);
+	var customerFilter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
+	customerFilter.setValueList('customers');
+	var addressFilter = toolbarFilter.addFilter('Address', 'address', scopes.svyToolbarFilter.FILTER_TYPES.TOKEN);
+	
+	toolbarFilter.setFilterValue(customerFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(addressFilter,[],scopes.svyPopupFilter.OPERATOR.LIKE_CONTAINS);
+	
+}

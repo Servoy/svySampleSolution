@@ -39,3 +39,23 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 function onShow(firstShow, event) {
 	foundset.loadAllRecords();
 }
+
+/**
+ * TODO generated, please specify type and doc for the params
+ * @param event
+ *
+ * @properties={typeid:24,uuid:"EC8B3E25-1816-4613-9DA0-7E22C3A0AF02"}
+ * @override
+ */
+function onLoad(event) {
+	_super.onLoad(event);
+	var orderIDFilter = toolbarFilter.addFilter('Order ID', 'orderid', scopes.svyToolbarFilter.FILTER_TYPES.NUMBER);
+	var orderDateFilter = toolbarFilter.addFilter('Order Date', 'orderdate', scopes.svyToolbarFilter.FILTER_TYPES.DATE);
+	var customerFilter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
+	customerFilter.setValueList('customers');
+	
+	toolbarFilter.setFilterValue(orderIDFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(orderDateFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(customerFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	
+}
