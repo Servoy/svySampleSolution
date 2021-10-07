@@ -51,6 +51,7 @@ function onLoad(event) {
 			'<span class=\"toolbar-filter-tag-value\"> ' + (valuesArr.length == 1 && valuesArr[0] == '' ? '' : 'On') + ' </span>' + \n\
 			'<span class=\"toolbar-filter-tag-icon-mobile " + scopes.svyPopupFilter.STYLING.OPEN_FILTER_ICON +"\">' + '</span>' + \n\
 		'</button>' + \n\
+		'<button data-target=\"clear\">CLEAR</button>' + \n\
 		'</div>'; \n\
 		return template; \n\
 	})";
@@ -67,7 +68,14 @@ function onLoad(event) {
  * @properties={typeid:24,uuid:"81BCE90D-A8BF-44E3-BC42-BF7F05DFB1E5"}
  */
 function onListComponentClick(entry, index, dataTarget, event) {
-    toolbarFilter.onClick(entry, index, dataTarget, event);
+	
+	if (dataTarget == "clear") {
+		var filter = toolbarFilter.getFilter(entry.dataprovider);
+		toolbarFilter.setFilterValue(filter, [], filter.getOperator());
+		// 
+	} else {
+		toolbarFilter.onClick(entry, index, dataTarget, event);
+	}
     updateCounter();
 }
 
