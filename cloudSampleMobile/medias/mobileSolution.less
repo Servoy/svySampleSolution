@@ -21,8 +21,13 @@
     border-bottom: 1px solid gray;
 }
 
-.toolbar-filter-tag-value-mobile {
-    display: none;
+.btn-clear{
+    border: none;
+    background: white;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-weight: bold;
 }
 
 .toolbar-filter-tag-icon-mobile {
@@ -38,18 +43,31 @@
     top: 15px;
 }
 
+.toolbar-filter-tag-value-mobile {
+	position: absolute;
+    left: 110px;
+    top: 15px;
+    width: 44px;
+    height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .list-item {
     display: grid !important;
     width: 95%;
 }
 
 .svy-popup-filter {
+	border-radius: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 	position: fixed;
     right: 0;
     left: 0;
-    top: 120px !important;
+    bottom: 0;
 }
 
 #formpopup .svy-lookup, #formpopup .lookup-table-form {
-    top: 120px !important;
+    top: unset !important;
 }
