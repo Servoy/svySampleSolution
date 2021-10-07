@@ -1,3 +1,17 @@
+/**
+ * @type {Number}
+ * @private 
+ * @properties={typeid:35,uuid:"E97352DA-AD75-492A-80A7-0BFD3513FAC2",variableType:8}
+ */
+var counter = 0;
+
+/**
+ * @type {String|Number}
+ *
+ * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39",variableType:-4}
+ */
+var searchText = null;
+
 /** 
  * @type {scopes.svyToolbarFilter.ListComponentFilterRenderer}
  *
@@ -12,18 +26,42 @@ var toolbarFilter;
  * @properties={typeid:24,uuid:"5C652274-EA6A-4083-B89D-73259F519EB1"}
  */
 function onLoad(event) {
-	//elements.filterList.visible = false;
 	toolbarFilter = scopes.svyToolbarFilter.createSimpleFilterToolbar(elements.filterList);
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 	
+	elements.filterList.entryRendererFunction = "(function renderFilterEntry(entry) {  \n\
+		var template = '';\n\
+		var strDivider = ' : ';\n\
+		var entryValue = entry.value ? entry.value.toString() : ''; \n\
+		var valuesArr = entryValue.split(',');\n\
+		for ( var i = 0; i < valuesArr.length ; i++ ) {\n\
+			if (valuesArr[i].indexOf('!=') === 0) { \n\
+				valuesArr[i] = '-' + valuesArr[i].substring(2, valuesArr[i].length); \n\
+			} else if (valuesArr[i].indexOf('!') === 0) { \n\
+				valuesArr[i] = '-' + valuesArr[i].substring(1, valuesArr[i].length); \n\
+			} else if (valuesArr[i].indexOf('%!=') === 0) { \n\
+				valuesArr[i] = '-' + valuesArr[i].substring(3, valuesArr[i].length); \n\
+			} \n\
+		}\n\
+		template += '<div class=\"btn-group push-right margin-left-10 toolbar-filter-tag\">' + \n\
+		'<button class=\"btn-mobile-filter\" data-target=\"open\" svy-tooltip=\"entry.text + entry.operator + \\' \\' + entry.value\">' + \n\
+			'<span class=\"toolbar-filter-tag-text-mobile\">' + entry.text + '</span>' + \n\
+			'<span class=\"toolbar-filter-tag-operator\">' + entry.operator + '</span>' + \n\
+			'<span class=\"toolbar-filter-tag-value\"> ' + valuesArr.join(', ') + ' </span>' + \n\
+			'<span class=\"toolbar-filter-tag-icon-mobile " + scopes.svyPopupFilter.STYLING.OPEN_FILTER_ICON +"\">' + '</span>' + \n\
+		'</button>' + \n\
+		'</div>'; \n\
+		return template; \n\
+	})"
 	
-	toolbarFilter.addFilter('Order ID', 'orderid', scopes.svyToolbarFilter.FILTER_TYPES.NUMBER);
+	var orderFilter = toolbarFilter.addFilter('Order ID', 'orderid', scopes.svyToolbarFilter.FILTER_TYPES.NUMBER);
 	toolbarFilter.addFilter('Order Date', 'orderdate', scopes.svyToolbarFilter.FILTER_TYPES.DATE);
 	var filter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
 	filter.setValueList('customers');
 	
 	toolbarFilter.setFilterValue(filter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(orderFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
 	
 }
 
@@ -35,7 +73,6 @@ function onLoad(event) {
  */
 function onActionPickFilter(event) {
 	toolbarFilter.showPopupFilterPicker(elements[event.getElementName()]);
-	//elements.filterList.visible = false;
 }
 
 /**
@@ -49,7 +86,6 @@ function onActionPickFilter(event) {
  */
 function onListComponentClick(entry, index, dataTarget, event) {
     toolbarFilter.onClick(entry, index, dataTarget, event);
-    //elements.filterList.visible = true;
 }
 
 /**
@@ -84,18 +120,24 @@ function saveToolbarFilterProperty() {
 }
 
 /**
- * @type {Number}
- * @private 
- * @properties={typeid:35,uuid:"E97352DA-AD75-492A-80A7-0BFD3513FAC2",variableType:8}
+ * @public
+ * @properties={typeid:24,uuid:"19834F57-99D7-43CA-A0C4-40179D1EDB18"}
  */
-var counter = 0;
+function updateCounter(){
+	counter = toolbarFilter.getActiveFilters().length;	
+}
 
 /**
- * @type {String|Number}
+ * @param {JSEvent} event
  *
- * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39",variableType:-4}
+ * @private
+ *
+ * @properties={typeid:24,uuid:"4B05B229-5CAD-49E1-B507-A95CA3BA6CAD"}
  */
-var searchText = null;
+function onActionSeeFilters(event) {
+	updateCounter();
+	elements.filterList.visible = !elements.filterList.visible;
+}
 
 /**
  * TODO generated, please specify type and doc for the params
@@ -128,40 +170,4 @@ function newRecord() {
  */
 function showForm(form){
 	scopes.global.showForm(form, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
-}
-
-/**
- * @public
- * @properties={typeid:24,uuid:"19834F57-99D7-43CA-A0C4-40179D1EDB18"}
- */
-function updateCounter(){
-	counter = 3;	
-}
-
-/**
- * @param {JSEvent} event
- * @param {string} dataTarget
- *
- * @private
- *
- * @properties={typeid:24,uuid:"150DEB9D-D55C-4CEE-A2A4-60B0E1CDFB19"}
- */
-function onActionFilters(event, dataTarget) {
-	var popup = plugins.window.createFormPopup(forms.filtersMobile);
-	popup.y(100);
-	popup.x(1);
-	popup.width(application.getWindow().getWidth()-2);
-	popup.height(application.getWindow().getHeight()-100);
-	popup.show()
-}
-
-/**
- * @param {JSEvent} event
- *
- * @private
- *
- * @properties={typeid:24,uuid:"4B05B229-5CAD-49E1-B507-A95CA3BA6CAD"}
- */
-function onActionSeeFilters(event) {
-	elements.filterList.visible = !elements.filterList.visible;
 }

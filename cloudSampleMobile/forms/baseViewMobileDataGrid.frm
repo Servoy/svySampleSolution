@@ -15,7 +15,7 @@ width:"25"
 },
 formIndex:0,
 imageStyleClass:"fa fa-filter h4",
-onActionMethodID:"4ECA171E-ADED-4730-B9BC-0B9CEA4FBE7E",
+onActionMethodID:"4B05B229-5CAD-49E1-B507-A95CA3BA6CAD",
 size:{
 height:30,
 width:80
@@ -30,24 +30,28 @@ typeid:47,
 uuid:"21186CA6-9282-4291-A33E-0552255D0DCF"
 },
 {
-cssPosition:"15,184,435,256,200,30",
+cssPosition:"55,0,0,0,200,30",
 formIndex:1,
 json:{
 cssPosition:{
-bottom:"435",
+bottom:"0",
 height:"30",
-left:"256",
-right:"184",
-top:"15",
+left:"0",
+right:"0",
+top:"55",
 width:"200"
 },
 formIndex:1,
-onClick:"81BCE90D-A8BF-44E3-BC42-BF7F05DFB1E5"
+onClick:"81BCE90D-A8BF-44E3-BC42-BF7F05DFB1E5",
+styleClass:"bg-white",
+visible:false
 },
 name:"filterList",
+styleClass:"bg-white",
 typeName:"customrenderedcomponents-customlist",
 typeid:47,
-uuid:"5581A170-D18B-414B-8EA6-3F385CC84BF7"
+uuid:"5581A170-D18B-414B-8EA6-3F385CC84BF7",
+visible:false
 },
 {
 cssPosition:"55,0,0,0,200,100",
@@ -149,16 +153,16 @@ width:"25"
 },
 dataProviderID:"counter",
 formIndex:1,
-onActionMethodID:"4B05B229-5CAD-49E1-B507-A95CA3BA6CAD",
+onActionMethodID:null,
 size:{
 height:30,
 width:80
 },
-styleClass:"count clickable"
+styleClass:"count"
 },
 name:"count",
 size:"80,30",
-styleClass:"count clickable",
+styleClass:"count",
 typeName:"bootstrapcomponents-datalabel",
 typeid:47,
 uuid:"D5E7D324-640F-4DA6-9A0D-5C8EF35E674F"
