@@ -175,6 +175,7 @@ function onSearch(txt) {
 
 	// show the lookup as popup
 	var popup = lookup.createPopUp(onSearchLookup, txt);
+	popup.showBackdrop(true);
 	popup.y(85);
 	popup.x(1);
 	popup.width(application.getWindow().getWidth()-1);

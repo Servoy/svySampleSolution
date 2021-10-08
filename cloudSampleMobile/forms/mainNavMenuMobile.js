@@ -157,6 +157,7 @@ function onMenuItemSelected(menuItemId, event) {
 
 		// show the lookup as popup
 		var popupS = lookup.createPopUp(onSearchLookup, "");
+		popupS.showBackdrop(true);
 		popupS.y(85);
 		popupS.x(1);
 		popupS.width(application.getWindow().getWidth()-1);
