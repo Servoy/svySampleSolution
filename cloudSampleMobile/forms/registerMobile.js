@@ -22,7 +22,7 @@ var newUserName = null;
 /**
  * @properties={typeid:35,uuid:"57E8AA5C-DAC5-4271-B66E-3A564B4A5EE8",variableType:-4}
  */
-var ERROR_CODES = {
+ERROR_CODES = {
 	
 	USER_NOT_SPECIFIED : 'Please enter the User',
 	USER_EXISTS : 'User already exists',
@@ -69,6 +69,7 @@ function onLoginError(error) {
 }
 
 /**
+ * @return {boolean} 
  * @properties={typeid:24,uuid:"C37671C0-87F9-4956-85D3-396DBD86CDB8"}
  */
 function userRegister(){
@@ -101,6 +102,8 @@ function userRegister(){
 	plugins.webnotificationsToastr.success('The user has been created');
 	
 	forms.loginContainerMobile.navigation(forms.loginMobile);
+	
+	return false;
 }
 /**
  * Callback method for when form is shown.

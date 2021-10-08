@@ -1,7 +1,7 @@
 /**
  * @properties={typeid:35,uuid:"71C225B7-64DE-4A10-922C-1923C8F32A61",variableType:-4}
  */
-var ERROR_CODES = {
+ERROR_CODES = {
 	TENANT_NOT_SPECIFIED : 'Please enter the Tenant',
 	USER_NOT_SPECIFIED : 'Please enter the User',
 	PASSWORD_NOT_SPECIFIED : 'Please enter the User\'s password',
