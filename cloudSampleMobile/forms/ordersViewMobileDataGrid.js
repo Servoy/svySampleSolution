@@ -54,8 +54,8 @@ function onLoad(event) {
 	var customerFilter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
 	customerFilter.setValueList('customers');
 	
-	toolbarFilter.setFilterValue(orderIDFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
-	toolbarFilter.setFilterValue(orderDateFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(orderIDFilter,[],scopes.svyPopupFilter.OPERATOR.EQUALS);
+	toolbarFilter.setFilterValue(orderDateFilter,[],scopes.svyPopupFilter.OPERATOR.BETWEEN);
 	toolbarFilter.setFilterValue(customerFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
 	
 }
