@@ -20,9 +20,16 @@ var newPassword = null;
 var newUserName = null;
 
 /**
- * @properties={typeid:35,uuid:"57E8AA5C-DAC5-4271-B66E-3A564B4A5EE8",variableType:-4}
+ * @type {String}
+ * @properties={typeid:35,uuid:"127812A0-98DD-4FBE-988F-FEADF789FB91"}
  */
-ERROR_CODES = {
+var tenantName = null;
+
+/**
+ * @properties={typeid:35,uuid:"57E8AA5C-DAC5-4271-B66E-3A564B4A5EE8",variableType:-4}
+ * @override 
+ */
+var ERROR_CODES = {
 	
 	USER_NOT_SPECIFIED : 'Please enter the User',
 	USER_EXISTS : 'User already exists',
@@ -37,7 +44,6 @@ ERROR_CODES = {
  * @param error
  *
  * @properties={typeid:24,uuid:"EB4F6397-23C2-43EA-9B23-FAA19C66BD04"}
- * @override
  */
 function onLoginError(error) {
 
@@ -93,11 +99,26 @@ function userRegister(){
 		onLoginError(ERROR_CODES.PASSWORD_MISMATCH);
 		return false;
 	}
+	/*the password should be checked before creating the user otherwise the user will be created without password*/
+	try{
+		scopes.svySecurity.verifyPasswordStrength(newPassword)
+	}catch(e){
+	    elements.errorMsg.text = e;
+	    elements.errorMsg.visible = true;
+	    return false;
+	}
 	
 	var user = scopes.svySecurity.getTenant(tenantName).createUser(newUserName);
 	
 	user.addRole('admin');
-	user.setPassword(newPassword);
+	
+	try{
+	    user.setPassword(newPassword);
+	}catch(e){
+	    elements.errorMsg.text = e;
+	    elements.errorMsg.visible = true;
+	    return false;
+	}
 	
 	plugins.webnotificationsToastr.success('The user has been created');
 	
@@ -129,29 +150,6 @@ function onShow(firstShow, event) {
 function onActionRegister(event) {
 	
 	userRegister();
-	
-	
-//	if(!newUserName || !newPassword || !confirmPassword){
-//		plugins.dialogs.showErrorDialog('','User name or passord cannot be empty');
-//		
-//	}else if(newPassword!==confirmPassword){
-//		plugins.dialogs.showErrorDialog('','Please make sure that you set the right password');
-//	}else{
-//		
-//		if(scopes.svySecurity.getTenant(tenantName).getUser(newUserName)){
-//			plugins.dialogs.showErrorDialog('','User already exists');
-//		}else{
-//			var user = scopes.svySecurity.getTenant(tenantName).createUser(newUserName);
-//			application.output(user)
-//			user.addRole('admin');
-//			user.setPassword(newPassword);
-//			
-//			plugins.dialogs.showInfoDialog('','The user has been created');
-//			forms.loginContainerMobile.navigation(forms.loginMobile);
-//		}
-//		
-//	}
-	
 
 }
 

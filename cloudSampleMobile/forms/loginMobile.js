@@ -1,7 +1,8 @@
 /**
+ * @enum 
  * @properties={typeid:35,uuid:"71C225B7-64DE-4A10-922C-1923C8F32A61",variableType:-4}
  */
-ERROR_CODES = {
+var ERROR_MESSAGES = {
 	TENANT_NOT_SPECIFIED : 'Please enter the Tenant',
 	USER_NOT_SPECIFIED : 'Please enter the User',
 	PASSWORD_NOT_SPECIFIED : 'Please enter the User\'s password',
@@ -43,31 +44,31 @@ function onLoginError(error) {
 	var errorTxt;
 	switch (error) {
 	case ERROR_CODES.INSUFFICIENT_PERMISSIONS:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.INSUFFICIENT_PERMISSIONS;
 		break;
 	case ERROR_CODES.LOCKED_TENANT:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.LOCKED_TENANT;
 		break;
 	case ERROR_CODES.LOCKED_USER:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.LOCKED_USER;
 		break;
 	case ERROR_CODES.PASSWORD_MISMATCH:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.PASSWORD_MISMATCH;
 		break;
 	case ERROR_CODES.PASSWORD_NOT_SPECIFIED:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.PASSWORD_NOT_SPECIFIED;
 		break;
 	case ERROR_CODES.TENANT_NOT_FOUND:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.TENANT_NOT_FOUND;
 		break;
 	case ERROR_CODES.TENANT_NOT_SPECIFIED:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.TENANT_NOT_SPECIFIED;
 		break;
 	case ERROR_CODES.USER_NOT_FOUND:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.USER_NOT_FOUND;
 		break;
 	case ERROR_CODES.USER_NOT_SPECIFIED:
-		errorTxt = error;
+		errorTxt = ERROR_MESSAGES.USER_NOT_SPECIFIED;
 		break;
 	default:
 		errorTxt = error

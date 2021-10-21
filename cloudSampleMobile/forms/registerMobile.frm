@@ -1,7 +1,7 @@
 customProperties:"formComponent:false,\
 useCssPosition:true",
 encapsulation:108,
-extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
+extendsID:"-1",
 items:[
 {
 cssPosition:"375,35,-1,35,140,40",
