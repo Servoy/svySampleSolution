@@ -58,7 +58,7 @@ function onSolutionOpen(arg, queryParams) {
 	scopes.cloudSampleData.updateOrderDates();
 	
 	// init navigation first-item
-	scopes.global.showForm(forms.homeDashboard);
+	scopes.global.showForm(forms.homeDashboardMobile);
 }
 
 /**
