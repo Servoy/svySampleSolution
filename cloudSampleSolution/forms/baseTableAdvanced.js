@@ -45,7 +45,7 @@ function onLoad(event) {
 		.addAlternateDateFormat("MMM yyyy")
 		.addAlternateDateFormat("MMMM yyyy")
 		.addAlternateDateFormat("MM/yyyy").addAlternateDateFormat("MM-yyyy")
-		.addAlternateDateFormat("dd/MM/yyyy").addAlternateDateFormat("MM-yyyy")
+		.addAlternateDateFormat("dd/MM/yyyy").addAlternateDateFormat("dd-MM-yyyy")
 		.addAlternateDateFormat("dd/MM/yyyy HH").addAlternateDateFormat("dd-MM-yyyy HH")
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm").addAlternateDateFormat("dd-MM-yyyy HH:mm")
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm:ss").addAlternateDateFormat("dd-MM-yyyy HH:mm:ss")
