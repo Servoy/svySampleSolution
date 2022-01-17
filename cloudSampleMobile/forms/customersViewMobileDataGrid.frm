@@ -10,7 +10,6 @@ dataSource:"db:/example_data/customers",
 extendsID:"DF4918EA-5E73-4887-91AA-15CB2300AEBF",
 items:[
 {
-cssPosition:"19,-1,-1,210,25,25",
 customProperties:"methods:{\
 onActionMethodID:{\
 arguments:null,\
@@ -19,14 +18,6 @@ parameters:null\
 }",
 extendsID:"E2641547-899B-41E9-B7DA-E4B0D347C050",
 json:{
-cssPosition:{
-bottom:"-1",
-height:"25",
-left:"210",
-right:"-1",
-top:"19",
-width:"25"
-},
 onActionMethodID:"8EFB537A-7765-424E-B053-5AD0877BFA71"
 },
 typeid:47,

@@ -44,7 +44,6 @@ typeid:47,
 uuid:"08F277B1-7F24-433B-9339-3B48B0A27650"
 },
 {
-cssPosition:"19,-1,-1,210,25,25",
 customProperties:"methods:{\
 onActionMethodID:{\
 arguments:null,\
@@ -53,14 +52,6 @@ parameters:null\
 }",
 extendsID:"E2641547-899B-41E9-B7DA-E4B0D347C050",
 json:{
-cssPosition:{
-bottom:"-1",
-height:"25",
-left:"210",
-right:"-1",
-top:"19",
-width:"25"
-},
 onActionMethodID:"F88F013D-AFC3-41E6-9F22-F4E3132C0B8D"
 },
 typeid:47,

@@ -30,7 +30,7 @@ var DEFAULT_COLORS = {
  * @properties={typeid:24,uuid:"7E9F25E5-915D-4A67-AAB9-9B9145F0AA10"}
  */
 function onSolutionOpen(arg, queryParams) {
-	scopes.svyToolbarFilter.setPopupRendererForm(scopes.svyToolbarFilter.FILTER_TYPES.DATE, forms.svyDatePopupFilterMobile);
+
 	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
 	
 	// autosave false
@@ -44,7 +44,10 @@ function onSolutionOpen(arg, queryParams) {
 	
 	// global config for grid filters
 	scopes.svyToolbarFilter.setPopupDefaultOperator(scopes.svyToolbarFilter.FILTER_TYPES.TOKEN, scopes.svyPopupFilter.OPERATOR.LIKE);
-
+	
+	// custom UI for date filter
+	scopes.svyToolbarFilter.setPopupRendererForm(scopes.svyToolbarFilter.FILTER_TYPES.DATE, forms.sampleDatePopupFilterMobile);
+	
 	// run onAfterUserCreate when a user is created from the svySecurityUX templates
 	scopes.svySecurityUX.addAfterUserCreateListener(onAfterUserCreate);
 	
