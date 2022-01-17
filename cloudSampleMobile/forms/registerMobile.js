@@ -27,20 +27,19 @@ var tenantName = null;
 
 /**
  * @properties={typeid:35,uuid:"57E8AA5C-DAC5-4271-B66E-3A564B4A5EE8",variableType:-4}
- * @override 
+ * @override
  */
 var ERROR_CODES = {
-	
-	USER_NOT_SPECIFIED : 'Please enter the User',
-	USER_EXISTS : 'User already exists',
-	PASSWORD_NOT_SPECIFIED : 'Please enter the User\'s password',
-	PASSWORD_MISMATCH : 'The entered password is not correct',
-	PASSWORD_CONFIRMATION : 'Please confirm the password'
+
+	USER_NOT_SPECIFIED: 'Please enter the User',
+	USER_EXISTS: 'User already exists',
+	PASSWORD_NOT_SPECIFIED: 'Please enter the User\'s password',
+	PASSWORD_MISMATCH: 'The entered password is not correct',
+	PASSWORD_CONFIRMATION: 'Please confirm the password'
 };
 
-
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param error
  *
  * @properties={typeid:24,uuid:"EB4F6397-23C2-43EA-9B23-FAA19C66BD04"}
@@ -49,16 +48,16 @@ function onLoginError(error) {
 
 	var errorTxt;
 	switch (error) {
-	
+
 	case ERROR_CODES.PASSWORD_MISMATCH:
 		errorTxt = error;
 		break;
 	case ERROR_CODES.PASSWORD_NOT_SPECIFIED:
 		errorTxt = error;
-		break;	
+		break;
 	case ERROR_CODES.PASSWORD_CONFIRMATION:
-	errorTxt = error;
-	break;
+		errorTxt = error;
+		break;
 	case ERROR_CODES.USER_NOT_SPECIFIED:
 		errorTxt = error;
 		break;
@@ -69,61 +68,62 @@ function onLoginError(error) {
 		errorTxt = error
 		break;
 	}
-	
+
 	elements.errorMsg.text = errorTxt;
 	elements.errorMsg.visible = true;
 }
 
 /**
- * @return {boolean} 
+ * @protected 
+ * @return {boolean}
  * @properties={typeid:24,uuid:"C37671C0-87F9-4956-85D3-396DBD86CDB8"}
  */
-function userRegister(){
-	if(!newUserName){
+function userRegister() {
+	if (!newUserName) {
 		onLoginError(ERROR_CODES.USER_NOT_SPECIFIED);
 		return false;
 	}
-	if(scopes.svySecurity.getTenant(tenantName).getUser(newUserName) && newUserName){
+	if (scopes.svySecurity.getTenant(tenantName).getUser(newUserName) && newUserName) {
 		onLoginError(ERROR_CODES.USER_EXISTS);
 		return false;
 	}
-	if(!newPassword){
+	if (!newPassword) {
 		onLoginError(ERROR_CODES.PASSWORD_NOT_SPECIFIED);
 		return false;
 	}
-	if(!confirmPassword){
+	if (!confirmPassword) {
 		onLoginError(ERROR_CODES.PASSWORD_CONFIRMATION);
 		return false;
 	}
-	if(newPassword!==confirmPassword){
+	if (newPassword !== confirmPassword) {
 		onLoginError(ERROR_CODES.PASSWORD_MISMATCH);
 		return false;
 	}
 	/*the password should be checked before creating the user otherwise the user will be created without password*/
 	try {
 		scopes.svySecurity.verifyPasswordStrength(newPassword)
-	} catch(e) {
-	    elements.errorMsg.text = e;
-	    elements.errorMsg.visible = true;
-	    return false;
+	} catch (e) {
+		elements.errorMsg.text = e;
+		elements.errorMsg.visible = true;
+		return false;
 	}
-	
+
 	var user = scopes.svySecurity.getTenant(tenantName).createUser(newUserName);
-	
+
 	user.addRole('admin');
-	
-	try{
-	    user.setPassword(newPassword);
-	}catch(e){
-	    elements.errorMsg.text = e;
-	    elements.errorMsg.visible = true;
-	    return false;
+
+	try {
+		user.setPassword(newPassword);
+	} catch (e) {
+		elements.errorMsg.text = e;
+		elements.errorMsg.visible = true;
+		return false;
 	}
-	
+
 	plugins.webnotificationsToastr.success('The user has been created');
-	
+
 	forms.loginContainerMobile.navigation(forms.loginMobile);
-	
+
 	return false;
 }
 /**
@@ -138,27 +138,26 @@ function userRegister(){
  */
 function onShow(firstShow, event) {
 	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
-	
+
 	tenantName = "admin";
 }
 
 /**
+ * @protected
  * @param {JSEvent} event
  *
  * @properties={typeid:24,uuid:"DF8B19E2-1B91-4F8B-97CF-CE0BE451550C"}
  */
 function onActionRegister(event) {
-	
 	userRegister();
-
 }
 
 /**
+ * @protected
  * @param {JSEvent} event
  *
  * @properties={typeid:24,uuid:"3C45AC0A-0968-4254-83E1-EBA2A8AB251F"}
  */
 function onActionBackToLogIn(event) {
 	forms.loginContainerMobile.navigation(forms.loginMobile);
-
 }

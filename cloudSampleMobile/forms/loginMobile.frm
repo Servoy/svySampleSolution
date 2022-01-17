@@ -1,4 +1,10 @@
 customProperties:"formComponent:false,\
+methods:{\
+onLoadMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+},\
 useCssPosition:true",
 encapsulation:108,
 extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
@@ -21,7 +27,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_3",
+name:"fldPassword",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -142,7 +148,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_2",
+name:"fldUsername",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -167,7 +173,7 @@ width:80
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 text:"Register"
 },
-name:"label_2",
+name:"btnRegister",
 size:"80,30",
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 typeName:"bootstrapcomponents-label",
@@ -191,7 +197,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_1",
+name:"fldTenant",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -222,7 +228,7 @@ width:80
 styleClass:"btn btn-default bg-success",
 text:"Login"
 },
-name:"button_4",
+name:"btnLogin",
 size:"80,30",
 styleClass:"btn btn-default bg-success",
 typeName:"bootstrapcomponents-button",
@@ -232,6 +238,7 @@ uuid:"E77F726B-7396-4F84-94E6-5BAF22D46923"
 ],
 name:"loginMobile",
 navigatorID:"-1",
+onLoadMethodID:"2E8AC2DC-DF77-4CC2-8468-58CF9036C084",
 onShowMethodID:"068D9927-B8AF-4BE4-B104-DA9E0553A5C4",
 showInMenu:true,
 size:"250,500",

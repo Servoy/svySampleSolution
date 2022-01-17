@@ -21,7 +21,7 @@ top:"0",
 width:"-1"
 }
 },
-name:"formcontainer_1",
+name:"formcontainer",
 typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"A51613A9-1007-49FF-942F-F9FA0C0781D9"

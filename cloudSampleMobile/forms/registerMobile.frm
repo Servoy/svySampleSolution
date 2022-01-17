@@ -21,7 +21,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_3c",
+name:"fldPassword2",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -46,7 +46,7 @@ width:80
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 text:"Back"
 },
-name:"label_3",
+name:"btnBack",
 size:"80,30",
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 typeName:"bootstrapcomponents-label",
@@ -157,7 +157,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_3",
+name:"fldPassword1",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -182,7 +182,7 @@ width:80
 styleClass:"btn btn-default bg-success",
 text:"Register"
 },
-name:"button_4",
+name:"btnRegister",
 size:"80,30",
 styleClass:"btn btn-default bg-success",
 typeName:"bootstrapcomponents-button",
@@ -207,7 +207,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_1",
+name:"fldTenant",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
@@ -230,7 +230,7 @@ height:30,
 width:140
 }
 },
-name:"textbox_2",
+name:"fldUsername",
 size:"140,30",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
