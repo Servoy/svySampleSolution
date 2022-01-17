@@ -99,14 +99,15 @@ function userRegister() {
 		onLoginError(ERROR_CODES.PASSWORD_MISMATCH);
 		return false;
 	}
+	 
 	/*the password should be checked before creating the user otherwise the user will be created without password*/
-	try {
-		scopes.svySecurity.verifyPasswordStrength(newPassword)
-	} catch (e) {
-		elements.errorMsg.text = e;
-		elements.errorMsg.visible = true;
-		return false;
-	}
+//	try {
+//		scopes.svySecurity.verifyPasswordStrength(newPassword);
+//	} catch (e) {
+//		elements.errorMsg.text = e;
+//		elements.errorMsg.visible = true;
+//		return false;
+//	}
 
 	var user = scopes.svySecurity.getTenant(tenantName).createUser(newUserName);
 
