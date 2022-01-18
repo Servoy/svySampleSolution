@@ -47,7 +47,7 @@ typeid:47,
 uuid:"2EE26127-E232-4377-8DCB-88564D3620C6"
 },
 {
-cssPosition:"50,-1,-1,15,265,32",
+cssPosition:"50,40,-1,15,265,32",
 extendsID:"D087ED71-9EFF-45B2-A61F-DCC5A5E64C45",
 formIndex:0,
 json:{
@@ -55,7 +55,7 @@ cssPosition:{
 bottom:"-1",
 height:"32",
 left:"15",
-right:"-1",
+right:"40",
 top:"50",
 width:"265"
 },
@@ -100,7 +100,7 @@ typeid:47,
 uuid:"5E9CAEC1-BB99-456F-87ED-EE4019A54378"
 },
 {
-cssPosition:"52,-1,-1,255,25,25",
+cssPosition:"52,40,-1,-1,25,25",
 customProperties:"methods:{\
 onActionMethodID:{\
 arguments:null,\
@@ -113,8 +113,8 @@ json:{
 cssPosition:{
 bottom:"-1",
 height:"25",
-left:"255",
-right:"-1",
+left:"-1",
+right:"40",
 top:"52",
 width:"25"
 },
