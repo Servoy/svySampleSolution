@@ -6,7 +6,7 @@
  * @properties={typeid:24,uuid:"8EFB537A-7765-424E-B053-5AD0877BFA71"}
  */
 function onActionSearch(event) {
-	search(searchText,['companyname','address']);
+	search(searchText, ['companyname', 'address']);
 }
 
 /**
@@ -14,6 +14,7 @@ function onActionSearch(event) {
  * @override
  */
 function newRecord() {
+	// Create new record and show Customer Detail
 	_super.newRecord();
 	showForm(forms.customerInfoAddMobile);
 }
@@ -32,6 +33,7 @@ function newRecord() {
  * @properties={typeid:24,uuid:"60B5D18C-215E-4DC2-88FB-CC5817743B5C"}
  */
 function onCellClick(foundsetindex, columnindex, record, event) {
+	// show the Customer Detail
 	showForm(forms.customerViewMobile);
 }
 
@@ -49,9 +51,7 @@ function onShow(firstShow, event) {
 	foundset.loadAllRecords();
 }
 
-
 /**
- * TODO generated, please specify type and doc for the params
  * @param event
  *
  * @properties={typeid:24,uuid:"01676E59-6F0B-4C97-AE8F-2CCFB694C11D"}
@@ -59,11 +59,12 @@ function onShow(firstShow, event) {
  */
 function onLoad(event) {
 	_super.onLoad(event);
+
 	var customerFilter = toolbarFilter.addFilter('Customer', 'customerid', scopes.svyToolbarFilter.FILTER_TYPES.SELECT);
 	customerFilter.setValueList('customers');
 	var addressFilter = toolbarFilter.addFilter('Address', 'address', scopes.svyToolbarFilter.FILTER_TYPES.TOKEN);
-	
-	toolbarFilter.setFilterValue(customerFilter,[],scopes.svyPopupFilter.OPERATOR.IS_IN);
-	toolbarFilter.setFilterValue(addressFilter,[],scopes.svyPopupFilter.OPERATOR.LIKE_CONTAINS);
-	
+
+	toolbarFilter.setFilterValue(customerFilter, [], scopes.svyPopupFilter.OPERATOR.IS_IN);
+	toolbarFilter.setFilterValue(addressFilter, [], scopes.svyPopupFilter.OPERATOR.LIKE_CONTAINS);
+
 }

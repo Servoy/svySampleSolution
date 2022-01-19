@@ -59,6 +59,8 @@ function onLoad(event) {
 		'</div>'; \n\
 		return template; \n\
 	})";
+
+	// update count with active filters
 	updateCounter();
 }
 
@@ -73,11 +75,15 @@ function onLoad(event) {
  */
 function onListComponentClick(entry, index, dataTarget, event) {
 	if (dataTarget == "clear") {
+		// reset the filter
 		var filter = toolbarFilter.getFilter(entry.dataprovider);
 		toolbarFilter.setFilterValue(filter, [], filter.getOperator());
 	} else {
+		// show the filter popup
 		toolbarFilter.onClick(entry, index, dataTarget, event);
 	}
+	
+	// update the counter
 	updateCounter();
 }
 
@@ -86,7 +92,10 @@ function onListComponentClick(entry, index, dataTarget, event) {
  * @properties={typeid:24,uuid:"459A49BF-7769-4939-B7AA-6853CBE4D950"}
  */
 function onFilterRemovedEvent() {
+	// persist filter changes
 	saveToolbarFilterProperty();
+	
+	// update the counter
 	updateCounter();
 }
 
@@ -100,7 +109,10 @@ function onFilterRemovedEvent() {
  * @properties={typeid:24,uuid:"0D9357DB-85D3-4B29-AC7F-1A6D39056A25"}
  */
 function onFilterApplyEvent(values, operator, filter) {
+	// persist filter changes
 	saveToolbarFilterProperty();
+	
+	// update filter counter
 	updateCounter();
 }
 
