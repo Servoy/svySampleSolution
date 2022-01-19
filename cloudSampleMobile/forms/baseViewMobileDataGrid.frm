@@ -14,17 +14,17 @@ top:"20",
 width:"25"
 },
 formIndex:0,
-imageStyleClass:"fa fa-filter h4",
+imageStyleClass:"fa fa-filter",
 onActionMethodID:"4B05B229-5CAD-49E1-B507-A95CA3BA6CAD",
 size:{
 height:30,
 width:80
 },
-styleClass:"clickable text-primary text-center"
+styleClass:"clickable text-primary text-center h4"
 },
 name:"filters",
 size:"80,30",
-styleClass:"clickable text-primary text-center",
+styleClass:"clickable text-primary text-center h4",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"21186CA6-9282-4291-A33E-0552255D0DCF"
