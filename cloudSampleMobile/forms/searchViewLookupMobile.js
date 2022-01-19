@@ -1,12 +1,12 @@
 /**
- * @protected 
- * 
+ * @protected
+ *
  * @param txt
  *
  * @properties={typeid:24,uuid:"6B1690A0-7D0B-4D36-9DFE-47F454C51783"}
  */
 function search(txt) {
-	
+
 	// load all records if no input
 	if (!txt) {
 		return;
@@ -16,7 +16,7 @@ function search(txt) {
 	var customerSearch = scopes.svySearch.createSimpleSearch(datasources.db.example_data.customers.getDataSource());
 	customerSearch.addSearchProvider("companyname");
 	customerSearch.setSearchText(txt);
-	
+
 	/** @type {QBSelect<db:/example_data/customers>} */
 	var customerQuery = customerSearch.getQuery();
 	customerQuery.result.clear();
@@ -29,14 +29,14 @@ function search(txt) {
 	orderSearch.addSearchProvider("orderid");
 	orderSearch.addSearchProvider("orders_to_customers.companyname").setAlias("companyname");
 	orderSearch.setSearchText(txt);
-	
+
 	/** @type {QBSelect<db:/example_data/orders>} */
 	var orderQuery = orderSearch.getQuery();
 	orderQuery.result.clear();
 	orderQuery.result.addValue("orders", "table_name");
 	orderQuery.result.add(orderQuery.columns.orderid, "pks");
 	orderQuery.result.add(orderQuery.columns.orderid.cast(QUERY_COLUMN_TYPES.TYPE_STRING).concat(" - ").concat(orderQuery.joins.orders_to_customers.columns.companyname), "text_value");
-	
+
 	var customerDataset = databaseManager.getDataSetByQuery(customerQuery, 50);
 	var orderDataset = databaseManager.getDataSetByQuery(orderQuery, 50);
 

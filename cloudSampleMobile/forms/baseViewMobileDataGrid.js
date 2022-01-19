@@ -1,20 +1,20 @@
 /**
  * @type {Number}
- * @private 
+ * @private
  * @properties={typeid:35,uuid:"E97352DA-AD75-492A-80A7-0BFD3513FAC2",variableType:8}
  */
 var counter = 0;
 
 /**
- * @protected 
+ * @protected
  * @type {String|Number}
  *
  * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39",variableType:-4}
  */
 var searchText = null;
 
-/** 
- * @protected 
+/**
+ * @protected
  * @type {scopes.svyToolbarFilter.ListComponentFilterRenderer}
  *
  * @properties={typeid:35,uuid:"BFFD2A08-6088-42CE-A78D-C7DF1A75FDBD",variableType:-4}
@@ -22,7 +22,7 @@ var searchText = null;
 var toolbarFilter;
 
 /**
- * @protected 
+ * @protected
  * @param event
  *
  * @properties={typeid:24,uuid:"5C652274-EA6A-4083-B89D-73259F519EB1"}
@@ -32,7 +32,7 @@ function onLoad(event) {
 	toolbarFilter = scopes.svyToolbarFilter.createSimpleFilterToolbar(elements.filterList);
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
-	
+
 	// custom template for the filter list
 	elements.filterList.entryRendererFunction = "(function renderFilterEntry(entry) {  \n\
 		var template = '';\n\
@@ -53,7 +53,7 @@ function onLoad(event) {
 			'<span class=\"toolbar-filter-tag-text-mobile\">' + entry.text + '</span>' + \n\
 			'<span class=\"toolbar-filter-tag-operator\">' + entry.operator + '</span>' + \n\
 			'<span class=\"toolbar-filter-tag-value-mobile\"> ' + valuesArr.join(', ') + ' </span>' + \n\
-			'<span class=\"toolbar-filter-tag-icon-mobile " + scopes.svyPopupFilter.STYLING.OPEN_FILTER_ICON +"\">' + '</span>' + \n\
+			'<span class=\"toolbar-filter-tag-icon-mobile " + scopes.svyPopupFilter.STYLING.OPEN_FILTER_ICON + "\">' + '</span>' + \n\
 		'</button>' + \n\
 		'<span class=\"btn-clear fas fa-trash-alt\" data-target=\"clear\"></span>' + \n\
 		'</div>'; \n\
@@ -63,7 +63,7 @@ function onLoad(event) {
 }
 
 /**
- * @private 
+ * @private
  * @param entry
  * @param index
  * @param dataTarget
@@ -71,18 +71,18 @@ function onLoad(event) {
  *
  * @properties={typeid:24,uuid:"81BCE90D-A8BF-44E3-BC42-BF7F05DFB1E5"}
  */
-function onListComponentClick(entry, index, dataTarget, event) {	
+function onListComponentClick(entry, index, dataTarget, event) {
 	if (dataTarget == "clear") {
 		var filter = toolbarFilter.getFilter(entry.dataprovider);
 		toolbarFilter.setFilterValue(filter, [], filter.getOperator());
 	} else {
 		toolbarFilter.onClick(entry, index, dataTarget, event);
 	}
-    updateCounter();
+	updateCounter();
 }
 
 /**
- * @private 
+ * @private
  * @properties={typeid:24,uuid:"459A49BF-7769-4939-B7AA-6853CBE4D950"}
  */
 function onFilterRemovedEvent() {
@@ -91,8 +91,8 @@ function onFilterRemovedEvent() {
 }
 
 /**
- * @private 
- * 
+ * @private
+ *
  * @param {Array} values
  * @param {String} operator
  * @param {scopes.svyPopupFilter.AbstractPopupFilter} filter
@@ -105,21 +105,21 @@ function onFilterApplyEvent(values, operator, filter) {
 }
 
 /**
- * @private  
+ * @private
  * @properties={typeid:24,uuid:"5CA04E21-8420-48B8-901F-78944AA30EB0"}
  */
 function saveToolbarFilterProperty() {
 	var filtersState = toolbarFilter.getToolbarFiltersState();
-	var propertyNameSpace = controller.getName() + "-" + elements.containerTable.getName();	
-	scopes.svyProperties.setUserProperty(propertyNameSpace,'filter-state',JSON.stringify(filtersState));
+	var propertyNameSpace = controller.getName() + "-" + elements.containerTable.getName();
+	scopes.svyProperties.setUserProperty(propertyNameSpace, 'filter-state', JSON.stringify(filtersState));
 }
 
 /**
- * @private 
+ * @private
  * @properties={typeid:24,uuid:"19834F57-99D7-43CA-A0C4-40179D1EDB18"}
  */
-function updateCounter(){
-	counter = toolbarFilter.getActiveFilters().length;	
+function updateCounter() {
+	counter = toolbarFilter.getActiveFilters().length;
 }
 
 /**
@@ -137,22 +137,22 @@ function onActionSeeFilters(event) {
 /**
  * @param text
  * @param column
- * 
- * @protected 
+ *
+ * @protected
  * @properties={typeid:24,uuid:"785B115C-F8EC-47B9-AC92-AAC722B9FE95"}
  */
-function search(text,column){
+function search(text, column) {
 	var simpleSearch = scopes.svySearch.createSimpleSearch(foundset);
-	for(var i =0; i<column.length; i++){
+	for (var i = 0; i < column.length; i++) {
 		simpleSearch.addSearchProvider(column[i]);
-	}	
+	}
 	simpleSearch.setSearchText(text);
 	simpleSearch.loadRecords(foundset);
-	
+
 }
 
 /**
- * @protected 
+ * @protected
  * @properties={typeid:24,uuid:"DF6D7132-A835-44A9-B68A-D4CCBCB28260"}
  */
 function newRecord() {
@@ -160,11 +160,11 @@ function newRecord() {
 }
 
 /**
- * @protected 
+ * @protected
  * @param form
  *
  * @properties={typeid:24,uuid:"BB4D777A-5C3F-45DB-BFEF-6822D66B811F"}
  */
-function showForm(form){
+function showForm(form) {
 	scopes.global.showForm(form, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 }

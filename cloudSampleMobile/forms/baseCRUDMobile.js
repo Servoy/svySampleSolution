@@ -1,7 +1,7 @@
 /**
  * @param {JSEvent} event
  *
- * @private 
+ * @private
  *
  * @properties={typeid:24,uuid:"FD3C823F-D59B-401F-92DE-04120DA2C8D2"}
  */
@@ -53,21 +53,21 @@ function save() {
  *
  * @param {Boolean} firstShow form is shown first time after load
  * @param {JSEvent} event the event that triggered the action
- * @protected 
+ * @protected
  *
  * @properties={typeid:24,uuid:"9E7D94DC-B03D-4C72-8EFF-0CC0D6871B9A"}
  */
 function onShow(firstShow, event) {
-	 scopes.svyNavigation.addNavigationListener(onOpen);
-	 updateUI();
+	scopes.svyNavigation.addNavigationListener(onOpen);
+	updateUI();
 }
 
 /**
  * Handle hide window.
- * 
+ *
  * @param {JSEvent} event the event that triggered the action
  * @return {Boolean}
- * @protected 
+ * @protected
  *
  * @properties={typeid:24,uuid:"3583D19C-7392-4C39-A650-453C66BE06D2"}
  */
@@ -77,9 +77,9 @@ function onHide(event) {
 }
 
 /**
-  * @protected 
+ * @protected
  * @param event
- * 
+ *
  * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"F8A79340-4913-4741-B8D0-3EC2A1DB2FC6"}
@@ -87,15 +87,13 @@ function onHide(event) {
 function onOpen(event) {
 	var type = event.getEventType();
 	if (type == scopes.svyNavigation.NAVIGATION_EVENT.BEFORE_CLOSE) {
-		if (databaseManager.getEditedRecords().length || databaseManager.getFailedRecords().length){
+		if (databaseManager.getEditedRecords().length || databaseManager.getFailedRecords().length) {
 			var answer = plugins.dialogs.showQuestionDialog("Pending changes", "How would you like to proceed?", "Save changes", "Discard changes", "Cancel")
 			if (answer == "Save changes") {
 				return save();
-			}
-			else if(answer == "Discard changes"){
+			} else if (answer == "Discard changes") {
 				return databaseManager.revertEditedRecords();
-			}
-			else{
+			} else {
 				return false;
 			}
 		}
@@ -104,9 +102,9 @@ function onOpen(event) {
 }
 
 /**
- * @protected 
+ * @protected
  * @param {RuntimeForm} form
- * 
+ *
  * @return {Boolean}
  *
  * @properties={typeid:24,uuid:"4DC8A1B0-B2D1-4BC4-AB39-B13B9FB8752A"}
@@ -119,23 +117,23 @@ function showForm(form) {
  * @protected
  * @properties={typeid:24,uuid:"47C86375-3260-4B03-820A-3A9F2B6A6A67"}
  */
-function updateUI(){
+function updateUI() {
 	// intentionally left empty
 }
 
 /************************************************************************************************************************
-*************************************************************************************************************************
-*
-* UI Validations
-*
-*************************************************************************************************************************
-************************************************************************************************************************/
+ *************************************************************************************************************************
+ *
+ * UI Validations
+ *
+ *************************************************************************************************************************
+ ************************************************************************************************************************/
 
 /**
  * Validate the record
  * @param {RuntimeTextField} [element] validate only the dataprovider linked to the given element when set
- * @protected 
- * @return {Array<JSRecordMarker>} It will return an array of JSRecordMarker when the record had validation problems 
+ * @protected
+ * @return {Array<JSRecordMarker>} It will return an array of JSRecordMarker when the record had validation problems
  * @properties={typeid:24,uuid:"58FC70FE-C910-4754-B5C7-2783840604BA"}
  */
 function validate(element) {
@@ -148,17 +146,17 @@ function validate(element) {
 	}
 	// invalid if any error marker
 	var isValid = markers.length ? false : true;
-	
-	if (element) {		
+
+	if (element) {
 		if (isValid) {
 			// clear validation error, if any
 			clearValidationError(element);
 		} else {
-			// show validation error	
+			// show validation error
 			updateValidationError(markers[0], element);
 		}
 	} else {
-		
+
 		if (isValid) {
 			// clear all validation errors
 			clearValidationErrors();
@@ -173,7 +171,7 @@ function validate(element) {
 
 /**
  * Show validation errors in UI, if any
- * @protected 
+ * @protected
  * @param {Array<JSRecordMarker>} errorMarkers
  *
  * @properties={typeid:24,uuid:"EC968854-4486-4507-8BCB-37F2DEACA4C1"}
@@ -181,20 +179,20 @@ function validate(element) {
 function updateValidationErrors(errorMarkers) {
 	// clear all validation errors
 	clearValidationErrors();
-	
+
 	if (errorMarkers) {
-		
+
 		// get the error markers
 		for (var i = 0; i < errorMarkers.length; i++) {
-	
+
 			// update the UI showing validation error
 			var errorMarker = errorMarkers[i];
-			
+
 			// get the element linked to the error marker
 			var element = scopes.svyValidationUtils.getMarkerElement(controller.getName(), errorMarker);
 			updateValidationError(errorMarker, element);
 		}
-		
+
 		// show the error message
 		var errorMsg = scopes.svyValidationUtils.getErrorMessages(foundset.getSelectedRecord());
 		plugins.webnotificationsToastr.error(errorMsg);
@@ -203,7 +201,7 @@ function updateValidationErrors(errorMarkers) {
 
 /**
  * Update the UI showing validation error in element
- * @protected 
+ * @protected
  * @param {JSRecordMarker} marker
  * @param {RuntimeTextField} element
  *
@@ -211,7 +209,7 @@ function updateValidationErrors(errorMarkers) {
  */
 function updateValidationError(marker, element) {
 	if (element) {
-		
+
 		// show error as tooltip
 		element.toolTipText = marker.message;
 		// style the element as invalid input
@@ -221,7 +219,7 @@ function updateValidationError(marker, element) {
 
 /**
  * Clear validation error from all UI elements
- * @protected 
+ * @protected
  * @properties={typeid:24,uuid:"7DC6537B-9D12-426B-B578-7AC584E2849E"}
  */
 function clearValidationErrors() {

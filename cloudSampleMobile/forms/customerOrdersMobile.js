@@ -1,5 +1,5 @@
 /**
- * @protected 
+ * @protected
  * @type {String}
  *
  * @properties={typeid:35,uuid:"7ADFBD5B-2362-4C54-9AFB-DF4C5EC6B163"}
@@ -24,20 +24,19 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 }
 
 /**
- * @protected 
+ * @protected
  * @properties={typeid:24,uuid:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF"}
  */
 function onActionSearch() {
-	search(searchText,['orderdate','orderid']);
+	search(searchText, ['orderdate', 'orderid']);
 }
 
-
 /**
- * @protected 
+ * @protected
  * @properties={typeid:24,uuid:"9381DA53-1A61-479B-8BDD-E5A267C25F7E"}
  * @override
  */
-function newRecord(){
+function newRecord() {
 	_super.newRecord();
 	foundset.customerid = cId;
 	scopes.global.showForm(forms.orderEditMobile, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
@@ -65,7 +64,7 @@ function back() {
 }
 
 /**
- * @protected 
+ * @protected
  * @param event
  * @param crumb
  * @param index
@@ -84,12 +83,12 @@ function onCrumbClicked(event, crumb, index) {
 }
 
 /**
- * @public 
- * 
+ * @public
+ *
  * @param id
  *
  * @properties={typeid:24,uuid:"14930FB8-FCB0-43FD-84FB-13429F85B242"}
  */
-function setCID(id){
+function setCID(id) {
 	cId = id;
 }
