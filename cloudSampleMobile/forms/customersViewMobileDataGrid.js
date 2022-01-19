@@ -10,6 +10,7 @@ function onActionSearch(event) {
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"DC89E380-3668-4155-A275-8AC17802F1E1"}
  * @override
  */
@@ -52,6 +53,7 @@ function onShow(firstShow, event) {
 }
 
 /**
+ * @protected 
  * @param event
  *
  * @properties={typeid:24,uuid:"01676E59-6F0B-4C97-AE8F-2CCFB694C11D"}

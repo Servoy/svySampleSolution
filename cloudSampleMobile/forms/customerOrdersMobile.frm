@@ -48,6 +48,16 @@ uuid:"2EE26127-E232-4377-8DCB-88564D3620C6"
 },
 {
 cssPosition:"50,-1,-1,15,265,32",
+customProperties:"methods:{\
+onActionMethodID:{\
+arguments:null,\
+parameters:null\
+},\
+onDataChangeMethodID:{\
+arguments:null,\
+parameters:null\
+}\
+}",
 extendsID:"D087ED71-9EFF-45B2-A61F-DCC5A5E64C45",
 formIndex:0,
 json:{
@@ -59,7 +69,9 @@ right:"-1",
 top:"50",
 width:"265"
 },
-formIndex:0
+formIndex:0,
+onActionMethodID:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF",
+onDataChangeMethodID:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF"
 },
 typeid:47,
 uuid:"47D90D1B-EA33-4219-BFC7-8A981CB6B642"
