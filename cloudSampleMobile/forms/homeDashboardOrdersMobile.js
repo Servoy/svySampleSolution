@@ -11,6 +11,7 @@
  */
 function onShow(firstShow, event) {
 
+	// load only the latest 10 orders
 	var query = datasources.db.example_data.orders.createSelect();
 	query.result.addPk()
 	query.sort.add(query.columns.orderdate.desc)

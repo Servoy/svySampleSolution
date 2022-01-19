@@ -1,4 +1,5 @@
 /**
+ * @protected 
  * @type {String}
  *
  * @properties={typeid:35,uuid:"8E791442-4E0E-471C-8078-E9D16A26E2B5"}
@@ -6,9 +7,9 @@
 var searchText = null;
 
 /**
- * TODO generated, please specify type and doc for the params
- * @param text
- * @param column
+ * @protected    
+ * @param {String} text
+ * @param {String} column
  * @properties={typeid:24,uuid:"82FB8684-9A4D-4C99-B3F5-817F9E831C6C"}
  */
 function search(text,column){
@@ -19,6 +20,7 @@ function search(text,column){
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"629301E7-48DA-4760-AEDF-9E3755E7CBE0"}
  */
 function newRecord() {
@@ -26,7 +28,7 @@ function newRecord() {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param form
  *
  * @properties={typeid:24,uuid:"C028FCDC-8A4B-4EA1-B290-02C133C7B1E7"}

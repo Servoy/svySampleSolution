@@ -110,5 +110,5 @@ function onActionLogin(event) {
  */
 function onActionRegister(event) {
 
-	forms.loginContainerMobile.navigation(forms.registerMobile);
+	forms.loginContainerMobile.showForm(forms.registerMobile);
 }

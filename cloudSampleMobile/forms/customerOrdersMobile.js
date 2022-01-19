@@ -10,6 +10,7 @@ var cId;
  * Called when the mouse is clicked on a row/cell (foundset and column indexes are given).
  * the foundsetindex is always -1 when there are grouped rows
  *
+ * @protected
  * @param {number} foundsetindex
  * @param {number} [columnindex]
  * @param {JSRecord} [record]
@@ -23,8 +24,8 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"98BA5FAD-6068-44E2-94B9-152BFEA8DFBF"}
- * @AllowToRunInFind
  */
 function onActionSearch() {
 	search(searchText,['orderdate','orderid']);
@@ -32,6 +33,7 @@ function onActionSearch() {
 
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"9381DA53-1A61-479B-8BDD-E5A267C25F7E"}
  * @override
  */
@@ -63,7 +65,7 @@ function back() {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param event
  * @param crumb
  * @param index
@@ -83,7 +85,7 @@ function onCrumbClicked(event, crumb, index) {
 
 /**
  * @public 
- * TODO generated, please specify type and doc for the params
+ * 
  * @param id
  *
  * @properties={typeid:24,uuid:"14930FB8-FCB0-43FD-84FB-13429F85B242"}

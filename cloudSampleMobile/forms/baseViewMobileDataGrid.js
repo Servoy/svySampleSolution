@@ -6,6 +6,7 @@
 var counter = 0;
 
 /**
+ * @protected 
  * @type {String|Number}
  *
  * @properties={typeid:35,uuid:"07B84B04-ED5D-4595-89CD-EE4512321A39",variableType:-4}
@@ -13,6 +14,7 @@ var counter = 0;
 var searchText = null;
 
 /** 
+ * @protected 
  * @type {scopes.svyToolbarFilter.ListComponentFilterRenderer}
  *
  * @properties={typeid:35,uuid:"BFFD2A08-6088-42CE-A78D-C7DF1A75FDBD",variableType:-4}
@@ -20,16 +22,18 @@ var searchText = null;
 var toolbarFilter;
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param event
  *
  * @properties={typeid:24,uuid:"5C652274-EA6A-4083-B89D-73259F519EB1"}
  */
 function onLoad(event) {
+	// setup the filter object
 	toolbarFilter = scopes.svyToolbarFilter.createSimpleFilterToolbar(elements.filterList);
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 	
+	// custom template for the filter list
 	elements.filterList.entryRendererFunction = "(function renderFilterEntry(entry) {  \n\
 		var template = '';\n\
 		var strDivider = ' : ';\n\
@@ -59,7 +63,7 @@ function onLoad(event) {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @private 
  * @param entry
  * @param index
  * @param dataTarget
@@ -111,7 +115,7 @@ function saveToolbarFilterProperty() {
 }
 
 /**
- * @public
+ * @private 
  * @properties={typeid:24,uuid:"19834F57-99D7-43CA-A0C4-40179D1EDB18"}
  */
 function updateCounter(){
@@ -131,9 +135,10 @@ function onActionSeeFilters(event) {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
  * @param text
  * @param column
+ * 
+ * @protected 
  * @properties={typeid:24,uuid:"785B115C-F8EC-47B9-AC92-AAC722B9FE95"}
  */
 function search(text,column){
@@ -147,6 +152,7 @@ function search(text,column){
 }
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"DF6D7132-A835-44A9-B68A-D4CCBCB28260"}
  */
 function newRecord() {
@@ -154,7 +160,7 @@ function newRecord() {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param form
  *
  * @properties={typeid:24,uuid:"BB4D777A-5C3F-45DB-BFEF-6822D66B811F"}

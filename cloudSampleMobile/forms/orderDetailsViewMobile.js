@@ -37,7 +37,6 @@ function onCrumbClicked(event, crumb, index) {
 
 /**
  * @public 
- * TODO generated, please specify type and doc for the params
  * @param id
  *
  * @properties={typeid:24,uuid:"2FAE2E4C-36DD-443B-879C-B4116B3B72A7"}
@@ -84,6 +83,7 @@ function onCellClick(foundsetindex, columnindex, record, event) {
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"514A09F4-5DFD-481A-B0DE-01E21E4475FD"}
  */
 function deleteRecord() {
@@ -110,6 +110,7 @@ function onActionAddProducts(event) {
 }
 
 /**
+ * @protected
  * @param {Array<JSRecord<db:/example_data/products>>} record
  * @param {Array} values
  * @param {scopes.svyLookup.Lookup} lookup

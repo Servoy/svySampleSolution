@@ -1,4 +1,5 @@
 /**
+ * @protected 
  * @type {String}
  *
  * @properties={typeid:35,uuid:"88CE4945-580C-4154-964B-3D4DE389B298"}
@@ -6,6 +7,7 @@
 var confirmPassword = null;
 
 /**
+ * @protected 
  * @type {String}
  *
  * @properties={typeid:35,uuid:"94E6CAF8-D894-4263-ADCE-9B1BBD1C7099"}
@@ -13,6 +15,7 @@ var confirmPassword = null;
 var newPassword = null;
 
 /**
+ * @protected 
  * @type {String}
  *
  * @properties={typeid:35,uuid:"6FE74931-239E-4E93-9698-6E7F9D5CD70A"}
@@ -20,12 +23,14 @@ var newPassword = null;
 var newUserName = null;
 
 /**
+ * @protected 
  * @type {String}
  * @properties={typeid:35,uuid:"127812A0-98DD-4FBE-988F-FEADF789FB91"}
  */
 var tenantName = null;
 
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"57E8AA5C-DAC5-4271-B66E-3A564B4A5EE8",variableType:-4}
  * @override
  */
@@ -69,6 +74,7 @@ function onLoginError(error) {
 		break;
 	}
 
+	// show error message
 	elements.errorMsg.text = errorTxt;
 	elements.errorMsg.visible = true;
 }
@@ -123,9 +129,9 @@ function userRegister() {
 
 	plugins.webnotificationsToastr.success('The user has been created');
 
-	forms.loginContainerMobile.navigation(forms.loginMobile);
+	backToLogin();
 
-	return false;
+	return true;
 }
 /**
  * Callback method for when form is shown.
@@ -141,6 +147,8 @@ function onShow(firstShow, event) {
 	plugins.ngclientutils.setViewportMetaForMobileAwareSites(plugins.ngclientutils.VIEWPORT_MOBILE_DENY_ZOOM);
 
 	tenantName = "admin";
+	
+	// reset error msg ?
 }
 
 /**
@@ -160,5 +168,13 @@ function onActionRegister(event) {
  * @properties={typeid:24,uuid:"3C45AC0A-0968-4254-83E1-EBA2A8AB251F"}
  */
 function onActionBackToLogIn(event) {
-	forms.loginContainerMobile.navigation(forms.loginMobile);
+	backToLogin();
+}
+
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"29184353-C37C-48CD-851A-742908A38FDF"}
+ */
+function backToLogin() {
+	forms.loginContainerMobile.showForm(forms.loginMobile);
 }

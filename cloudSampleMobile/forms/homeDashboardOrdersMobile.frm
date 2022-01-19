@@ -22,7 +22,7 @@ width:80
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 text:"See more"
 },
-name:"label_4",
+name:"btnSeeMore",
 size:"80,30",
 styleClass:"text-tertiary text-center text-center-vertical text-underline",
 typeName:"bootstrapcomponents-label",
@@ -47,7 +47,7 @@ width:80
 styleClass:"h3 text-center text-center-vertical text-primary",
 text:"LAST 10 ORDERS"
 },
-name:"label_3",
+name:"labelTitle",
 size:"80,30",
 styleClass:"h3 text-center text-center-vertical text-primary",
 typeName:"bootstrapcomponents-label",
@@ -91,7 +91,7 @@ suppressSideButtons:true,
 svyUUID:"5500AC78-6918-4D75-B3F7-B39994275802"
 }
 },
-name:"groupingtable_1",
+name:"table",
 styleClass:"ag-theme-servoy",
 typeName:"aggrid-groupingtable",
 typeid:47,

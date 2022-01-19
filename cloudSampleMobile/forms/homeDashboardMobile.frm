@@ -32,7 +32,7 @@ width:200
 }
 },
 location:"93,586",
-name:"formcontainer_3",
+name:"tbDashboard",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -76,7 +76,7 @@ width:200
 }
 },
 location:"55,88",
-name:"formcontainer_1",
+name:"tbCards",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -120,7 +120,7 @@ width:200
 }
 },
 location:"68,437",
-name:"formcontainer_2",
+name:"tbCharts",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,

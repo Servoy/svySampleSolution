@@ -3,16 +3,11 @@
  * @properties={typeid:35,uuid:"2C240038-1E7E-4165-B2AA-172ED915A7C9",variableType:-4}
  */
 var NAVBAR_ACTIONS = {
-	DOWNLOAD_IDE: "download-ide",
 	PRIMARY_COLOR: "primary-color",
 	HOME: "homeDashboardMobile",
 	CUSTOMERS: "customersViewMobileDataGrid",
 	ORDERS: "ordersViewMobileDataGrid",
-	DOCUMENT_EDITOR: "documentEditor",
-	TUTORIAL: "TUTORIAL",
-	SECURITY: "svyTENANT",
-	SECURITY_ROLES: "svyROLES",
-	SECURITY_USERS: "svyUSERS"
+	TUTORIAL: "TUTORIAL"
 };
 
 /**
@@ -41,12 +36,6 @@ function loadNavbarItems() {
 	/** @type {CustomType<bootstrapextracomponents-navbar.menuItem>} */
 	var menuItem;
 
-	menuItem = elements.navbar.createMenuItem('Download IDE', NAVBAR_ACTIONS.DOWNLOAD_IDE, 'RIGHT');
-	menuItem.displayType = 'MENU_ITEM';
-	menuItem.styleClass = 'btn-download-ide btn-round border-default margin-10';
-	menuItem.iconName = "icon-cloud-download";
-	menuItems.push(menuItem);
-
 	menuItem = elements.navbar.createMenuItem('Search', DEFAULT_NAVBAR_ACTIONS.SEARCH, 'RIGHT');
 	menuItem.displayType = 'INPUT_GROUP';
 	menuItem.styleClass = 'closed searchbar';
@@ -71,28 +60,6 @@ function loadNavbarItems() {
 	menuItem.styleClass = 'no-border';
 	menuItem.inputButtonStyleClass = "btn-default";
 	menuItems.push(menuItem);
-
-	/*menuItem = elements.navbar.createMenuItem('DOCUMENT EDITOR', NAVBAR_ACTIONS.DOCUMENT_EDITOR, 'RIGHT');
-	menuItem.displayType = 'MENU_ITEM';
-	menuItem.styleClass = 'no-border';
-	menuItem.inputButtonStyleClass = "btn-default";
-	menuItems.push(menuItem);
-
-	menuItem = elements.navbar.createMenuItem('SECURITY', NAVBAR_ACTIONS.SECURITY, 'RIGHT');
-	menuItem.displayType = 'MENU_ITEM';
-	menuItem.styleClass = 'no-border';
-	menuItem.inputButtonStyleClass = "btn-default";
-
-	var roles = elements.navbar.createMenuItem('ROLES', NAVBAR_ACTIONS.SECURITY_ROLES);
-	submenuItems.push(roles);
-	
-	var users = elements.navbar.createMenuItem('USERS', NAVBAR_ACTIONS.SECURITY_USERS);
-	submenuItems.push(users);
-	
-	menuItem.subMenuItems = submenuItems;
-	menuItems.push(menuItem);*/
-	
-	
 	
 	menuItem = elements.navbar.createMenuItem('TUTORIAL', NAVBAR_ACTIONS.TUTORIAL, 'RIGHT');
 	menuItem.displayType = 'MENU_ITEM';
@@ -138,12 +105,10 @@ function loadNavbarItems() {
 function onNavbarMenuItemClicked(event, menuItem) {
 
 	switch (menuItem.itemId) {
-	case NAVBAR_ACTIONS.DOWNLOAD_IDE:
-		application.showURL('https://www.servoy.com/download/', '_blank');
-		break;
 	case NAVBAR_ACTIONS.PRIMARY_COLOR:
 
 		var popup = plugins.window.createFormPopup(forms.colorPicker);
+		popup.showBackdrop(true);
 		popup.x(0);
 		popup.y(0);
 		popup.show();

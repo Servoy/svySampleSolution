@@ -1,16 +1,18 @@
-
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"B3BE213C-557E-43BA-BA58-72C009A85C38",variableType:-4}
  */
 var months = [];
 
 
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"6DEB5921-6C2D-4104-8205-3EACC8ED57D0",variableType:-4}
  */
 var amounts = [];
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"259EC61A-0FA2-4383-B6A9-D1FE42D7C5B4"}
  */
 function RenderChart() {
@@ -61,7 +63,7 @@ function RenderChart() {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param event
  *
  * @properties={typeid:24,uuid:"C8BF6D52-4DB1-4C45-9BE8-E5B78074862C"}
@@ -86,7 +88,7 @@ function onLoad(event) {
 
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param dataset_index
  * @param index
  * @param label

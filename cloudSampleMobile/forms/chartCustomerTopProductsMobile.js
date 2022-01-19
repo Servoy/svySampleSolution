@@ -1,30 +1,35 @@
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"E8E8C5F2-E7F9-4E60-8FB3-B1C3D437AE90",variableType:-4}
  */
 var products = [];
 
 /**
+ * @protected
  * @properties={typeid:35,uuid:"697D17BA-6C8D-45A1-BBCB-551EAC71AB4F",variableType:-4}
  */
 var customerAmounts = [];
 
 /**
+ * @protected
  * @properties={typeid:35,uuid:"51763856-90F5-4321-B11D-688A7B5DBA22",variableType:-4}
  */
 var annualAmounts = [];
 
 /**
+ * @protected
  * @properties={typeid:35,uuid:"D36DC2A6-E307-48DE-8B28-D4314D2A1931",variableType:-4}
  */
 var years = [];
 
 /**
+ * @protected
  * @properties={typeid:35,uuid:"0BA41DC4-9788-48E5-8F1B-994E03F9148C",variableType:-4}
  */
 var colors = [];
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected
  * @param event
  *
  * @properties={typeid:24,uuid:"1D5149B8-9FF5-4082-8774-CF1B67A67E49"}
@@ -34,7 +39,7 @@ function onLoad(event) {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected
  * @param firstShow
  * @param event
  *
@@ -49,6 +54,7 @@ function onShow(firstShow, event) {
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"0B18B81A-07E1-4F45-94A7-33C440DCA2DE"}
  */
 function RenderPieChart() {
@@ -89,6 +95,7 @@ function RenderPieChart() {
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"35E1A7E7-07DA-46D0-B566-2BA83B97DEEF"}
  */
 function setPieChartData(){
@@ -105,6 +112,7 @@ function setPieChartData(){
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"9D2CA450-1B3F-4B18-BDAC-AC105218AA7A"}
  */
 function renderBarChart() {
@@ -149,6 +157,7 @@ function renderBarChart() {
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"0972E081-B12A-4396-859F-E5600C32E433"}
  */
 function setBarChartData(){
@@ -165,6 +174,7 @@ function setBarChartData(){
 }
 
 /**
+ * @protected
  * @properties={typeid:24,uuid:"6EAACB3B-E419-4180-8FC6-034B10701644"}
  */
 function setColors(){

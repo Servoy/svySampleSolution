@@ -1,16 +1,18 @@
-
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"34F55BC4-2166-47EF-8E3C-6CBCA686BA1C",variableType:-4}
  */
 var dataTopCustomersName = [];
 
 /**
+ * @protected 
  * @properties={typeid:35,uuid:"60A31CCB-C78F-4DAB-8ACD-D39DC45861BF",variableType:-4}
  */
 var dataTopCustomersAmount = [];
 
 
 /**
+ * @protected 
  * @properties={typeid:24,uuid:"B90DC5A2-FB34-436A-93C9-19B7AE22F3FC"}
  */
 function RenderChart() {
@@ -56,7 +58,7 @@ function RenderChart() {
 }
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param event
  *
  * @properties={typeid:24,uuid:"E406DA70-5C1C-4685-841F-CBAF4DC6ACBD"}
@@ -76,7 +78,7 @@ function onLoad(event) {
 
 
 /**
- * TODO generated, please specify type and doc for the params
+ * @protected 
  * @param dataset_index
  * @param index
  * @param label
@@ -86,10 +88,12 @@ function onLoad(event) {
  * @AllowToRunInFind
  */
 function onClickChart(dataset_index, index, label, value) {
-	forms.customersViewMobile.search(label,'customerid')
+	
+	var record = scopes.svyDataUtils.getRecord(datasources.db.example_data.customers.getDataSource(), [label])
+	
 	// navigate to Customer view table
 	var item = new scopes.svyNavigation.NavigationItem("customerViewMobile");
-	scopes.svyNavigation.open(item);
+	scopes.svyNavigation.open(item, record, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 
 }
 

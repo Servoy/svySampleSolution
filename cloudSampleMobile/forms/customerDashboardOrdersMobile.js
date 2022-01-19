@@ -1,5 +1,5 @@
-
 /**
+ * @protected
  * @param {JSEvent} event
  * @param {string} dataTarget
  *

@@ -32,7 +32,7 @@ width:200
 }
 },
 location:"98,345",
-name:"formcontainer_3",
+name:"tbOrders",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -76,7 +76,7 @@ width:200
 }
 },
 location:"76,99",
-name:"formcontainer_1",
+name:"tbRevenue",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -120,7 +120,7 @@ width:200
 }
 },
 location:"59,214",
-name:"formcontainer_2",
+name:"tbProfit",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,

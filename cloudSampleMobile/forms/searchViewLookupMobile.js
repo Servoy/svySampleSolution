@@ -1,5 +1,5 @@
 /**
- * @AllowToRunInFind
+ * @protected 
  * 
  * @param txt
  *

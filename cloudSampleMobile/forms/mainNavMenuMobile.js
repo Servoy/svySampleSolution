@@ -5,12 +5,11 @@
  * @properties={typeid:24,uuid:"F8A19012-5907-4828-94A7-365D70971DA9"}
  */
 function loadMenuItems() {
+	
 	var menuItems = [];
 	/** @type {CustomType<servoyextra-sidenav.MenuItem>} */
 	var menuItem;
-	//var menuSubItems = [];
-	//var menuSubItem;
-
+	
 	// User
 	menuItem = new Object();
 	menuItem.id = "User";
@@ -47,34 +46,6 @@ function loadMenuItems() {
 	menuItem.iconStyleClass = "icon-box";
 	menuItems.push(menuItem);
 
-	// DOCUMENT EDITOR
-	/*menuItem = new Object();
-	menuItem.id = "documentEditor";
-	menuItem.text = "DOCUMENT EDITOR";
-	menuItem.iconStyleClass = "far fa-file-alt";
-	menuItems.push(menuItem);
-
-	// SECURITY
-	menuItem = new Object();
-	menuItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT;
-	menuItem.text = "SECURITY";
-	menuItem.iconStyleClass = "fas fa-shield-alt";
-
-	menuSubItem = new Object();
-	menuSubItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT_ROLES;
-	menuSubItem.text = "ROLES";
-	menuSubItem.iconStyleClass = "fa fa-user-shield";
-	menuSubItems.push(menuSubItem);
-
-	menuSubItem = new Object();
-	menuSubItem.id = scopes.svySecurityUX.SVY_SECURITY_UX.TENANT_USERS;
-	menuSubItem.text = "USERS";
-	menuSubItem.iconStyleClass = "fa fa-user-shield";
-	menuSubItems.push(menuSubItem);
-
-	menuItem.menuItems = menuSubItems;
-	menuItems.push(menuItem);*/
-
 	// DIVIDER
 	menuItem = new Object();
 	menuItem.isDivider = true;
@@ -100,14 +71,6 @@ function loadMenuItems() {
 	menuItem.iconStyleClass = "fas fa-graduation-cap";
 	menuItems.push(menuItem);
 
-	// DOWNLOAD IDE
-	menuItem = new Object();
-	menuItem.id = "DOWNLOADIDE";
-	menuItem.text = "DOWNLOAD IDE";
-	menuItem.styleClass = "font-weight-bold";
-	menuItem.iconStyleClass = "icon-cloud-download";
-	menuItems.push(menuItem);
-
 	// DIVIDER
 	menuItem = new Object();
 	menuItem.isDivider = true;
@@ -121,7 +84,7 @@ function loadMenuItems() {
 	menuItems.push(menuItem);
 
 	// LOGOUT
-	menuItems.push(_super.loadMenuItems()[0]);
+	menuItems.concat(_super.loadMenuItems());
 
 	// return the menu items
 	return menuItems;
@@ -141,14 +104,14 @@ function onMenuItemSelected(menuItemId, event) {
 
 	if (menuItemId === "TUTORIAL") {
 		scopes.tutorial.showTutorial()
-	} else if (menuItemId === "DOWNLOADIDE") {
-		application.showURL("https://www.servoy.com/download/", "_blank");
 	} else if (menuItemId === "PRIMARYCOLORS") {
 		var popup = plugins.window.createFormPopup(forms.colorPicker);
+		popup.showBackdrop(true);
 		popup.x(2.5);
 		popup.y(102.5);
 		popup.show();
 		return false;
+		
 	} else if(menuItemId === "SEARCH"){
 		var lookup = scopes.svyLookup.createLookup(datasources.mem.search_results.getDataSource());
 		lookup.setLookupForm(forms.searchViewLookupMobile);
