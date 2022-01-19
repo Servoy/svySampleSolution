@@ -1,0 +1,43 @@
+customProperties:"formComponent:false,\
+useCssPosition:true",
+encapsulation:108,
+items:[
+{
+cssPosition:"30,10,-1,10,-1,40",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"40",
+left:"10",
+right:"10",
+top:"30",
+width:"-1"
+},
+onActionMethodID:"4C125ABE-7784-4BFC-AFC2-13BE06FA678C",
+size:{
+height:30,
+width:80
+},
+styleClass:"h3 text-center text-center-vertical border",
+text:"CUSTOMER ORDERS"
+},
+name:"label_2",
+size:"80,30",
+styleClass:"h3 text-center text-center-vertical border",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"365E6430-BE87-48B5-A2A5-9E1DCFE47EA1"
+},
+{
+height:100,
+partType:5,
+typeid:19,
+uuid:"80DBEF44-9FD7-471F-876D-78D2CE16D13C"
+}
+],
+name:"customerDashboardOrdersMobile",
+navigatorID:"-1",
+showInMenu:true,
+size:"320,320",
+typeid:3,
+uuid:"AC8A78E2-C233-4103-BB63-2476D0DF3085"

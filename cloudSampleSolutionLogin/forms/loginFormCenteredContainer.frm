@@ -32,7 +32,6 @@ uuid:"7ED3585A-6F66-4874-B9A8-4772F1C7BFB6"
 cssPosition:"0,0,0,0,0,0",
 imageMediaID:"696AA329-B5E6-44E6-80CB-3C0D53BC6CDE",
 name:"image",
-text:"",
 typeid:7,
 uuid:"C64B7CD2-FD0B-4C38-90DD-27C064B5482B"
 }
