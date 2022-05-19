@@ -333,12 +333,10 @@ function addEvent(event){
  * @properties={typeid:24,uuid:"E6251587-BAA3-4E49-9B67-03995E727F98"}
  */
 function onDayClick(date, event, view, resource) {
-	var answer = plugins.dialogs.showInputDialog('New event', 'Enter a name for the event')
-	
 	var data = {
 		id: application.getUUID().toString(),
-		resourceid: resource.id,
-		title: answer,
+		resourceId: parseInt(resource.id.toString()),
+		title: 'Order '+foundset.orderid,
 		start: date,
 		end: scopes.svyDateUtils.addHours(date, 1),
 		allday: false

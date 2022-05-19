@@ -23,6 +23,7 @@ width:"0"
 },
 formIndex:2,
 onDayClickMethodID:"E6251587-BAA3-4E49-9B67-03995E727F98",
+onEventClickMethodID:null,
 onEventDropMethodID:"B530F5F2-B3C5-4D00-91A3-236B2DEC04C9",
 onEventResizeMethodID:"B530F5F2-B3C5-4D00-91A3-236B2DEC04C9",
 onSelectMethodID:null
@@ -116,28 +117,6 @@ name:"button_add_resource",
 typeName:"bootstrapcomponents-button",
 typeid:47,
 uuid:"8FD2B9BE-17A4-47C1-A098-2078EE5D854C"
-},
-{
-cssPosition:"80,-1,-1,179,132,30",
-formIndex:1,
-json:{
-cssPosition:{
-bottom:"-1",
-height:"30",
-left:"179",
-right:"-1",
-top:"80",
-width:"132"
-},
-formIndex:1,
-imageStyleClass:"fa fa-plus",
-onActionMethodID:"1E46589C-E390-4F8F-86C9-10C6216EF551",
-text:"Add event"
-},
-name:"button_add_event",
-typeName:"bootstrapcomponents-button",
-typeid:47,
-uuid:"B140C7CE-E46D-4A6B-9DD0-7CC2248305ED"
 },
 {
 cssPosition:"24,260,-1,30,350,40",
