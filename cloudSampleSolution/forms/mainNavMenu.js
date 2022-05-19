@@ -62,6 +62,13 @@ function loadMenuItems() {
 	menuItem.text = "DOCUMENT EDITOR"
 	menuItem.iconStyleClass = "far fa-file-alt";
 	menuItems.push(menuItem);
+	
+	// FULLCALENDAR
+	menuItem = new Object();
+	menuItem.id = "fullcalendar";
+	menuItem.text = "FULLCALENDAR"
+	menuItem.iconStyleClass = "far fa-calendar";
+	menuItems.push(menuItem);
 
 	// SECURITY
 	menuItem = new Object();

@@ -1,21 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>cloudSampleSolution</name>
+	<name>postImportHookStyleGuide</name>
 	<comment></comment>
 	<projects>
 		<project>resources</project>
-		<project>customrenderedcomponents</project>
-		<project>cloudSampleModel</project>
-		<project>cloudSampleSolutionLogin</project>
-		<project>svyNavigationUX</project>
-		<project>svyPopupFilter</project>
-		<project>svySearch</project>
-		<project>svySecurityUX</project>
-		<project>svyThemeRoller</project>
-		<project>aggrid</project>
-		<project>postImportHook</project>
-		<project>svyUtils$documentEditor</project>
-		<project>fullcalendarscheduler</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

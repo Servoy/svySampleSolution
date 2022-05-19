@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-Name: FullCalendar Scheduler
+Bundle-SymbolicName: fullcalendarscheduler
+Package-Type: Web-Service
+Bundle-Version: 1.0.0
+
+Name: scheduler/scheduler.spec
+Web-Service: True
+

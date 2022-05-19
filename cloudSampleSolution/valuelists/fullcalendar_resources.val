@@ -1,0 +1,13 @@
+addEmptyValue:1,
+customProperties:"lazyLoading:false",
+dataProviderID1:"title",
+dataProviderID2:"resourceid",
+dataSource:"mem:fullcalendar_resources",
+displayValueType:12,
+name:"fullcalendar_resources",
+realValueType:4,
+returnDataProviders:2,
+showDataProviders:1,
+typeid:34,
+uuid:"29DDF442-D347-4190-8205-36EB56390DB5",
+valueListType:1

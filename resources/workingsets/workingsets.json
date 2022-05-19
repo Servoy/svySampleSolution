@@ -74,5 +74,14 @@
 "/cloudSampleMobile/forms/orderEditMobile.frm",
 "/cloudSampleMobile/forms/ordersViewMobileDataGrid.frm"
 ]
+},
+{
+"name":"fullcalendar",
+"paths":[
+"/cloudSampleSolution/.project",
+"/cloudSampleSolution/forms/fullcalendar.frm",
+"/cloudSampleSolution/forms/newEventPopup.frm",
+"/cloudSampleSolution/forms/newResourcePopup.frm"
+]
 }
 ]
