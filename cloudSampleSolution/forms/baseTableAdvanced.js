@@ -282,6 +282,7 @@ function showForm(form){
  * @param {object} [oldvalue]
  * @param {object} [newvalue]
  * @param {JSEvent} [event]
+ * @param {JSRecord} [record]
  *
  * @return {boolean}
  *
@@ -289,7 +290,7 @@ function showForm(form){
  *
  * @properties={typeid:24,uuid:"51762184-6F32-4021-9998-6CFBCA60B2FC"}
  */
-function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, event) {
+function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, event, record) {
 	// save data at every data change
 	databaseManager.saveData();
 	return true;
