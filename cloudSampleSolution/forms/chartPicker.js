@@ -52,7 +52,7 @@ var callback;
 /**
  *
  * @public
- * @param {RuntimeWebComponent<aggrid-groupingtable>} table
+ * @param {RuntimeWebComponent<aggrid-groupingtable_abs>} table
  * @param {function} onApply
  * @param {JSEvent} event
  * @param {Object} params
