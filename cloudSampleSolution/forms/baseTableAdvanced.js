@@ -38,6 +38,7 @@ function onLoad(event) {
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 	toolbarFilter.setOnSearchCommand(onSearchCommand);
+	toolbarFilter.setOnFilterApplyQueryCondition(onFilterQueryCondition)
 	
 	// customize the free search
 	var simpleSearch = toolbarFilter.getSimpleSearch();
@@ -65,12 +66,26 @@ function onSearchCommand(query, fs) {
 
 
 /**
+ * @protected 
+ * @param {QBSelect} query
+ * @param {String} dataprovider
+ * @param {String} operator
+ * @param {Array} values
+ * @param {scopes.svyPopupFilter.AbstractPopupFilter} filter
+ * 
+ * @return {Boolean}
+ *
+ * @properties={typeid:24,uuid:"83D47A95-BE7A-4797-AC2A-A8D7FD347AB0"}
+ */
+function onFilterQueryCondition(query, dataprovider, operator, values, filter) {
+	return true;
+}
+
+/**
  * @private 
  * @properties={typeid:24,uuid:"E9C17BB8-BB62-4AE9-B9DA-34E72A10D8AA"}
  */
-function onFilterRemovedEvent() {
-	//plugins.webnotificationsToastr.info('filter removed');
-	
+function onFilterRemovedEvent() {	
 	saveToolbarFilterProperty();
 }
 
@@ -84,9 +99,7 @@ function onFilterRemovedEvent() {
  *
  * @properties={typeid:24,uuid:"2600A53A-0203-4DB5-9D84-D2FC9FE1B450"}
  */
-function onFilterApplyEvent(values, operator, filter) {
-	//plugins.webnotificationsToastr.info(values.join(','));
-	
+function onFilterApplyEvent(values, operator, filter) {	
 	saveToolbarFilterProperty();
 }
 
