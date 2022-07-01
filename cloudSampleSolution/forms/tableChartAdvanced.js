@@ -75,7 +75,7 @@ function renderChart(chartFoundset) {
 
 	switch (valueFunc) {
 	case CHART_VALUE_FUNC.COUNT:
-		query.result.add(query.getColumn(value).count);
+		query.result.add(query.getColumn(value).count.distinct);
 		break;
 	case CHART_VALUE_FUNC.SUM:
 		query.result.add(query.getColumn(value).sum);
@@ -87,7 +87,7 @@ function renderChart(chartFoundset) {
 		query.result.add(query.getColumn(value).min);
 		break;
 	default:
-		query.result.add(query.getColumn(value).count);
+		query.result.add(query.getColumn(value).count.distinct);
 		break;
 	}
 

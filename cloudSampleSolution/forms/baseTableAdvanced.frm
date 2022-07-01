@@ -15,7 +15,8 @@ top:"40",
 width:"25"
 },
 faclass:"fas fa-chart-bar clickable",
-onActionMethodID:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A"
+onActionMethodID:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A",
+toolTipText:"Toggle chart view"
 },
 name:"btnChart",
 typeName:"servoyextra-fontawesome",
@@ -125,6 +126,7 @@ width:"25"
 },
 faclass:"fas fa-cog clickable",
 onActionMethodID:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C",
+toolTipText:"Configure chart",
 visible:true
 },
 name:"btnChartConfig",

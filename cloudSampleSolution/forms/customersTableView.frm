@@ -4,17 +4,8 @@ dataSource:"db:/example_data/customers",
 extendsID:"220354D9-CA4C-401C-96E6-7A07733010B0",
 items:[
 {
-cssPosition:"40,65,-1,-1,28,30",
 extendsID:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
 json:{
-cssPosition:{
-bottom:"-1",
-height:"30",
-left:"-1",
-right:"65",
-top:"40",
-width:"28"
-},
 visible:true
 },
 typeName:"bootstrapcomponents-label",
