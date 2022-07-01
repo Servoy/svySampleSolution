@@ -14,12 +14,12 @@ right:"86",
 top:"40",
 width:"25"
 },
-faclass:"fas fa-chart-bar clickable",
+imageStyleClass:"fas fa-chart-bar clickable",
 onActionMethodID:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A",
 toolTipText:"Toggle chart view"
 },
 name:"btnChart",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"0253AB81-E199-47E0-889A-99600DFA4458"
 },
@@ -124,13 +124,13 @@ right:"60",
 top:"40",
 width:"25"
 },
-faclass:"fas fa-cog clickable",
+imageStyleClass:"fas fa-cog clickable",
 onActionMethodID:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C",
 toolTipText:"Configure chart",
 visible:true
 },
 name:"btnChartConfig",
-typeName:"servoyextra-fontawesome",
+typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"6E0E644F-DA3C-4504-875A-ACE502D5B5F2"
 },
@@ -254,7 +254,7 @@ visible:false
 },
 name:"tabChart",
 styleClass:"box",
-typeName:"bootstrapcomponents-tablesspanel",
+typeName:"servoycore-formcontainer",
 typeid:47,
 uuid:"FA4F7C95-AF83-4279-9D64-49E2E6BE93A2",
 visible:false
