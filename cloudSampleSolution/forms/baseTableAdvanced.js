@@ -375,22 +375,24 @@ function chartConfig(event) {
 }
 
 /**
- * @param chartLabel
- * @param chartValue
- * @param chartFunc
+ * @param {String} chartLabel
+ * @param {String} chartValue
+ * @param {String} chartFunc
+ * @param {String} chartLabelDisplay
+ * @param {String} chartValueDisplay
  * 
  * @protected
  *
  * @properties={typeid:24,uuid:"0E580D43-803C-4224-839E-F8ED00D22956"}
  */
-function applyChartConfig(chartLabel, chartValue, chartFunc) {
+function applyChartConfig(chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay) {
 	
 	// update chart Values
 	chartParams.label = chartLabel;
 	chartParams.value = chartValue;
 	chartParams.valueFunc = chartFunc;
 	
-	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc);
+	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay);
 
 	elements.table.visible = false;
 	elements.tabChart.visible = true;

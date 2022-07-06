@@ -201,13 +201,11 @@ function updateUI() {
  */
 function onActionApply(event) {
 
-	//	scopes.svyProperties.setUserProperty("MAIN-COLOR", "style", primaryColor);
-	//	scopes.svyProperties.setUserProperty("SECONDARY-COLOR", "style", secondaryColor);
-	//
-	//	scopes.cloudSample.overrideStyleColors(primaryColor, secondaryColor);
-
 	if (callback) {
-		callback.call(this, labelColumn, valueColumn, valueFunc)
+		var labelColumnDisplay = labelColumn ? application.getValueListDisplayValue('chartLabelPicker',labelColumn) : '';
+		var valueColumnDisplay = valueColumn ? application.getValueListDisplayValue('chartValuePicker', valueColumn) : '';
+		
+		callback.call(this, labelColumn, valueColumn, valueFunc, labelColumnDisplay, valueColumnDisplay)
 	}
 	
 	plugins.window.closeFormPopup(null);
