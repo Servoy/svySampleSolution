@@ -76,6 +76,6 @@ uuid:"A35987DB-B420-4AC6-8421-B924679ECB36"
 name:"newResourcePopup",
 navigatorID:"-1",
 showInMenu:true,
-size:"400,300",
+size:"500,240",
 typeid:3,
 uuid:"65FC125E-0AF3-418A-86DA-F1D8C93214A3"

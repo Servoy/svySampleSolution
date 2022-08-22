@@ -13,25 +13,11 @@ var title;
 var resource = null
 
 /**
- * @type {String}
- *
- * @properties={typeid:35,uuid:"36ECC346-1326-4F58-B2A7-910CE7E9C21E"}
- */
-var startTime 
-
-/**
  * @type {Date}
  *
  * @properties={typeid:35,uuid:"D9F77400-8AFE-4282-8B84-8B794DD8ADBD",variableType:93}
  */
 var startDate = new Date()
-
-/**
- * @type {String}
- *
- * @properties={typeid:35,uuid:"C00317F3-F705-4203-B7F2-50E026E59336"}
- */
-var endTime
 
 /**
  * @type {Date}
@@ -59,8 +45,8 @@ function onActionAdd(event) {
 	eventsFS.newRecord()
 	eventsFS.title = title
 	eventsFS.resourceid = resource
-	eventsFS.start = new Date(startDate.setHours(startTime.split(':')[0], startTime.split(':')[1]))
-	eventsFS.end = new Date(endDate.setHours(endTime.split(':')[0], endTime.split(':')[1]))	
+	eventsFS.start = startDate
+	eventsFS.end = endDate
 	eventsFS.allday = allDay ? 1 : 0
 	databaseManager.saveData(eventsFS)
 	
@@ -68,10 +54,8 @@ function onActionAdd(event) {
 	
 	title = null
 	resource = null
-	startTime = null
-	startDate = null
-	endTime = null
-	endDate = null
+	startDate = new Date()
+	endDate = new Date()
 	allDay = null
 	
 	application.getActiveWindow().destroy()

@@ -1,5 +1,6 @@
 /**
- * @properties={typeid:35,uuid:"C9B63415-7503-4558-8486-731BC22070A4",variableType:-4}
+ * @private
+ * @properties={typeid:35,uuid:"9E67DAED-FBB8-4960-B992-9D2B90540D1B",variableType:-4}
  */
 var CALENDAR_VIEW_TYPE = {
 	MONTH: 'month',
@@ -24,7 +25,7 @@ var CALENDAR_VIEW_TYPE = {
  *
  * @protected
  *
- * @properties={typeid:24,uuid:"4259E926-315E-44DE-A683-486235EBE70A"}
+ * @properties={typeid:24,uuid:"9CAF8A64-6D20-4E81-B039-EBF0BD11C5DC"}
  * @AllowToRunInFind
  */
 function onLoad(event) {
@@ -94,7 +95,7 @@ function onLoad(event) {
  *
  * @return {Array<CustomType<svy-fullcalendar.ResourceType>>}
  *
- * @properties={typeid:24,uuid:"FBAA5661-34FA-47EC-9456-293A11CE9196"}
+ * @properties={typeid:24,uuid:"B8B3ACF3-A21C-4845-9C49-F0B2A83061B8"}
  * @AllowToRunInFind
  * @private
  */
@@ -126,7 +127,7 @@ function getResources() {
  * @AllowToRunInFind
  * @private
  * 
- * @properties={typeid:24,uuid:"9301CC65-C717-4FBE-BBEE-F6146F5B0BB0"}
+ * @properties={typeid:24,uuid:"A5DCA19D-3138-47C9-90E5-37942DF41AE4"}
  */
 function getEvents(){
 	/** @type {Array<CustomType<svy-fullcalendar.EventType>>} */
@@ -156,7 +157,8 @@ function getEvents(){
 }
 
 /**
- * @properties={typeid:24,uuid:"F0764A1F-CF00-4BEC-809B-65B75DE9ABE5"}
+ * @private
+ * @properties={typeid:24,uuid:"1ABB8D17-DF1B-4B40-BA94-8B88208A6C96"}
  */
 function initData(){
 	var resources = [{
@@ -203,54 +205,6 @@ function initData(){
 	
 	databaseManager.saveData(resourceFS)
 	
-//	var events = [
-//		{
-//			resourceid: 1,
-//			title: 'Team Meeting',
-//			start: new Date(new Date().setHours(10,0,0,0)),
-//			end: new Date(new Date().setHours(11,0,0,0)),
-//			allday: false,
-//			planned: true
-//		},{
-//			resourceid: 2,
-//			title: 'Vacation',
-//			start: new Date(),
-//			end: null,
-//			allday: true,
-//			planned: true
-//			
-//		},{
-//			resourceid: 3,
-//			title: 'Lunch',
-//			start: new Date(new Date().setHours(12,0,0,0)),
-//			end: new Date(new Date().setHours(13,0,0,0)),
-//			allday: false,
-//			planned: false
-//		},{
-//			resourceid: 5,
-//			title: 'Timesheets',
-//			start: new Date(new Date().setHours(16,0,0,0)),
-//			end: new Date(new Date().setHours(17,0,0,0)),
-//			allday: false,
-//			planned: false
-//		}
-//	]
-//	
-//	
-//	var eventFS = datasources.mem.fullcalendar_events.getFoundSet()	
-//	events.forEach(function(event){
-//		eventFS.newRecord()
-//		eventFS.eventid = event.id
-//		eventFS.resourceid = event.resourceid
-//		eventFS.title = event.title
-//		eventFS.start = event.start
-//		eventFS.end = event.end
-//		eventFS.allday = event.allday
-//		eventFS.planned = event.planned
-//	})
-//	
-//	databaseManager.saveData(eventFS)	
-
 }
 /**
  * @param {CustomType<svy-fullcalendar.EventType>} eventObject
@@ -260,7 +214,7 @@ function initData(){
  *
  * @private
  *
- * @properties={typeid:24,uuid:"B530F5F2-B3C5-4D00-91A3-236B2DEC04C9"}
+ * @properties={typeid:24,uuid:"17CA9771-7569-4F2A-ABFE-5B34917DB776"}
  */
 function onEventDrop(eventObject, delta, event, view) {
 
@@ -281,10 +235,11 @@ function onEventDrop(eventObject, delta, event, view) {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"D6543DB3-EB2E-47A3-A1F6-858923DA8195"}
+ * @properties={typeid:24,uuid:"73DB24DF-2955-4AFE-91AA-A9BD8F76CAFC"}
  */
 function onActionAddResource(event) {
 	var popup = application.createWindow('newResource', JSWindow.MODAL_DIALOG)
+	popup.title = 'New Resource'
 	popup.show(forms.newResourcePopup)
 }
 
@@ -293,10 +248,11 @@ function onActionAddResource(event) {
  *
  * @private
  *
- * @properties={typeid:24,uuid:"1E46589C-E390-4F8F-86C9-10C6216EF551"}
+ * @properties={typeid:24,uuid:"7BF3F956-28DE-4117-AC44-2E6601738572"}
  */
 function onActionAddEvent(event) {
 	var popup = application.createWindow('newEvent', JSWindow.MODAL_DIALOG)
+	popup.title = 'New Event'
 	popup.show(forms.newEventPopup)	
 }
 
@@ -305,7 +261,7 @@ function onActionAddEvent(event) {
  * 
  * @public
  *
- * @properties={typeid:24,uuid:"BAC3E45A-21C6-48EE-932E-E1697BC365A6"}
+ * @properties={typeid:24,uuid:"0960DB06-76B2-47ED-9FB9-604DCD03F794"}
  */
 function addResource(resource){
 	elements.fullcalendar.addResource(resource)
@@ -317,7 +273,7 @@ function addResource(resource){
  * 
  * @public
  *
- * @properties={typeid:24,uuid:"3CFCAB1C-0EE0-4E4A-B583-9786B8B25345"}
+ * @properties={typeid:24,uuid:"CC582085-FE19-49A7-8EC7-6491B4093C12"}
  */
 function addEvent(event){
 	elements.fullcalendar.renderEvent(event)
@@ -330,17 +286,40 @@ function addEvent(event){
  *
  * @private
  *
- * @properties={typeid:24,uuid:"E6251587-BAA3-4E49-9B67-03995E727F98"}
+ * @properties={typeid:24,uuid:"E9EEC5E4-F9C3-4492-903A-938B70192828"}
  */
 function onDayClick(date, event, view, resource) {
 	var data = {
 		id: application.getUUID().toString(),
 		resourceId: parseInt(resource.id.toString()),
-		title: 'Order '+foundset.orderid,
+		title: 'Order '+ foundset.orderid,
 		start: date,
 		end: scopes.svyDateUtils.addHours(date, 1),
 		allday: false
 	}
 	
 	elements.fullcalendar.renderEvent(data)
+}
+/**
+ * @param {Boolean} firstShow
+ * @param {JSEvent} event
+ *
+ * @private
+ * @override
+ *
+ * @properties={typeid:24,uuid:"CCD550CE-5FDA-4AE8-B72E-BCA66347BA06"}
+ */
+function onShow(firstShow, event) {
+	//Show popup to inform user of functionality
+	if(firstShow){
+		plugins.scheduler.addJob('ShowInfoDialog',new Date(new Date().setSeconds(new Date().getSeconds()+1)),test,0,0)
+	}
+}
+
+
+/**
+ * @properties={typeid:24,uuid:"8541F1E8-BD8E-4333-A238-1A85E2FDBE9F"}
+ */
+function test(){
+	plugins.dialogs.showInfoDialog('Add event', 'Click in the calendar to add the currently selected order to that timeslot')
 }

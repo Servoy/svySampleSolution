@@ -10,7 +10,7 @@ var resourceName;
  *
  * @properties={typeid:35,uuid:"0F67AFF2-8634-474E-A607-1F219F37F3AA",variableType:8}
  */
-var selectedParent
+var selectedParent = null
 /**
  * @param {JSEvent} event
  *
