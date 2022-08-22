@@ -29,16 +29,10 @@ var CALENDAR_VIEW_TYPE = {
  * @AllowToRunInFind
  */
 function onLoad(event) {
-	
-	if(foundset.find()){
-		foundset.allday = 1;
-		foundset.search();
-	}
-	
 	//Fill the in memory tables
 	initData()	
 	
-	// init the calendar
+	// init the calendar with properties
 	/** @type {CustomType<svy-fullcalendar.FullCalendarOptions>} */
 	var options = {
 		allDayText: '',
@@ -120,7 +114,7 @@ function getResources() {
 }
 
 /**
- * Get all active resources
+ * Get all active events
  *
  * @return {Array<CustomType<svy-fullcalendar.EventType>>}
  *
@@ -149,14 +143,13 @@ function getEvents(){
 			}
 			events.push(data)
 		}
-		
-	
 	})
 
 	return events;
 }
 
 /**
+ * This function adds temporary data to an in-memory table to be used as resources for the calendar
  * @private
  * @properties={typeid:24,uuid:"1ABB8D17-DF1B-4B40-BA94-8B88208A6C96"}
  */
@@ -207,6 +200,7 @@ function initData(){
 	
 }
 /**
+ * Update the event when dropped in the table
  * @param {CustomType<svy-fullcalendar.EventType>} eventObject
  * @param {number} delta
  * @param {JSEvent} event
@@ -231,6 +225,8 @@ function onEventDrop(eventObject, delta, event, view) {
 	databaseManager.saveData(eventsFS)
 }
 /**
+ * Open the newResourcePopup to create a new resource in the calendar
+ * 
  * @param {JSEvent} event
  *
  * @private
@@ -244,6 +240,8 @@ function onActionAddResource(event) {
 }
 
 /**
+ * Add a new event to the calendar
+ * 
  * @param {JSEvent} event
  *
  * @private
@@ -257,6 +255,8 @@ function onActionAddEvent(event) {
 }
 
 /**
+ * Add resource callback
+ * 
  * @param resource
  * 
  * @public
@@ -269,6 +269,8 @@ function addResource(resource){
 
 
 /**
+ * Add event callback
+ * 
  * @param event
  * 
  * @public
@@ -278,7 +280,10 @@ function addResource(resource){
 function addEvent(event){
 	elements.fullcalendar.renderEvent(event)
 }
+
 /**
+ * When clicking on a day, add the selected order in the orders foundset as an event
+ * 
  * @param {Date} date
  * @param {JSEvent} event
  * @param {CustomType<svy-fullcalendar.ViewType>} view
@@ -300,6 +305,7 @@ function onDayClick(date, event, view, resource) {
 	
 	elements.fullcalendar.renderEvent(data)
 }
+
 /**
  * @param {Boolean} firstShow
  * @param {JSEvent} event
@@ -312,14 +318,16 @@ function onDayClick(date, event, view, resource) {
 function onShow(firstShow, event) {
 	//Show popup to inform user of functionality
 	if(firstShow){
-		plugins.scheduler.addJob('ShowInfoDialog',new Date(new Date().setSeconds(new Date().getSeconds()+1)),test,0,0)
+		plugins.scheduler.addJob('ShowInfoDialog',new Date(new Date().setSeconds(new Date().getSeconds()+1)), showInfoDialog, 0, 0)
 	}
 }
 
 
 /**
+ * Show a popup to inform the user of the click functionality of the calendar
+ * 
  * @properties={typeid:24,uuid:"8541F1E8-BD8E-4333-A238-1A85E2FDBE9F"}
  */
-function test(){
+function showInfoDialog(){
 	plugins.dialogs.showInfoDialog('Add event', 'Click in the calendar to add the currently selected order to that timeslot')
 }
