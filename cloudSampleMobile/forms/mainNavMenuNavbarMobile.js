@@ -107,12 +107,8 @@ function onNavbarMenuItemClicked(event, menuItem) {
 	switch (menuItem.itemId) {
 	case NAVBAR_ACTIONS.PRIMARY_COLOR:
 
-		var popup = plugins.window.createFormPopup(forms.colorPicker);
-		popup.showBackdrop(true);
-		popup.x(0);
-		popup.y(0);
-		popup.show();
-
+		// show the color picker
+		forms.colorPickerMobile.showColorPicker();
 		return false;
 	case NAVBAR_ACTIONS.TUTORIAL:
 		scopes.tutorial.showTutorial();
