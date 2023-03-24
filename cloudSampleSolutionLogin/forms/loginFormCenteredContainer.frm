@@ -9,16 +9,16 @@ typeid:19,
 uuid:"50490D68-90C2-46A5-8286-26AC083C707D"
 },
 {
-cssPosition:"calc( 50% - 250px),calc( 50% - 300px),calc( 50% - 250px),calc( 50% - 300px),-1,-1",
+cssPosition:"calc( 50% - 225px),calc( 50% - 300px),calc( 50% - 225px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
 containedForm:"CF5B4C78-9945-470E-AEAE-9C6BF9A14443",
 cssPosition:{
-bottom:"calc( 50% - 250px)",
+bottom:"calc( 50% - 225px)",
 height:"-1",
 left:"calc( 50% - 300px)",
 right:"calc( 50% - 300px)",
-top:"calc( 50% - 250px)",
+top:"calc( 50% - 225px)",
 width:"-1"
 },
 formIndex:1

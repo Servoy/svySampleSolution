@@ -8,16 +8,12 @@
  * @properties={typeid:24,uuid:"0A80E4F6-5693-4451-9BAD-5C388A658C83"}
  */
 function onLoad(event) {
+	
+	tenantName = 'admin'
+	userName = "admin";
+	password = "admin";
 
 	// switch the svy_security server to a db containin only sample users
-
-	// auto fill credentials in developer
-	if (application.isInDeveloper()) {
-		tenantName = "admin";
-		userName = "admin";
-		password = "admin";
-		//	login();
-	}
 }
 
 /**
