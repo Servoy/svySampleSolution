@@ -1,5 +1,6 @@
 groups:[
-"Administrators"
+"Administrators",
+"Guest"
 ],
 usergroups:{
 Administrators:[

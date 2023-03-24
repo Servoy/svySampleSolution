@@ -11,7 +11,20 @@
  * @properties={typeid:24,uuid:"8FDBDB3B-5DFF-415D-BB01-95973BB00B5E"}
  */
 function onSolutionOpenPostImportHook(arg, queryParams) {
-	
 	// sync security permissions at every deployment
 	scopes.svySecurity.syncPermissions();
+	
+	// clean users at every deployment
+	scopes.svySecurity.deleteTenant('admin')
+	
+	scopes.svySecurity.createSampleData()
+	
+	//Add sample data at every deployment
+	var tenant = scopes.svySecurity.getTenant('admin')
+	var role = tenant.createRole('guest')
+	role.addPermission('Guest')
+	
+	var user = tenant.createUser('guest')
+	user.addRole('guest')
+	user.setPassword('guest')
 }
