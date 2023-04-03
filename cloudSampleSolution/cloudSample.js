@@ -87,16 +87,16 @@ function configGrid() {
 	plugins.ngDataGrid.toolPanelConfig = toolPanelOptions;
 
 	// set up grid icons
-	var icons = plugins.ngDataGrid.createIconConfig();
-	icons.iconSortAscending = "fa fa-long-arrow-up";
-	icons.iconSortDescending = "fa fa-long-arrow-down";
-	icons.iconFilter = "fa fa-filter";
+	// var icons = plugins.ngDataGrid.createIconConfig();
+	// icons.iconSortAscending = "fa fa-long-arrow-up";
+	// icons.iconSortDescending = "fa fa-long-arrow-down";
+	// icons.iconFilter = "fa fa-filter";
 
 	//	icons.iconCheckboxChecked = "fa fa-check-square-o";
 	//	icons.iconCheckboxUnchecked = "fa fa-square-o";
 	//	icons.iconCheckboxIndeterminate = "fa fa-minus-square-o";
 
-	plugins.ngDataGrid.iconConfig = icons;
+	// plugins.ngDataGrid.iconConfig = icons;
 }
 
 /**
@@ -171,4 +171,18 @@ function overrideStyleColors(mainColor, secondaryColor) {
 function getDefaultDocumentTemplate() {
 	var content = '<html><body><div class="ck-content" dir="ltr"><figure class="image image-style-align-left"><img src="https://docs.google.com/drawings/u/2/d/sqTY9PPHoJ_grubeHm0JXUQ/image?w=816&amp;h=209&amp;rev=12&amp;ac=1&amp;parent=1chvZaE9c3etg_-hovDYZxouocPvBTfLQuOma-vSK2xA"></figure><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2><span class="mention svy-mention" data-mention="#customers.Company" data-real-value="orders_to_customers.companyname" contenteditable="false" data-format="">#customers.Company</span>&nbsp;</h2><h4><span style="background-color:transparent;color:#31394d;">COMPANY ADDRESS</span></h4><h4><span class="mention svy-mention" data-mention="#Address" data-real-value="displayAddress" contenteditable="false" data-format="">#Address</span>&nbsp;</h4><p>&nbsp;</p><h3><span style="background-color:transparent;color:#31394d;">Order &nbsp;<span class="mention svy-mention" data-mention="#orders.OrderId" data-real-value="orderid" contenteditable="false" data-format="">#orders.OrderId</span> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></h3><p><i>Date</i>: <span class="mention svy-mention" data-mention="#Order Date" data-real-value="orderdate" contenteditable="false" data-format="">#Order Date</span>&nbsp;</p><p><i>Status</i>: <span class="mention svy-mention" data-mention="#Status" data-real-value="orderStatus" contenteditable="false" data-format="">#Status</span>&nbsp;</p><p><i>Total</i>: &nbsp;$ <span class="mention svy-mention" data-mention="#Total" data-real-value="order_total" contenteditable="false" data-format="">#Total</span>&nbsp;</p><p><span class="mention svy-mention" data-mention="$startRepeater.OrderDetails" data-real-value="startRepeater-orders_to_order_details" contenteditable="false" data-format="">$startRepeater.OrderDetails</span></p><figure class="table"><table><thead><tr><th>ITEM</th><th>&nbsp; &nbsp; &nbsp;QTY</th><th>&nbsp; &nbsp; &nbsp;PRICE</th><th>&nbsp; &nbsp; &nbsp;SUBTOTAL</th></tr></thead><tbody><tr><td><span class="mention svy-mention" data-mention="#Product.Name" data-real-value="orders_to_order_details.order_details_to_products.productname" contenteditable="false" data-format="">#Product.Name</span>&nbsp;</td><td>&nbsp; &nbsp; &nbsp;<span class="mention svy-mention" data-mention="#OrderDetails.Quantity" data-real-value="orders_to_order_details.quantity" contenteditable="false" data-format="">#OrderDetails.Quantity</span>&nbsp;</td><td>&nbsp; &nbsp; &nbsp;<span class="mention svy-mention" data-mention="#OrderDetails.Unit Price" data-real-value="orders_to_order_details.unitprice" contenteditable="false" data-format="">#OrderDetails.Unit Price</span>&nbsp;</td><td>&nbsp; &nbsp; &nbsp;<span class="mention svy-mention" data-mention="#OrderDetails.Subtotal" data-real-value="orders_to_order_details.subtotal" contenteditable="false" data-format="">#OrderDetails.Subtotal</span>&nbsp;</td></tr></tbody></table></figure><p><span class="mention svy-mention" data-mention="$endRepeater" data-real-value="endRepeater" contenteditable="false" data-format="">$endRepeater</span>&nbsp;</p></div></body></html>'
 	return content;
+}
+
+/**
+ * Callback method for when solution is closed, force boolean argument tells if this is a force (not stoppable) close or not.
+ *
+ * @param {Boolean} force if false then solution close can be stopped by returning false
+ *
+ * @return {Boolean}
+ *
+ * @properties={typeid:24,uuid:"179AC997-3E58-4FD3-AF1F-C72EC9503664"}
+ */
+function onSolutionClose(force) {
+	application.overrideStyle('cloudSampleSolution.less', 'cloudSampleSolution.less');
+	return true
 }
