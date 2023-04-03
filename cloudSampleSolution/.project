@@ -4,7 +4,6 @@
 	<comment></comment>
 	<projects>
 		<project>resources</project>
-		<project>customrenderedcomponents</project>
 		<project>cloudSampleModel</project>
 		<project>cloudSampleSolutionLogin</project>
 		<project>svyNavigationUX</project>
