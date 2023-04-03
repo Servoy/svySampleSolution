@@ -303,11 +303,13 @@ function getColumn(dataprovider) {
 /**
  * @protected 
  * @param form
+ * @param {JSRecord|JSFoundSet} [record]
  *
  * @properties={typeid:24,uuid:"185B6063-C444-4A51-A3C7-B42B18E648D5"}
  */
-function showForm(form){
-	scopes.global.showForm(form, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+function showForm(form, record){
+	var dataToLoad = record ? record : foundset;
+	scopes.global.showForm(form, dataToLoad, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 }
 
 /**
