@@ -148,17 +148,24 @@ function overrideStyleColors(mainColor, secondaryColor) {
 		'MAIN-COLOR': mainColor,
 		'SECONDARY-COLOR': secondaryColor
 	}
+	
+	var styleOriginal = "cloudSampleTemplateOriginal.less";
+	var styleTemplate = "cloudSampleTemplate.less";
+	if (scopes.svySystem.isTINGClient()) {
+		styleOriginal = "cloudSampleTemplateOriginal_ng2.less";
+		styleTemplate = "cloudSampleTemplate_ng2.less";
+	}
 
 	// set the preferred colors
-	var mediaOriginal = solutionModel.getMedia('cloudSampleTemplateOriginal.less');
+	var mediaOriginal = solutionModel.getMedia(styleOriginal);
 	var cssText = mediaOriginal.getAsString();
 
 	// override css
 	cssText = utils.stringReplaceTags(cssText, newColorStyle);
-	var media = solutionModel.getMedia('cloudSampleTemplate.less');
+	var media = solutionModel.getMedia(styleTemplate);
 	media.setAsString(cssText);
 
-	application.overrideStyle('cloudSampleSolution.less', 'cloudSampleTemplate.less');
+	application.overrideStyle('cloudSampleSolution.less', styleTemplate);
 }
 
 
