@@ -1,6 +1,6 @@
 firstFormID:"3D44BDA0-42D0-4A17-BDF9-F12E35986E75",
-loginFormID:"-1",
-modulesNames:"svyNavigationUX,svySecurityUX,cloudSampleModel,cloudSampleSolutionLogin,svyPopupFilter,postImportHook,svyUtils$documentEditor",
+loginFormID:"FC00B251-A4E4-4386-8067-5486E87FCF84",
+modulesNames:"svyNavigationUX,svySecurityUX,cloudSampleModel,svyPopupFilter,svyUtils$documentEditor",
 onCloseMethodID:"179AC997-3E58-4FD3-AF1F-C72EC9503664",
 onOpenMethodID:"BFCC6B60-B595-4A61-B90E-0D1D0853B7C7",
 styleSheetID:"DF3AC9FD-270A-4D3B-B0E9-D66425BB3F54",
