@@ -12,7 +12,6 @@
 		<project>svySearch</project>
 		<project>svySecurityUX</project>
 		<project>svyThemeRoller</project>
-		<project>aggrid</project>
 		<project>postImportHook</project>
 		<project>svyUtils$documentEditor</project>
 	</projects>
