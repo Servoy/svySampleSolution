@@ -158,6 +158,7 @@ uuid:"77B75982-F3BC-459F-ABAE-D1B5EF16340A"
 cssPosition:"84,30,53,30,0,0",
 formIndex:1,
 json:{
+continuousColumnsAutoSizing:true,
 cssPosition:{
 bottom:"53",
 height:"0",
