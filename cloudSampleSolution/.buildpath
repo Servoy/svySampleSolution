@@ -2,6 +2,7 @@
 <buildpath>
 	<buildpathentry excluding=".stp/|medias/" kind="src" path=""/>
 	<buildpathentry exported="true" kind="prj" path="/cloudSampleModel"/>
+	<buildpathentry exported="true" kind="prj" path="/postImportHook"/>
 	<buildpathentry exported="true" kind="prj" path="/svyNavigationUX"/>
 	<buildpathentry exported="true" kind="prj" path="/svyPopupFilter"/>
 	<buildpathentry exported="true" kind="prj" path="/svySecurityUX"/>
