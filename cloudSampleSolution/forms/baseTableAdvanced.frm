@@ -3,6 +3,27 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
+cssPosition:"40,86,-1,-1,25,30",
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"30",
+left:"-1",
+right:"86",
+top:"40",
+width:"25"
+},
+imageStyleClass:"fas fa-chart-bar clickable",
+onActionMethodID:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A",
+toolTipText:"Toggle chart view"
+},
+name:"btnChart",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"0253AB81-E199-47E0-889A-99600DFA4458"
+},
+{
 cssPosition:"42,-1,-1,318,25,25",
 formIndex:1,
 json:{
@@ -43,16 +64,16 @@ typeid:4,
 uuid:"204FD588-8F62-4F01-9CB2-D298EE211CE5"
 },
 {
-cssPosition:"42,-1,-1,359,25,25",
+cssPosition:"40,-1,-1,359,25,30",
 formIndex:2,
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
-height:"25",
+height:"30",
 left:"359",
 right:"-1",
-top:"42",
+top:"40",
 width:"25"
 },
 faclass:"fa fa-filter",
@@ -73,15 +94,15 @@ typeid:47,
 uuid:"33748875-2236-4888-8EEE-5347DC761343"
 },
 {
-cssPosition:"41,110,-1,385,0,30",
+cssPosition:"40,139,-1,385,111,30",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"385",
-right:"110",
-top:"41",
-width:"0"
+right:"139",
+top:"40",
+width:"111"
 },
 foundset:null,
 onClick:"4DA82988-EE93-4BFC-A5DE-11AE27EE1310"
@@ -90,6 +111,28 @@ name:"filterToolbar",
 typeName:"customrenderedcomponents-customlist",
 typeid:47,
 uuid:"58578296-17E6-435F-AC5F-3F5609F0F2BE"
+},
+{
+cssPosition:"40,60,-1,-1,25,30",
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"30",
+left:"-1",
+right:"60",
+top:"40",
+width:"25"
+},
+imageStyleClass:"fas fa-cog clickable",
+onActionMethodID:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C",
+toolTipText:"Configure chart",
+visible:true
+},
+name:"btnChartConfig",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"6E0E644F-DA3C-4504-875A-ACE502D5B5F2"
 },
 {
 cssPosition:"10,-1,-1,31,324,23",
@@ -113,7 +156,9 @@ uuid:"77B75982-F3BC-459F-ABAE-D1B5EF16340A"
 },
 {
 cssPosition:"84,30,53,30,0,0",
+formIndex:1,
 json:{
+continuousColumnsAutoSizing:true,
 cssPosition:{
 bottom:"53",
 height:"0",
@@ -122,6 +167,7 @@ right:"30",
 top:"84",
 width:"0"
 },
+formIndex:1,
 gridOptions:{
 floatingFilter:"false",
 floatingFiltersHeight:"0",
@@ -144,7 +190,7 @@ typeid:19,
 uuid:"AA801C33-79D0-48C7-9E88-58A11D7AB1D1"
 },
 {
-cssPosition:"40,34,-1,-1,28,30",
+cssPosition:"40,34,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
@@ -153,7 +199,7 @@ height:"30",
 left:"-1",
 right:"34",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"fas fa-graduation-cap clickable",
 imageStyleClass:"fas fa-graduation-cap",
@@ -168,16 +214,16 @@ typeid:47,
 uuid:"D38E1B61-18AF-47B1-B104-EA3D61B6111C"
 },
 {
-cssPosition:"40,65,-1,-1,28,30",
+cssPosition:"40,112,-1,-1,25,30",
 json:{
 alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
 left:"-1",
-right:"65",
+right:"112",
 top:"40",
-width:"28"
+width:"25"
 },
 faclass:"icon-control_point h4 clickable",
 imageStyleClass:"icon-control_point h4",
@@ -189,7 +235,29 @@ name:"btnAdd",
 styleClass:"default-align clickable",
 typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"E08B9F39-7A28-40C7-8FAF-81034783BCCD",
+uuid:"E08B9F39-7A28-40C7-8FAF-81034783BCCD"
+},
+{
+cssPosition:"84,30,53,30,0,0",
+json:{
+containedForm:"02AD411E-B972-4275-89A2-FE6C27DBA0EE",
+cssPosition:{
+bottom:"53",
+height:"0",
+left:"30",
+right:"30",
+top:"84",
+width:"0"
+},
+formIndex:0,
+styleClass:"box",
+visible:false
+},
+name:"tabChart",
+styleClass:"box",
+typeName:"servoycore-formcontainer",
+typeid:47,
+uuid:"FA4F7C95-AF83-4279-9D64-49E2E6BE93A2",
 visible:false
 }
 ],

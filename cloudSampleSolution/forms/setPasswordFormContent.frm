@@ -10,31 +10,22 @@ encapsulation:44,
 extendsID:"674E6B11-85C3-4D0E-807D-AA26B4FA0A52",
 items:[
 {
-height:430,
-partType:5,
-typeid:19,
-uuid:"77C2665C-C933-47AD-896F-61620F88B0F7"
-},
-{
-cssPosition:"292,30,-1,30,200,38",
+cssPosition:"165,30,-1,30,100,20",
 json:{
 cssPosition:{
 bottom:"-1",
-height:"38",
+height:"20",
 left:"30",
 right:"30",
-top:"292",
-width:"200"
+top:"165",
+width:"100"
 },
-onActionMethodID:"12FCAEAA-F6C4-402C-83D2-1911DB309C7C",
-styleClass:"btn btn-primary",
-text:"Set password"
+text:"New Password"
 },
-name:"btnSetPassword",
-styleClass:"btn btn-primary",
-typeName:"bootstrapcomponents-button",
+name:"lblTenant",
+typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"7DBC3954-B8DA-404F-995F-3802F797A433"
+uuid:"04929667-85AA-4F59-B195-C75ECD4DDCF0"
 },
 {
 cssPosition:"345,30,-1,30,100,71",
@@ -54,26 +45,8 @@ name:"errorMsg",
 styleClass:"text-danger",
 typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"865B7794-87C2-41AB-8A53-02D2E179B258",
+uuid:"0709A64D-92FB-467D-A1EB-213866968940",
 visible:false
-},
-{
-cssPosition:"165,30,-1,30,100,20",
-json:{
-cssPosition:{
-bottom:"-1",
-height:"20",
-left:"30",
-right:"30",
-top:"165",
-width:"100"
-},
-text:"New Password"
-},
-name:"lblTenant",
-typeName:"bootstrapcomponents-label",
-typeid:47,
-uuid:"9F29FEF5-1046-49AD-90D8-2207DF9005B6"
 },
 {
 cssPosition:"190,30,-1,30,0,32",
@@ -93,7 +66,7 @@ onActionMethodID:"2F8D781B-F5CB-46E4-9D07-984A8E42B71B"
 name:"fldTenant",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
-uuid:"BBE68461-8678-44BB-92A3-4556823416D0"
+uuid:"1C1D09BB-9F99-4346-A9EB-B423790BE114"
 },
 {
 cssPosition:"254,30,-1,30,0,32",
@@ -113,7 +86,7 @@ onActionMethodID:"2F8D781B-F5CB-46E4-9D07-984A8E42B71B"
 name:"fldUsername",
 typeName:"bootstrapcomponents-textbox",
 typeid:47,
-uuid:"C9E449C6-48A7-460D-B952-EFC93660C6D5"
+uuid:"2FB75AB1-B383-42D5-97A3-4CA859FE6746"
 },
 {
 cssPosition:"20,calc(50% - 168px),-1,calc(50% - 168px),0,120",
@@ -133,7 +106,7 @@ name:"logo",
 styleClass:"full-width",
 typeName:"servoyextra-imagelabel",
 typeid:47,
-uuid:"EC17D14A-FBB7-4B9A-A556-4D0480D1C03C"
+uuid:"40191C21-D36E-43BE-BC78-E9C564151B25"
 },
 {
 cssPosition:"229,30,-1,30,100,20",
@@ -151,7 +124,34 @@ text:"Confirm Password"
 name:"lblUsername",
 typeName:"bootstrapcomponents-label",
 typeid:47,
-uuid:"FF8FE1A0-8FFA-4D66-AA97-F55EAD0A9BCA"
+uuid:"56A78D5B-68D0-4EC8-BF7F-2308CEE6499A"
+},
+{
+height:430,
+partType:5,
+typeid:19,
+uuid:"5C774239-53D2-4846-9E1C-71864DBFC3F9"
+},
+{
+cssPosition:"292,30,-1,30,200,38",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"38",
+left:"30",
+right:"30",
+top:"292",
+width:"200"
+},
+onActionMethodID:"DAF06334-CF5A-4276-A834-AADA26DD64AE",
+styleClass:"btn btn-primary",
+text:"Set password"
+},
+name:"btnSetPassword",
+styleClass:"btn btn-primary",
+typeName:"bootstrapcomponents-button",
+typeid:47,
+uuid:"864D3C23-731D-4E61-9852-700DE330FC05"
 }
 ],
 name:"setPasswordFormContent",
@@ -161,4 +161,4 @@ showInMenu:true,
 size:"600,513",
 styleClass:"box",
 typeid:3,
-uuid:"1BA6A1DB-7066-4449-8057-62113A534167"
+uuid:"0A7CAA5D-5446-43CA-BE62-981FDD5B3C75"
