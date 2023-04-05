@@ -35,7 +35,7 @@ function onCrumbClicked(event, crumb, index) {
 		showForm(forms.customersTableView);
 		break;
 	default:
-		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+		scopes.global.showForm(forms.customerView, foundset.orders_to_customers.getSelectedRecord());
 		break;
 	}
 }
@@ -53,7 +53,11 @@ function onActionPickRequiredShippedDates(event) {
 	var datePicker = scopes.svyPopupFilter.createDateFilter();
 	
 	// set popup template form
-	datePicker.setRendererForm(forms.customDatePopupFilter);
+	if (scopes.svySystem.isTINGClient()) {
+		datePicker.setRendererForm(forms.customDatePopupFilterTiNG);
+	} else {
+		datePicker.setRendererForm(forms.customDatePopupFilter);
+	}
 	
 	// set selected values
 	datePicker.setValues([foundset.shippeddate, foundset.requireddate]);

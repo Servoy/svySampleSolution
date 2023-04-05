@@ -45,3 +45,14 @@ function search(txt) {
 
 	foundset.sort("table_name asc");
 }
+
+/**
+ * Dismisses the popup
+ *
+ * @protected
+ * @properties={typeid:24,uuid:"12B50A5D-8243-4499-81E5-14E23AAE1CAF"}
+ */
+function dismiss() {
+	plugins.window.closeFormPopup(null);
+}
+

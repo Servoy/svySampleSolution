@@ -32,6 +32,7 @@ uuid:"35231972-AFF9-4626-85B4-11EAEC688780"
 {
 cssPosition:"70,15,15,15,200,100",
 json:{
+continuousColumnsAutoSizing:true,
 cssPosition:{
 bottom:"15",
 height:"100",

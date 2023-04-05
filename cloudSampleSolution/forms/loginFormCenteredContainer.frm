@@ -3,16 +3,23 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
+cssPosition:"0,0,0,0,0,0",
+imageMediaID:"14248E09-5D0F-491C-A3B8-A1E31AB0AD2D",
+name:"image",
+typeid:7,
+uuid:"50FC27E1-AF6C-48CB-B808-6F8862D3C68B"
+},
+{
 height:500,
 partType:5,
 typeid:19,
-uuid:"50490D68-90C2-46A5-8286-26AC083C707D"
+uuid:"DB04AD08-577D-4286-98D1-F60C21DC625A"
 },
 {
 cssPosition:"calc( 50% - 225px),calc( 50% - 300px),calc( 50% - 225px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
-containedForm:"CF5B4C78-9945-470E-AEAE-9C6BF9A14443",
+containedForm:"3C502F4A-07C6-4847-880E-87B8846ACB4F",
 cssPosition:{
 bottom:"calc( 50% - 225px)",
 height:"-1",
@@ -26,14 +33,7 @@ formIndex:1
 name:"tablesspanel",
 typeName:"servoycore-formcontainer",
 typeid:47,
-uuid:"7ED3585A-6F66-4874-B9A8-4772F1C7BFB6"
-},
-{
-cssPosition:"0,0,0,0,0,0",
-imageMediaID:"696AA329-B5E6-44E6-80CB-3C0D53BC6CDE",
-name:"image",
-typeid:7,
-uuid:"C64B7CD2-FD0B-4C38-90DD-27C064B5482B"
+uuid:"DD389D3B-4390-4196-BD2D-261FE2C9D659"
 }
 ],
 name:"loginFormCenteredContainer",
@@ -42,4 +42,4 @@ showInMenu:true,
 size:"600,500",
 styleClass:"bg-tertiary",
 typeid:3,
-uuid:"EFA4F47F-BD54-405D-A9C1-6E796BF93B05"
+uuid:"FC00B251-A4E4-4386-8067-5486E87FCF84"

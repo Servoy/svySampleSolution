@@ -20,10 +20,56 @@ function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 	var column = elements.table.getColumn(columnindex)
 	if (column.id == "customer") {
 		// navigate to the clicked customer
-		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+		scopes.global.showForm(forms.customerView, record.orders_to_customers.getSelectedRecord())
 		
 	} else {
 		// navigate to the orderEdit
-		scopes.global.showForm(forms.orderEdit, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET)
+		scopes.global.showForm(forms.orderEdit, record)
 	}
+}
+
+/**
+ * @param {QBSelect<db:/example_data/orders>} query
+ * @param {String} dataprovider
+ * @param {String} operator
+ * @param {Array} values
+ * @param {scopes.svyPopupFilter.AbstractPopupFilter} filter
+ * 
+ * @return {Boolean}
+ * @protected
+ * @override 
+ *
+ * @properties={typeid:24,uuid:"E838DBBC-0B32-4C48-81F7-4360A5D6A2AF"}
+ */
+function onFilterQueryCondition(query, dataprovider, operator, values, filter) {
+	if (!values || !values.length) return true;
+
+	switch (dataprovider) {
+	case "orderStatus":
+
+		var or = query.or;
+
+		// no requireddate set
+		if (values.indexOf("new") > -1) {
+			or.add(query.columns.requireddate.isNull)
+		}
+
+		// only requireddate is set
+		if (values.indexOf("planned") > -1) {
+			or.add(query.and.add(query.columns.requireddate.not.isNull).add(query.columns.shippeddate.isNull))
+		}
+
+		// requireddate & shippedate are set
+		if (values.indexOf("completed") > -1) {
+			or.add(query.and.add(query.columns.requireddate.not.isNull).add(query.columns.shippeddate.not.isNull))
+		}
+
+		query.where.add(or);
+
+		return false;
+		break;
+	default:
+		break;
+	}
+	return true;
 }

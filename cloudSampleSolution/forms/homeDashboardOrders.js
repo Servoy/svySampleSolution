@@ -12,7 +12,7 @@ var tooltipCustomer = 'Show customer at double click';
  *
  * @param {Number} foundsetindex
  * @param {Number} [columnindex]
- * @param {object} [record]
+ * @param {JSRecord} [record]
  * @param {JSEvent} [event]
  *
  * @protected
@@ -22,9 +22,9 @@ var tooltipCustomer = 'Show customer at double click';
 function onCellDoubleClick(foundsetindex, columnindex, record, event) {
 	if (columnindex == 1) {
 		// navigate to the clicked customer
-		scopes.global.showForm(forms.customerView, foundset.orders_to_customers, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+		scopes.global.showForm(forms.customerView, foundset.orders_to_customers.getSelectedRecord());
 	} else {
 		// navigate to the orderEdit
-		scopes.global.showForm(forms.orderEdit, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.SET_FOUNDSET);
+		scopes.global.showForm(forms.orderEdit, record);
 	}
 }

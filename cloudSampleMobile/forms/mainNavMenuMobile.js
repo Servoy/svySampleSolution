@@ -105,14 +105,13 @@ function onMenuItemSelected(menuItemId, event) {
 	if (menuItemId === "TUTORIAL") {
 		scopes.tutorial.showTutorial()
 	} else if (menuItemId === "PRIMARYCOLORS") {
-		var popup = plugins.window.createFormPopup(forms.colorPicker);
-		popup.showBackdrop(true);
-		popup.x(2.5);
-		popup.y(102.5);
-		popup.show();
-		return false;
 		
+		// show the color picker
+		forms.colorPickerMobile.showColorPicker();
+		return false;
 	} else if(menuItemId === "SEARCH"){
+		
+		// create a lookup object
 		var lookup = scopes.svyLookup.createLookup(datasources.mem.search_results.getDataSource());
 		lookup.setLookupForm(forms.searchViewLookupMobile);
 		lookup.addField("").setSearchable(false).setStyleClass("text-center fa-2x").setStyleClassDataprovider("iconStyleClass").setWidth("50");

@@ -21,6 +21,42 @@ width:280
 size:"280,260",
 typeid:47,
 uuid:"ED0EDFE4-AD97-4EE2-9974-050AE2877A1E"
+},
+{
+anchors:3,
+cssPosition:"0,0,-1,-1,25,25",
+json:{
+alignment:"center",
+anchors:3,
+cssPosition:{
+bottom:"-1",
+height:"25",
+left:"-1",
+right:"0",
+top:"0",
+width:"25"
+},
+faclass:"fa fa-close",
+imageStyleClass:"fa fa-close",
+location:{
+x:254,
+y:7
+},
+onActionMethodID:"12B50A5D-8243-4499-81E5-14E23AAE1CAF",
+size:{
+height:25,
+width:25
+},
+styleClass:"default-align text-tertiary clickable",
+styleclass:"text-tertiary clickable"
+},
+location:"254,7",
+name:"faClose",
+size:"25,25",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"FCBB783F-6126-4E39-B775-B892F522EBE5"
 }
 ],
 name:"searchViewLookupMobile",

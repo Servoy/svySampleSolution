@@ -5,7 +5,7 @@
  *
  * @protected
  *
- * @properties={typeid:24,uuid:"0A80E4F6-5693-4451-9BAD-5C388A658C83"}
+ * @properties={typeid:24,uuid:"9F00BBBC-562C-406D-845B-83A381C63D95"}
  */
 function onLoad(event) {
 	
@@ -18,7 +18,7 @@ function onLoad(event) {
 
 /**
  * @protected
- * @properties={typeid:24,uuid:"3A541FD4-C9D5-4330-B16C-94C693E544B2"}
+ * @properties={typeid:24,uuid:"1AB30B46-D4A2-4822-9E80-D75E62381211"}
  * @override
  */
 function onLoginSuccess() {
@@ -30,7 +30,7 @@ function onLoginSuccess() {
  * @protected
  * @param error
  *
- * @properties={typeid:24,uuid:"C3758249-7032-472A-85BF-4940A34E8089"}
+ * @properties={typeid:24,uuid:"B24C7D9E-5713-4D64-935D-2B2DDF3D466E"}
  * @override
  */
 function onLoginError(error) {
@@ -77,7 +77,7 @@ function onLoginError(error) {
  * @public
  * @param {String} appName
  *
- * @properties={typeid:24,uuid:"29B7E977-546A-4BCB-A0CD-FC99D629895B"}
+ * @properties={typeid:24,uuid:"846D3793-872E-489E-8F86-FBB82D31BDB8"}
  */
 function setAppName(appName) {
 	tenantName = appName;
