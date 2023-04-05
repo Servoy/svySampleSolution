@@ -24,6 +24,6 @@ uuid:"60C4B8D2-52B9-4401-8F6C-A0A2A5F43D1A"
 }
 ],
 name:"searchViewLookup",
-size:"400,100",
+size:"400,300",
 typeid:3,
 uuid:"CFE8B090-CB36-447A-82AB-998497BC865E"

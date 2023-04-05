@@ -1,0 +1,116 @@
+customProperties:"formComponent:false,\
+useCssPosition:true",
+encapsulation:44,
+items:[
+{
+cssPosition:"5,-1,-1,65,200,40",
+json:{
+autoRemoveWhenClicked:false,
+breadcrumbs:[
+{
+svyUUID:"01083E7D-E7EE-4685-888E-7EF673BEB58D"
+}
+],
+cssPosition:{
+bottom:"-1",
+height:"40",
+left:"65",
+right:"-1",
+top:"5",
+width:"200"
+},
+size:{
+height:40,
+width:600
+},
+styleClass:"bg-tertiary text-primary h4"
+},
+name:"breadcrumbs",
+size:"600,40",
+styleClass:"bg-tertiary text-primary h4",
+typeName:"bootstrapextracomponents-breadcrumbs",
+typeid:47,
+uuid:"18D552B3-6DF7-4CDF-A9F6-444DD60D663B"
+},
+{
+cssPosition:"10,-1,-1,10,55,25",
+json:{
+alignment:"center",
+cssPosition:{
+bottom:"-1",
+height:"25",
+left:"10",
+right:"-1",
+top:"10",
+width:"55"
+},
+faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
+imageStyleClass:"fas fa-angle-left fa-2x",
+onActionMethodID:"4D888D9A-5782-4890-B899-099B50B4130D",
+styleClass:"default-align text-tertiary clickable",
+styleclass:"clickable",
+text:"Back"
+},
+name:"back_icon",
+styleClass:"default-align text-tertiary clickable",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"9C048812-8C66-4E1A-B440-D8FEF56A0C3E"
+},
+{
+cssPosition:"50,10,10,10,0,0",
+json:{
+cssPosition:{
+bottom:"10",
+height:"0",
+left:"10",
+right:"10",
+top:"50",
+width:"0"
+},
+styleClass:"bg border-radius"
+},
+name:"bg",
+styleClass:"bg border-radius",
+typeName:"bootstrapcomponents-label",
+typeid:47,
+uuid:"A55FC613-C594-4E63-9DBB-0A672FADEABA"
+},
+{
+height:480,
+partType:5,
+typeid:19,
+uuid:"B1D98F42-E45A-4A98-B1DE-9764B3B5A5D5"
+},
+{
+cssPosition:"430,15,-1,15,115,35",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"35",
+left:"15",
+right:"15",
+top:"430",
+width:"115"
+},
+formIndex:0,
+onActionMethodID:"FD3C823F-D59B-401F-92DE-04120DA2C8D2",
+styleClass:"btn btn-success btn-lg font-weight-bold",
+text:"APPLY"
+},
+name:"save_button",
+styleClass:"btn btn-success btn-lg font-weight-bold",
+typeName:"bootstrapcomponents-button",
+typeid:47,
+uuid:"DF107F13-E782-4C96-ADF4-C3319C182AD9"
+}
+],
+name:"baseCRUDMobile",
+navigatorID:"-1",
+onElementDataChangeMethodID:"5A4AB2CE-D003-409E-84CD-7F3AD063C2EA",
+onHideMethodID:"3583D19C-7392-4C39-A650-453C66BE06D2",
+onShowMethodID:"9E7D94DC-B03D-4C72-8EFF-0CC0D6871B9A",
+showInMenu:true,
+styleClass:"bg-tertiary",
+typeid:3,
+uuid:"2257E189-E435-4C88-A089-690E2F250200"
