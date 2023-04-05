@@ -54,16 +54,16 @@ typeid:7,
 uuid:"9CCFD5C2-335B-4E29-8658-D6FE13C2F2D5"
 },
 {
-cssPosition:"calc(50% - 80px),calc(50% + 15px),calc(50% - 105px),15,calc( 50% - 30px),210",
+cssPosition:"calc(50% - 80px),calc(75% - 110px),calc(50% - 105px),calc(25% - 110px),210,210",
 extendsID:"B3B946CD-A178-4C49-A7F8-7072D267868D",
 json:{
 cssPosition:{
 bottom:"calc(50% - 105px)",
 height:"210",
-left:"15",
-right:"calc(50% + 15px)",
+left:"calc(25% - 110px)",
+right:"calc(75% - 110px)",
 top:"calc(50% - 80px)",
-width:"calc( 50% - 30px)"
+width:"210"
 },
 type:"doughnut"
 },
