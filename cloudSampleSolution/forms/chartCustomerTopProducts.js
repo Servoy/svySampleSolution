@@ -87,6 +87,13 @@ function RenderPieChart() {
 		}
 
 	};
+	
+	if (scopes.svySystem.isTINGClient()) {
+		options.plugins = {
+			legend: options.legend 
+		};
+		delete options.legend;
+	}
 
 	elements.chart_1.setData(data);
 	elements.chart_1.setOptions(options);
@@ -148,6 +155,13 @@ function renderBarChart() {
 			}]
 		}
 	};
+	
+	if (scopes.svySystem.isTINGClient()) {
+		options.plugins = {
+			legend: options.legend 
+		};
+		delete options.legend;
+	}
 
 	elements.bar_chart.setData(data);
 	elements.bar_chart.setOptions(options);
