@@ -155,7 +155,7 @@ uuid:"A2CB4D7E-C90B-45A9-B870-9DC55459D84F"
 ],
 name:"loginFormContent",
 navigatorID:"-1",
-onLoadMethodID:"0A80E4F6-5693-4451-9BAD-5C388A658C83",
+onLoadMethodID:"9F00BBBC-562C-406D-845B-83A381C63D95",
 showInMenu:true,
 size:"600,513",
 styleClass:"box",

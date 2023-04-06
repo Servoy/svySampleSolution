@@ -19,7 +19,7 @@ uuid:"DB04AD08-577D-4286-98D1-F60C21DC625A"
 cssPosition:"calc( 50% - 225px),calc( 50% - 300px),calc( 50% - 225px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
-containedForm:"3C502F4A-07C6-4847-880E-87B8846ACB4F",
+containedForm:"CF5B4C78-9945-470E-AEAE-9C6BF9A14443",
 cssPosition:{
 bottom:"calc( 50% - 225px)",
 height:"-1",
