@@ -11,6 +11,17 @@ var searchText;
  * @properties={typeid:35,uuid:"36DBC6FF-7710-4094-8778-E14F7CBBFC59",variableType:-4}
  */
 var toolbarFilter;
+
+/**
+ * @protected 
+ * @properties={typeid:35,uuid:"46E8021B-4455-4D1C-A443-6E267B746577",variableType:-4}
+ */
+var chartParams = {
+	label : "",
+	value : "",
+	valueFunc : "count"
+}
+
 /**
  * Perform the element onclick action.
  *
@@ -38,6 +49,7 @@ function onLoad(event) {
 	toolbarFilter.setOnFilterApplyCallback(onFilterApplyEvent);
 	toolbarFilter.setOnFilterRemovedCallback(onFilterRemovedEvent);
 	toolbarFilter.setOnSearchCommand(onSearchCommand);
+	toolbarFilter.setOnFilterApplyQueryCondition(onFilterQueryCondition)
 	
 	// customize the free search
 	var simpleSearch = toolbarFilter.getSimpleSearch();
@@ -45,11 +57,12 @@ function onLoad(event) {
 		.addAlternateDateFormat("MMM yyyy")
 		.addAlternateDateFormat("MMMM yyyy")
 		.addAlternateDateFormat("MM/yyyy").addAlternateDateFormat("MM-yyyy")
-		.addAlternateDateFormat("dd/MM/yyyy").addAlternateDateFormat("MM-yyyy")
+		.addAlternateDateFormat("dd/MM/yyyy").addAlternateDateFormat("dd-MM-yyyy")
 		.addAlternateDateFormat("dd/MM/yyyy HH").addAlternateDateFormat("dd-MM-yyyy HH")
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm").addAlternateDateFormat("dd-MM-yyyy HH:mm")
 		.addAlternateDateFormat("dd/MM/yyyy HH:mm:ss").addAlternateDateFormat("dd-MM-yyyy HH:mm:ss")
 		.addAlternateDateFormat("DDD/yyyy").addAlternateDateFormat("DDD-yyyy");
+	//chartParams.label = elements.table.columns[0].dataprovider;
 }
 
 /**
@@ -65,13 +78,29 @@ function onSearchCommand(query, fs) {
 
 
 /**
+ * @protected 
+ * @param {QBSelect} query
+ * @param {String} dataprovider
+ * @param {String} operator
+ * @param {Array} values
+ * @param {scopes.svyPopupFilter.AbstractPopupFilter} filter
+ * 
+ * @return {Boolean}
+ *
+ * @properties={typeid:24,uuid:"83D47A95-BE7A-4797-AC2A-A8D7FD347AB0"}
+ */
+function onFilterQueryCondition(query, dataprovider, operator, values, filter) {
+	return true;
+}
+
+/**
  * @private 
  * @properties={typeid:24,uuid:"E9C17BB8-BB62-4AE9-B9DA-34E72A10D8AA"}
  */
-function onFilterRemovedEvent() {
-	//plugins.webnotificationsToastr.info('filter removed');
-	
+function onFilterRemovedEvent() {	
 	saveToolbarFilterProperty();
+	
+	renderChart();
 }
 
 
@@ -84,10 +113,10 @@ function onFilterRemovedEvent() {
  *
  * @properties={typeid:24,uuid:"2600A53A-0203-4DB5-9D84-D2FC9FE1B450"}
  */
-function onFilterApplyEvent(values, operator, filter) {
-	//plugins.webnotificationsToastr.info(values.join(','));
-	
+function onFilterApplyEvent(values, operator, filter) {	
 	saveToolbarFilterProperty();
+	
+	renderChart();
 }
 
 /**
@@ -140,6 +169,7 @@ function onActionSearch(event) {
 function search(text) {
 	toolbarFilter.setSearchText(text);
 	toolbarFilter.search();
+	renderChart();
 }
 
 /**
@@ -238,10 +268,16 @@ function onShow(firstShow, event) {
 			}
 		}
 	}
+	
+	if (firstShow) {
+		forms.tableChartAdvanced.configChart(foundset, "orders_to_customers.companyname");
+	}
 
 	// re-apply last search
 	toolbarFilter.search();
 	
+	// render the chart
+	renderChart();
 }
 
 /**
@@ -267,11 +303,13 @@ function getColumn(dataprovider) {
 /**
  * @protected 
  * @param form
+ * @param {JSRecord|JSFoundSet} [record]
  *
  * @properties={typeid:24,uuid:"185B6063-C444-4A51-A3C7-B42B18E648D5"}
  */
-function showForm(form){
-	scopes.global.showForm(form, foundset, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
+function showForm(form, record){
+	var dataToLoad = record ? record : foundset;
+	scopes.global.showForm(form, dataToLoad, scopes.svyNavigation.NAVIGATION_SELECTION_TYPE.LOAD_RECORDS);
 }
 
 /**
@@ -282,6 +320,7 @@ function showForm(form){
  * @param {object} [oldvalue]
  * @param {object} [newvalue]
  * @param {JSEvent} [event]
+ * @param {JSRecord} [record]
  *
  * @return {boolean}
  *
@@ -289,8 +328,78 @@ function showForm(form){
  *
  * @properties={typeid:24,uuid:"51762184-6F32-4021-9998-6CFBCA60B2FC"}
  */
-function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, event) {
+function onColumnDataChange(foundsetindex, columnindex, oldvalue, newvalue, event, record) {
 	// save data at every data change
 	databaseManager.saveData();
 	return true;
+}
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"F797A8C4-CACD-4ACD-A76D-1EE4CB3EAF3A"}
+ */
+function toggleViewChart(event) {
+
+	// elements.btnChartConfig.visible = elements.tabChart.visible;
+	//elements.btnAdd.visible = !elements.tabChart.visible;
+	
+	if (!chartParams.label) {
+		chartConfig(event);
+	} else {
+		elements.table.visible = !elements.table.visible;
+		elements.tabChart.visible = !elements.tabChart.visible;
+		renderChart();
+	}
+}
+
+/**
+ * @private
+ * @properties={typeid:24,uuid:"5F6486A3-A01E-4C6D-ABFD-A78C1770047F"}
+ */
+function renderChart() {
+	if (elements.tabChart.visible) {
+		forms.tableChartAdvanced.renderChart(foundset)
+	}
+}
+
+/**
+ * @param {JSEvent} event
+ *
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"6CA01D3F-828A-4CF7-980D-9CEAE933DA6C"}
+ */
+function chartConfig(event) {
+	forms.chartPicker.showChartConfig(elements.table, applyChartConfig, event, chartParams);
+}
+
+/**
+ * @param {String} chartLabel
+ * @param {String} chartValue
+ * @param {String} chartFunc
+ * @param {String} chartLabelDisplay
+ * @param {String} chartValueDisplay
+ * 
+ * @protected
+ *
+ * @properties={typeid:24,uuid:"0E580D43-803C-4224-839E-F8ED00D22956"}
+ */
+function applyChartConfig(chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay) {
+	
+	// update chart Values
+	chartParams.label = chartLabel;
+	chartParams.value = chartValue;
+	chartParams.valueFunc = chartFunc;
+	
+	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay);
+
+	elements.table.visible = false;
+	elements.tabChart.visible = true;
+	
+	renderChart();
+	
+
 }

@@ -1,37 +1,38 @@
 /**
  * @type {String}
  *
- * @properties={typeid:35,uuid:"C6631576-3798-424F-8327-A5B96AA2CE0A"}
+ * @properties={typeid:35,uuid:"019815A8-FFF1-4B71-993E-512A6369EDAF"}
  */
-var newPassword;
+var newPassword = '';
 
 /**
  * @type {String}
  *
- * @properties={typeid:35,uuid:"1F7880B1-2E89-486D-9474-EB16D4C41405"}
+ * @properties={typeid:35,uuid:"BA34201F-9AAB-4B6C-ABFF-987110282192"}
  */
-var confirmPassword;
+var confirmPassword = '';
 
 /**
  * @type {scopes.svySecurity.User}
  *
- * @properties={typeid:35,uuid:"81910812-7AAE-4F21-BF6A-BB819DD12B6D",variableType:-4}
+ * @properties={typeid:35,uuid:"85A5BAAB-C1E2-49EB-A216-871CCE944674",variableType:-4}
  */
 var user;
 
 /**
  * @param {scopes.svySecurity.User} userToReset
  *
- * @properties={typeid:24,uuid:"D7DCF90A-0BCE-4F49-A664-24DE9D82500B"}
+ * @properties={typeid:24,uuid:"792BD969-9C34-4E67-AAC0-19FEB766C267"}
  */
 function setUser(userToReset){
 	user = userToReset;
 }
+
 /**
 
  * @private
  *
- * @properties={typeid:24,uuid:"12FCAEAA-F6C4-402C-83D2-1911DB309C7C"}
+ * @properties={typeid:24,uuid:"DAF06334-CF5A-4276-A834-AADA26DD64AE"}
  */
 function resetPassword() {
 	

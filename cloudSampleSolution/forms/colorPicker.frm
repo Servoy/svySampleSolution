@@ -50,12 +50,12 @@ typeid:47,
 uuid:"21932E1E-3B5A-4788-B430-E28617B5FF73"
 },
 {
-cssPosition:"284,-1,-1,60,120,33",
+cssPosition:"284,-1,-1,50,120,33",
 json:{
 cssPosition:{
 bottom:"-1",
 height:"33",
-left:"60",
+left:"50",
 right:"-1",
 top:"284",
 width:"120"
@@ -177,7 +177,7 @@ name:"colorPicker",
 navigatorID:"-1",
 onLoadMethodID:"9A3921DF-552C-41D3-8D96-999FF469F78A",
 showInMenu:true,
-size:"402,346",
+size:"355,346",
 styleClass:"box",
 typeid:3,
 uuid:"AB80A4FE-EA60-43DC-8122-86DFFE5A5DCE"

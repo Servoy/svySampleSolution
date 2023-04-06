@@ -1,0 +1,9 @@
+addEmptyValue:1,
+customValues:"<span class=\"text-info\">New<\/span>|New\r\
+<span class=\"text-warning\">Planned<\/span>|Planned\r\
+<span class=\"text-success\">Completed<\/span>|Completed",
+displayValueType:12,
+name:"orderStatuses",
+realValueType:12,
+typeid:34,
+uuid:"176A5FA0-756F-493B-B490-88835051871A"

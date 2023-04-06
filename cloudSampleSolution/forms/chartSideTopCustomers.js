@@ -45,8 +45,14 @@ function RenderChart() {
 			display: false,
 			position: 'right'
 		}
-
 	};
+	
+	if (scopes.svySystem.isTINGClient()) {
+		options.plugins = {
+			legend: options.legend 
+		};
+		delete options.legend;
+	}
 
 	elements.chart_1.setData(data);
 	elements.chart_1.setOptions(options);
