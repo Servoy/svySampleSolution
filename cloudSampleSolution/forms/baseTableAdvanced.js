@@ -434,6 +434,3 @@ function getTableColumn(dataprovider) {
 	}
 	return null;
 }
-
-	
-}
