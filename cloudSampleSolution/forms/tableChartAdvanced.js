@@ -49,6 +49,22 @@ var labelDisplay = ''
  * @properties={typeid:35,uuid:"8F61DFFF-D01B-4140-B5E2-8ECB4261520C"}
  */
 var valueDisplay = ''
+	
+/**
+ * @type {String}
+ * @protected 
+ *
+ * @properties={typeid:35,uuid:"504B54AC-562F-4288-B46A-F469AAA27285"}
+ */
+var labelValueList = null;
+
+/**
+ * @type {String}
+ * @protected
+ *
+ * @properties={typeid:35,uuid:"EDB53945-52B4-4159-997B-23F5267B1AAE"}
+ */
+var labelFormat = ''
 
 /**
  * @param {JSFoundSet} chartFoundSet
@@ -57,10 +73,12 @@ var valueDisplay = ''
  * @param {String} [chartValueFunc]
  * @param {String} [chartLabelDisplay]
  * @param {String} [chartValueDisplay]
+ * @param {String} [chartLabelValueList]
+ * @param {String} [chartLabelFormat]
  *
  * @properties={typeid:24,uuid:"2AB3AB8F-20F8-4C31-8B04-1F1218168C12"}
  */
-function configChart(chartFoundSet, chartLabel, chartValue, chartValueFunc, chartLabelDisplay, chartValueDisplay) {
+function configChart(chartFoundSet, chartLabel, chartValue, chartValueFunc, chartLabelDisplay, chartValueDisplay, chartLabelValueList, chartLabelFormat) {
 
 	var table = databaseManager.getTable(chartFoundSet);
 	var pkName = table.getRowIdentifierColumnNames()[0];
@@ -70,6 +88,8 @@ function configChart(chartFoundSet, chartLabel, chartValue, chartValueFunc, char
 	valueFunc = chartValueFunc ? chartValueFunc : 'count';
 	labelDisplay = chartLabelDisplay ? chartLabelDisplay : '';
 	valueDisplay = chartValueDisplay ? chartValueDisplay : '';
+	labelValueList = chartLabelValueList ? chartLabelValueList : null;
+	labelFormat = chartLabelFormat ? chartLabelFormat : null;
 }
 
 /**
@@ -125,6 +145,23 @@ function renderChart(chartFoundset) {
 	var dataset = databaseManager.getDataSetByQuery(query, -1);
 	var labels = dataset.getColumnAsArray(1);
 	var chartData = dataset.getColumnAsArray(2);
+	
+	// apply valuelist substitution
+	if (labelValueList) {
+		for (var i = 0; i < labels.length; i++) {
+			var labelDisplayValue = application.getValueListDisplayValue(labelValueList, labels[i])
+			labels[i] = labelDisplayValue ? labelDisplayValue : labels[i];
+		}
+	} 
+	
+	// apply format
+	if (labelFormat) {
+		if (labels[0] && labels[0] instanceof Date) {
+			for (i = 0; i < labels.length; i++) {
+				labels[i] = utils.dateFormat(labels[i], labelFormat);
+			}
+		}
+	}
 
 	// fill colors
 	var colors = ["#9D0952",
@@ -135,7 +172,7 @@ function renderChart(chartFoundset) {
 		"#5C774C"];
 
 	var dataColors = colors;
-	for (var i = 0; i <= labels.length / 5; i++) {
+	for (i = 0; i <= labels.length / 5; i++) {
 		dataColors = dataColors.concat(colors);
 	}
 
