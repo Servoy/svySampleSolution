@@ -34,10 +34,6 @@
 	path = svySearch
 	url = https://github.com/Servoy/svySearch.git
 	branch = master
-[submodule "svyAnalyticsClient"]
-	path = svyAnalyticsClient
-	url = https://github.com/Servoy/svyAnalyticsClient.git
-	branch = master
 [submodule "aggridcomponents"]
 	path = aggridcomponents
 	url = https://github.com/Servoy/aggridcomponents.git
