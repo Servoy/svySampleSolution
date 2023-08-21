@@ -434,3 +434,17 @@ function getTableColumn(dataprovider) {
 	}
 	return null;
 }
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"E6E1CD86-3538-4B0C-9943-4762D4240707"}
+ */
+function excelExport() {
+	try {
+		var excelBuilder = scopes.svyExcelBuilder.createNgGridExcelBuilder(elements.table, false);
+		var wb = excelBuilder.createWorkbook();
+		wb.openFile('excel_export');
+	} catch (e) {
+		application.output(e, LOGGINGLEVEL.ERROR);
+		plugins.dialogs.showErrorDialog('Excel export requires Setup', 'Excel utilities for export are not properly setup.\nPlease follow instructions at https://github.com/Servoy/svyUtils/wiki/ExcelUtils');
+	}
+}
