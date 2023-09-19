@@ -25,7 +25,7 @@ specname:\"column\"\
 items:[
 {
 json:{
-containedForm:"1E02E3F7-7BCA-4286-9DD3-AD7D0F0083B4",
+containedForm:"60296D90-351C-4456-B595-DB4BCE565392",
 location:{
 x:76,
 y:341
@@ -36,7 +36,7 @@ width:200
 }
 },
 location:"76,341",
-name:"formcontainer_3",
+name:"topProducts",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -83,7 +83,7 @@ width:200
 }
 },
 location:"199,95",
-name:"formcontainer_1",
+name:"orders",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,
@@ -130,7 +130,7 @@ width:200
 }
 },
 location:"101,221",
-name:"formcontainer_2",
+name:"revenue",
 size:"200,100",
 typeName:"servoycore-formcontainer",
 typeid:47,

@@ -20,7 +20,6 @@ uuid:"6B7BABCB-8743-4409-8DAF-B4B10F81055F"
 {
 extendsID:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC",
 json:{
-faclass:"fas fa-coins",
 imageStyleClass:"fas fa-coins fa-3x"
 },
 typeName:"bootstrapcomponents-label",

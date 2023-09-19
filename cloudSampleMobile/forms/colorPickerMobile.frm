@@ -5,7 +5,6 @@ items:[
 {
 cssPosition:"0,0,-1,-1,25,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -14,15 +13,13 @@ right:"0",
 top:"0",
 width:"25"
 },
-faclass:"fa fa-close",
 imageStyleClass:"fa fa-close",
 onActionMethodID:"AFDE6BE0-6468-4503-B58D-781F9D834235",
 size:{
 height:25,
 width:25
 },
-styleClass:"default-align text-tertiary clickable",
-styleclass:"text-tertiary clickable"
+styleClass:"default-align text-tertiary clickable"
 },
 name:"faClose",
 size:"25,25",

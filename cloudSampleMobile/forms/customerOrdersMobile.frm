@@ -24,7 +24,6 @@ visible:false
 {
 cssPosition:"10,-1,-1,5,55,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -33,11 +32,9 @@ right:"-1",
 top:"10",
 width:"55"
 },
-faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
 imageStyleClass:"fas fa-angle-left fa-2x",
 onActionMethodID:"801C4D4C-3B0B-499D-B3B0-1FB06E66E283",
 styleClass:"default-align text-tertiary clickable",
-styleclass:"clickable",
 text:"Back"
 },
 name:"back_icon",
