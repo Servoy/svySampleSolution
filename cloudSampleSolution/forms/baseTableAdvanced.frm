@@ -5,7 +5,6 @@ items:[
 {
 cssPosition:"40,86,-1,-1,25,30",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
@@ -27,7 +26,6 @@ uuid:"0253AB81-E199-47E0-889A-99600DFA4458"
 cssPosition:"42,-1,-1,318,25,25",
 formIndex:1,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -36,7 +34,6 @@ right:"-1",
 top:"42",
 width:"25"
 },
-faclass:"fa fa-search",
 formIndex:1,
 imageStyleClass:"fa fa-search",
 onActionMethodID:"FA66816E-DE30-43F3-AF63-E26D2F6A2379",
@@ -67,7 +64,6 @@ uuid:"204FD588-8F62-4F01-9CB2-D298EE211CE5"
 cssPosition:"40,-1,-1,359,25,30",
 formIndex:2,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
@@ -76,7 +72,6 @@ right:"-1",
 top:"40",
 width:"25"
 },
-faclass:"fa fa-filter",
 formIndex:2,
 imageStyleClass:"fa fa-filter",
 onActionMethodID:"18402340-95F4-4FEC-BAAE-DB7533D2C3E1",
@@ -104,7 +99,6 @@ right:"139",
 top:"40",
 width:"111"
 },
-foundset:null,
 onClick:"4DA82988-EE93-4BFC-A5DE-11AE27EE1310"
 },
 name:"filterToolbar",
@@ -115,7 +109,6 @@ uuid:"58578296-17E6-435F-AC5F-3F5609F0F2BE"
 {
 cssPosition:"40,60,-1,-1,25,30",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
@@ -192,7 +185,6 @@ uuid:"AA801C33-79D0-48C7-9E88-58A11D7AB1D1"
 {
 cssPosition:"40,34,-1,-1,25,30",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
@@ -201,7 +193,6 @@ right:"34",
 top:"40",
 width:"25"
 },
-faclass:"fas fa-graduation-cap clickable",
 imageStyleClass:"fas fa-graduation-cap",
 onActionMethodID:"9C6747ED-5DA2-4932-BEC6-F77E7AEFE78E",
 styleClass:"default-align clickable",
@@ -216,7 +207,6 @@ uuid:"D38E1B61-18AF-47B1-B104-EA3D61B6111C"
 {
 cssPosition:"40,112,-1,-1,25,30",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"30",
@@ -225,7 +215,6 @@ right:"112",
 top:"40",
 width:"25"
 },
-faclass:"icon-control_point h4 clickable",
 imageStyleClass:"icon-control_point h4",
 onActionMethodID:"0617C50E-1CB5-4E1F-8D42-AEA2408967DD",
 styleClass:"default-align clickable",

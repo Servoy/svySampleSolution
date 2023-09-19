@@ -62,7 +62,6 @@ uuid:"140F8736-7B1A-44EE-8EAD-3CC3908E09D2"
 cssPosition:"368,calc(50% - 10px),-1,-1,25,31",
 formIndex:33,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"31",
@@ -71,7 +70,6 @@ right:"calc(50% - 10px)",
 top:"368",
 width:"25"
 },
-faclass:"far fa-calendar-check",
 formIndex:33,
 imageStyleClass:"far fa-calendar-check",
 onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
@@ -79,8 +77,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align clickable",
-styleclass:"clickable"
+styleClass:"default-align clickable"
 },
 name:"iconPickRequiredDate",
 size:"25,25",
@@ -136,7 +133,6 @@ right:"-1",
 top:"148",
 width:"25"
 },
-faclass:"fas fa-phone",
 formIndex:16,
 imageStyleClass:"fas fa-phone",
 size:{
@@ -388,7 +384,6 @@ right:"-1",
 top:"171",
 width:"25"
 },
-faclass:"fas fa-fax",
 formIndex:9,
 imageStyleClass:"fas fa-fax",
 size:{
@@ -457,7 +452,6 @@ uuid:"E1812ED5-95E6-4B4D-8816-86A6384D2637"
 cssPosition:"426,calc(50% - 10px),-1,-1,25,31",
 formIndex:34,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"31",
@@ -466,7 +460,6 @@ right:"calc(50% - 10px)",
 top:"426",
 width:"25"
 },
-faclass:"far fa-calendar-check",
 formIndex:34,
 imageStyleClass:"far fa-calendar-check",
 onActionMethodID:"0781C250-0287-4E70-B3CD-B6E6C7F3D59B",
@@ -474,8 +467,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align clickable",
-styleclass:"clickable"
+styleClass:"default-align clickable"
 },
 name:"iconPickRequiredDatec",
 size:"25,25",
