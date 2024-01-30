@@ -25,7 +25,6 @@ uuid:"0708FDF6-D39C-422A-9B5A-BBCF3D3AFEAE"
 {
 cssPosition:"0,0,-1,-1,25,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -34,15 +33,13 @@ right:"0",
 top:"0",
 width:"25"
 },
-faclass:"fa fa-close",
 imageStyleClass:"fa fa-close",
 onActionMethodID:"F18750A2-44A6-4CC0-B6A9-C973F0569851",
 size:{
 height:25,
 width:25
 },
-styleClass:"default-align text-tertiary clickable",
-styleclass:"text-tertiary clickable"
+styleClass:"default-align text-tertiary clickable"
 },
 name:"faClose",
 size:"25,25",

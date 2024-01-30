@@ -176,7 +176,6 @@ uuid:"8B8E5E0D-8812-4A94-8DE7-EE6AAB174046"
 cssPosition:"-1,-1,10,30,25,40",
 formIndex:1,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"10",
 height:"40",
@@ -185,7 +184,6 @@ right:"-1",
 top:"-1",
 width:"25"
 },
-faclass:"icon-control_point h4 clickable",
 formIndex:1,
 imageStyleClass:"icon-control_point h4",
 onActionMethodID:"E0143577-D0A3-422B-8382-DE48E2094A1F",
@@ -193,8 +191,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align clickable text-success",
-styleclass:"text-success"
+styleClass:"default-align clickable text-success"
 },
 name:"iconNewRole",
 size:"25,25",

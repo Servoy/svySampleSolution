@@ -213,7 +213,7 @@ function updateValidationError(marker, element) {
 	if (element) {
 		
 		// show error as tooltip
-		element.toolTipText = marker.message;
+		element.toolTipText = marker.i18NMessage;
 		// style the element as invalid input
 		element.addStyleClass("form-invalid");
 	}
@@ -265,7 +265,7 @@ function onElementDataChange(oldValue, newValue, event) {
 	var markers = validate(event.getSource());
 	if (markers && markers.length) {
 		// show error message
-		plugins.webnotificationsToastr.error(markers[0].message);
+		plugins.webnotificationsToastr.error(markers[0].i18NMessage);
 	}
 	return true
 }

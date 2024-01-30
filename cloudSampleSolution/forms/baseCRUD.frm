@@ -5,7 +5,6 @@ items:[
 {
 cssPosition:"22,193,-1,-1,25,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -14,11 +13,9 @@ right:"193",
 top:"22",
 width:"25"
 },
-faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
 imageStyleClass:"fas fa-long-arrow-alt-left fa-lg",
 onActionMethodID:"2A3F64AB-11F1-4DDB-81E9-571640F47307",
-styleClass:"default-align text-tertiary clickable",
-styleclass:"clickable"
+styleClass:"default-align text-tertiary clickable"
 },
 name:"back_icon",
 styleClass:"default-align text-tertiary clickable",

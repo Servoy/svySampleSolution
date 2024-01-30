@@ -171,7 +171,6 @@ uuid:"6BBF8651-28C7-4029-91C2-D7813BCB08F3"
 cssPosition:"-1,80,42,-1,215,272",
 formIndex:17,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"42",
 height:"272",
@@ -180,15 +179,13 @@ right:"80",
 top:"-1",
 width:"215"
 },
-faclass:"fas icon-contacts fa-8x",
 formIndex:17,
 imageStyleClass:"fas icon-contacts fa-8x",
 size:{
 height:25,
 width:25
 },
-styleClass:"default-align h2 text-tertiary",
-styleclass:"h2 text-tertiary"
+styleClass:"default-align h2 text-tertiary"
 },
 name:"icon",
 size:"25,25",

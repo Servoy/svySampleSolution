@@ -92,7 +92,6 @@ right:"-1",
 top:"286",
 width:"33"
 },
-faclass:"fas fa-fax",
 imageStyleClass:"fas fa-fax",
 size:{
 height:25,
@@ -177,7 +176,6 @@ right:"-1",
 top:"256",
 width:"33"
 },
-faclass:"fas fa-phone",
 imageStyleClass:"fas fa-phone",
 size:{
 height:25,
@@ -215,7 +213,6 @@ uuid:"52082E6C-57AB-42B4-B9C0-48B3EAC8B0C5"
 cssPosition:"-1,30,10,-1,25,40",
 formIndex:1,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"10",
 height:"40",
@@ -224,7 +221,6 @@ right:"30",
 top:"-1",
 width:"25"
 },
-faclass:"fas fa-long-arrow-alt-right text-tertiary fa-lg clickable",
 formIndex:1,
 imageStyleClass:"fas fa-long-arrow-alt-right fa-lg",
 onActionMethodID:"10F36B49-6417-4D92-AFA2-8EF903405D80",
@@ -265,7 +261,6 @@ uuid:"6804DD3E-D648-4593-9ACF-6D3114515D36"
 {
 cssPosition:"-1,23,54,-1,115,130",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"54",
 height:"130",
@@ -274,15 +269,13 @@ right:"23",
 top:"-1",
 width:"115"
 },
-faclass:"fas icon-contacts fa-4x",
 formIndex:0,
 imageStyleClass:"fas icon-contacts fa-4x",
 size:{
 height:25,
 width:25
 },
-styleClass:"default-align text-tertiary h2",
-styleclass:"h2 text-tertiary"
+styleClass:"default-align text-tertiary h2"
 },
 name:"icon",
 size:"25,25",
@@ -403,7 +396,6 @@ uuid:"B3984091-1CB2-4DAD-8337-84F64C538A00"
 {
 cssPosition:"16,54,-1,-1,25,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -412,11 +404,9 @@ right:"54",
 top:"16",
 width:"25"
 },
-faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
 imageStyleClass:"fas fa-long-arrow-alt-left fa-lg",
 onActionMethodID:"7984D179-92B2-481F-A085-27F2B6931AF6",
-styleClass:"default-align text-tertiary clickable",
-styleclass:"clickable"
+styleClass:"default-align text-tertiary clickable"
 },
 name:"back_icon",
 styleClass:"default-align text-tertiary clickable",
