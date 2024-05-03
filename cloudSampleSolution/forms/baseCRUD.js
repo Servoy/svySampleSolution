@@ -133,7 +133,7 @@ function updateUI(){
 
 /**
  * Validate the record
- * @param {RuntimeTextField} [element] validate only the dataprovider linked to the given element when set
+ * @param {RuntimeTextField|RuntimeComponent} [element] validate only the dataprovider linked to the given element when set
  * @protected 
  * @return {Array<JSRecordMarker>} It will return an array of JSRecordMarker when the record had validation problems 
  * @properties={typeid:24,uuid:"A95E28F2-F687-4DBB-B179-DB6EEAE1B586"}
@@ -205,7 +205,7 @@ function updateValidationErrors(errorMarkers) {
  * Update the UI showing validation error in element
  * @protected 
  * @param {JSRecordMarker} marker
- * @param {RuntimeTextField} element
+ * @param {RuntimeTextField|RuntimeComponent} element
  *
  * @properties={typeid:24,uuid:"0F955500-B6E1-4A86-B3D4-31271C22F596"}
  */
@@ -262,7 +262,7 @@ function clearValidationError(element) {
  * @properties={typeid:24,uuid:"8EA94FC5-668C-4874-9891-6379F38012C1"}
  */
 function onElementDataChange(oldValue, newValue, event) {
-	var markers = validate(event.getSource());
+	var markers = validate(elements[event.getElementName()]);
 	if (markers && markers.length) {
 		// show error message
 		plugins.webnotificationsToastr.error(markers[0].i18NMessage);
