@@ -246,8 +246,8 @@ function onShow(firstShow, event) {
 				id: String,
 				dataprovider: String,
 				operator: String,
-				params: Object,
 				text: String,
+				customProperties: Object,
 				values: Array}>} */
 			var toolbarState = JSON.parse(filterState);
 			toolbarFilter.restoreToolbarFiltersState(toolbarState);
