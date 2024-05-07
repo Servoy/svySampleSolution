@@ -132,6 +132,7 @@ items:[
 {
 json:{
 containedForm:"1268C2A5-625F-4B41-8764-B0DCA44B6565",
+height:"480",
 location:{
 x:1,
 y:1
