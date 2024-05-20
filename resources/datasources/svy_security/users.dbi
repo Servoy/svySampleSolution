@@ -14,7 +14,7 @@ allowNull:true,
 compatibleColumnTypes:"[[-9,64,0]]",
 creationOrderIndex:1,
 dataType:12,
-length:64,
+length:250,
 name:"user_password",
 titleText:"Password"
 },
