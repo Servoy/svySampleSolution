@@ -517,6 +517,6 @@ uuid:"FFDB557C-335D-4CFB-A65D-A55A2765353E"
 name:"customerInfo",
 navigatorID:"-1",
 showInMenu:true,
-size:"640,614",
+size:"280,614",
 typeid:3,
 uuid:"71C80C08-190D-4DA7-AEAD-4925904EE22E"

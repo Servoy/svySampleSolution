@@ -10,22 +10,22 @@ typeid:7,
 uuid:"50FC27E1-AF6C-48CB-B808-6F8862D3C68B"
 },
 {
-height:500,
+height:600,
 partType:5,
 typeid:19,
 uuid:"DB04AD08-577D-4286-98D1-F60C21DC625A"
 },
 {
-cssPosition:"calc( 50% - 250px),calc( 50% - 300px),calc( 50% - 250px),calc( 50% - 300px),-1,-1",
+cssPosition:"calc( 50% - 257px),calc( 50% - 300px),calc( 50% - 257px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
 containedForm:"3C502F4A-07C6-4847-880E-87B8846ACB4F",
 cssPosition:{
-bottom:"calc( 50% - 250px)",
+bottom:"calc( 50% - 257px)",
 height:"-1",
 left:"calc( 50% - 300px)",
 right:"calc( 50% - 300px)",
-top:"calc( 50% - 250px)",
+top:"calc( 50% - 257px)",
 width:"-1"
 },
 formIndex:1
