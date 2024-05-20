@@ -16,16 +16,16 @@ typeid:19,
 uuid:"DB04AD08-577D-4286-98D1-F60C21DC625A"
 },
 {
-cssPosition:"calc( 50% - 225px),calc( 50% - 300px),calc( 50% - 225px),calc( 50% - 300px),-1,-1",
+cssPosition:"calc( 50% - 232px),calc( 50% - 300px),calc( 50% - 232px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
 containedForm:"CF5B4C78-9945-470E-AEAE-9C6BF9A14443",
 cssPosition:{
-bottom:"calc( 50% - 225px)",
+bottom:"calc( 50% - 232px)",
 height:"-1",
 left:"calc( 50% - 300px)",
 right:"calc( 50% - 300px)",
-top:"calc( 50% - 225px)",
+top:"calc( 50% - 232px)",
 width:"-1"
 },
 formIndex:1
