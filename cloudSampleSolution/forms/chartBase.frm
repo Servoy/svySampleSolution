@@ -40,7 +40,6 @@ right:"-1",
 top:"208",
 width:"16"
 },
-faclass:"fas fa-sort-down",
 imageStyleClass:"fas fa-sort-down",
 size:{
 height:25,
@@ -66,7 +65,6 @@ right:"-1",
 top:"212",
 width:"16"
 },
-faclass:"fas fa-sort-up",
 imageStyleClass:"fas fa-sort-up",
 size:{
 height:25,
@@ -105,8 +103,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align text-foreground",
-styleclass:"fa-3x"
+styleClass:"default-align text-foreground"
 },
 name:"image",
 size:"25,25",

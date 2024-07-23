@@ -1,0 +1,4 @@
+clientOnlyConnections:false,
+queryProcedures:false,
+sortIgnorecase:false,
+sortingNullprecedence:"databaseDefault"
