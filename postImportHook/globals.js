@@ -11,6 +11,10 @@
  * @properties={typeid:24,uuid:"8FDBDB3B-5DFF-415D-BB01-95973BB00B5E"}
  */
 function onSolutionOpenPostImportHook(arg, queryParams) {
+	
+	// increase user_pwd size
+	plugins.rawSQL.executeSQL('svy_security','ALTER TABLE users ALTER COLUMN user_password TYPE character varying(250)')
+	
 	// sync security permissions at every deployment
 	scopes.svySecurity.syncPermissions();
 	
