@@ -110,6 +110,22 @@ typeid:19,
 uuid:"1B6FE0B4-7281-4BF5-B0AA-A5FD4493C17F"
 },
 {
+cssPosition:"21,54,-1,-1,20,20",
+extendsID:"7403686B-0C3B-40DA-86C7-6BC0DB761E1A",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"20",
+left:"-1",
+right:"54",
+top:"21",
+width:"20"
+}
+},
+typeid:47,
+uuid:"2DA94640-C215-473D-945B-82D10394744D"
+},
+{
 cssPosition:"-1,-1,10,60,116,40",
 formIndex:2,
 json:{
@@ -133,6 +149,22 @@ typeid:47,
 uuid:"34246DE3-8E65-463D-8F06-133DB0F7DA77"
 },
 {
+cssPosition:"21,86,-1,-1,20,20",
+extendsID:"DD37254E-8ECC-4B76-902C-5FD56E986972",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"20",
+left:"-1",
+right:"86",
+top:"21",
+width:"20"
+}
+},
+typeid:47,
+uuid:"56BDC901-62E1-4736-9FBB-38B4A3149F06"
+},
+{
 extendsID:"6E57CCB6-C6DB-4EEA-899E-662BD7FED798",
 json:{
 
@@ -144,7 +176,6 @@ uuid:"8B8E5E0D-8812-4A94-8DE7-EE6AAB174046"
 cssPosition:"-1,-1,10,30,25,40",
 formIndex:1,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"10",
 height:"40",
@@ -153,7 +184,6 @@ right:"-1",
 top:"-1",
 width:"25"
 },
-faclass:"icon-control_point h4 clickable",
 formIndex:1,
 imageStyleClass:"icon-control_point h4",
 onActionMethodID:"E0143577-D0A3-422B-8382-DE48E2094A1F",
@@ -161,8 +191,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align clickable text-success",
-styleclass:"text-success"
+styleClass:"default-align clickable text-success"
 },
 name:"iconNewRole",
 size:"25,25",
@@ -170,6 +199,22 @@ styleClass:"default-align clickable text-success",
 typeName:"bootstrapcomponents-label",
 typeid:47,
 uuid:"9A98B839-6DE8-4B07-8E45-73CAF7A1AE12"
+},
+{
+cssPosition:"21,20,-1,-1,20,20",
+extendsID:"29E69132-37C2-40DE-9F6E-8BAA976661F3",
+json:{
+cssPosition:{
+bottom:"-1",
+height:"20",
+left:"-1",
+right:"20",
+top:"21",
+width:"20"
+}
+},
+typeid:47,
+uuid:"F4F4E66B-A182-44D0-85AF-DBDF6270A9F7"
 }
 ],
 name:"customerDashboardOrders",

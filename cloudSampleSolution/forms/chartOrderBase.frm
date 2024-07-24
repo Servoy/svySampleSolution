@@ -3,7 +3,7 @@ useCssPosition:true",
 encapsulation:44,
 items:[
 {
-cssPosition:"89,0,-1,4,182,33",
+cssPosition:"74,0,-1,4,182,33",
 horizontalAlignment:0,
 styleClass:"h3 text-foreground text-uppercase",
 text:"SubTitle",
@@ -12,7 +12,7 @@ typeid:7,
 uuid:"743206C2-A000-4760-955C-FD7EBAA2DE54"
 },
 {
-cssPosition:"47,0,-1,0,186,39",
+cssPosition:"32,0,-1,0,186,39",
 dataProviderID:"value",
 horizontalAlignment:0,
 styleClass:"h1 text-foreground font-weight-bold",
@@ -22,7 +22,7 @@ typeid:7,
 uuid:"9F6DFEAC-616A-4650-9C33-82D5FDDDA41B"
 },
 {
-height:184,
+height:140,
 partType:5,
 typeid:19,
 uuid:"BBB356B0-E444-4A82-9EA3-BACC1979E1BD"

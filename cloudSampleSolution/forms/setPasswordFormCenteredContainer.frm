@@ -4,23 +4,17 @@ encapsulation:44,
 items:[
 {
 cssPosition:"0,0,0,0,0,0",
-imageMediaID:"696AA329-B5E6-44E6-80CB-3C0D53BC6CDE",
+imageMediaID:"14248E09-5D0F-491C-A3B8-A1E31AB0AD2D",
 name:"image",
 text:"",
 typeid:7,
-uuid:"043BB49F-277D-498E-908D-B88090DAC2F2"
-},
-{
-height:500,
-partType:5,
-typeid:19,
-uuid:"7984EB9D-140B-4D31-A2F4-9C40D39D29CE"
+uuid:"0D4E0533-3AE9-464F-B449-B3D17AE77BAA"
 },
 {
 cssPosition:"calc( 50% - 250px),calc( 50% - 300px),calc( 50% - 250px),calc( 50% - 300px),-1,-1",
 formIndex:1,
 json:{
-containedForm:"1BA6A1DB-7066-4449-8057-62113A534167",
+containedForm:"0A7CAA5D-5446-43CA-BE62-981FDD5B3C75",
 cssPosition:{
 bottom:"calc( 50% - 250px)",
 height:"-1",
@@ -34,7 +28,13 @@ formIndex:1
 name:"tablesspanel",
 typeName:"servoycore-formcontainer",
 typeid:47,
-uuid:"F1EFD28B-2D44-4A85-8380-67C3C3D7A23C"
+uuid:"8D3E3B29-4FB3-4A3D-9179-F0D045FEF99A"
+},
+{
+height:500,
+partType:5,
+typeid:19,
+uuid:"C68FAA14-86FC-485C-9B9A-B7649008CEAE"
 }
 ],
 name:"setPasswordFormCenteredContainer",
@@ -43,4 +43,4 @@ showInMenu:true,
 size:"600,500",
 styleClass:"bg-tertiary",
 typeid:3,
-uuid:"1C41AEED-88C0-40BB-8D91-834319552A6A"
+uuid:"1E733A73-D8CE-415C-B9A9-790C71A95A12"

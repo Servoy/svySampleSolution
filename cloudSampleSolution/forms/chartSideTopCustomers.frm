@@ -16,6 +16,7 @@ typeid:7,
 uuid:"55A23BCB-F203-4C3D-95BD-24751D660FF3"
 },
 {
+cssPosition:"71,calc(50% + 81px),-1,calc(50% - 81px),162,161",
 customProperties:"methods:{\
 onClick:{\
 arguments:null,\
@@ -24,6 +25,14 @@ parameters:null\
 }",
 extendsID:"B3B946CD-A178-4C49-A7F8-7072D267868D",
 json:{
+cssPosition:{
+bottom:"-1",
+height:"161",
+left:"calc(50% - 81px)",
+right:"calc(50% + 81px)",
+top:"71",
+width:"162"
+},
 onClick:"01F188CD-7447-404C-A612-2B634169F3D3",
 type:"doughnut"
 },
