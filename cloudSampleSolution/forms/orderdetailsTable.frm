@@ -27,7 +27,7 @@ typeid:47,
 uuid:"055986DE-2214-4405-8A4D-67DFC31BEACE"
 },
 {
-height:480,
+height:200,
 partType:5,
 typeid:19,
 uuid:"52847DE0-4177-413B-BCB5-F096072EE09A"
@@ -44,7 +44,6 @@ uuid:"5F9C5DA3-323D-492A-A855-2102F521687E"
 cssPosition:"-1,-1,10,23,25,40",
 formIndex:1,
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"10",
 height:"40",
@@ -53,7 +52,6 @@ right:"-1",
 top:"-1",
 width:"25"
 },
-faclass:"icon-control_point h4 clickable",
 formIndex:1,
 imageStyleClass:"icon-control_point h4",
 onActionMethodID:"500A0286-3A91-4C29-956E-EF0397468FEA",
@@ -61,8 +59,7 @@ size:{
 height:25,
 width:25
 },
-styleClass:"default-align text-success clickable",
-styleclass:"text-success"
+styleClass:"default-align text-success clickable"
 },
 name:"iconNewProduct",
 size:"25,25",

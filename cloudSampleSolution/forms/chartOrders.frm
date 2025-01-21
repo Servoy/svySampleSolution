@@ -21,7 +21,6 @@ uuid:"CE0BB075-D7F3-462C-B48E-3F72C1F54753"
 {
 extendsID:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC",
 json:{
-faclass:"fas fa-chart-line",
 imageStyleClass:"fas fa-chart-line fa-3x"
 },
 typeName:"bootstrapcomponents-label",

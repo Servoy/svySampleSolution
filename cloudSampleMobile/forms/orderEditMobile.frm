@@ -169,7 +169,6 @@ right:"-1",
 top:"121",
 width:"25"
 },
-faclass:"fas fa-fax",
 formIndex:6,
 imageStyleClass:"fas fa-fax",
 size:{
@@ -435,7 +434,6 @@ right:"-1",
 top:"101",
 width:"25"
 },
-faclass:"fas fa-phone",
 formIndex:8,
 imageStyleClass:"fas fa-phone",
 size:{

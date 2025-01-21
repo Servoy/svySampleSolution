@@ -35,7 +35,6 @@ uuid:"18D552B3-6DF7-4CDF-A9F6-444DD60D663B"
 {
 cssPosition:"10,-1,-1,10,55,25",
 json:{
-alignment:"center",
 cssPosition:{
 bottom:"-1",
 height:"25",
@@ -44,11 +43,9 @@ right:"-1",
 top:"10",
 width:"55"
 },
-faclass:"fas fa-long-arrow-alt-left fa-lg text-tertiary",
 imageStyleClass:"fas fa-angle-left fa-2x",
 onActionMethodID:"4D888D9A-5782-4890-B899-099B50B4130D",
 styleClass:"default-align text-tertiary clickable",
-styleclass:"clickable",
 text:"Back"
 },
 name:"back_icon",

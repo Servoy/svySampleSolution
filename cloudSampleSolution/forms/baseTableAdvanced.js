@@ -226,6 +226,11 @@ function onColumnStateChanged(columnState) {
  */
 function onShow(firstShow, event) {
 	
+	// restore chart settings upon onShow
+	if (elements.tabChart.visible) {
+		applyChartConfig(chartParams.label, chartParams.value, chartParams.valueFunc, chartParams.labelDisplay, chartParams.valueDisplay)
+	}
+	
 	// restore grid state
 	var propertyKey = controller.getName() + "-" + elements.table.getName();
 	var columnState = scopes.svyProperties.getUserPropertyValue(propertyKey, 'table-state');
@@ -241,8 +246,8 @@ function onShow(firstShow, event) {
 				id: String,
 				dataprovider: String,
 				operator: String,
-				params: Object,
 				text: String,
+				customProperties: Object,
 				values: Array}>} */
 			var toolbarState = JSON.parse(filterState);
 			toolbarFilter.restoreToolbarFiltersState(toolbarState);
@@ -350,7 +355,7 @@ function toggleViewChart(event) {
 		chartConfig(event);
 	} else {
 		elements.table.visible = !elements.table.visible;
-		elements.tabChart.visible = !elements.tabChart.visible;
+		elements.tabChart.visible = !elements.tabChart.visible;		
 		renderChart();
 	}
 }
@@ -393,13 +398,53 @@ function applyChartConfig(chartLabel, chartValue, chartFunc, chartLabelDisplay, 
 	chartParams.label = chartLabel;
 	chartParams.value = chartValue;
 	chartParams.valueFunc = chartFunc;
+	chartParams.labelDisplay = chartLabelDisplay;
+	chartParams.valueDisplay = chartValueDisplay
 	
-	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay);
+	var labelColumn = getColumn(chartLabel);
+	var chartLabelValuelist = labelColumn && labelColumn.valuelist ? labelColumn.valuelist.name : null;	
+	
+	/** @type {String} */
+	var format = labelColumn.format ? (labelColumn.format.indexOf('displayFormat') > -1 ? JSON.parse(labelColumn.format)['displayFormat'] : labelColumn.format) : null;
+	if (format && format.indexOf('|') > -1) {
+		format = format.substring(0, format.indexOf('|'));
+	}	
+	
+	forms.tableChartAdvanced.configChart(foundset, chartLabel, chartValue, chartFunc, chartLabelDisplay, chartValueDisplay, chartLabelValuelist, format);
 
 	elements.table.visible = false;
 	elements.tabChart.visible = true;
 	
 	renderChart();
-	
 
+}
+
+/**
+ * @param {String} dataprovider
+ * @private 
+ * 
+ * @return {CustomType<aggrid-groupingtable.column>}
+ * @properties={typeid:24,uuid:"15A28F1B-9C06-4209-A9F9-FCB20D653EFF"}
+ */
+function getTableColumn(dataprovider) {
+	for (var i = 0; i < elements.table.columns.length; i++) {
+		if (elements.table.columns[i].dataprovider === dataprovider) {
+			return elements.table.columns[i];
+		}
+	}
+	return null;
+}
+/**
+ * @protected 
+ * @properties={typeid:24,uuid:"E6E1CD86-3538-4B0C-9943-4762D4240707"}
+ */
+function excelExport() {
+	try {
+		var excelBuilder = scopes.svyExcelBuilder.createNgGridExcelBuilder(elements.table, false);
+		var wb = excelBuilder.createWorkbook();
+		wb.openFile('excel_export');
+	} catch (e) {
+		application.output(e, LOGGINGLEVEL.ERROR);
+		plugins.dialogs.showErrorDialog('Excel export requires Setup', 'Excel utilities for export are not properly setup.\nPlease follow instructions at https://github.com/Servoy/svyUtils/wiki/ExcelUtils');
+	}
 }

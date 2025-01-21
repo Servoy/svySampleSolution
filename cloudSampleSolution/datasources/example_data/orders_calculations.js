@@ -42,7 +42,7 @@ function orderStatus() {
  */
 function orderStatusStyleClass() {
 	switch (orderStatus) {
-	case "New Order":
+	case "New":
 		return "btn-label-info";
 		break;
 	case "Completed":

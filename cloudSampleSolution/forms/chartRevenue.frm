@@ -28,7 +28,6 @@ uuid:"61472DBA-B01B-43D1-88FD-BB321C73AB59"
 {
 extendsID:"ED8C746F-867A-4EDE-8E1B-86DF99B832AC",
 json:{
-faclass:"fas fa-hand-holding-usd",
 imageStyleClass:"fas fa-hand-holding-usd fa-3x"
 },
 typeName:"bootstrapcomponents-label",
