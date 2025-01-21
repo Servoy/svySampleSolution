@@ -7,6 +7,7 @@
     "wikiUrl": "https://github.com/Servoy/svySampleSolution/wiki",
     "sourceUrl" : "https://github.com/Servoy/svySampleSolution",
     "releases" : [
+        {"version":"2024.3.0","url":"https://github.com/Servoy/svySampleSolution/releases/download/2023.3/cloudSampleSolution.servoy", "servoy-version":"2024.3.0", "dependency":"svyNavigationUX#>=2022.3.0,svySecurityUX#>=2024.3.0,svyPopupFilter#>=2024.3.0,svyUtils$documentEditor#>=2024.3.0,svyUtils$Excel#>=2024.3.0,webnotifications#>=2024.3.0,aggridservice#>=1.3.5,smartdocumenteditor#>=2024.3.2"},
         {"version":"2023.3.0","url":"https://github.com/Servoy/svySampleSolution/releases/download/2023.3/cloudSampleSolution.servoy", "servoy-version":"2023.3.0", "dependency":"svyNavigationUX#>=2022.3.0,svySecurityUX#>=2022.3.0,svyPopupFilter#>=2022.3.1,svyUtils$documentEditor#>=2022.3.1,webnotifications#>=2023.3.0,aggridservice#>=1.3.2,smartdocumenteditor#>=2022.9.2"},
         {"version":"1.2.0","url":"https://github.com/Servoy/svySampleSolution/releases/download/v1.2.0/cloudSampleSolution.servoy", "servoy-version":"2021.6", "dependency":"svyNavigationUX#>=1.1.0,svySecurityUX#>=1.6.0,svyPopupFilter#>=2.0.2,svyUtils$documentEditor#>=1.6.0,webnotifications#>=1.1.3,aggridservice#>=1.3.0,smartdocumenteditor#>=1.0.0"},
         {"version":"1.1.2","url":"https://github.com/Servoy/svySampleSolution/releases/download/v1.1.2/cloudSampleSolution.servoy", "servoy-version":"2021.3", "dependency":"svyNavigationUX#>=1.0.4,svySecurityUX#>=1.5.0,svyPopupFilter#>=2.0.1,webnotifications#>=1.1.2,aggridservice#>=1.2.2"},
