@@ -214,6 +214,31 @@ function renderChart(chartFoundset) {
             display: true
 		}
 	};
+	
+	if (scopes.svySystem.isTINGClient()) {
+		options = {
+			plugins: {
+				title: {
+					display: true,
+					text: titleText,
+					position: 'top',
+					font: {
+						size: 14,
+						family: 'Karla, Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif'
+					},
+					color: '#191B33'
+				},
+				legend: {
+					display: false
+				}
+			},
+			scales: {
+				y: {
+					beginAtZero: true
+				}
+			}
+		}
+	}
 
 	elements.chart.setOptions(options);
 	elements.chart.setData(data);

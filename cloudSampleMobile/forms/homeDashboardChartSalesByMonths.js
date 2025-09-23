@@ -38,24 +38,26 @@ function RenderChart() {
 	};
 
 	var options = {
-		tooltips: {
-			enabled: false
-		},
-		legend: {
-			display: false
+		plugins: {
+			tooltip: {
+				enabled: false
+			},
+			legend: {
+				display: false
+			}
 		},
 		scales: {
-			yAxes: [{
+			y: {
 				ticks: {
 					beginAtZero: true
 				},
-				scaleLabel: {
+				title: {
 					display: true,
-					labelString: 'Amount($)'
+					text: 'Amount($)'
 				}
-			}]
+			}
 		}
-	};
+	}
 
 	elements.chart_1.setData(data);
 	elements.chart_1.setOptions(options);

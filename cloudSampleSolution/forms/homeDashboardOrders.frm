@@ -47,7 +47,7 @@ svyUUID:"4C389912-90E5-4807-8579-66799D122943"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"order_total",
 enableResize:false,
@@ -60,7 +60,7 @@ svyUUID:"1EE5A275-8411-4A15-9D58-42BA97C0BF31"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"orderStatus",
 enableRowGroup:false,

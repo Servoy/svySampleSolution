@@ -91,7 +91,7 @@ svyUUID:"94C12284-3A5C-4A05-B7B0-AB1A0150972A"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"customers_to_orders.order_total",
 enableRowGroup:false,

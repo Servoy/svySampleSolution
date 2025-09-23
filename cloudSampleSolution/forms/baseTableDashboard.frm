@@ -42,7 +42,6 @@ top:"70",
 width:"200"
 },
 gridOptions:{
-floatingFilter:"true",
 floatingFiltersHeight:"40",
 headerHeight:"10"
 },

@@ -89,10 +89,21 @@ function RenderPieChart() {
 	};
 	
 	if (scopes.svySystem.isTINGClient()) {
-		options.plugins = {
-			legend: options.legend 
-		};
-		delete options.legend;
+		options = {
+			plugins: {
+				tooltip: {
+					enabled: true
+				},
+				title: {
+					display: false
+				},
+				legend: {
+					display: false,
+					position: 'right'
+				}
+			},
+			cutout: '50%'
+		}
 	}
 
 	elements.chart_1.setData(data);
@@ -157,10 +168,25 @@ function renderBarChart() {
 	};
 	
 	if (scopes.svySystem.isTINGClient()) {
-		options.plugins = {
-			legend: options.legend 
-		};
-		delete options.legend;
+		options = {
+			plugins: {
+				tooltip: {
+					enabled: false
+				},
+				legend: {
+					display: false
+				}
+			},
+			scales: {
+				y: {
+					beginAtZero: true,
+					title: {
+						display: true,
+						text: 'Amount($)'
+					}
+				}
+			}
+		}
 	}
 
 	elements.bar_chart.setData(data);

@@ -74,7 +74,7 @@ json:{
 columns:[
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"productid",
 enableRowGroup:false,
@@ -86,7 +86,7 @@ valuelist:"FF6542C6-8731-40F3-BEF5-1C923D90C385"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"quantity",
 enableRowGroup:false,
@@ -98,7 +98,7 @@ width:80
 {
 autoResize:false,
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 enableResize:false,
 enableRowGroup:false,
@@ -114,7 +114,7 @@ width:40
 {
 autoResize:false,
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 enableResize:false,
 enableRowGroup:false,
@@ -129,7 +129,7 @@ width:40
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"unitprice",
 enableRowGroup:false,
@@ -140,7 +140,7 @@ svyUUID:"3C1BA302-8078-47A1-A961-00BC48AF3CDB"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"discount",
 enableRowGroup:false,
@@ -150,7 +150,7 @@ svyUUID:"31CCA978-58B7-47EC-8CF9-0D9C0EEEB965"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"subtotal",
 enableRowGroup:false,
@@ -163,7 +163,7 @@ svyUUID:"7A5EFE95-7F1A-494D-948F-79A324A7AD88"
 {
 autoResize:false,
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 enableResize:false,
 enableRowGroup:false,

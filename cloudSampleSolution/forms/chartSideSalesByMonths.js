@@ -54,10 +54,25 @@ function RenderChart() {
 	};
 	
 	if (scopes.svySystem.isTINGClient()) {
-		options.plugins = {
-			legend: options.legend 
-		};
-		delete options.legend;
+		options = {
+			plugins: {
+				tooltip: {
+					enabled: false
+				},
+				legend: {
+					display: false
+				}
+			},
+			scales: {
+				y: {
+					beginAtZero: true,
+					title: {
+						display: true,
+						text: 'Amount($)'
+					}
+				}
+			}
+		}
 	}
 
 	elements.chart_1.setData(data);

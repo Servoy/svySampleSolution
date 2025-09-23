@@ -96,7 +96,7 @@ svyUUID:"5110B8F3-191F-4320-9288-6864371B50DD"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"orderStatus",
 enableRowGroup:false,

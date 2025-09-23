@@ -19,7 +19,7 @@ columns:[
 {
 autoResize:false,
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 enableResize:false,
 enableRowGroup:false,
@@ -56,7 +56,7 @@ svyUUID:"4C389912-90E5-4807-8579-66799D12294A"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"order_total",
 enableResize:false,
@@ -69,7 +69,7 @@ svyUUID:"1EE5A275-8411-4A15-9D58-42BA97C0BF3A"
 },
 {
 columnDef:{
-suppressMenu:"true"
+suppressHeaderMenuButton:"true"
 },
 dataprovider:"orderStatus",
 enableRowGroup:false,

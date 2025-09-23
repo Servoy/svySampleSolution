@@ -37,18 +37,19 @@ function RenderChart() {
 	};
 
 	var options = {
-		tooltips: {
-			enabled: true
+		plugins: {
+			tooltip: {
+				enabled: true
+			},
+			title: {
+				display: false
+			},
+			legend: {
+				display: false,
+				position: 'right'
+			}
 		},
-		cutoutPercentage: 50,
-		title: {
-			display: false
-		},
-		legend: {
-			display: false,
-			position: 'right'
-		}
-
+		cutout: '50%'
 	};
 
 	elements.chart_1.setData(data);

@@ -75,19 +75,20 @@ function RenderPieChart() {
 	};
 
 	var options = {
-		tooltips: {
-			enabled: true
+		plugins: {
+			tooltip: {
+				enabled: true
+			},
+			title: {
+				display: false
+			},
+			legend: {
+				display: false,
+				position: 'right'
+			}
 		},
-		cutoutPercentage: 50,
-		title: {
-			display: false
-		},
-		legend: {
-			display: false,
-			position: 'right'
-		}
-
-	};
+		cutout: '50%'
+	}
 
 	elements.chart_1.setData(data);
 	elements.chart_1.setOptions(options);
@@ -133,24 +134,24 @@ function renderBarChart() {
 	};
 
 	var options = {
-		tooltips: {
-			enabled: false
-		},
-		legend: {
-			display: false
+		plugins: {
+			tooltip: {
+				enabled: false
+			},
+			legend: {
+				display: false
+			}
 		},
 		scales: {
-			yAxes: [{
-				ticks: {
-					beginAtZero: true
-				},
-				scaleLabel: {
+			y: {
+				beginAtZero: true,
+				title: {
 					display: true,
-					labelString: 'Amount($)'
+					text: 'Amount($)'
 				}
-			}]
+			}
 		}
-	};
+	}
 
 	elements.bar_chart.setData(data);
 	elements.bar_chart.setOptions(options);

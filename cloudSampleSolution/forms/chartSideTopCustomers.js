@@ -48,10 +48,20 @@ function RenderChart() {
 	};
 	
 	if (scopes.svySystem.isTINGClient()) {
-		options.plugins = {
-			legend: options.legend 
-		};
-		delete options.legend;
+		options = {
+			plugins: {
+				tooltip: {
+					enabled: true
+				},
+				title: {
+					display: false
+				},
+				legend: {
+					display: false
+				}
+			},
+			cutout: '50%'
+		}
 	}
 
 	elements.chart_1.setData(data);
